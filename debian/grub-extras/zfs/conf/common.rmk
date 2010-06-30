@@ -1,0 +1,13 @@
+# -*- makefile -*-
+
+COMMON_CFLAGS += -I$(GRUB_CONTRIB)/zfs/include
+
+pkglib_MODULES += zfs.mod
+zfs_mod_SOURCES = $(GRUB_CONTRIB)/zfs/zfs.c $(GRUB_CONTRIB)/zfs/zfs_lzjb.c $(GRUB_CONTRIB)/zfs/zfs_sha256.c $(GRUB_CONTRIB)/zfs/zfs_fletcher.c
+zfs_mod_CFLAGS = $(COMMON_CFLAGS) -Wno-error
+zfs_mod_LDFLAGS = $(COMMON_LDFLAGS)
+
+pkglib_MODULES += zfsinfo.mod
+zfsinfo_mod_SOURCES = $(GRUB_CONTRIB)/zfs/zfsinfo.c
+zfsinfo_mod_CFLAGS = $(COMMON_CFLAGS) -Wno-error
+zfsinfo_mod_LDFLAGS = $(COMMON_LDFLAGS)

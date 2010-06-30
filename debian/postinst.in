@@ -1,0 +1,435 @@
+#!/bin/bash -e
+
+merge_debconf_into_conf()
+{
+  local tmpfile; tmpfile="$1"
+  local setting; setting="$2"
+  local template; template="$3"
+
+  db_get "$template"
+  local value; value="$(echo "$RET" | sed -e 's,[$`"\],\\&,g; s,[\@],\\&,g')"
+  if grep -q "^${setting}=" "$tmpfile"; then
+    sed -i -re "s@^(${setting}=).*@\1\"${value}\"@" "$tmpfile"
+  else
+    echo >> "$tmpfile"
+    echo "${setting}=\"${value}\"" >> "$tmpfile"
+  fi
+}
+
+cached_available_ids=
+available_ids()
+{
+  local id path
+
+  if [ "$cached_available_ids" ]; then
+    echo "$cached_available_ids"
+    return
+  fi
+
+  [ -d /dev/disk/by-id ] || return
+  cached_available_ids="$(
+    for path in /dev/disk/by-id/*; do
+      [ -e "$path" ] || continue
+      printf '%s %s\n' "$path" "$(readlink -f "$path")"
+    done | sort -k2 -s -u | cut -d' ' -f1
+  )"
+  echo "$cached_available_ids"
+}
+
+# Returns non-zero and no output if no mapping can be found.
+device_to_id()
+{
+  local id
+  for id in $(available_ids); do
+    if [ "$(readlink -f "$id")" = "$(readlink -f "$1")" ]; then
+      echo "$id"
+      return 0
+    fi
+  done
+  return 1
+}
+
+devices_to_ids()
+{
+  local device id ids
+  ids=
+  for device; do
+    id="$(device_to_id "$device" || true)"
+    if [ "$id" ]; then
+      ids="${ids:+$ids, }$id"
+    fi
+  done
+  echo "$ids"
+}
+
+all_partitions()
+{
+  local id ids
+  ids=
+  for id in $(available_ids); do
+    if [ "$id" != "$1" ] && [ "${id%-part*}" = "$1" ]; then
+      ids="${ids:+$ids }$id"
+    fi
+  done
+  echo "$ids"
+}
+
+sysfs_size()
+{
+  local num_sectors sector_size size
+  # Try to find out the size without relying on a partitioning tool being
+  # installed. This isn't too hard on Linux 2.6 with sysfs, but we have to
+  # try a couple of variants on detection of the sector size.
+  if [ -e "$1/size" ]; then
+    num_sectors="$(cat "$1/size")"
+    sector_size=512
+    if [ -e "$1/queue/logical_block_size" ]; then
+      sector_size="$(cat "$1/queue/logical_block_size")"
+    elif [ -e "$1/queue/hw_sector_size" ]; then
+      sector_size="$(cat "$1/queue/hw_sector_size")"
+    fi
+    size="$(expr "$num_sectors" \* "$sector_size" / 1000 / 1000)"
+  fi
+  [ "$size" ] || size='???'
+  echo "$size"
+}
+
+# Returns value in $RET, like a debconf command.
+describe_disk()
+{
+  local disk id base size
+  disk="$1"
+  id="$2"
+
+  if which udevadm >/dev/null 2>&1; then
+    size="$(sysfs_size "/sys$(udevadm info -n "$disk" -q path)")"
+  else
+    base="${disk#/dev/}"
+    base="$(printf %s "$base" | sed 's,/,!,g')"
+    size="$(sysfs_size "/sys/block/$base")"
+  fi
+
+  model=
+  if which udevadm >/dev/null 2>&1; then
+    model="$(udevadm info -n "$disk" -q property | sed -n 's/^ID_MODEL=//p')"
+    if [ -z "$model" ]; then
+      model="$(udevadm info -n "$disk" -q property | sed -n 's/^DM_NAME=//p')"
+    fi
+  fi
+  [ "$model" ] || model='???'
+
+  db_subst grub-pc/disk_description DEVICE "$disk"
+  db_subst grub-pc/disk_description SIZE "$size"
+  db_subst grub-pc/disk_description MODEL "$model"
+  db_metaget grub-pc/disk_description description
+}
+
+# Returns value in $RET, like a debconf command.
+describe_partition()
+{
+  local disk part id path diskbase partbase size
+  disk="$1"
+  part="$2"
+  id="$3"
+  path="$4"
+
+  if which udevadm >/dev/null 2>&1; then
+    size="$(sysfs_size "/sys$(udevadm info -n "$part" -q path)")"
+  else
+    diskbase="${disk#/dev/}"
+    diskbase="$(printf %s "$diskbase" | sed 's,/,!,g')"
+    partbase="${part#/dev/}"
+    partbase="$(printf %s "$partbase" | sed 's,/,!,g')"
+    size="$(sysfs_size "/sys/block/$diskbase/$partbase")"
+  fi
+
+  db_subst grub-pc/partition_description DEVICE "$part"
+  db_subst grub-pc/partition_description SIZE "$size"
+  db_subst grub-pc/partition_description PATH "$path"
+  db_metaget grub-pc/partition_description description
+}
+
+usable_partitions()
+{
+  local last_partition path partition partition_id
+
+  last_partition=
+  for path in / /boot /boot/grub; do
+    partition="$(grub-probe -t device "$path" || true)"
+    if [ -z "$partition" ] || [ "$partition" = "$last_partition" ]; then
+      continue
+    fi
+    partition_id="$(device_to_id "$partition" || true)"
+    echo "$path:$partition_id"
+    last_partition="$partition"
+  done | sort -t: -k2
+}
+
+get_mountpoint()
+{
+  local relpath boot_mountpoint
+
+  relpath="$(grub-mkrelpath "$1")"
+  boot_mountpoint="${1#$relpath}"
+  echo "${boot_mountpoint:-/}"
+}
+
+case "$1" in
+  configure)
+    . /usr/share/debconf/confmodule
+
+    case @PACKAGE@ in
+      grub-pc)
+
+        if grep -q "[= ]/sbin/update-grub" /etc/kernel-img.conf 2> /dev/null ; then
+          echo -e "\n/etc/kernel-img.conf still contains /sbin/update-grub in the hooks." >&2
+          echo -e "Running sed over it to remove the /sbin/ prefix.\n" >&2
+          sed -i /etc/kernel-img.conf -e "s,\(.*\)  */sbin/update-grub$,\1 update-grub,g"
+        fi
+        mkdir -p /boot/grub
+
+        if test -e /boot/grub/device.map && ! test -e /boot/grub/core.img ; then
+          # Looks like your device.map was generated by GRUB Legacy, which
+          # used to generate broken device.map (see #422851).  Avoid the risk
+          # by regenerating it.
+          grub-mkdevicemap --no-floppy
+        fi
+      ;;
+    esac
+
+    tmp_default_grub="$(mktemp "/tmp/grub.XXXXXXXXXX")"
+    trap "rm -f ${tmp_default_grub}" EXIT
+    cp -p /usr/share/grub/default/grub ${tmp_default_grub}
+
+    merge_debconf_into_conf "$tmp_default_grub" GRUB_CMDLINE_LINUX grub2/linux_cmdline
+    merge_debconf_into_conf "$tmp_default_grub" GRUB_CMDLINE_LINUX_DEFAULT grub2/linux_cmdline_default
+
+    case @PACKAGE@ in
+      grub-pc)
+        merge_debconf_into_conf "$tmp_default_grub" GRUB_TIMEOUT grub-pc/timeout
+        sed -i -e 's/^\(GRUB_TIMEOUT=\)"\([0-9][0-9]*\)"/\1\2/' "$tmp_default_grub"
+        db_get grub-pc/hidden_timeout
+        if [ "$RET" = false ]; then
+          sed -i -e 's/^GRUB_HIDDEN_TIMEOUT=/#&/' "$tmp_default_grub"
+        fi
+      ;;
+    esac
+
+    ucf --three-way --debconf-ok --sum-file=/usr/share/grub/default/grub.md5sum ${tmp_default_grub} /etc/default/grub
+    package="$(ucfq --with-colons /etc/default/grub | cut -d : -f 2)"
+    if echo $package | grep -q "^grub-" ; then
+      ucfr --force @PACKAGE@ /etc/default/grub
+    else
+      ucfr @PACKAGE@ /etc/default/grub
+    fi
+
+    case @PACKAGE@ in
+      grub-pc)
+
+        if test -e /boot/grub/stage2 && test -e /boot/grub/menu.lst && ! test -e /boot/grub/core.img ; then
+          db_get grub-pc/chainload_from_menu.lst
+          if $RET ; then
+            # Create core.img (but do not risk writing to MBR).
+            # Using grub-probe instead of "(hd0)" avoids (UUID=) hack slowness
+            # in case /boot/grub is not on (hd0) in device.map.
+            echo "Generating core.img" >&2
+            grub-install --no-floppy --grub-setup=/bin/true "$(grub-probe -t drive /boot/grub)" > /dev/null
+
+            # Update menu.lst to reflect that:
+            # - core.img is present now
+            # - core.img has to be the first option
+            echo "Saving menu.lst backup in /boot/grub/menu.lst_backup_by_grub2_postinst" >&2
+            cp /boot/grub/menu.lst{,_backup_by_grub2_postinst}
+            echo "Running update-grub Legacy to hook our core.img in it" >&2
+            LET_US_TRY_GRUB_2=true /usr/lib/grub-legacy/update-grub 2>&1 | sed -e "s/^/    /g" >&2
+            # We just hooked GRUB 2 in menu.lst; then also generate grub.cfg.
+            touch /boot/grub/grub.cfg
+          fi
+        else
+          question=grub-pc/install_devices
+          device_map="$(grub-mkdevicemap -m - | grep -v '^(fd[0-9]\+)' || true)"
+          devices="$(echo "$device_map" | cut -f2)"
+          if dpkg --compare-versions "$2" lt 1.98~20100128-1ubuntu1; then
+            # Migrate to new by-id naming scheme.
+            db_get grub-pc/install_devices
+            old_devices="$RET"
+            new_devices=
+            # Common-case optimisation: if the list of devices is
+            # identical to the LHS of grub-mkdevicemap's output, then
+            # there's no point asking again; just install to all disks.
+            # (This handles e.g. "(hd0)" with one disk.)
+            if [ "$(echo "$device_map" | cut -f1 | sort)" = \
+                 "$(echo "$old_devices" | xargs -n1 | sort)" ]; then
+              new_devices="$(devices_to_ids $devices)"
+              db_set grub-pc/install_devices "$new_devices"
+            # Alternatively, we might be installing to a single partition
+            # on a single disk, and we can deal with that too if there's
+            # only one available disk and it has an appropriate partition.
+            # This doesn't necessarily work for multiple disks because now
+            # the order matters.
+            elif [ "$(echo "$device_map" | wc -l)" = 1 ] && \
+                 [ "$(echo "$old_devices" | wc -w)" = 1 ] && \
+                 echo "$old_devices" | grep -q ,; then
+              old_device="${old_devices#(}"
+              old_device="${old_device%)}"
+              old_disk="${old_device%,*}"
+              old_partition="${old_device##*,}"
+              new_device="$(echo "$device_map" | grep "^($old_disk)" | \
+                            cut -f2)"
+              new_device="$(device_to_id $new_device)"
+              if [ "$new_device" ]; then
+                new_device="$new_device-part$old_partition"
+                # Run through device_to_id again to check for existence.
+                new_device="$(device_to_id $new_device)"
+              fi
+              if [ "$new_device" ]; then
+                new_devices="$new_device"
+                db_set grub-pc/install_devices "$new_device"
+              fi
+            fi
+            if [ -z "$new_devices" ]; then
+              new_devices="$(devices_to_ids $old_devices)"
+              db_set grub-pc/install_devices "$new_devices"
+              # Common-case optimisation: if all devices are translatable
+              # to by-id and the number of devices there is the same as
+              # the number of devices GRUB can see, then there's no point
+              # asking again.  (This handles e.g. "/dev/sda" with one
+              # disk.)
+              old_devices_count="$(echo "$old_devices" | wc -w)"
+              new_devices_count="$(echo "$new_devices" | wc -w)"
+              devices_count="$(echo "$devices" | wc -w)"
+              if [ "$old_devices_count" != "$new_devices_count" ] || \
+                 [ "$new_devices_count" != "$devices_count" ]; then
+                db_fset grub-pc/install_devices seen false
+                db_fset grub-pc/install_devices_empty seen false
+              fi
+            fi
+          else
+            db_get grub-pc/install_devices
+            valid=1
+            for device in $RET; do
+              if [ ! -e "$device" ]; then
+                valid=0
+                break
+              fi
+            done
+            if [ "$valid" = 0 ]; then
+              question=grub-pc/install_devices_disks_changed
+              db_set "$question" "$RET"
+              db_fset "$question" seen false
+              db_fset grub-pc/install_devices_empty seen false
+            fi
+          fi
+
+          while :; do
+            ids=
+            descriptions=
+            partitions="$(usable_partitions)"
+            for device in $devices; do
+              disk_id="$(device_to_id "$device" || true)"
+              if [ "$disk_id" ]; then
+                ids="${ids:+$ids, }$disk_id"
+                describe_disk "$device" "$disk_id"
+                RET="$(printf %s "$RET" | sed 's/,/\\,/g')"
+                descriptions="${descriptions:+$descriptions, }$RET"
+                for partition_pair in $partitions; do
+                  partition_id="${partition_pair#*:}"
+                  if [ "${partition_id#$disk_id-part}" != "$partition_id" ]; then
+                    ids="${ids:+$ids, }$partition_id"
+                    describe_partition "$device" "$(readlink -f "$partition_id")" "$partition_id" "$(get_mountpoint "${partition_pair%%:*}")"
+                    RET="$(printf %s "$RET" | sed 's/,/\\,/g')"
+                    descriptions="${descriptions:+$descriptions, }$RET"
+                  fi
+                done
+              fi
+            done
+            db_subst "$question" RAW_CHOICES "$ids"
+            db_subst "$question" CHOICES "$descriptions"
+            db_input high "$question" || true
+            db_go
+            db_get "$question"
+            failed_devices=
+            for i in `echo $RET | sed -e 's/,/ /g'` ; do
+              real_device="$(readlink -f "$i")"
+              if grub-install --force --no-floppy $real_device ; then
+                # We just installed GRUB 2; then also generate grub.cfg.
+                touch /boot/grub/grub.cfg
+              else
+                failed_devices="$failed_devices $real_device"
+              fi
+            done
+
+            if [ "$question" != grub-pc/install_devices ]; then
+              db_set grub-pc/install_devices "$RET"
+              db_fset grub-pc/install_devices seen true
+            fi
+
+            if [ "$failed_devices" ]; then
+              db_subst grub-pc/install_devices_failed FAILED_DEVICES "$failed_devices"
+              db_fset grub-pc/install_devices_failed seen false
+              if db_input critical grub-pc/install_devices_failed; then
+                db_go
+                db_get grub-pc/install_devices_failed
+                if [ "$RET" = true ]; then
+                  break
+                else
+                  db_fset "$question" seen false
+                  db_fset grub-pc/install_devices_failed seen false
+                  continue
+                fi
+              else
+                break # noninteractive
+              fi
+            fi
+
+            db_get grub-pc/install_devices
+            if [ -z "$RET" ]; then
+              if db_input critical grub-pc/install_devices_empty; then
+                db_go
+                db_get grub-pc/install_devices_empty
+                if [ "$RET" = true ]; then
+                  break
+                else
+                  db_fset "$question" seen false
+                  db_fset grub-pc/install_devices_empty seen false
+                fi
+              else
+                break # noninteractive
+              fi
+            else
+              break
+            fi
+          done
+        fi
+
+        # /boot/grub/ has more chances of being accessible by GRUB
+        if test -e /boot/grub/grub.cfg ; then
+          for i in /usr/share/grub/unicode.pf2 /usr/share/images/desktop-base/moreblue-orbit-grub.png ; do
+            if test -e $i ; then
+              cp $i /boot/grub/
+            fi
+          done
+        fi
+
+      ;;
+    esac
+
+    # If grub.cfg has been generated, update it.
+    if test -e /boot/grub/grub.cfg ; then
+      update-grub
+    fi
+  ;;
+  abort-upgrade|abort-remove|abort-deconfigure)
+  ;;
+  *)
+    echo "postinst called with unknown argument \`$1'" >&2
+    exit 1
+  ;;
+esac
+
+# dh_installdeb will replace this with shell code automatically
+# generated by other debhelper scripts.
+
+#DEBHELPER#
+
+exit 0

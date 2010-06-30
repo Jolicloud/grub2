@@ -1,0 +1,196 @@
+# translation of grub2.pot to Dutch
+# Copyright (C) 2008-2009 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the grub2 package.
+#
+# Paul Gevers <paul@climbing.nl>, 2008-2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: grub2_1.96+20099829_nl\n"
+"Report-Msgid-Bugs-To: grub2@packages.debian.org\n"
+"POT-Creation-Date: 2010-02-02 22:17-0800\n"
+"PO-Revision-Date: 2009-09-01 22:46+0100\n"
+"Last-Translator: Paul Gevers <paul@climbing.nl>\n"
+"Language-Team: Dutch <debian-l10n-dutch@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid "Chainload from menu.lst?"
+msgstr "Doorschakelen vanuit menu.lst?"
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid "GRUB upgrade scripts have detected a GRUB Legacy setup in /boot/grub."
+msgstr ""
+"GRUB's opwaardeerscripts hebben een oude-stijl GRUB opstelling in /boot/grub "
+"gedetecteerd."
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid ""
+"In order to replace the Legacy version of GRUB in your system, it is "
+"recommended that /boot/grub/menu.lst is adjusted to chainload GRUB 2 from "
+"your existing GRUB Legacy setup.  This step may be automaticaly performed "
+"now."
+msgstr ""
+"Om de oude-stijl versie van GRUB op uw systeem te vervangen wordt het "
+"aangeraden om het /boot/grub/menu.lst bestand zo te laten aanpassen dat naar "
+"GRUB2 wordt doorgeschakeld (chainloading) vanuit uw bestaande oude-stijl "
+"GRUB opstelling. Deze stap kan nu automatisch worden uitgevoerd."
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid ""
+"It's recommended that you accept chainloading GRUB 2 from menu.lst, and "
+"verify that your new GRUB 2 setup is functional for you, before you install "
+"it directly to your MBR (Master Boot Record)."
+msgstr ""
+"U wordt aangeraden om het doorschakelen van GRUB2 vanuit menu.lst te "
+"accepteren, en daarna te verifiëren dat uw nieuwe GRUB2 opstelling werkt "
+"voordat u het in de MBR (Master Boot Record) installeert."
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid ""
+"In either case, whenever you want GRUB 2 to be loaded directly from MBR, you "
+"can do so by issuing (as root) the following command:"
+msgstr ""
+"Waar u ook voor kiest, als u GRUB2 direct in de MBR wilt laden kunt u dat "
+"doen door het volgende commando uit te voeren (met beheerdersrechten (root)):"
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid "upgrade-from-grub-legacy"
+msgstr "upgrade-from-grub-legacy"
+
+#. Type: text
+#. Description
+#. Disk sizes are in decimal megabytes, to match how disk manufacturers
+#. usually describe them.
+#: ../grub-pc.templates.in:5001
+msgid "${DEVICE} (${SIZE} MB, ${MODEL})"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:7001
+msgid "GRUB installation failed.  Continue?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:7001
+msgid "GRUB failed to install to the following devices:"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:7001
+msgid ""
+"Do you want to continue anyway?  If you do, your computer may not start up "
+"properly."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:8001
+msgid "Continue without installing GRUB?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:8001
+msgid ""
+"You chose not to install GRUB to any devices.  If you continue, the boot "
+"loader may not be properly configured, and when your computer next starts up "
+"it will use whatever was previously in the boot sector.  If there is an "
+"earlier version of GRUB 2 in the boot sector, it may be unable to load "
+"modules or handle the current configuration file."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:8001
+msgid ""
+"If you are already running a different boot loader and want to carry on "
+"doing so, or if this is a special environment where you do not need a boot "
+"loader, then you should continue anyway.  Otherwise, you should install GRUB "
+"somewhere."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates.in:1001
+msgid "Linux command line:"
+msgstr "Linux-commandoregel:"
+
+#. Type: string
+#. Description
+#: ../templates.in:1001
+msgid ""
+"The following Linux command line was extracted from /etc/default/grub or the "
+"`kopt' parameter in GRUB Legacy's menu.lst.  Please verify that it is "
+"correct, and modify it if necessary."
+msgstr ""
+"De volgende Linux-commandoregel is gebaseerd op /etc/default/grub of op de "
+"'kopt'-parameter gevonden in het menu.lst bestand van de oude-stijl GRUB. "
+"Wilt u deze op correctheid controleren en indien nodig aanpassen?"
+
+#. Type: string
+#. Description
+#: ../templates.in:2001
+msgid "Linux default command line:"
+msgstr "Standaard Linux-commandoregel:"
+
+#. Type: string
+#. Description
+#: ../templates.in:2001
+msgid ""
+"The following string will be used as Linux parameters for the default menu "
+"entry but not for the recovery mode."
+msgstr ""
+"De volgende regel zal, behalve in de herstelmodus, gebruikt worden voor de "
+"Linux parameters in de standaard menuoptie."
+
+#. Type: string
+#. Description
+#: ../templates.in:3001
+msgid "kFreeBSD command line:"
+msgstr "kFreeBSD-commandoregel:"
+
+#. Type: string
+#. Description
+#: ../templates.in:3001
+msgid ""
+"The following kFreeBSD command line was extracted from /etc/default/grub or "
+"the `kopt' parameter in GRUB Legacy's menu.lst.  Please verify that it is "
+"correct, and modify it if necessary."
+msgstr ""
+"De volgende kFreeBSD-commandoregel is gebaseerd /etc/default/grub of op de "
+"'kopt'-parameter gevonden in het menu.lst bestand van de oude-stijl GRUB. "
+"Wilt u deze op correctheid controleren en indien nodig aanpassen?"
+
+#. Type: string
+#. Description
+#: ../templates.in:4001
+msgid "kFreeBSD default command line:"
+msgstr "Standaard kFreeBSD-commandoregel:"
+
+#. Type: string
+#. Description
+#: ../templates.in:4001
+msgid ""
+"The following string will be used as kFreeBSD parameters for the default "
+"menu entry but not for the recovery mode."
+msgstr ""
+"De volgende regel zal, behalve in de herstelmodus, gebruikt worden voor de "
+"kFreeBSD parameters in de standaard menuoptie."

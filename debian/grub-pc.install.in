@@ -1,0 +1,2 @@
+debian/legacy/update-grub	usr/lib/grub-legacy
+debian/legacy/upgrade-from-grub-legacy	usr/sbin

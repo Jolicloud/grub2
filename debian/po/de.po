@@ -1,0 +1,195 @@
+# Translation of grub2 debconf templates to German
+# Copyright (C) Helge Kreutzmann <debian@helgefjell.de>, 2007-2009.
+# This file is distributed under the same license as the grub2 package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: grub2 1.96+20090829-2\n"
+"Report-Msgid-Bugs-To: grub2@packages.debian.org\n"
+"POT-Creation-Date: 2010-02-02 22:17-0800\n"
+"PO-Revision-Date: 2009-08-30 21:42+0200\n"
+"Last-Translator: Helge Kreutzmann <debian@helgefjell.de>\n"
+"Language-Team: de <debian-l10n-german@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-15\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid "Chainload from menu.lst?"
+msgstr "Chainload (Kettenladen) aus menu.lst?"
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid "GRUB upgrade scripts have detected a GRUB Legacy setup in /boot/grub."
+msgstr ""
+"Die Upgrade-Skripte von GRUB haben eine »GRUB Legacy«-Installation in /boot/"
+"grub erkannt."
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid ""
+"In order to replace the Legacy version of GRUB in your system, it is "
+"recommended that /boot/grub/menu.lst is adjusted to chainload GRUB 2 from "
+"your existing GRUB Legacy setup.  This step may be automaticaly performed "
+"now."
+msgstr ""
+"Um die Legacy-Version von GRUB auf Ihrem System zu ersetzen, wird empfohlen, "
+"dass /boot/grub/menu.lst angepasst wird, so dass GRUB 2 aus Ihrer "
+"existierenden »GRUB Legacy«-Einrichtung heraus geladen wird. Dieser Schritt "
+"kann jetzt automatisch vollzogen werden."
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid ""
+"It's recommended that you accept chainloading GRUB 2 from menu.lst, and "
+"verify that your new GRUB 2 setup is functional for you, before you install "
+"it directly to your MBR (Master Boot Record)."
+msgstr ""
+"Es wird empfohlen, dass Sie dem Chainloading von GRUB 2 aus der menu.lst "
+"zustimmen und überprüfen, dass die »GRUB 2«-Installation für Sie "
+"funktioniert, bevor Sie diese direkt in Ihren MBR (Master Boot Record) "
+"installieren."
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid ""
+"In either case, whenever you want GRUB 2 to be loaded directly from MBR, you "
+"can do so by issuing (as root) the following command:"
+msgstr ""
+"Auf jeden Fall können Sie den folgenden Befehl (als root) eingeben, wenn Sie "
+"möchten, dass GRUB 2 direkt vom MBR geladen wird:"
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid "upgrade-from-grub-legacy"
+msgstr "upgrade-from-grub-legacy"
+
+#. Type: text
+#. Description
+#. Disk sizes are in decimal megabytes, to match how disk manufacturers
+#. usually describe them.
+#: ../grub-pc.templates.in:5001
+msgid "${DEVICE} (${SIZE} MB, ${MODEL})"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:7001
+msgid "GRUB installation failed.  Continue?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:7001
+msgid "GRUB failed to install to the following devices:"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:7001
+msgid ""
+"Do you want to continue anyway?  If you do, your computer may not start up "
+"properly."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:8001
+msgid "Continue without installing GRUB?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:8001
+msgid ""
+"You chose not to install GRUB to any devices.  If you continue, the boot "
+"loader may not be properly configured, and when your computer next starts up "
+"it will use whatever was previously in the boot sector.  If there is an "
+"earlier version of GRUB 2 in the boot sector, it may be unable to load "
+"modules or handle the current configuration file."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:8001
+msgid ""
+"If you are already running a different boot loader and want to carry on "
+"doing so, or if this is a special environment where you do not need a boot "
+"loader, then you should continue anyway.  Otherwise, you should install GRUB "
+"somewhere."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates.in:1001
+msgid "Linux command line:"
+msgstr "Linux-Kommandozeile:"
+
+#. Type: string
+#. Description
+#: ../templates.in:1001
+msgid ""
+"The following Linux command line was extracted from /etc/default/grub or the "
+"`kopt' parameter in GRUB Legacy's menu.lst.  Please verify that it is "
+"correct, and modify it if necessary."
+msgstr ""
+"Die folgende Linux-Kommandozeile wurde aus /etc/default/grub oder dem "
+"Parameter »kopt« in GRUB Legacys menu.lst extrahiert. Bitte überprüfen Sie, "
+"ob diese korrekt ist und passen Sie sie falls notwendig an."
+
+#. Type: string
+#. Description
+#: ../templates.in:2001
+msgid "Linux default command line:"
+msgstr "Linux Standard-Kommandozeile:"
+
+#. Type: string
+#. Description
+#: ../templates.in:2001
+msgid ""
+"The following string will be used as Linux parameters for the default menu "
+"entry but not for the recovery mode."
+msgstr ""
+"Die folgende Zeichenkette wird als Linux-Parameter für den "
+"Standardmenüeintrag, nicht aber für den Rettungsmodus verwandt."
+
+#. Type: string
+#. Description
+#: ../templates.in:3001
+msgid "kFreeBSD command line:"
+msgstr "kFreeBSD-Kommandozeile:"
+
+#. Type: string
+#. Description
+#: ../templates.in:3001
+msgid ""
+"The following kFreeBSD command line was extracted from /etc/default/grub or "
+"the `kopt' parameter in GRUB Legacy's menu.lst.  Please verify that it is "
+"correct, and modify it if necessary."
+msgstr ""
+"Die folgende kFreeBSD-Kommandozeile wurde aus /etc/default/grub oder dem "
+"Parameter »kopt« in GRUB Legacys menu.lst extrahiert. Bitte überprüfen Sie, "
+"ob diese korrekt ist und passen Sie sie falls notwendig an."
+
+#. Type: string
+#. Description
+#: ../templates.in:4001
+msgid "kFreeBSD default command line:"
+msgstr "kFreeBSD Standard-Kommandozeile:"
+
+#. Type: string
+#. Description
+#: ../templates.in:4001
+msgid ""
+"The following string will be used as kFreeBSD parameters for the default "
+"menu entry but not for the recovery mode."
+msgstr ""
+"Die folgende Zeichenkette wird als kFreeBSD-Parameter für den "
+"Standardmenüeintrag, nicht aber für den Rettungsmodus verwandt."

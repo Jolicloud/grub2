@@ -1,0 +1,201 @@
+# translation of ca.po to catalan
+# Catalan translation of grub2's debconf messages
+# Copyright © 2009 Free Software Foundation, Inc.
+# This file is distributed under the same license as the grub2 package.
+#
+# Jordi Mallach <jordi@debian.org>, 2009.
+# Juan Andrés Gimeno Crespo <juagicre@gmail.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: ca\n"
+"Report-Msgid-Bugs-To: grub2@packages.debian.org\n"
+"POT-Creation-Date: 2010-02-02 22:17-0800\n"
+"PO-Revision-Date: 2009-09-02 18:12+0200\n"
+"Last-Translator: Juan Andrés Gimeno Crespo <juagicre@gmail.com>\n"
+"Language-Team: catalan <debian-l10n-catalan@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid "Chainload from menu.lst?"
+msgstr "Voleu carregar en cadena des del menu.lst?"
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid "GRUB upgrade scripts have detected a GRUB Legacy setup in /boot/grub."
+msgstr ""
+"Els scripts d'actualització del GRUB han detectat una configuració del GRUB "
+"Legacy en /boot/grub."
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid ""
+"In order to replace the Legacy version of GRUB in your system, it is "
+"recommended that /boot/grub/menu.lst is adjusted to chainload GRUB 2 from "
+"your existing GRUB Legacy setup.  This step may be automaticaly performed "
+"now."
+msgstr ""
+"A l'hora de reemplaçar la versió Legacy del GRUB que hi ha al sistema, és "
+"recomanable que es modifique /boot/grub/menu.lst per a carregar el GRUB 2 en "
+"cadena des de la vostra configuració del GRUB Legacy existent. Aquest pas es "
+"pot dur a terme ara."
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid ""
+"It's recommended that you accept chainloading GRUB 2 from menu.lst, and "
+"verify that your new GRUB 2 setup is functional for you, before you install "
+"it directly to your MBR (Master Boot Record)."
+msgstr ""
+"És recomanable que accepteu la càrrega en cadena del GRUB 2 des del menu."
+"lst, per a verificar que la nova configuració del GRUB 2 funciona "
+"correctament, abans de que l'instal·leu directament al vostre registre "
+"mestre d'arrencada (MBR)."
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid ""
+"In either case, whenever you want GRUB 2 to be loaded directly from MBR, you "
+"can do so by issuing (as root) the following command:"
+msgstr ""
+"En qualsevol cas, quan vulgueu que es carregue el GRUB 2 directament des de "
+"l'MBR, podeu fer-ho executant (com a root) l'ordre següent:"
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid "upgrade-from-grub-legacy"
+msgstr "upgrade-from-grub-legacy"
+
+#. Type: text
+#. Description
+#. Disk sizes are in decimal megabytes, to match how disk manufacturers
+#. usually describe them.
+#: ../grub-pc.templates.in:5001
+msgid "${DEVICE} (${SIZE} MB, ${MODEL})"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:7001
+msgid "GRUB installation failed.  Continue?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:7001
+msgid "GRUB failed to install to the following devices:"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:7001
+msgid ""
+"Do you want to continue anyway?  If you do, your computer may not start up "
+"properly."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:8001
+msgid "Continue without installing GRUB?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:8001
+msgid ""
+"You chose not to install GRUB to any devices.  If you continue, the boot "
+"loader may not be properly configured, and when your computer next starts up "
+"it will use whatever was previously in the boot sector.  If there is an "
+"earlier version of GRUB 2 in the boot sector, it may be unable to load "
+"modules or handle the current configuration file."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:8001
+msgid ""
+"If you are already running a different boot loader and want to carry on "
+"doing so, or if this is a special environment where you do not need a boot "
+"loader, then you should continue anyway.  Otherwise, you should install GRUB "
+"somewhere."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates.in:1001
+msgid "Linux command line:"
+msgstr "Línia d'ordres de Linux:"
+
+#. Type: string
+#. Description
+#: ../templates.in:1001
+msgid ""
+"The following Linux command line was extracted from /etc/default/grub or the "
+"`kopt' parameter in GRUB Legacy's menu.lst.  Please verify that it is "
+"correct, and modify it if necessary."
+msgstr ""
+"La següent línia d'ordres de Linux ha sigut extreta de /etc/default/grub o "
+"del paràmetre «kopt» del fitxer menu.lst del GRUB Legacy. Per favor verifique "
+"que és correcta, i modifiqueu-la si és necessari."
+
+#. Type: string
+#. Description
+#: ../templates.in:2001
+msgid "Linux default command line:"
+msgstr "Línia d'ordres de Linux per defecte:"
+
+#. Type: string
+#. Description
+#: ../templates.in:2001
+msgid ""
+"The following string will be used as Linux parameters for the default menu "
+"entry but not for the recovery mode."
+msgstr ""
+"La següent cadena serà emprada com a paràmetre Linux per al menú d'entrada "
+"per defecte però no per al mode de recuperació."
+
+#. Type: string
+#. Description
+#: ../templates.in:3001
+#, fuzzy
+#| msgid "Linux command line:"
+msgid "kFreeBSD command line:"
+msgstr "Línia d'ordres de Linux:"
+
+#. Type: string
+#. Description
+#: ../templates.in:3001
+msgid ""
+"The following kFreeBSD command line was extracted from /etc/default/grub or "
+"the `kopt' parameter in GRUB Legacy's menu.lst.  Please verify that it is "
+"correct, and modify it if necessary."
+msgstr ""
+"La següent línia d'ordres de kFreeBSD ha sigut extreta de /etc/default/grub "
+"o del paràmetre «kopt» del fitxer menu.lst del GRUB Legacy. Per favor "
+"verifique que és correcta, i modifiqueu-la si és necessari."
+
+#. Type: string
+#. Description
+#: ../templates.in:4001
+msgid "kFreeBSD default command line:"
+msgstr "Línia d'ordres de kFreeBSD per defecte:"
+
+#. Type: string
+#. Description
+#: ../templates.in:4001
+msgid ""
+"The following string will be used as kFreeBSD parameters for the default "
+"menu entry but not for the recovery mode."
+msgstr ""
+"La següent cadena serà emprada com a paràmetre kFreeBSD per al menú "
+"d'entrada per defecte però no per al mode de recuperació."

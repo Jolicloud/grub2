@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: grub 1.97+20100124\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-06 21:00+0100\n"
+"POT-Creation-Date: 2010-03-08 22:55+0000\n"
 "PO-Revision-Date: 2010-02-15 14:30+0800\n"
 "Last-Translator: Aron Xu <happyaron.xu@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
@@ -1003,7 +1003,7 @@ msgstr "diskboot.img 的大小必须为 %u 字节"
 msgid "core image is too big (%p > %p)"
 msgstr "核心镜像太大(%p > %p)"
 
-#: util/grub-mkrawimage.c:434 util/i386/pc/grub-setup.c:587
+#: util/grub-mkrawimage.c:434 util/i386/pc/grub-setup.c:602
 #, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "请尝试运行“%s --help”以获得更多信息。\n"
@@ -1044,39 +1044,39 @@ msgstr ""
 msgid "cannot open %s"
 msgstr "无法打开 %s"
 
-#: util/i386/pc/grub-setup.c:159
+#: util/i386/pc/grub-setup.c:160
 msgid "the first sector of the core file is not sector-aligned"
 msgstr "核心文件的第一扇区未对齐"
 
-#: util/i386/pc/grub-setup.c:173
+#: util/i386/pc/grub-setup.c:174
 msgid "non-sector-aligned data is found in the core file"
 msgstr "核心文件中发现未对齐的扇区"
 
-#: util/i386/pc/grub-setup.c:187
+#: util/i386/pc/grub-setup.c:188
 msgid "the sectors of the core file are too fragmented"
 msgstr "核心文件的扇区碎片太多"
 
-#: util/i386/pc/grub-setup.c:198
+#: util/i386/pc/grub-setup.c:199
 #, c-format
 msgid "the size of `%s' is not %u"
 msgstr "“%s”的大小不是 %u"
 
-#: util/i386/pc/grub-setup.c:215
+#: util/i386/pc/grub-setup.c:216
 #, c-format
 msgid "the size of `%s' is too small"
 msgstr "“%s”的尺寸太小"
 
-#: util/i386/pc/grub-setup.c:217
+#: util/i386/pc/grub-setup.c:218
 #, c-format
 msgid "the size of `%s' is too large"
 msgstr "“%s”的尺寸太大"
 
-#: util/i386/pc/grub-setup.c:254
+#: util/i386/pc/grub-setup.c:255
 #, c-format
 msgid "unable to identify a filesystem in %s; safety check can't be performed"
 msgstr "无法在 %s 中识别文件系统，无法执行安全性检测"
 
-#: util/i386/pc/grub-setup.c:258
+#: util/i386/pc/grub-setup.c:259
 #, c-format
 msgid ""
 "%s appears to contain a %s filesystem which isn't known to reserve space for "
@@ -1088,52 +1088,52 @@ msgstr ""
 "致 grub-setup 覆盖重要数据从而损坏文件系统(--skip-fs-probe 参数可以禁用这个检"
 "查，使用该选项风险自负)"
 
-#: util/i386/pc/grub-setup.c:307
+#: util/i386/pc/grub-setup.c:308
 msgid "no DOS-style partitions found"
 msgstr "未找到 DOS 类型分区"
 
-#: util/i386/pc/grub-setup.c:323 util/i386/pc/grub-setup.c:348
+#: util/i386/pc/grub-setup.c:324 util/i386/pc/grub-setup.c:349
 msgid ""
 "Attempting to install GRUB to a partitionless disk.  This is a BAD idea."
 msgstr "正在试图将 GRUB 安装至未分区的磁盘。这是一个坏主意。"
 
-#: util/i386/pc/grub-setup.c:329
+#: util/i386/pc/grub-setup.c:330
 msgid ""
 "Attempting to install GRUB to a partition instead of the MBR.  This is a BAD "
 "idea."
 msgstr "正在试图将 GRUB 安装至一个分区而非 MBR。这是一个坏主意。"
 
-#: util/i386/pc/grub-setup.c:357
+#: util/i386/pc/grub-setup.c:358
 msgid "No DOS-style partitions found"
 msgstr "未找到 DOS 类型分区"
 
-#: util/i386/pc/grub-setup.c:362
+#: util/i386/pc/grub-setup.c:363
 msgid ""
 "This msdos-style partition label has no post-MBR gap; embedding won't be "
 "possible!"
 msgstr "此 DOS 分区标签没有 MBR 前间隔，无法进行嵌入！"
 
-#: util/i386/pc/grub-setup.c:364
+#: util/i386/pc/grub-setup.c:365
 msgid ""
 "This GPT partition label has no BIOS Boot Partition; embedding won't be "
 "possible!"
 msgstr "此 GPT 分区标签没有 BIOS 引导分区，无法进行嵌入！"
 
-#: util/i386/pc/grub-setup.c:371
+#: util/i386/pc/grub-setup.c:372
 msgid "Your core.img is unusually large.  It won't fit in the embedding area."
 msgstr "您的 core.img 过大，无法装入嵌入区域。"
 
-#: util/i386/pc/grub-setup.c:373
+#: util/i386/pc/grub-setup.c:374
 msgid "Your embedding area is unusually small.  core.img won't fit in it."
 msgstr "您的嵌入区域过小，无法装入 core.img。"
 
-#: util/i386/pc/grub-setup.c:416
+#: util/i386/pc/grub-setup.c:419
 msgid ""
 "embedding is not possible, but this is required when the root device is on a "
 "RAID array or LVM volume"
 msgstr "无法嵌入，但在根设备位于 RAID 阵列或 LVM 卷上时必须使用嵌入。"
 
-#: util/i386/pc/grub-setup.c:419
+#: util/i386/pc/grub-setup.c:422
 msgid ""
 "Embedding is not possible.  GRUB can only be installed in this setup by "
 "using blocklists.  However, blocklists are UNRELIABLE and its use is "
@@ -1142,43 +1142,43 @@ msgstr ""
 "无法嵌入，在此次安装中 GRUB 只能通过使用块列表安装。但是块列表是不可信赖的，"
 "不推荐使用"
 
-#: util/i386/pc/grub-setup.c:423
+#: util/i386/pc/grub-setup.c:426
 msgid "if you really want blocklists, use --force"
 msgstr "如果确实要使用块列表，请使用 --force 选项"
 
-#: util/i386/pc/grub-setup.c:439
+#: util/i386/pc/grub-setup.c:445
 #, c-format
 msgid "attempting to read the core image `%s' from GRUB"
 msgstr "正在尝试从 GRUB 读取核心镜像“%s”"
 
-#: util/i386/pc/grub-setup.c:440
+#: util/i386/pc/grub-setup.c:446
 #, c-format
 msgid "attempting to read the core image `%s' from GRUB again"
 msgstr "正在尝试再次从 GRUB 读取核心镜像“%s”"
 
-#: util/i386/pc/grub-setup.c:498
+#: util/i386/pc/grub-setup.c:513
 #, c-format
 msgid "cannot read `%s' correctly"
 msgstr "无法正确读取“%s”"
 
-#: util/i386/pc/grub-setup.c:511
+#: util/i386/pc/grub-setup.c:526
 msgid "no terminator in the core image"
 msgstr "核心镜像中没有终止符"
 
-#: util/i386/pc/grub-setup.c:522
+#: util/i386/pc/grub-setup.c:537
 msgid "failed to read the first sector of the core image"
 msgstr "读取核心镜像的第一扇区失败"
 
-#: util/i386/pc/grub-setup.c:528
+#: util/i386/pc/grub-setup.c:543
 msgid "failed to read the rest sectors of the core image"
 msgstr "读取核心镜像的其他扇区失败"
 
-#: util/i386/pc/grub-setup.c:547
+#: util/i386/pc/grub-setup.c:562
 #, c-format
 msgid "cannot open `%s'"
 msgstr "无法打开“%s”"
 
-#: util/i386/pc/grub-setup.c:589
+#: util/i386/pc/grub-setup.c:604
 #, c-format
 msgid ""
 "Usage: %s [OPTION]... DEVICE\n"
@@ -1217,27 +1217,27 @@ msgstr ""
 "\n"
 "软件错误请报告给 %s\n"
 
-#: util/i386/pc/grub-setup.c:719
+#: util/i386/pc/grub-setup.c:734
 #, c-format
 msgid "No device is specified.\n"
 msgstr "没有指定设备。\n"
 
-#: util/i386/pc/grub-setup.c:725
+#: util/i386/pc/grub-setup.c:740
 #, c-format
 msgid "Unknown extra argument `%s'.\n"
 msgstr "未知的额外参数“%s”。\n"
 
-#: util/i386/pc/grub-setup.c:742
+#: util/i386/pc/grub-setup.c:757
 #, c-format
 msgid "Invalid device `%s'.\n"
 msgstr "无效的设备“%s”。\n"
 
-#: util/i386/pc/grub-setup.c:755
+#: util/i386/pc/grub-setup.c:770
 #, c-format
 msgid "invalid root device `%s'"
 msgstr "无效的根设备“%s”"
 
-#: util/i386/pc/grub-setup.c:768
+#: util/i386/pc/grub-setup.c:783
 msgid "cannot guess the root device. Specify the option `--root-device'"
 msgstr "无法猜测根设备。请使用“--root-device”参数指定。"
 
@@ -1249,19 +1249,19 @@ msgstr "%s，kFreeBSD %s"
 msgid "Loading kernel of FreeBSD %s ..."
 msgstr "载入 FreeBSD 内核 %s ..."
 
-#: util/grub.d/10_linux.in:59
+#: util/grub.d/10_linux.in:60
 msgid "%s, with Linux %s (recovery mode)"
 msgstr "%s，Linux %s (恢复模式)"
 
-#: util/grub.d/10_linux.in:61
+#: util/grub.d/10_linux.in:62
 msgid "%s, with Linux %s"
 msgstr "%s，Linux %s"
 
-#: util/grub.d/10_linux.in:86
+#: util/grub.d/10_linux.in:87
 msgid "Loading Linux %s ..."
 msgstr "载入 Linux ..."
 
-#: util/grub.d/10_linux.in:91
+#: util/grub.d/10_linux.in:92
 msgid "Loading initial ramdisk ..."
 msgstr "载入引导虚拟磁盘。"
 

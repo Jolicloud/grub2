@@ -1,0 +1,6 @@
+debian/presubj			usr/share/bug/@PACKAGE@
+debian/script			usr/share/bug/@PACKAGE@
+debian/default			usr/share/grub
+debian/grub.d			etc
+debian/update-grub2		usr/sbin
+debian/update-grub		usr/sbin

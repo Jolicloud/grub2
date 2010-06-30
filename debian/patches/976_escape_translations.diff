@@ -1,0 +1,112 @@
+Description: Fix escaping problems with translations
+ Enclose all translated strings in grub.cfg in single quotes, and escape
+ them appropriately.
+Origin: upstream, http://bazaar.launchpad.net/~vcs-imports/grub/grub2-bzr/revision/2323
+Bug-Ubuntu: https://bugs.launchpad.net/bugs/552921
+Forwarded: yes
+Last-Update: 2010-04-13
+
+diff -Nur -x '*.orig' -x '*~' grub2/util/grub-mkconfig_lib.in grub2.new/util/grub-mkconfig_lib.in
+--- grub2/util/grub-mkconfig_lib.in	2010-04-13 14:17:50.000000000 +0100
++++ grub2.new/util/grub-mkconfig_lib.in	2010-04-13 14:23:12.000000000 +0100
+@@ -211,3 +211,7 @@
+   done
+   echo "$a"
+ }
++
++gettext_quoted () {
++  gettext "$@" | sed "s/'/'\\\\''/g"
++}
+diff -Nur -x '*.orig' -x '*~' grub2/util/grub.d/10_hurd.in grub2.new/util/grub.d/10_hurd.in
+--- grub2/util/grub.d/10_hurd.in	2010-04-13 14:17:50.000000000 +0100
++++ grub2.new/util/grub.d/10_hurd.in	2010-04-13 14:23:12.000000000 +0100
+@@ -76,13 +76,13 @@
+ EOF
+ prepare_grub_to_access_device ${GRUB_DEVICE_BOOT} | sed -e "s/^/\t/"
+ cat << EOF
+-	echo		$(gettext "Loading GNU Mach ...")
++	echo		'$(gettext_quoted "Loading GNU Mach ...")'
+ 	multiboot	${kernel} root=device:${GRUB_DEVICE#/dev/}
+ EOF
+ save_default_entry | sed -e "s/^/\t/"
+ prepare_grub_to_access_device ${GRUB_DEVICE} | sed -e "s/^/\t/"
+ cat << EOF
+-	echo		$(gettext "Loading the Hurd ...")
++	echo		'$(gettext_quoted "Loading the Hurd ...")'
+ 	module		/hurd/${hurd_fs}.static ${hurd_fs} --readonly \\
+ 			--multiboot-command-line='\${kernel-command-line}' \\
+ 			--host-priv-port='\${host-port}' \\
+@@ -98,13 +98,13 @@
+ EOF
+ prepare_grub_to_access_device ${GRUB_DEVICE_BOOT} | sed -e "s/^/\t/"
+ cat << EOF
+-	echo		$(gettext "Loading GNU Mach ...")
++	echo		'$(gettext_quoted "Loading GNU Mach ...")'
+ 	multiboot	${kernel} root=device:${GRUB_DEVICE#/dev/} -s
+ EOF
+ save_default_entry | sed -e "s/^/\t/"
+ prepare_grub_to_access_device ${GRUB_DEVICE} | sed -e "s/^/\t/"
+ cat << EOF
+-	echo		$(gettext "Loading the Hurd ...")
++	echo		'$(gettext_quoted "Loading the Hurd ...")'
+ 	module		/hurd/${hurd_fs}.static ${hurd_fs} \\
+ 			--multiboot-command-line='\${kernel-command-line}' \\
+ 			--host-priv-port='\${host-port}' \\
+diff -Nur -x '*.orig' -x '*~' grub2/util/grub.d/10_kfreebsd.in grub2.new/util/grub.d/10_kfreebsd.in
+--- grub2/util/grub.d/10_kfreebsd.in	2010-04-13 14:17:50.000000000 +0100
++++ grub2.new/util/grub.d/10_kfreebsd.in	2010-04-13 14:23:12.000000000 +0100
+@@ -44,15 +44,15 @@
+   version="$2"
+   recovery="$3"	# not used yet
+   args="$4"	# not used yet
+-  title="$(gettext "%s, with kFreeBSD %s")"
+-  printf "menuentry \"${title}\" ${CLASS} {\n" "${os}" "${version}"
++  title="$(gettext_quoted "%s, with kFreeBSD %s")"
++  printf "menuentry '${title}' ${CLASS} {\n" "${os}" "${version}"
+   save_default_entry | sed -e "s/^/\t/"
+   if [ -z "${prepare_boot_cache}" ]; then
+     prepare_boot_cache="$(prepare_grub_to_access_device ${GRUB_DEVICE_BOOT} | sed -e "s/^/\t/")"
+   fi
+   printf '%s\n' "${prepare_boot_cache}"
+   cat << EOF
+-	echo			$(printf "$(gettext "Loading kernel of FreeBSD %s ...")" ${version})
++	echo			'$(printf "$(gettext_quoted "Loading kernel of FreeBSD %s ...")" ${version})'
+ 	kfreebsd		${rel_dirname}/${basename}
+ EOF
+ 
+diff -Nur -x '*.orig' -x '*~' grub2/util/grub.d/10_linux.in grub2.new/util/grub.d/10_linux.in
+--- grub2/util/grub.d/10_linux.in	2010-04-13 14:17:50.000000000 +0100
++++ grub2.new/util/grub.d/10_linux.in	2010-04-13 14:24:06.000000000 +0100
+@@ -67,11 +67,11 @@
+   recovery="$3"
+   args="$4"
+   if ${recovery} ; then
+-    title="$(gettext "%s, with Linux %s (recovery mode)")"
++    title="$(gettext_quoted "%s, with Linux %s (recovery mode)")"
+   else
+-    title="$(gettext "%s, with Linux %s")"
++    title="$(gettext_quoted "%s, with Linux %s")"
+   fi
+-  printf "menuentry \"${title}\" ${CLASS} {\n" "${os}" "${version}"
++  printf "menuentry '${title}' ${CLASS} {\n" "${os}" "${version}"
+   cat << EOF
+ 	recordfail
+ EOF
+@@ -89,7 +89,7 @@
+   printf '%s\n' "${prepare_boot_cache}"
+   if [ "x$5" != "xquiet" ]; then
+     cat << EOF
+-	echo	$(printf "$(gettext "Loading Linux %s ...")" ${version})
++	echo	'$(printf "$(gettext_quoted "Loading Linux %s ...")" ${version})'
+ EOF
+   fi
+   cat << EOF
+@@ -97,7 +97,7 @@
+ EOF
+   if [ "x$5" != "xquiet" ]; then
+     cat << EOF
+-	echo	$(gettext "Loading initial ramdisk ...")
++	echo	'$(gettext_quoted "Loading initial ramdisk ...")'
+ EOF
+   fi
+   if test -n "${initrd}" ; then

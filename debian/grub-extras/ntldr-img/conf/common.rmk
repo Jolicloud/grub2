@@ -1,0 +1,2 @@
+# -*- makefile -*-
+-include $(GRUB_CONTRIB)/ntldr-img/conf/$(target_cpu)-$(platform).mk

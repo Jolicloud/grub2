@@ -1,0 +1,233 @@
+# grub2 Brazilian Portuguese translation
+# Copyright (C) 2009 THE grub2'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the grub2 package.
+# Flamarion Jorge <jorge.flamarion@gmail.com>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: grub2 1.96\n"
+"Report-Msgid-Bugs-To: grub2@packages.debian.org\n"
+"POT-Creation-Date: 2010-02-02 22:17-0800\n"
+"PO-Revision-Date: 2009-08-30 20:45-0300\n"
+"Last-Translator: Flamarion Jorge <jorge.flamarion@gmail.com>\n"
+"Language-Team: Brazilian Portuguese <debian-l10n-portuguese@lists.debian."
+"org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"pt_BR utf-8\n"
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid "Chainload from menu.lst?"
+msgstr "Carregar em cadeia a partir do menu.lst?"
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid "GRUB upgrade scripts have detected a GRUB Legacy setup in /boot/grub."
+msgstr ""
+"Os scripts de atualização do GRUB detectaram uma configuração do GRUB Legado "
+"em /boot/grub."
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid ""
+"In order to replace the Legacy version of GRUB in your system, it is "
+"recommended that /boot/grub/menu.lst is adjusted to chainload GRUB 2 from "
+"your existing GRUB Legacy setup.  This step may be automaticaly performed "
+"now."
+msgstr ""
+"A fim de substituir a versão Legada do GRUB no seu sistema, é recomendável "
+"que o /boot/grub/menu.lst seja ajustado para carregar em cadeia o GRUB 2 a "
+"partir da sua configuração existente do GRUB Legado. Este passo pode ser "
+"executado automaticamente agora."
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid ""
+"It's recommended that you accept chainloading GRUB 2 from menu.lst, and "
+"verify that your new GRUB 2 setup is functional for you, before you install "
+"it directly to your MBR (Master Boot Record)."
+msgstr ""
+"É recomendado que você aceite o carregamento em cadeia do GRUB 2 a partir do "
+"menu.lst, e verifique que sua nova configuração do GRUB 2 está funcional "
+"para você, antes de instalá-lo diretamente no seu MBR (\"Master Boot Record"
+"\")."
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid ""
+"In either case, whenever you want GRUB 2 to be loaded directly from MBR, you "
+"can do so by issuing (as root) the following command:"
+msgstr ""
+"Em todo caso, sempre que você quiser que o GRUB 2 seja carregado diretamente "
+"do MBR, você pode fazê-lo (como root) através do seguinte comando:"
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid "upgrade-from-grub-legacy"
+msgstr "upgrade-from-grub-legacy"
+
+#. Type: text
+#. Description
+#. Disk sizes are in decimal megabytes, to match how disk manufacturers
+#. usually describe them.
+#: ../grub-pc.templates.in:5001
+msgid "${DEVICE} (${SIZE} MB, ${MODEL})"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:7001
+msgid "GRUB installation failed.  Continue?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:7001
+msgid "GRUB failed to install to the following devices:"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:7001
+msgid ""
+"Do you want to continue anyway?  If you do, your computer may not start up "
+"properly."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:8001
+msgid "Continue without installing GRUB?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:8001
+msgid ""
+"You chose not to install GRUB to any devices.  If you continue, the boot "
+"loader may not be properly configured, and when your computer next starts up "
+"it will use whatever was previously in the boot sector.  If there is an "
+"earlier version of GRUB 2 in the boot sector, it may be unable to load "
+"modules or handle the current configuration file."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:8001
+msgid ""
+"If you are already running a different boot loader and want to carry on "
+"doing so, or if this is a special environment where you do not need a boot "
+"loader, then you should continue anyway.  Otherwise, you should install GRUB "
+"somewhere."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates.in:1001
+msgid "Linux command line:"
+msgstr "Linha de comando Linux:"
+
+#. Type: string
+#. Description
+#: ../templates.in:1001
+msgid ""
+"The following Linux command line was extracted from /etc/default/grub or the "
+"`kopt' parameter in GRUB Legacy's menu.lst.  Please verify that it is "
+"correct, and modify it if necessary."
+msgstr ""
+"A linha de comando Linux a seguir foi extraída de /etc/default/grub ou do "
+"parâmetro `kopt' do menu.lst do Grub Legado. Por favor, verifique se ela "
+"está correta, e modifique-a se necessário."
+
+#. Type: string
+#. Description
+#: ../templates.in:2001
+msgid "Linux default command line:"
+msgstr "Linha de comando padrão Linux:"
+
+#. Type: string
+#. Description
+#: ../templates.in:2001
+msgid ""
+"The following string will be used as Linux parameters for the default menu "
+"entry but not for the recovery mode."
+msgstr ""
+"A seguinte string será usada como um parâmetro Linux para a entrada no menu "
+"padrão, mas não para o modo de recuperação."
+
+#. Type: string
+#. Description
+#: ../templates.in:3001
+msgid "kFreeBSD command line:"
+msgstr "Linha de comando kFreeBSD:"
+
+#. Type: string
+#. Description
+#: ../templates.in:3001
+msgid ""
+"The following kFreeBSD command line was extracted from /etc/default/grub or "
+"the `kopt' parameter in GRUB Legacy's menu.lst.  Please verify that it is "
+"correct, and modify it if necessary."
+msgstr ""
+"A linha de comando kFreeBSD a seguir foi extraída de /etc/default/grub ou do "
+"parâmetro `kopt' do menu.lst do Grub Legado. Por favor, verifique se ela "
+"está correta, e modifique-a se necessário."
+
+#. Type: string
+#. Description
+#: ../templates.in:4001
+msgid "kFreeBSD default command line:"
+msgstr "Linha de comando padrão kFreeBSD:"
+
+#. Type: string
+#. Description
+#: ../templates.in:4001
+msgid ""
+"The following string will be used as kFreeBSD parameters for the default "
+"menu entry but not for the recovery mode."
+msgstr ""
+"A seguinte string será usada como um parâmetro kFreeBSD para a entrada no "
+"menu padrão, mas não para o modo de recuperação."
+
+#~ msgid "GRUB 1.95 numbering scheme transition"
+#~ msgstr "Transição do esquema de numeração do GRUB 1.95"
+
+#~ msgid ""
+#~ "As of version 1.95, GRUB 2 has changed its numbering scheme.  Partitions "
+#~ "are now counted starting from 1 rather than 0.  This is to make it "
+#~ "consistent with device names of Linux and the other kernels used in "
+#~ "Debian.  For example, when using Linux as the kernel, \"(hd0,1)\" refers "
+#~ "to the same partition as the /dev/sda1 device node."
+#~ msgstr ""
+#~ "A partir da versão 1.95, o GRUB 2 mudou seu esquema de numeração. Agora "
+#~ "partições são contadas a partir de 1 em vez de 0. Isto é para torná-lo "
+#~ "consistente com nomes de dispositivos do Linux e de outros kernels usados "
+#~ "no Debian. Por exemplo, quando se usa o Linux como kernel, \"(hd0,1)\" se "
+#~ "refere à mesma partição que o nó de dispositivo /dev/sda1."
+
+#~ msgid ""
+#~ "Because of this, there's a chance your system becomes unbootable if "
+#~ "update-grub(8) is run before GRUB is updated, generating a grub.cfg file "
+#~ "that your installed GRUB won't yet be able to parse correctly.  To ensure "
+#~ "your system will be able to boot, you have to:"
+#~ msgstr ""
+#~ "Por causa disso, existe uma chance de seu sistema tornar-se não "
+#~ "inicializável se o update-grub(8) for executado antes do GRUB ser "
+#~ "atualizado, gerando um arquivo grub.cfg que o GRUB instalado ainda não "
+#~ "será capaz de analisar corretamente. Para garantir que seu sistema será "
+#~ "capaz de inicializar, você tem que:"
+
+#~ msgid ""
+#~ " - Reinstall GRUB (typically, by running grub-install).\n"
+#~ " - Rerun update-grub to generate a new grub.cfg."
+#~ msgstr ""
+#~ " - Reinstalar o GRUB (tipicamente, executando grub-install).\n"
+#~ " - Re-executar update-grub para gerar um novo grub.cfg."

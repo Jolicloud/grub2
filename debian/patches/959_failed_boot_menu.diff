@@ -1,0 +1,41 @@
+diff -Nur -x '*.orig' -x '*~' grub2/util/grub.d/00_header.in grub2.new/util/grub.d/00_header.in
+--- grub2/util/grub.d/00_header.in	2010-03-09 16:58:14.000000000 +0000
++++ grub2.new/util/grub.d/00_header.in	2010-03-09 16:58:16.000000000 +0000
+@@ -57,6 +57,11 @@
+     save_env saved_entry
+   fi
+ }
++
++function recordfail {
++  set recordfail=1
++  if [ -n \${have_grubenv} ]; then if [ -z \${boot_once} ]; then save_env recordfail; fi; fi
++}
+ EOF
+ 
+ case ${GRUB_TERMINAL_INPUT}:${GRUB_TERMINAL_OUTPUT} in
+@@ -143,7 +148,11 @@
+ fi
+ 
+ cat << EOF
+-set timeout=${GRUB_TIMEOUT}
++if [ \${recordfail} = 1 ]; then
++  set timeout=-1
++else
++  set timeout=${GRUB_TIMEOUT}
++fi
+ EOF
+ 
+ # Play an initial tune
+diff -Nur -x '*.orig' -x '*~' grub2/util/grub.d/10_linux.in grub2.new/util/grub.d/10_linux.in
+--- grub2/util/grub.d/10_linux.in	2010-03-09 16:58:14.000000000 +0000
++++ grub2.new/util/grub.d/10_linux.in	2010-03-09 16:59:38.000000000 +0000
+@@ -72,6 +72,9 @@
+     title="$(gettext "%s, with Linux %s")"
+   fi
+   printf "menuentry \"${title}\" ${CLASS} {\n" "${os}" "${version}"
++  cat << EOF
++	recordfail
++EOF
+   save_default_entry | sed -e "s/^/\t/"
+ 
+   if [ "x$GRUB_GFXPAYLOAD_LINUX" != x ]; then

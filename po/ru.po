@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: grub 1.97+20100124\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-06 21:00+0100\n"
+"POT-Creation-Date: 2010-03-08 22:55+0000\n"
 "PO-Revision-Date: 2010-01-25 21:49+0300\n"
 "Last-Translator: Yuri Kozlov <yuray@komyakino.ru>\n"
 "Language-Team: Russian <gnu@mx.ru>\n"
@@ -1018,7 +1018,7 @@ msgstr "размер diskboot.img должен быть %u байт"
 msgid "core image is too big (%p > %p)"
 msgstr "базовый образ слишком большой (%p > %p)"
 
-#: util/grub-mkrawimage.c:434 util/i386/pc/grub-setup.c:587
+#: util/grub-mkrawimage.c:434 util/i386/pc/grub-setup.c:602
 #, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "По команде %s --help можно получить дополнительную информацию.\n"
@@ -1064,41 +1064,41 @@ msgstr ""
 msgid "cannot open %s"
 msgstr "не удалось открыть %s"
 
-#: util/i386/pc/grub-setup.c:159
+#: util/i386/pc/grub-setup.c:160
 msgid "the first sector of the core file is not sector-aligned"
 msgstr "первый сектор базового файла не выровнен посекторно"
 
-#: util/i386/pc/grub-setup.c:173
+#: util/i386/pc/grub-setup.c:174
 msgid "non-sector-aligned data is found in the core file"
 msgstr "в базовом файле найдены невыравненные посекторно данные"
 
-#: util/i386/pc/grub-setup.c:187
+#: util/i386/pc/grub-setup.c:188
 msgid "the sectors of the core file are too fragmented"
 msgstr "секторы базового файла слишком фрагментированы"
 
-#: util/i386/pc/grub-setup.c:198
+#: util/i386/pc/grub-setup.c:199
 #, c-format
 msgid "the size of `%s' is not %u"
 msgstr "размер %s не равен %u"
 
-#: util/i386/pc/grub-setup.c:215
+#: util/i386/pc/grub-setup.c:216
 #, c-format
 msgid "the size of `%s' is too small"
 msgstr "размер %s слишком мал"
 
-#: util/i386/pc/grub-setup.c:217
+#: util/i386/pc/grub-setup.c:218
 #, c-format
 msgid "the size of `%s' is too large"
 msgstr "размер %s слишком велик"
 
-#: util/i386/pc/grub-setup.c:254
+#: util/i386/pc/grub-setup.c:255
 #, c-format
 msgid "unable to identify a filesystem in %s; safety check can't be performed"
 msgstr ""
 "не удалось определить файловую систему в %s; невозможно выполнить безопасную "
 "проверку"
 
-#: util/i386/pc/grub-setup.c:258
+#: util/i386/pc/grub-setup.c:259
 #, c-format
 msgid ""
 "%s appears to contain a %s filesystem which isn't known to reserve space for "
@@ -1112,26 +1112,26 @@ msgstr ""
 "перезаписаны grub-setup (параметр --skip-fs-probe выключает эту проверку, но "
 "вас предупредили)"
 
-#: util/i386/pc/grub-setup.c:307
+#: util/i386/pc/grub-setup.c:308
 msgid "no DOS-style partitions found"
 msgstr "разделов в стиле DOS не найдено"
 
-#: util/i386/pc/grub-setup.c:323 util/i386/pc/grub-setup.c:348
+#: util/i386/pc/grub-setup.c:324 util/i386/pc/grub-setup.c:349
 msgid ""
 "Attempting to install GRUB to a partitionless disk.  This is a BAD idea."
 msgstr "Попытка установить GRUB на диск без разделов. Лучше этого НЕ ДЕЛАТЬ."
 
-#: util/i386/pc/grub-setup.c:329
+#: util/i386/pc/grub-setup.c:330
 msgid ""
 "Attempting to install GRUB to a partition instead of the MBR.  This is a BAD "
 "idea."
 msgstr "Попытка установить GRUB на раздел вместо MBR. Лучше этого НЕ ДЕЛАТЬ."
 
-#: util/i386/pc/grub-setup.c:357
+#: util/i386/pc/grub-setup.c:358
 msgid "No DOS-style partitions found"
 msgstr "Разделов в стиле DOS не найдено"
 
-#: util/i386/pc/grub-setup.c:362
+#: util/i386/pc/grub-setup.c:363
 msgid ""
 "This msdos-style partition label has no post-MBR gap; embedding won't be "
 "possible!"
@@ -1139,25 +1139,25 @@ msgstr ""
 "Метка раздела в стиле msdos не имеет промежутка после MBR; встраивание "
 "невозможно!"
 
-#: util/i386/pc/grub-setup.c:364
+#: util/i386/pc/grub-setup.c:365
 msgid ""
 "This GPT partition label has no BIOS Boot Partition; embedding won't be "
 "possible!"
 msgstr ""
 "Метка раздела GPT не имеет BIOS Boot Partition; встраивание невозможно!"
 
-#: util/i386/pc/grub-setup.c:371
+#: util/i386/pc/grub-setup.c:372
 msgid "Your core.img is unusually large.  It won't fit in the embedding area."
 msgstr ""
 "Данный core.img необычно большого размера. Он не влезет во встраиваемую "
 "область."
 
-#: util/i386/pc/grub-setup.c:373
+#: util/i386/pc/grub-setup.c:374
 msgid "Your embedding area is unusually small.  core.img won't fit in it."
 msgstr ""
 "Встраиваемая область необычно маленького размера. core.img не влезет в неё."
 
-#: util/i386/pc/grub-setup.c:416
+#: util/i386/pc/grub-setup.c:419
 msgid ""
 "embedding is not possible, but this is required when the root device is on a "
 "RAID array or LVM volume"
@@ -1165,7 +1165,7 @@ msgstr ""
 "встраивание невозможно, но оно необходимо, если корневое устройство "
 "располагается в RAID-массиве или томе LVM."
 
-#: util/i386/pc/grub-setup.c:419
+#: util/i386/pc/grub-setup.c:422
 msgid ""
 "Embedding is not possible.  GRUB can only be installed in this setup by "
 "using blocklists.  However, blocklists are UNRELIABLE and its use is "
@@ -1175,43 +1175,43 @@ msgstr ""
 "только с помощью списка блоков (blocklists). Однако, список блоков является "
 "НЕНАДЁЖНЫМ механизмом и его лучше не использовать."
 
-#: util/i386/pc/grub-setup.c:423
+#: util/i386/pc/grub-setup.c:426
 msgid "if you really want blocklists, use --force"
 msgstr "если вы всё равно хотите использовать список блоков, укажите --force."
 
-#: util/i386/pc/grub-setup.c:439
+#: util/i386/pc/grub-setup.c:445
 #, c-format
 msgid "attempting to read the core image `%s' from GRUB"
 msgstr "попытка прочитать базовый образ %s из GRUB"
 
-#: util/i386/pc/grub-setup.c:440
+#: util/i386/pc/grub-setup.c:446
 #, c-format
 msgid "attempting to read the core image `%s' from GRUB again"
 msgstr "повторная попытка прочитать базовый образ %s из GRUB"
 
-#: util/i386/pc/grub-setup.c:498
+#: util/i386/pc/grub-setup.c:513
 #, c-format
 msgid "cannot read `%s' correctly"
 msgstr "не удалось прочитать %s правильно"
 
-#: util/i386/pc/grub-setup.c:511
+#: util/i386/pc/grub-setup.c:526
 msgid "no terminator in the core image"
 msgstr "в базовом образе нет метки окончания"
 
-#: util/i386/pc/grub-setup.c:522
+#: util/i386/pc/grub-setup.c:537
 msgid "failed to read the first sector of the core image"
 msgstr "не удалось прочитать первый сектор базового образа"
 
-#: util/i386/pc/grub-setup.c:528
+#: util/i386/pc/grub-setup.c:543
 msgid "failed to read the rest sectors of the core image"
 msgstr "не удалось прочитать оставшиеся секторы базового образа"
 
-#: util/i386/pc/grub-setup.c:547
+#: util/i386/pc/grub-setup.c:562
 #, c-format
 msgid "cannot open `%s'"
 msgstr "не удалось открыть %s"
 
-#: util/i386/pc/grub-setup.c:589
+#: util/i386/pc/grub-setup.c:604
 #, c-format
 msgid ""
 "Usage: %s [OPTION]... DEVICE\n"
@@ -1255,27 +1255,27 @@ msgstr ""
 "\n"
 "Сообщения об ошибках направляйте на <%s>.\n"
 
-#: util/i386/pc/grub-setup.c:719
+#: util/i386/pc/grub-setup.c:734
 #, c-format
 msgid "No device is specified.\n"
 msgstr "Не указано устройство.\n"
 
-#: util/i386/pc/grub-setup.c:725
+#: util/i386/pc/grub-setup.c:740
 #, c-format
 msgid "Unknown extra argument `%s'.\n"
 msgstr "Неизвестный дополнительный параметр %s.\n"
 
-#: util/i386/pc/grub-setup.c:742
+#: util/i386/pc/grub-setup.c:757
 #, c-format
 msgid "Invalid device `%s'.\n"
 msgstr "Неверное устройство %s.\n"
 
-#: util/i386/pc/grub-setup.c:755
+#: util/i386/pc/grub-setup.c:770
 #, c-format
 msgid "invalid root device `%s'"
 msgstr "неверное корневое устройство %s"
 
-#: util/i386/pc/grub-setup.c:768
+#: util/i386/pc/grub-setup.c:783
 msgid "cannot guess the root device. Specify the option `--root-device'"
 msgstr ""
 "не удалось вычислить корневое устройство. Укажите его параметром --root-"
@@ -1289,19 +1289,19 @@ msgstr "%s, с kFreeBSD %s"
 msgid "Loading kernel of FreeBSD %s ..."
 msgstr "Загружается ядро FreeBSD %s ..."
 
-#: util/grub.d/10_linux.in:59
+#: util/grub.d/10_linux.in:60
 msgid "%s, with Linux %s (recovery mode)"
 msgstr "%s, с Linux %s (режим восстановления)"
 
-#: util/grub.d/10_linux.in:61
+#: util/grub.d/10_linux.in:62
 msgid "%s, with Linux %s"
 msgstr "%s, с Linux %s"
 
-#: util/grub.d/10_linux.in:86
+#: util/grub.d/10_linux.in:87
 msgid "Loading Linux %s ..."
 msgstr "Загружается Linux %s ..."
 
-#: util/grub.d/10_linux.in:91
+#: util/grub.d/10_linux.in:92
 msgid "Loading initial ramdisk ..."
 msgstr "Загружается начальный ramdisk ..."
 

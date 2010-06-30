@@ -1,0 +1,15 @@
+Index: util/grub-mkconfig.in
+===================================================================
+--- util/grub-mkconfig.in	(revision 2598)
++++ util/grub-mkconfig.in	(working copy)
+@@ -261,6 +261,10 @@ for i in ${grub_mkconfig_dir}/* ; do
+   esac
+ done
+ 
++if [ "x${grub_cfg}" != "x" ] && ! grep -q "^password " ${grub_cfg}.new ; then
++  chmod 444 ${grub_cfg}.new || true
++fi
++
+ if test "x${grub_cfg}" != "x" ; then
+   # none of the children aborted with error, install the new grub.cfg
+   mv -f ${grub_cfg}.new ${grub_cfg}

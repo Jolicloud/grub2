@@ -1,0 +1,220 @@
+Source: grub2
+Section: admin
+Priority: optional
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: GRUB Maintainers <pkg-grub-devel@lists.alioth.debian.org>
+Uploaders: Robert Millan <rmh.debian@aybabtu.com>, Felix Zielcke <fzielcke@z-51.de>, Jordi Mallach <jordi@debian.org>, Colin Watson <cjwatson@debian.org>
+DM-Upload-Allowed: yes
+Build-Depends: cdbs,
+ debhelper (>= 7),
+ patchutils,
+ autoconf,
+ automake,
+ python,
+ ruby,
+ bison,
+ po-debconf,
+ help2man,
+ texinfo,
+ gcc-4.4-multilib [sparc],
+ gcc-4.4,
+ libncurses5-dev,
+ xfonts-unifont,
+ libfreetype6-dev,
+ gettext,
+ libusb-dev,
+ libdevmapper-dev,
+Build-Conflicts: autoconf2.13 
+Standards-Version: 3.8.4
+Homepage: http://www.gnu.org/software/grub/grub-2.en.html
+XS-Debian-Vcs-Bzr: https://alioth.debian.org/anonscm/bzr/pkg-grub/trunk/grub/
+XS-Debian-Vcs-Browser: http://bzr.debian.org/loggerhead/pkg-grub/
+Vcs-Bzr: http://bazaar.launchpad.net/~ubuntu-core-dev/ubuntu/lucid/grub2/lucid
+
+
+Package: grub2
+Architecture: i386 kfreebsd-i386 hurd-i386 kopensolaris-i386 amd64 kfreebsd-amd64 lpia powerpc sparc
+Depends: grub-pc [i386 kfreebsd-i386 hurd-i386 kopensolaris-i386 amd64 kfreebsd-amd64 lpia] | grub-ieee1275 [powerpc sparc], ${misc:Depends}
+Description: GRand Unified Bootloader, version 2 (dummy package)
+ This is a dummy transitional package to handle GRUB 2 upgrades.  It can be
+ safely removed.
+
+Package: grub-linuxbios
+Architecture: i386 kfreebsd-i386 hurd-i386 kopensolaris-i386 amd64 kfreebsd-amd64 lpia
+Depends: grub-coreboot (= ${binary:Version}), ${misc:Depends}
+Description: GRand Unified Bootloader, version 2 (dummy package)
+ This is a dummy transitional package that depends on grub-coreboot.
+
+Package: grub-efi
+Architecture: i386 kfreebsd-i386 hurd-i386 kopensolaris-i386 amd64 kfreebsd-amd64 lpia
+Depends: ${misc:Depends}, grub-efi-ia32 [i386 kfreebsd-i386 hurd-i386 kopensolaris-i386 lpia], grub-efi-amd64 [amd64 kfreebsd-amd64]
+Description: GRand Unified Bootloader, version 2 (dummy package)
+ This is a dummy transitional package that depends on either grub-efi-ia32 or
+ grub-efi-amd64, depending on the architecture.
+
+
+Package: grub-common
+Architecture: i386 kfreebsd-i386 hurd-i386 kopensolaris-i386 amd64 kfreebsd-amd64 lpia powerpc sparc mipsel
+Depends: base-files (>= 4.0.1~), dpkg (>= 1.15.4) | install-info | dpkg (<= 1.14.25), lsb-base (>= 3.0-6), ${shlibs:Depends}, ${misc:Depends}, gettext-base
+Replaces: grub-pc (<< 1.97+20091114-1), grub-ieee1275 (<< 1.96+20080831-1), grub-efi (<< 1.96+20080831-1), grub-coreboot (<< 1.97+20091114-1), grub-linuxbios (<< 1.96+20080831-1)
+Recommends: os-prober (>= 1.33)
+Suggests: multiboot-doc [i386 kfreebsd-i386 hurd-i386 kopensolaris-i386 amd64 kfreebsd-amd64 lpia], grub-emu
+# See bugs #435983 and #455746
+Conflicts: mdadm (<< 2.6.7-2), grub-doc (<< 0.97-29ubuntu60), grub-legacy-doc (<< 0.97-29ubuntu60)
+Description: GRand Unified Bootloader, version 2 (common files)
+ This package contains common files shared by the distinct flavours of GRUB.
+
+Package: grub-emu
+Architecture: i386 kfreebsd-i386 hurd-i386 kopensolaris-i386 amd64 kfreebsd-amd64 lpia powerpc sparc
+Depends: ${shlibs:Depends}, base-files (>= 4.0.1~), ${misc:Depends}
+Replaces: grub-common (<= 1.97~beta3-1)
+Description: GRand Unified Bootloader, version 2 (emulated version)
+ This package contains grub-emu, an emulated version of GRUB.  It is only
+ provided for debugging purposes.
+
+Package: grub-pc
+Architecture: i386 kfreebsd-i386 hurd-i386 kopensolaris-i386 amd64 kfreebsd-amd64 lpia
+Depends: ${shlibs:Depends}, ${misc:Depends}, grub-common (= ${binary:Version}), ucf
+Replaces: grub, grub-legacy, grub2 (<< ${source:Version}), grub-common (<< 1.97~beta1-1ubuntu4), grub-efi-amd64, grub-efi-ia32, grub-coreboot, grub-ieee1275
+Conflicts: grub (<< 0.97-54), grub-legacy, desktop-base (= 4.0.5), grub-efi-amd64, grub-efi-ia32, grub-coreboot, grub-ieee1275
+Suggests: desktop-base (>= 4.0.6)
+Description: GRand Unified Bootloader, version 2 (PC/BIOS version)
+ GRUB is a portable, powerful bootloader.  This version of GRUB is based on a
+ cleaner design than its predecessors, and provides the following new features:
+ .
+  - Scripting in grub.cfg using BASH-like syntax.
+  - Support for modern partition maps such as GPT.
+  - Modular generation of grub.cfg via update-grub.  Packages providing GRUB
+    add-ons can plug in their own script rules and trigger updates by invoking
+    update-grub2.
+  - VESA-based graphical mode with background image support and complete 24-bit
+    color set.
+  - Support for extended charsets.  Users can write UTF-8 text to their menu
+    entries.
+ .
+ This package contains a version of GRUB that has been built for use with
+ traditional PC/BIOS architecture.
+
+Package: grub-rescue-pc
+Architecture: i386 kfreebsd-i386 hurd-i386 kopensolaris-i386 amd64 kfreebsd-amd64 lpia
+Depends: ${misc:Depends}, grub-pc (>= 1.97+20091114-1), grub-common (>= 1.97+20091114-1)
+Description: GRUB bootable rescue images, version 2 (PC/BIOS version)
+ This package contains two GRUB rescue images that have been built for use with
+ traditional PC/BIOS architecture:
+ .
+  - grub-rescue-floppy.img: floppy image.
+  - grub-rescue-cdrom.iso: El Torito CDROM image.
+
+Package: grub-coreboot
+Architecture: i386 kfreebsd-i386 hurd-i386 kopensolaris-i386 amd64 kfreebsd-amd64
+Depends: ${shlibs:Depends}, grub-common (= ${binary:Version}), ${misc:Depends}, ucf
+Replaces: grub-legacy, grub2 (<< ${source:Version}), grub-common (<< 1.97~beta1-1ubuntu4), grub-linuxbios, grub-efi-amd64, grub-efi-ia32, grub-pc, grub-ieee1275
+Conflicts: grub (<< 0.97-54), grub-legacy, grub-linuxbios (<< ${source:Version}), grub-efi-amd64, grub-efi-ia32, grub-pc, grub-ieee1275
+Suggests: os-prober
+Description: GRand Unified Bootloader, version 2 (Coreboot version)
+ GRUB is a portable, powerful bootloader.  This version of GRUB is based on a
+ cleaner design than its predecessors, and provides the following new features:
+ .
+  - Scripting in grub.cfg using BASH-like syntax.
+  - Support for modern partition maps such as GPT.
+  - Modular generation of grub.cfg via update-grub.  Packages providing GRUB
+    add-ons can plug in their own script rules and trigger updates by invoking
+    update-grub2.
+ .
+ This package contains a version of GRUB that has been built for use with
+ platforms running the Coreboot firmware.
+
+Package: grub-efi-ia32
+Architecture: i386 kfreebsd-i386 hurd-i386 kopensolaris-i386 amd64 kfreebsd-amd64 lpia
+Depends: ${shlibs:Depends}, grub-common (= ${binary:Version}), ${misc:Depends}, ucf
+Replaces: grub, grub-legacy, grub2 (<< ${source:Version}), grub-common (<< 1.97~beta1-1ubuntu4), grub-efi, grub-efi-amd64, grub-pc, grub-coreboot, grub-ieee1275
+Conflicts: grub (<< 0.97-54), grub-legacy, grub-efi-amd64, grub-pc, grub-coreboot, grub-ieee1275
+Suggests: os-prober, efibootmgr
+Description: GRand Unified Bootloader, version 2 (EFI-IA32 version)
+ GRUB is a portable, powerful bootloader.  This version of GRUB is based on a
+ cleaner design than its predecessors, and provides the following new features:
+ .
+  - Scripting in grub.cfg using BASH-like syntax.
+  - Support for modern partition maps such as GPT.
+  - Modular generation of grub.cfg via update-grub.  Packages providing GRUB
+    add-ons can plug in their own script rules and trigger updates by invoking
+    update-grub2.
+ .
+ This package contains a version of GRUB that has been built for use with
+ EFI-IA32 architecture, such as the one provided by Intel Macs (that is, unless
+ a BIOS interface has been activated).
+
+Package: grub-efi-amd64
+Architecture: i386 kopensolaris-i386 amd64 kfreebsd-amd64
+Depends: ${shlibs:Depends}, grub-common (= ${binary:Version}), ${misc:Depends}, ucf
+Replaces: grub, grub-legacy, grub2 (<< ${source:Version}), grub-common (<< 1.97~beta1-1ubuntu4), grub-pc, grub-efi-ia32, grub-coreboot, grub-ieee1275
+Conflicts: grub, grub-legacy, grub-efi-ia32, grub-coreboot, grub-ieee1275
+Suggests: os-prober, efibootmgr
+Description: GRand Unified Bootloader, version 2 (EFI-AMD64 version)
+ GRUB is a portable, powerful bootloader.  This version of GRUB is based on a
+ cleaner design than its predecessors, and provides the following new features:
+ .
+  - Scripting in grub.cfg using BASH-like syntax.
+  - Support for modern partition maps such as GPT.
+  - Modular generation of grub.cfg via update-grub.  Packages providing GRUB
+    add-ons can plug in their own script rules and trigger updates by invoking
+    update-grub2.
+ .
+ This package contains a version of GRUB that has been built for use with
+ EFI-AMD64 architecture, such as the one provided by Intel Macs (that is, unless
+ a BIOS interface has been activated).
+
+Package: grub-ieee1275
+Architecture: i386 kfreebsd-i386 hurd-i386 kopensolaris-i386 amd64 kfreebsd-amd64 lpia powerpc sparc
+Depends: ${shlibs:Depends}, grub-common (= ${binary:Version}),
+ powerpc-ibm-utils [powerpc], powerpc-utils [powerpc], bc [powerpc], ${misc:Depends}, ucf
+Replaces: grub-legacy, grub2 (<< ${source:Version}), grub-common (<< 1.97~beta1-1ubuntu4), grub-efi-amd64, grub-efi-ia32, grub-coreboot, grub-pc
+Conflicts: grub (<< 0.97-54), grub-legacy, grub-efi-amd64, grub-efi-ia32, grub-coreboot, grub-pc
+Suggests: os-prober, genisoimage [powerpc]
+Description: GRand Unified Bootloader, version 2 (Open Firmware version)
+ GRUB is a portable, powerful bootloader.  This version of GRUB is based on a
+ cleaner design than its predecessors, and provides the following new features:
+ .
+  - Scripting in grub.cfg using BASH-like syntax.
+  - Support for modern partition maps such as GPT.
+  - Modular generation of grub.cfg via update-grub.  Packages providing GRUB
+    add-ons can plug in their own script rules and trigger updates by invoking
+    update-grub2.
+ .
+ This package contains a version of GRUB that has been built for use with
+ Open Firmware implementations.
+
+Package: grub-firmware-qemu
+Architecture: i386 kfreebsd-i386 hurd-i386 kopensolaris-i386 amd64 kfreebsd-amd64 lpia
+Depends: base-files (>= 4.0.1~), ${misc:Depends}
+Recommends: qemu
+Enhances: qemu
+Description: GRUB firmware image for QEMU
+ This package contains a binary of GRUB that has been built for use as
+ firmware for QEMU.  It can be used as a replacement for the standard
+ PC BIOS provided by the bochsbios package (bios.bin).
+ .
+ In order to make QEMU use this firmware, simply add `-bios grub.bin' when
+ invoking it.
+ .
+ This package behaves in the same way as GRUB for coreboot, but doesn't
+ contain any code from coreboot itself, and is only suitable for QEMU. If
+ you want to install GRUB as firmware on real hardware, you need to use the
+ grub-coreboot package, and manually combine that with coreboot.
+
+Package: grub-yeeloong
+Architecture: mipsel
+Depends: ${shlibs:Depends}, grub-common (= ${binary:Version}), ${misc:Depends}, ucf
+Suggests: os-prober
+Description: GRand Unified Bootloader, version 2 (Yeeloong version)
+ GRUB is a portable, powerful bootloader.  This version of GRUB is based on a
+ cleaner design than its predecessors, and provides the following new features:
+ .
+  - Scripting in grub.cfg using BASH-like syntax.
+  - Support for modern partition maps such as GPT.
+  - Modular generation of grub.cfg via update-grub.  Packages providing GRUB
+    add-ons can plug in their own script rules and trigger updates by invoking
+    update-grub2.
+ .
+ This package contains a version of GRUB that has been built for use with
+ the Lemote Yeeloong laptop.

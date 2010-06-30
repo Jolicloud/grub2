@@ -1,0 +1,58 @@
+Name: GNU GRUB
+Source: http://www.gnu.org/software/grub/grub-2.en.html
+
+Files: *
+Copyright: 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009  Free Software Foundation, Inc
+License: GPL-3+
+
+Files: util/mkisofs/include/prototyp.h
+       util/mkisofs/include/fctldefs.h
+       util/mkisofs/include/statdefs.h
+       util/mkisofs/include/mconfig.h
+Copyright: 1995, 1996, 1998  J. Schilling
+License: GPL-2+
+
+Files: util/mkisofs/iso9660.h
+       util/mkisofs/rock.c
+       util/mkisofs/mkisofs.c
+       util/mkisofs/hash.c
+       util/mkisofs/write.c
+       util/mkisofs/name.c
+       util/mkisofs/tree.c
+       util/mkisofs/mkisofs.h
+Copyright: 1993  Yggdrasil Computing, Incorporated
+License: GPL-2+
+
+Files: util/mkisofs/rock.c
+       util/mkisofs/mkisofs.c
+       util/mkisofs/write.c
+       util/mkisofs/mkisofs.h
+Copyright: 2009  Free Software Foundation, Inc.
+License: GPL-3+
+
+Files: util/mkisofs/joliet.c
+Copyright: 1997 Eric Youngdale
+License: GPL-2+
+
+Files: util/mkisofs/eltorito.c
+Copyright: 1996 RedHat Software, Incorporated
+License: GPL-2+
+
+
+Files: debian/*
+Copyright: 2003, 2004, 2005, 2006, 2007, 2008, 2009, Robert Millan
+	   2005, 2006, 2007, Otavio Salvador
+	   2008, 2009, Felix Zielcke
+	   2009, Jordi Mallach
+License: GPL-3+
+
+Files: debian/grub-extras/*
+Copyright: Nathan Coulson
+           2003, 2007  Free Software Foundation, Inc
+           2003  NIIBE Yutaka
+License: GPL-3+
+
+License: GPL-3+
+ On Debian systems the full text of the GNU General Public
+ License can be found in the `/usr/share/common-licenses/GPL'
+ file.

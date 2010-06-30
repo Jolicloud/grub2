@@ -1,0 +1,15 @@
+Description: Remove GNU/Linux from default distributor string.
+UbuntuSpecific: We call it "Ubuntu", not "Ubuntu GNU/Linux".
+
+diff -Nur -x '*.orig' -x '*~' grub2/util/grub.d/10_linux.in grub2.new/util/grub.d/10_linux.in
+--- grub2/util/grub.d/10_linux.in	2010-03-09 16:55:52.000000000 +0000
++++ grub2.new/util/grub.d/10_linux.in	2010-03-09 16:56:32.000000000 +0000
+@@ -30,7 +30,7 @@
+ if [ "x${GRUB_DISTRIBUTOR}" = "x" ] ; then
+   OS=GNU/Linux
+ else
+-  OS="${GRUB_DISTRIBUTOR} GNU/Linux"
++  OS="${GRUB_DISTRIBUTOR}"
+   CLASS="--class $(echo ${GRUB_DISTRIBUTOR} | tr '[A-Z]' '[a-z]') ${CLASS}"
+ fi
+ 

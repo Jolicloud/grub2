@@ -1,0 +1,37 @@
+# -*- makefile -*-
+
+pkglib_IMAGES += g2ldr.mbr g2hdr.bin grldr.img
+
+all: g2ldr.mbr g2hdr.bin
+
+DISTCLEANFILES += g2ldr.mbr g2hdr.bin
+
+g2hdr_bin_SOURCES = $(GRUB_CONTRIB)/ntldr-img/g2hdr.S
+g2hdr_bin_ASFLAGS = $(COMMON_ASFLAGS)
+g2hdr_bin_LDFLAGS = $(COMMON_LDFLAGS) $(TARGET_IMG_LDFLAGS)0x0
+g2hdr_bin_FORMAT = binary
+
+grldr_img_SOURCES = $(GRUB_CONTRIB)/ntldr-img/grldrstart.S $(GRUB_CONTRIB)/ntldr-img/ntfsbs.S
+grldr_img_ASFLAGS = $(COMMON_ASFLAGS) -DGRLDR_MBR
+grldr_img_LDFLAGS = $(COMMON_LDFLAGS) $(TARGET_IMG_LDFLAGS)0x7c00
+grldr_img_FORMAT = binary
+
+grldr.mbr: grldr.img
+	head -c 8192 $< > $@
+DISTCLEANFILES += grldr.mbr
+
+bin2h: $(GRUB_CONTRIB)/ntldr-img/bin2h.c
+	$(CC) $^ -o $@
+DISTCLEANFILES += bin2h
+
+grub_mbr.h: grldr.mbr bin2h
+	./bin2h grub_mbr 8192 < $< > $@
+DISTCLEANFILES += grub_mbr.h
+
+grubinst: $(GRUB_CONTRIB)/ntldr-img/grubinst.c $(GRUB_CONTRIB)/ntldr-img/utils.c grub_mbr.h
+	$(CC) -I. -I$(GRUB_CONTRIB)/ntldr-img -DLINUX -o $@ $(GRUB_CONTRIB)/ntldr-img/grubinst.c $(GRUB_CONTRIB)/ntldr-img/utils.c
+DISTCLEANFILES += grubinst
+
+g2ldr.mbr: grubinst
+	./grubinst --grub2 -o $@
+DISTCLEANFILES += g2ldr.mbr

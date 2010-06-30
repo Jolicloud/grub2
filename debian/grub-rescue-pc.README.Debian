@@ -1,0 +1,16 @@
+grub-rescue-pc
+~~~~~~~~~~~~~~
+
+How to test the images with qemu:
+
+  qemu -fda /usr/lib/grub-rescue/grub-rescue-floppy.img
+
+  qemu -cdrom /usr/lib/grub-rescue/grub-rescue-cdrom.iso
+
+How to write the images to bootable media:
+
+  sudo dd if=/usr/lib/grub-rescue/grub-rescue-floppy.img of=/dev/fd0 bs=32k
+
+  sudo wodim /usr/lib/grub-rescue/grub-rescue-cdrom.iso
+  # or just use your favourite CD burning program
+

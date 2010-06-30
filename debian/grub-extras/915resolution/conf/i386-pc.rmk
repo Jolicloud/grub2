@@ -1,0 +1,6 @@
+# -*- makefile -*-
+
+pkglib_MODULES += 915resolution.mod
+915resolution_mod_SOURCES = $(GRUB_CONTRIB)/915resolution/915resolution.c
+915resolution_mod_CFLAGS = $(COMMON_CFLAGS) -Wno-error
+915resolution_mod_LDFLAGS = $(COMMON_LDFLAGS)

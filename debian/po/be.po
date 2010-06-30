@@ -1,0 +1,233 @@
+# Belarusian translation of grub2 templates
+# Copyright (C) 2009 respective translators (see below)
+# This file is distributed under the same license as the grub2 package.
+# Hleb Rubanau <g.rubanau@gmail.com>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: be\n"
+"Report-Msgid-Bugs-To: grub2@packages.debian.org\n"
+"POT-Creation-Date: 2010-02-02 22:17-0800\n"
+"PO-Revision-Date: 2009-08-31 10:50+0200\n"
+"Last-Translator: Hleb Rubanau <g.rubanau@gmail.com>\n"
+"Language-Team: Debian Belarusian (Official spelling) <debian-l10n-"
+"belarusian@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid "Chainload from menu.lst?"
+msgstr "Ланцуговая загрузка з menu.lst?"
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid "GRUB upgrade scripts have detected a GRUB Legacy setup in /boot/grub."
+msgstr ""
+"Скрыпты абнаўлення GRUB выявілі папярэднюю версію GRUB, усталяваную ў /boot/"
+"grub."
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid ""
+"In order to replace the Legacy version of GRUB in your system, it is "
+"recommended that /boot/grub/menu.lst is adjusted to chainload GRUB 2 from "
+"your existing GRUB Legacy setup.  This step may be automaticaly performed "
+"now."
+msgstr ""
+"Каб замяніць папярэднюю версію GRUB у Вашай сістэме, раім выправіць файл /"
+"boot/grub/menu.lst такім чынам, каб GRUB 2 загружаўся праз механізм "
+"ланцуговай загрузкі (chainload) з існуючай папярэдняй версіі GRUB. Зараз "
+"можна зрабіць гэтую наладку аўтаматычна. "
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid ""
+"It's recommended that you accept chainloading GRUB 2 from menu.lst, and "
+"verify that your new GRUB 2 setup is functional for you, before you install "
+"it directly to your MBR (Master Boot Record)."
+msgstr ""
+"Раім абраць опцыю ланцуговай загрузкі GRUB 2 з menu.lst, каб праверыць, ці "
+"прыдатны для Вас нанова ўсталяваны GRUB 2, перад тым як усталёўваць яго "
+"непасрэдна ў галоўны загрузачны запіс (MBR, Master Boot Record)."
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid ""
+"In either case, whenever you want GRUB 2 to be loaded directly from MBR, you "
+"can do so by issuing (as root) the following command:"
+msgstr ""
+"Калі ж Вы хочаце, каб GRUB 2 запускаўся непасрэдна з MBR, дастаткова "
+"запусціць з правамі карыстальніка root наступную каманду:"
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid "upgrade-from-grub-legacy"
+msgstr "update-from-grub-legacy"
+
+#. Type: text
+#. Description
+#. Disk sizes are in decimal megabytes, to match how disk manufacturers
+#. usually describe them.
+#: ../grub-pc.templates.in:5001
+msgid "${DEVICE} (${SIZE} MB, ${MODEL})"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:7001
+msgid "GRUB installation failed.  Continue?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:7001
+msgid "GRUB failed to install to the following devices:"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:7001
+msgid ""
+"Do you want to continue anyway?  If you do, your computer may not start up "
+"properly."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:8001
+msgid "Continue without installing GRUB?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:8001
+msgid ""
+"You chose not to install GRUB to any devices.  If you continue, the boot "
+"loader may not be properly configured, and when your computer next starts up "
+"it will use whatever was previously in the boot sector.  If there is an "
+"earlier version of GRUB 2 in the boot sector, it may be unable to load "
+"modules or handle the current configuration file."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:8001
+msgid ""
+"If you are already running a different boot loader and want to carry on "
+"doing so, or if this is a special environment where you do not need a boot "
+"loader, then you should continue anyway.  Otherwise, you should install GRUB "
+"somewhere."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates.in:1001
+msgid "Linux command line:"
+msgstr "Радок камандаў для ядра Linux:"
+
+#. Type: string
+#. Description
+#: ../templates.in:1001
+msgid ""
+"The following Linux command line was extracted from /etc/default/grub or the "
+"`kopt' parameter in GRUB Legacy's menu.lst.  Please verify that it is "
+"correct, and modify it if necessary."
+msgstr ""
+"Гэты радок камандаў для ядра Linux узяты з файлу /etc/default/grub або з "
+"параметру `kopt' у файле наладак (menu.lst) папярэдняй версіі GRUB. Калі "
+"ласка, пераканайцеся, што каманды запісаныя правільна, або папраўце іх, калі "
+"трэба."
+
+#. Type: string
+#. Description
+#: ../templates.in:2001
+msgid "Linux default command line:"
+msgstr "Прадвызначаны радок камандаў для ядра Linux:"
+
+#. Type: string
+#. Description
+#: ../templates.in:2001
+msgid ""
+"The following string will be used as Linux parameters for the default menu "
+"entry but not for the recovery mode."
+msgstr ""
+"Наступны радок будзе выкарыстаны ў якасці параметраў ядра Linux для "
+"прадвызначанага пункту меню (але не для рэжыму аднаўлення)."
+
+#. Type: string
+#. Description
+#: ../templates.in:3001
+msgid "kFreeBSD command line:"
+msgstr "Радок камандаў для ядра kFreeBSD:"
+
+#. Type: string
+#. Description
+#: ../templates.in:3001
+msgid ""
+"The following kFreeBSD command line was extracted from /etc/default/grub or "
+"the `kopt' parameter in GRUB Legacy's menu.lst.  Please verify that it is "
+"correct, and modify it if necessary."
+msgstr ""
+"Гэты радок камандаў для kFreeBSD узяты з файлу /etc/default/grub або з "
+"параметру `kopt' у файле наладак (menu.lst) папярэдняй версіі GRUB. Калі "
+"ласка, пераканайцеся, што каманды запісаныя правільна, або папраўце іх, калі "
+"трэба."
+
+#. Type: string
+#. Description
+#: ../templates.in:4001
+msgid "kFreeBSD default command line:"
+msgstr "Прадвызначаны радок камандаў для ядра kFreeBSD:"
+
+#. Type: string
+#. Description
+#: ../templates.in:4001
+msgid ""
+"The following string will be used as kFreeBSD parameters for the default "
+"menu entry but not for the recovery mode."
+msgstr ""
+"Наступны радок будзе выкарыстаны ў якасці параметраў ядра kFreeBSD для "
+"прадвызначанага пункту меню (але не для рэжыму аднаўлення)."
+
+#~ msgid "GRUB 1.95 numbering scheme transition"
+#~ msgstr "Змена схемы нумарацыі GRUB 1.95"
+
+#~ msgid ""
+#~ "As of version 1.95, GRUB 2 has changed its numbering scheme.  Partitions "
+#~ "are now counted starting from 1 rather than 0.  This is to make it "
+#~ "consistent with device names of Linux and the other kernels used in "
+#~ "Debian.  For example, when using Linux as the kernel, \"(hd0,1)\" refers "
+#~ "to the same partition as the /dev/sda1 device node."
+#~ msgstr ""
+#~ "Схема нумарацыі ў GRUB 2 змянілася ў параўнанні з версіяй 1.95 . Зараз "
+#~ "падзелы дыску адлічваюцца пачынаючы з 1 замест 0. Гэта зроблена, каб "
+#~ "адпавядаць назвам прыладаў у Linux і іншых ядрах, якія выкарыстоўваюцца ў "
+#~ "Debian. Напрыклад, калі ў якасці ядра выкарыстоўваецца Linux, радок "
+#~ "\"(hd0,1)\" датычыцца таго самага падзелу дыску, як і файл прылады /dev/"
+#~ "sda1."
+
+#~ msgid ""
+#~ "Because of this, there's a chance your system becomes unbootable if "
+#~ "update-grub(8) is run before GRUB is updated, generating a grub.cfg file "
+#~ "that your installed GRUB won't yet be able to parse correctly.  To ensure "
+#~ "your system will be able to boot, you have to:"
+#~ msgstr ""
+#~ "З гэтай прычыны Ваша сістэма можа стаць няздольнай да загрузкі, калі "
+#~ "праграма update-grub(8), запушчаная да абнаўлення GRUB, стварыла файл "
+#~ "grub.cfg, які немагчыма карэктна апрацаваць усталяваным GRUB. Каб "
+#~ "пераканацца, што Ваша сістэма здольная да загрузкі, варта: "
+
+#~ msgid ""
+#~ " - Reinstall GRUB (typically, by running grub-install).\n"
+#~ " - Rerun update-grub to generate a new grub.cfg."
+#~ msgstr ""
+#~ " - Пераўсталяваць GRUB (звычайна, праз запуск grub-install).\n"
+#~ " - Перазапусціць update-grub, каб стварыць новы grub.cfg."

@@ -1,0 +1,56 @@
+Upstream: http://lists.gnu.org/archive/html/grub-devel/2009-09/msg00056.html
+Description: Don't display introductory message about line editing unless
+ we're actually offering a shell prompt. Also, don't clear the screen just
+ before booting if we never drew the menu in the first place.
+UbuntuSpecific: The line editing change is believed to be a workaround for a
+ different bug. We'll go with this for now, but will drop this in favour of
+ a better fix upstream if somebody figures out what that is.
+
+diff -Nur -x '*.orig' -x '*~' grub2/normal/main.c grub2.new/normal/main.c
+--- grub2/normal/main.c	2010-02-01 14:33:16.000000000 -0800
++++ grub2.new/normal/main.c	2010-02-03 14:32:09.000000000 -0800
+@@ -564,6 +564,13 @@
+ {
+   grub_parser_t parser = grub_parser_get_current ();
+   char *prompt;
++  static int displayed_intro;
++
++  if (! displayed_intro)
++    {
++      grub_normal_reader_init (nested);
++      displayed_intro = 1;
++    }
+ 
+   if (cont)
+     prompt = grub_xasprintf (">");
+@@ -610,8 +617,6 @@
+       return;
+     }
+ 
+-  grub_normal_reader_init (nested);
+-
+   while (1)
+     {
+       char *line;
+diff -Nur -x '*.orig' -x '*~' grub2/normal/menu.c grub2.new/normal/menu.c
+--- grub2/normal/menu.c	2010-02-01 14:33:16.000000000 -0800
++++ grub2.new/normal/menu.c	2010-02-03 14:29:46.000000000 -0800
+@@ -540,6 +540,7 @@
+       int boot_entry;
+       grub_menu_entry_t e;
+       int auto_boot;
++      int initial_timeout = grub_menu_get_timeout ();
+ 
+       boot_entry = run_menu (menu, nested, &auto_boot);
+       if (boot_entry < 0)
+@@ -549,7 +550,9 @@
+       if (! e)
+ 	continue; /* Menu is empty.  */
+ 
+-      grub_cls ();
++      /* Only clear the screen if we drew the menu in the first place.  */
++      if (initial_timeout != 0)
++	grub_cls ();
+ 
+       if (auto_boot)
+         {

@@ -1,0 +1,257 @@
+# grub2 po-debconf translation to Spanish
+# Copyright (C) 2007, 2009 Software in the Public Interest
+# This file is distributed under the same license as the grub2 package.
+#
+# Changes:
+#   - Initial translation
+#       Maria Germana Oliveira Blazetic<germanaoliveirab@gmail.com>, 2007
+#
+#   - Updates
+#       Gary Ariel Sandi Vigabriel <gary.gsv@gmail.com>, 2009
+#       Francisco Javier Cuadrado <fcocuadrado@gmail.com>, 2009
+#
+# Traductores, si no conocen el formato PO, merece la pena leer la
+# documentación de gettext, especialmente las secciones dedicadas a este
+# formato, por ejemplo ejecutando:
+#       info -n '(gettext)PO Files'
+#       info -n '(gettext)Header Entry'
+#
+# Equipo de traducción al español, por favor lean antes de traducir
+# los siguientes documentos:
+#
+#   - El proyecto de traducción de Debian al español
+#     http://www.debian.org/intl/spanish/
+#     especialmente las notas y normas de traducción en
+#     http://www.debian.org/intl/spanish/notas
+#
+#   - La guía de traducción de po's de debconf:
+#     /usr/share/doc/po-debconf/README-trans
+#     o http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: grub2 1.96+20090829-2\n"
+"Report-Msgid-Bugs-To: grub2@packages.debian.org\n"
+"POT-Creation-Date: 2010-02-02 22:17-0800\n"
+"PO-Revision-Date: 2009-08-30 19:42+0100\n"
+"Last-Translator: Francisco Javier Cuadrado <fcocuadrado@gmail.com>\n"
+"Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid "Chainload from menu.lst?"
+msgstr "¿Desea realizar la carga en cadena desde el archivo «menu.lst»?"
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid "GRUB upgrade scripts have detected a GRUB Legacy setup in /boot/grub."
+msgstr ""
+"Los scripts de actualización han detectado en «/boot/grub» una configuración "
+"heredada de una versión anterior de GRUB."
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid ""
+"In order to replace the Legacy version of GRUB in your system, it is "
+"recommended that /boot/grub/menu.lst is adjusted to chainload GRUB 2 from "
+"your existing GRUB Legacy setup.  This step may be automaticaly performed "
+"now."
+msgstr ""
+"Para reemplazar la versión anterior de GRUB en el sistema, se recomienda que "
+"se configure «/boot/grub/menu.lst» para que cargue en cadena GRUB 2 a partir "
+"de la configuración heredada de GRUB. Este paso se debería hacer de forma "
+"automática."
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid ""
+"It's recommended that you accept chainloading GRUB 2 from menu.lst, and "
+"verify that your new GRUB 2 setup is functional for you, before you install "
+"it directly to your MBR (Master Boot Record)."
+msgstr ""
+"Antes de instalar GRUB 2 directamente en el MBR («Master Boot Record») se "
+"recomienda que acepte cargarlo en cadena desde el archivo «menu.lst» y que "
+"verifique que puede utilizar la nueva configuración de GRUB 2."
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid ""
+"In either case, whenever you want GRUB 2 to be loaded directly from MBR, you "
+"can do so by issuing (as root) the following command:"
+msgstr ""
+"En cualquier caso, cuando quiera que GRUB 2 se cargue directamente desde el "
+"MBR, puede hacerlo ejecutando (como usuario «root») la siguiente orden:"
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:2001
+msgid "upgrade-from-grub-legacy"
+msgstr "upgrade-from-grub-legacy"
+
+#. Type: text
+#. Description
+#. Disk sizes are in decimal megabytes, to match how disk manufacturers
+#. usually describe them.
+#: ../grub-pc.templates.in:5001
+msgid "${DEVICE} (${SIZE} MB, ${MODEL})"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:7001
+msgid "GRUB installation failed.  Continue?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:7001
+msgid "GRUB failed to install to the following devices:"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:7001
+msgid ""
+"Do you want to continue anyway?  If you do, your computer may not start up "
+"properly."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:8001
+msgid "Continue without installing GRUB?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:8001
+msgid ""
+"You chose not to install GRUB to any devices.  If you continue, the boot "
+"loader may not be properly configured, and when your computer next starts up "
+"it will use whatever was previously in the boot sector.  If there is an "
+"earlier version of GRUB 2 in the boot sector, it may be unable to load "
+"modules or handle the current configuration file."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../grub-pc.templates.in:8001
+msgid ""
+"If you are already running a different boot loader and want to carry on "
+"doing so, or if this is a special environment where you do not need a boot "
+"loader, then you should continue anyway.  Otherwise, you should install GRUB "
+"somewhere."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates.in:1001
+msgid "Linux command line:"
+msgstr "Linea de órdenes de Linux:"
+
+#. Type: string
+#. Description
+#: ../templates.in:1001
+msgid ""
+"The following Linux command line was extracted from /etc/default/grub or the "
+"`kopt' parameter in GRUB Legacy's menu.lst.  Please verify that it is "
+"correct, and modify it if necessary."
+msgstr ""
+"La siguiente linea de órdenes de Linux se extrajo del archivo «/etc/default/"
+"grub» o del parámetro «kopt» en el archivo «menu.lst» de la versión anterior "
+"de GRUB. Por favor, compruebe que esto es correcto y modifíquelo si es "
+"necesario."
+
+#. Type: string
+#. Description
+#: ../templates.in:2001
+msgid "Linux default command line:"
+msgstr "Linea de órdenes predeterminada de Linux:"
+
+#. Type: string
+#. Description
+#: ../templates.in:2001
+msgid ""
+"The following string will be used as Linux parameters for the default menu "
+"entry but not for the recovery mode."
+msgstr ""
+"La siguiente cadena se utilizará como parámetros de Linux para la entrada "
+"predeterminada del menú pero no para el modo de recuperación."
+
+#. Type: string
+#. Description
+#: ../templates.in:3001
+msgid "kFreeBSD command line:"
+msgstr "Linea de órdenes de kFreeBSD:"
+
+#. Type: string
+#. Description
+#: ../templates.in:3001
+msgid ""
+"The following kFreeBSD command line was extracted from /etc/default/grub or "
+"the `kopt' parameter in GRUB Legacy's menu.lst.  Please verify that it is "
+"correct, and modify it if necessary."
+msgstr ""
+"La siguiente linea de órdenes de kFreeBSD se extrajo del archivo «/etc/"
+"default/grub» o del parámetro «kopt» en el archivo «menu.lst» de la versión "
+"anterior de GRUB. Por favor, compruebe que esto es correcto y modifíquelo si "
+"es necesario."
+
+#. Type: string
+#. Description
+#: ../templates.in:4001
+msgid "kFreeBSD default command line:"
+msgstr "Linea de órdenes predeterminada de kFreeBSD:"
+
+#. Type: string
+#. Description
+#: ../templates.in:4001
+msgid ""
+"The following string will be used as kFreeBSD parameters for the default "
+"menu entry but not for the recovery mode."
+msgstr ""
+"La siguiente cadena se utilizará como parámetros de kFreeBSD para la entrada "
+"predeterminada del menú pero no para el modo de recuperación."
+
+#~ msgid "GRUB 1.95 numbering scheme transition"
+#~ msgstr "Esquema de transición numérica de GRUB 1.95"
+
+#~ msgid ""
+#~ "As of version 1.95, GRUB 2 has changed its numbering scheme.  Partitions "
+#~ "are now counted starting from 1 rather than 0.  This is to make it "
+#~ "consistent with device names of Linux and the other kernels used in "
+#~ "Debian.  For example, when using Linux as the kernel, \"(hd0,1)\" refers "
+#~ "to the same partition as the /dev/sda1 device node."
+#~ msgstr ""
+#~ "GRUB 2 ha cambiado el esquema de numeración, como en la versión 1.95. "
+#~ "Ahora las particiones comienzan en el número 1 en vez de en el número 0. "
+#~ "Esto sirve para hacerlo consistente con los nombres de dispositivos de "
+#~ "Linux y otros núcleos que se usan en Debian. Por ejemplo, cuando se usa "
+#~ "Linux como núcleo, «(hd0, 1)» se refiere a la misma partición que el "
+#~ "dispositivo «/dev/sda1»."
+
+#~ msgid ""
+#~ "Because of this, there's a chance your system becomes unbootable if "
+#~ "update-grub(8) is run before GRUB is updated, generating a grub.cfg file "
+#~ "that your installed GRUB won't yet be able to parse correctly.  To ensure "
+#~ "your system will be able to boot, you have to:"
+#~ msgstr ""
+#~ "Por este motivo, existe la posibilidad de que su sistema no sea capaz de "
+#~ "arrancar si se ejecuta update-grub(8) antes de actualizar GRUB, ya que se "
+#~ "generaría un archivo «grub.cfg» que la versión instalada de GRUB no podría "
+#~ "leer correctamente. Para asegurarse de que el sistema arrancará, debe:"
+
+#~ msgid ""
+#~ " - Reinstall GRUB (typically, by running grub-install).\n"
+#~ " - Rerun update-grub to generate a new grub.cfg."
+#~ msgstr ""
+#~ " - Reinstalar GRUB (normalmente, ejecutando grub-install).\n"
+#~ "- Volver a ejecutar update-grub para generar un nuevo archivo «grub.cfg»."

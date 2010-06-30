@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: grub-1.97+20091122\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-06 21:00+0100\n"
+"POT-Creation-Date: 2010-03-08 22:55+0000\n"
 "PO-Revision-Date: 2009-12-22 21:32+0100\n"
 "Last-Translator: Nicolas Provost <nprovost@quadriv.com>\n"
 "Language-Team: French <traduc@traduc.org>\n"
@@ -985,7 +985,7 @@ msgstr "la taille de diskboot.img doit être %u octets"
 msgid "core image is too big (%p > %p)"
 msgstr "L'image principale (core) est trop grande (%p > %p)\n"
 
-#: util/grub-mkrawimage.c:434 util/i386/pc/grub-setup.c:587
+#: util/grub-mkrawimage.c:434 util/i386/pc/grub-setup.c:602
 #, fuzzy, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "Essayez ``%s --help'' pour plus d'informations.\n"
@@ -1033,44 +1033,44 @@ msgstr ""
 msgid "cannot open %s"
 msgstr "impossible d'ouvrir %s"
 
-#: util/i386/pc/grub-setup.c:159
+#: util/i386/pc/grub-setup.c:160
 #, fuzzy
 msgid "the first sector of the core file is not sector-aligned"
 msgstr "Le premier secteur du fichier noyau n'est pas aligné sur un secteur"
 
-#: util/i386/pc/grub-setup.c:173
+#: util/i386/pc/grub-setup.c:174
 #, fuzzy
 msgid "non-sector-aligned data is found in the core file"
 msgstr "Données non alignées sur des secteurs trouvées dans le fichier noyau"
 
-#: util/i386/pc/grub-setup.c:187
+#: util/i386/pc/grub-setup.c:188
 #, fuzzy
 msgid "the sectors of the core file are too fragmented"
 msgstr "Les secteurs du fichier noyau sont trop dispersés"
 
-#: util/i386/pc/grub-setup.c:198
+#: util/i386/pc/grub-setup.c:199
 #, fuzzy, c-format
 msgid "the size of `%s' is not %u"
 msgstr "La taille de `%s' n'est pas égale à %u"
 
-#: util/i386/pc/grub-setup.c:215
+#: util/i386/pc/grub-setup.c:216
 #, fuzzy, c-format
 msgid "the size of `%s' is too small"
 msgstr "La taille de `%s' est trop petite"
 
-#: util/i386/pc/grub-setup.c:217
+#: util/i386/pc/grub-setup.c:218
 #, fuzzy, c-format
 msgid "the size of `%s' is too large"
 msgstr "La taille de `%s' est trop large"
 
-#: util/i386/pc/grub-setup.c:254
+#: util/i386/pc/grub-setup.c:255
 #, fuzzy, c-format
 msgid "unable to identify a filesystem in %s; safety check can't be performed"
 msgstr ""
 "Impossible d'identifier le système de fichiers sur %s; contrôle impossible à "
 "effectuer"
 
-#: util/i386/pc/grub-setup.c:258
+#: util/i386/pc/grub-setup.c:259
 #, c-format
 msgid ""
 "%s appears to contain a %s filesystem which isn't known to reserve space for "
@@ -1084,18 +1084,18 @@ msgstr ""
 "l'installation de grub (--skip-fs-probe désactive ce contrôle, à utiliser à "
 "vos risques et périls)"
 
-#: util/i386/pc/grub-setup.c:307
+#: util/i386/pc/grub-setup.c:308
 #, fuzzy
 msgid "no DOS-style partitions found"
 msgstr "Aucune partition de type DOS trouvée"
 
-#: util/i386/pc/grub-setup.c:323 util/i386/pc/grub-setup.c:348
+#: util/i386/pc/grub-setup.c:324 util/i386/pc/grub-setup.c:349
 msgid ""
 "Attempting to install GRUB to a partitionless disk.  This is a BAD idea."
 msgstr ""
 "Tentative d'installation de GRUB sur un disque sans partition. Mauvaise idée."
 
-#: util/i386/pc/grub-setup.c:329
+#: util/i386/pc/grub-setup.c:330
 msgid ""
 "Attempting to install GRUB to a partition instead of the MBR.  This is a BAD "
 "idea."
@@ -1103,85 +1103,85 @@ msgstr ""
 "Tentative d'installation de GRUB sur une partition au lieu du MBR. Mauvaise "
 "idée."
 
-#: util/i386/pc/grub-setup.c:357
+#: util/i386/pc/grub-setup.c:358
 msgid "No DOS-style partitions found"
 msgstr "Aucune partition de type DOS trouvée"
 
-#: util/i386/pc/grub-setup.c:362
+#: util/i386/pc/grub-setup.c:363
 msgid ""
 "This msdos-style partition label has no post-MBR gap; embedding won't be "
 "possible!"
 msgstr ""
 
-#: util/i386/pc/grub-setup.c:364
+#: util/i386/pc/grub-setup.c:365
 msgid ""
 "This GPT partition label has no BIOS Boot Partition; embedding won't be "
 "possible!"
 msgstr ""
 
-#: util/i386/pc/grub-setup.c:371
+#: util/i386/pc/grub-setup.c:372
 msgid "Your core.img is unusually large.  It won't fit in the embedding area."
 msgstr ""
 "Votre image noyau est inhabituellement grande. Elle ne tiendra pas dans "
 "l'aire dédiée."
 
-#: util/i386/pc/grub-setup.c:373
+#: util/i386/pc/grub-setup.c:374
 msgid "Your embedding area is unusually small.  core.img won't fit in it."
 msgstr ""
 
-#: util/i386/pc/grub-setup.c:416
+#: util/i386/pc/grub-setup.c:419
 msgid ""
 "embedding is not possible, but this is required when the root device is on a "
 "RAID array or LVM volume"
 msgstr ""
 
-#: util/i386/pc/grub-setup.c:419
+#: util/i386/pc/grub-setup.c:422
 msgid ""
 "Embedding is not possible.  GRUB can only be installed in this setup by "
 "using blocklists.  However, blocklists are UNRELIABLE and its use is "
 "discouraged."
 msgstr ""
 
-#: util/i386/pc/grub-setup.c:423
+#: util/i386/pc/grub-setup.c:426
 msgid "if you really want blocklists, use --force"
 msgstr ""
 
-#: util/i386/pc/grub-setup.c:439
+#: util/i386/pc/grub-setup.c:445
 #, c-format
 msgid "attempting to read the core image `%s' from GRUB"
 msgstr "tentative de lecture de l'image noyau `%s' par GRUB"
 
-#: util/i386/pc/grub-setup.c:440
+#: util/i386/pc/grub-setup.c:446
 #, c-format
 msgid "attempting to read the core image `%s' from GRUB again"
 msgstr "nouvelle tentative de lecture de l'image noyau `%s' par GRUB"
 
-#: util/i386/pc/grub-setup.c:498
+#: util/i386/pc/grub-setup.c:513
 #, fuzzy, c-format
 msgid "cannot read `%s' correctly"
 msgstr "Impossible de lire `%s' correctement"
 
-#: util/i386/pc/grub-setup.c:511
+#: util/i386/pc/grub-setup.c:526
 #, fuzzy
 msgid "no terminator in the core image"
 msgstr "Pas de terminateur dans l'image noyau"
 
-#: util/i386/pc/grub-setup.c:522
+#: util/i386/pc/grub-setup.c:537
 #, fuzzy
 msgid "failed to read the first sector of the core image"
 msgstr "Echec de lecture du premier secteur de l'image noyau"
 
-#: util/i386/pc/grub-setup.c:528
+#: util/i386/pc/grub-setup.c:543
 #, fuzzy
 msgid "failed to read the rest sectors of the core image"
 msgstr "Echec de lecture des secteurs restants de l'image noyau"
 
-#: util/i386/pc/grub-setup.c:547
+#: util/i386/pc/grub-setup.c:562
 #, fuzzy, c-format
 msgid "cannot open `%s'"
 msgstr "Impossible d'ouvrir `%s'"
 
-#: util/i386/pc/grub-setup.c:589
+#: util/i386/pc/grub-setup.c:604
 #, fuzzy, c-format
 msgid ""
 "Usage: %s [OPTION]... DEVICE\n"
@@ -1224,27 +1224,27 @@ msgstr ""
 "\n"
 "Report bugs to <%s>.\n"
 
-#: util/i386/pc/grub-setup.c:719
+#: util/i386/pc/grub-setup.c:734
 #, c-format
 msgid "No device is specified.\n"
 msgstr "Aucun périphérique spécifié.\n"
 
-#: util/i386/pc/grub-setup.c:725
+#: util/i386/pc/grub-setup.c:740
 #, c-format
 msgid "Unknown extra argument `%s'.\n"
 msgstr "Argument superflu inconnu `%s'.\n"
 
-#: util/i386/pc/grub-setup.c:742
+#: util/i386/pc/grub-setup.c:757
 #, c-format
 msgid "Invalid device `%s'.\n"
 msgstr "Périphérique non valide `%s'.\n"
 
-#: util/i386/pc/grub-setup.c:755
+#: util/i386/pc/grub-setup.c:770
 #, fuzzy, c-format
 msgid "invalid root device `%s'"
 msgstr "Périphérique racine non valide `%s'"
 
-#: util/i386/pc/grub-setup.c:768
+#: util/i386/pc/grub-setup.c:783
 #, fuzzy
 msgid "cannot guess the root device. Specify the option `--root-device'"
 msgstr ""
@@ -1259,19 +1259,19 @@ msgstr "%s, avec kFreeBSD %s"
 msgid "Loading kernel of FreeBSD %s ..."
 msgstr ""
 
-#: util/grub.d/10_linux.in:59
+#: util/grub.d/10_linux.in:60
 msgid "%s, with Linux %s (recovery mode)"
 msgstr "%s, avec Linux %s (mode de dépannage)"
 
-#: util/grub.d/10_linux.in:61
+#: util/grub.d/10_linux.in:62
 msgid "%s, with Linux %s"
 msgstr "%s, avec Linux %s"
 
-#: util/grub.d/10_linux.in:86
+#: util/grub.d/10_linux.in:87
 msgid "Loading Linux %s ..."
 msgstr ""
 
-#: util/grub.d/10_linux.in:91
+#: util/grub.d/10_linux.in:92
 msgid "Loading initial ramdisk ..."
 msgstr ""
 
