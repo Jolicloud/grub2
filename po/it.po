@@ -1,0 +1,1915 @@
+# Italian translations for grub package
+# Copyright (C) 2009, 2010 Free Software Foundation, Inc.
+# This file is distributed under the same license as the grub package.
+#
+# transparent compression -> compressione immediata
+# non avendo trovato molto in giro, ho cercato un sinonimo di 
+# "trasparente". Praticamente la "transparent compression" è una 
+# compressione on-the-fly, "trasparente" all'utente, da qui 
+# "immediata", visto che non si nota
+# boot catalog -> lasciato invariato, dovrebbe essere il file boot.catalog, non so
+# se tradurlo con "catalogo di boot" sia comprensibile...
+# Joliet -> usato sempre con la maiuscola
+#
+# http://en.wikipedia.org/wiki/Transparency_(computing)
+# http://en.wikipedia.org/wiki/Rock_Ridge
+# http://en.wikipedia.org/wiki/Joliet_(file_system)
+# http://www.linux.com/archive/feature/151485
+# Milo Casagrande <milo@casagrande.name>, 2009, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: grub-1.97+20091221\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-03-06 21:00+0100\n"
+"PO-Revision-Date: 2010-01-05 19:28+0100\n"
+"Last-Translator: Milo Casagrande <milo@casagrande.name>\n"
+"Language-Team: Italian <tp@lists.linux.it>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: commands/acpi.c:40
+msgid "Don't load host tables specified by comma-separated list."
+msgstr ""
+
+#: commands/acpi.c:43
+msgid "Load only tables specified by comma-separated list."
+msgstr ""
+
+#: commands/acpi.c:44
+msgid "Expose v1 tables."
+msgstr ""
+
+#: commands/acpi.c:45
+msgid "Expose v2 and v3 tables."
+msgstr ""
+
+#: commands/acpi.c:46
+msgid "Set OEMID of RSDP, XSDT and RSDT."
+msgstr ""
+
+#: commands/acpi.c:48
+msgid "Set OEMTABLE ID of RSDP, XSDT and RSDT."
+msgstr ""
+
+#: commands/acpi.c:50
+msgid "Set OEMTABLE revision of RSDP, XSDT and RSDT."
+msgstr ""
+
+#: commands/acpi.c:52
+msgid "Set creator field of RSDP, XSDT and RSDT."
+msgstr ""
+
+#: commands/acpi.c:54
+msgid "Set creator revision of RSDP, XSDT and RSDT."
+msgstr ""
+
+#: commands/acpi.c:55
+msgid ""
+"Don't update EBDA. May fix failures or hangs on some. BIOSes but makes it "
+"ineffective with OS not receiving RSDP from GRUB."
+msgstr ""
+
+#: commands/acpi.c:763
+msgid ""
+"[-1|-2] [--exclude=TABLE1,TABLE2|--load-only=table1,table2] FILE1 [FILE2] "
+"[...]"
+msgstr ""
+
+#: commands/acpi.c:766
+msgid "Load host ACPI tables and tables specified by arguments."
+msgstr ""
+
+#: commands/blocklist.c:114 commands/cat.c:82 commands/configfile.c:57
+#: commands/configfile.c:60 commands/configfile.c:65 commands/crc.c:64
+#: commands/minicmd.c:357 loader/i386/bsd.c:1297 loader/i386/bsd.c:1301
+#: loader/i386/bsd.c:1305
+msgid "FILE"
+msgstr "FILE"
+
+#: commands/blocklist.c:114
+msgid "Print a block list."
+msgstr ""
+
+#: commands/boot.c:190
+msgid "Boot an operating system."
+msgstr ""
+
+#: commands/cat.c:82 commands/minicmd.c:357
+msgid "Show the contents of a file."
+msgstr ""
+
+#: commands/cmp.c:113
+msgid "FILE1 FILE2"
+msgstr ""
+
+#: commands/cmp.c:113
+msgid "Compare two files."
+msgstr ""
+
+#: commands/configfile.c:57
+msgid "Load another config file."
+msgstr ""
+
+#: commands/configfile.c:61 commands/configfile.c:66
+msgid "Load another config file without changing context."
+msgstr ""
+
+#: commands/crc.c:65
+msgid "Calculate the crc32 checksum of a file."
+msgstr ""
+
+#: commands/date.c:139
+msgid "[[year-]month-day] [hour:minute[:second]]"
+msgstr ""
+
+#: commands/date.c:140
+msgid "Command to display/set current datetime."
+msgstr ""
+
+#: commands/echo.c:27
+msgid "Do not output the trailing newline."
+msgstr ""
+
+#: commands/echo.c:28
+msgid "Enable interpretation of backslash escapes."
+msgstr ""
+
+#: commands/echo.c:117
+msgid "[-e|-n] STRING"
+msgstr ""
+
+#: commands/echo.c:117
+msgid "Display a line of text."
+msgstr ""
+
+#: commands/efi/fixvideo.c:103
+msgid "Fix video problem."
+msgstr ""
+
+#: commands/efi/loadbios.c:207
+msgid "Fake BIOS."
+msgstr ""
+
+#: commands/efi/loadbios.c:211
+msgid "Load BIOS dump."
+msgstr ""
+
+#: commands/gptsync.c:244
+msgid "DEVICE [PARTITION[+/-[TYPE]]] ..."
+msgstr ""
+
+#: commands/gptsync.c:245
+msgid ""
+"Fill hybrid MBR of GPT drive DEVICE. specified partitions will be a part of "
+"hybrid mbr. Up to 3 partitions are allowed. TYPE is an MBR type. + means "
+"that partition is active. Only one partition can be active."
+msgstr ""
+
+#: commands/halt.c:39
+msgid ""
+"Halts the computer.  This command does not work on all firmware "
+"implementations."
+msgstr ""
+
+#: commands/handler.c:94
+msgid "[class [handler]]"
+msgstr ""
+
+#: commands/handler.c:95
+msgid "List or select a handler."
+msgstr ""
+
+#: commands/hdparm.c:30
+msgid ""
+"Set Advanced Power Management\n"
+"(1=low, ..., 254=high, 255=off)."
+msgstr ""
+
+#: commands/hdparm.c:33
+msgid "Check power mode."
+msgstr ""
+
+#: commands/hdparm.c:34
+msgid "Freeze ATA security settings until reset."
+msgstr ""
+
+#: commands/hdparm.c:36
+msgid "Check SMART health status."
+msgstr ""
+
+#: commands/hdparm.c:37
+msgid ""
+"Set Automatic Acoustic Management\n"
+"(0=off, 128=quiet, ..., 254=fast)."
+msgstr ""
+
+#: commands/hdparm.c:40
+msgid ""
+"Set standby timeout\n"
+"(0=off, 1=5s, 2=10s, ..., 240=20m, 241=30m, ...)."
+msgstr ""
+
+#: commands/hdparm.c:43
+msgid "Set drive to standby mode."
+msgstr ""
+
+#: commands/hdparm.c:44
+msgid "Set drive to sleep mode."
+msgstr ""
+
+#: commands/hdparm.c:45
+msgid "Print drive identity and settings."
+msgstr ""
+
+#: commands/hdparm.c:47
+msgid "Dump contents of ATA IDENTIFY sector."
+msgstr ""
+
+#: commands/hdparm.c:49
+msgid "Disable/enable SMART (0/1)."
+msgstr ""
+
+#: commands/hdparm.c:50
+msgid "Do not print messages."
+msgstr ""
+
+#: commands/hdparm.c:414
+msgid "[OPTIONS] DISK"
+msgstr ""
+
+#: commands/hdparm.c:415
+msgid "Get/set ATA disk parameters."
+msgstr ""
+
+#: commands/help.c:103 lib/arg.c:110
+msgid "Usage:"
+msgstr ""
+
+#: commands/help.c:136
+msgid "[PATTERN ...]"
+msgstr ""
+
+#: commands/help.c:137
+msgid "Show a help message."
+msgstr ""
+
+#: commands/hexdump.c:30
+msgid "Skip offset bytes from the beginning of file."
+msgstr ""
+
+#: commands/hexdump.c:32
+msgid "Read only LENGTH bytes."
+msgstr ""
+
+#: commands/hexdump.c:125
+msgid "[OPTIONS] FILE_OR_DEVICE"
+msgstr ""
+
+#: commands/hexdump.c:126
+msgid "Dump the contents of a file or memory."
+msgstr ""
+
+#: commands/i386/cpuid.c:37
+msgid "Check for long mode flag (default)."
+msgstr ""
+
+#: commands/i386/cpuid.c:92
+msgid "Check for CPU features."
+msgstr ""
+
+#: commands/i386/pc/drivemap.c:37
+msgid "Show the current mappings."
+msgstr ""
+
+#: commands/i386/pc/drivemap.c:38
+msgid "Reset all mappings to the default values."
+msgstr ""
+
+#: commands/i386/pc/drivemap.c:39
+msgid "Perform both direct and reverse mappings."
+msgstr ""
+
+#: commands/i386/pc/drivemap.c:407
+msgid "-l | -r | [-s] grubdev osdisk."
+msgstr ""
+
+#: commands/i386/pc/drivemap.c:408
+msgid "Manage the BIOS drive mappings."
+msgstr ""
+
+#: commands/i386/pc/halt.c:27
+msgid "Do not use APM to halt the computer."
+msgstr ""
+
+#: commands/i386/pc/halt.c:51
+msgid "Halt the system, if possible using APM."
+msgstr ""
+
+#: commands/i386/pc/play.c:262
+msgid "FILE | TEMPO [PITCH1 DURATION1] [PITCH2 DURATION2] ... "
+msgstr ""
+
+#: commands/i386/pc/play.c:263
+msgid "Play a tune."
+msgstr ""
+
+#: commands/i386/pc/pxecmd.c:46
+msgid "Unload PXE environment."
+msgstr ""
+
+#: commands/i386/pc/vbeinfo.c:179
+msgid "List compatible VESA BIOS extension video modes."
+msgstr ""
+
+#: commands/i386/pc/vbetest.c:173
+msgid "Test VESA BIOS Extension 2.0+ support."
+msgstr ""
+
+#: commands/ieee1275/suspend.c:43
+msgid "Return to Open Firmware prompt."
+msgstr ""
+
+#: commands/keystatus.c:28
+msgid "Check Shift key."
+msgstr ""
+
+#: commands/keystatus.c:29
+msgid "Check Control key."
+msgstr ""
+
+#: commands/keystatus.c:30
+msgid "Check Alt key."
+msgstr ""
+
+#: commands/keystatus.c:85
+msgid "[--shift] [--ctrl] [--alt]"
+msgstr ""
+
+#: commands/keystatus.c:86
+msgid "Check key modifier status."
+msgstr ""
+
+#: commands/loadenv.c:33
+#, fuzzy
+msgid "Specify filename."
+msgstr "Imposta il nome file astratto"
+
+#: commands/loadenv.c:383 commands/loadenv.c:389
+#, fuzzy
+msgid "[-f FILE]"
+msgstr "FILE"
+
+#: commands/loadenv.c:384
+msgid "Load variables from environment block file."
+msgstr ""
+
+#: commands/loadenv.c:390
+msgid "List variables from environment block file."
+msgstr ""
+
+#: commands/loadenv.c:395
+msgid "[-f FILE] variable_name [...]"
+msgstr ""
+
+#: commands/loadenv.c:396
+msgid "Save variables to environment block file."
+msgstr ""
+
+#: commands/ls.c:37
+msgid "Show a long list with more detailed information."
+msgstr ""
+
+#: commands/ls.c:38
+msgid "Print sizes in a human readable format."
+msgstr ""
+
+#: commands/ls.c:39
+msgid "List all files."
+msgstr ""
+
+#: commands/ls.c:269
+msgid "[-l|-h|-a] [FILE]"
+msgstr ""
+
+#: commands/ls.c:270
+msgid "List devices and files."
+msgstr ""
+
+#: commands/lsmmap.c:47
+msgid "List memory map provided by firmware."
+msgstr ""
+
+#: commands/lspci.c:228
+msgid "List PCI devices."
+msgstr ""
+
+#: commands/memrw.c:31
+msgid "Save read value into variable VARNAME."
+msgstr ""
+
+#: commands/memrw.c:123 commands/memrw.c:126 commands/memrw.c:129
+#: commands/minicmd.c:366
+msgid "ADDR"
+msgstr ""
+
+#: commands/memrw.c:123
+msgid "Read byte from ADDR."
+msgstr ""
+
+#: commands/memrw.c:126
+msgid "Read word from ADDR."
+msgstr ""
+
+#: commands/memrw.c:129
+msgid "Read dword from ADDR."
+msgstr ""
+
+#: commands/memrw.c:132 commands/memrw.c:135 commands/memrw.c:138
+msgid "ADDR VALUE [MASK]"
+msgstr ""
+
+#: commands/memrw.c:132
+msgid "Write byte VALUE to ADDR."
+msgstr ""
+
+#: commands/memrw.c:135
+msgid "Write word VALUE to ADDR."
+msgstr ""
+
+#: commands/memrw.c:138
+msgid "Write dword VALUE to ADDR."
+msgstr ""
+
+#: commands/minicmd.c:360
+msgid "Show this message."
+msgstr ""
+
+#: commands/minicmd.c:363 commands/probe.c:154
+msgid "[DEVICE]"
+msgstr ""
+
+#: commands/minicmd.c:363
+msgid "Set the root device."
+msgstr ""
+
+#: commands/minicmd.c:366
+msgid "Dump memory."
+msgstr ""
+
+#: commands/minicmd.c:369
+msgid "MODULE"
+msgstr ""
+
+#: commands/minicmd.c:369
+msgid "Remove a module."
+msgstr ""
+
+#: commands/minicmd.c:372
+msgid "Show loaded modules."
+msgstr ""
+
+#: commands/minicmd.c:375
+msgid "Exit from GRUB."
+msgstr ""
+
+#: commands/minicmd.c:378
+msgid "Clear the screen."
+msgstr ""
+
+#: commands/parttool.c:325
+msgid "PARTITION COMMANDS"
+msgstr ""
+
+#: commands/password.c:78
+msgid "USER PASSWORD"
+msgstr ""
+
+#: commands/password.c:79
+msgid "Set user password (plaintext). Unrecommended and insecure."
+msgstr ""
+
+#: commands/probe.c:38
+msgid "Set a variable to return value."
+msgstr ""
+
+#: commands/probe.c:39
+msgid "Determine driver."
+msgstr ""
+
+#: commands/probe.c:40
+msgid "Determine partition map type."
+msgstr ""
+
+#: commands/probe.c:41
+#, fuzzy
+msgid "Determine filesystem type."
+msgstr "File system di tipo %s"
+
+#: commands/probe.c:42
+msgid "Determine filesystem UUID."
+msgstr ""
+
+#: commands/probe.c:43
+msgid "Determine filesystem label."
+msgstr ""
+
+#: commands/probe.c:155
+msgid "Retrieve device info."
+msgstr ""
+
+#: commands/read.c:83
+msgid "[ENVVAR]"
+msgstr ""
+
+#: commands/read.c:84
+msgid "Set variable with user input."
+msgstr ""
+
+#: commands/reboot.c:39
+msgid "Reboot the computer."
+msgstr ""
+
+#: commands/search.c:161
+msgid "NAME [VARIABLE]"
+msgstr ""
+
+#: commands/search_file.c:5
+msgid ""
+"Search devices by file. If VARIABLE is specified, the first device found is "
+"set to a variable."
+msgstr ""
+
+#: commands/search_label.c:5
+msgid ""
+"Search devices by label. If VARIABLE is specified, the first device found is "
+"set to a variable."
+msgstr ""
+
+#: commands/search_uuid.c:5
+msgid ""
+"Search devices by UUID. If VARIABLE is specified, the first device found is "
+"set to a variable."
+msgstr ""
+
+#: commands/sleep.c:31
+msgid "Verbose countdown."
+msgstr ""
+
+#: commands/sleep.c:32
+msgid "Interruptible with ESC."
+msgstr ""
+
+#: commands/sleep.c:106
+msgid "NUMBER_OF_SECONDS"
+msgstr ""
+
+#: commands/sleep.c:107
+msgid "Wait for a specified number of seconds."
+msgstr ""
+
+#: commands/test.c:424
+msgid "EXPRESSION ]"
+msgstr ""
+
+#: commands/test.c:424 commands/test.c:426
+msgid "Evaluate an expression."
+msgstr ""
+
+#: commands/test.c:426
+msgid "EXPRESSION"
+msgstr ""
+
+#: commands/true.c:47
+msgid "Do nothing, successfully."
+msgstr ""
+
+#: commands/true.c:50
+msgid "Do nothing, unsuccessfully."
+msgstr ""
+
+#: commands/usbtest.c:199
+msgid "Test USB support."
+msgstr ""
+
+#: commands/videotest.c:180
+msgid "Test video subsystem."
+msgstr ""
+
+#: commands/xnu_uuid.c:92
+msgid "GRUBUUID [VARNAME]"
+msgstr ""
+
+#: commands/xnu_uuid.c:93
+msgid "Transform 64-bit UUID to format suitable for XNU."
+msgstr ""
+
+#: disk/loopback.c:40
+msgid "Delete the loopback device entry."
+msgstr ""
+
+#: disk/loopback.c:41
+msgid "Simulate a hard drive with partitions."
+msgstr ""
+
+#: disk/loopback.c:249
+msgid "[-d|-p] DEVICENAME FILE."
+msgstr ""
+
+#: disk/loopback.c:250
+msgid "Make a device of a file."
+msgstr ""
+
+#: hello/hello.c:43
+msgid "Say \"Hello World\"."
+msgstr ""
+
+#: lib/arg.c:34
+msgid "Display this help and exit."
+msgstr ""
+
+#: lib/arg.c:36
+msgid "Display the usage of this command and exit."
+msgstr ""
+
+#: loader/efi/appleloader.c:325
+msgid "Boot legacy system."
+msgstr ""
+
+#: loader/efi/chainloader.c:340 loader/i386/pc/chainloader.c:153
+msgid "Load another boot loader."
+msgstr ""
+
+#: loader/i386/bsd.c:65
+msgid "Display output on all consoles."
+msgstr ""
+
+#: loader/i386/bsd.c:66
+msgid "Use serial console."
+msgstr ""
+
+#: loader/i386/bsd.c:67 loader/i386/bsd.c:93 loader/i386/bsd.c:114
+msgid "Ask for file name to reboot from."
+msgstr ""
+
+#: loader/i386/bsd.c:68
+msgid "Use CDROM as root."
+msgstr ""
+
+#: loader/i386/bsd.c:69
+msgid "Invoke user configuration routing."
+msgstr ""
+
+#: loader/i386/bsd.c:70 loader/i386/bsd.c:97 loader/i386/bsd.c:117
+msgid "Enter in KDB on boot."
+msgstr ""
+
+#: loader/i386/bsd.c:71
+msgid "Use GDB remote debugger instead of DDB."
+msgstr ""
+
+#: loader/i386/bsd.c:72
+msgid "Disable all boot output."
+msgstr ""
+
+#: loader/i386/bsd.c:74
+msgid "Wait for keypress after every line of output."
+msgstr ""
+
+#: loader/i386/bsd.c:76
+msgid "Use compiled-in rootdev."
+msgstr ""
+
+#: loader/i386/bsd.c:77 loader/i386/bsd.c:96 loader/i386/bsd.c:120
+msgid "Boot into single mode."
+msgstr ""
+
+#: loader/i386/bsd.c:78 loader/i386/bsd.c:121
+msgid "Boot with verbose messages."
+msgstr ""
+
+#: loader/i386/bsd.c:94 loader/i386/bsd.c:115
+msgid "Don't reboot, just halt."
+msgstr ""
+
+#: loader/i386/bsd.c:95 loader/i386/bsd.c:116
+msgid "Change configured devices."
+msgstr ""
+
+#: loader/i386/bsd.c:98 loader/i386/bsd.c:124
+#, fuzzy
+msgid "Set root device."
+msgstr "Device root \"%s\" non valido"
+
+#: loader/i386/bsd.c:112
+msgid "Disable SMP."
+msgstr ""
+
+#: loader/i386/bsd.c:113
+msgid "Disable ACPI."
+msgstr ""
+
+#: loader/i386/bsd.c:119
+msgid "Don't display boot diagnostic messages."
+msgstr ""
+
+#: loader/i386/bsd.c:122
+msgid "Boot with debug messages."
+msgstr ""
+
+#: loader/i386/bsd.c:123
+msgid "Supress normal output (warnings remain)."
+msgstr ""
+
+#: loader/i386/bsd.c:124
+msgid "DEVICE"
+msgstr ""
+
+#: loader/i386/bsd.c:1297
+msgid "Load kernel of FreeBSD."
+msgstr ""
+
+#: loader/i386/bsd.c:1301
+msgid "Load kernel of OpenBSD."
+msgstr ""
+
+#: loader/i386/bsd.c:1305
+msgid "Load kernel of NetBSD."
+msgstr ""
+
+#: loader/i386/bsd.c:1309
+msgid "Load FreeBSD env."
+msgstr ""
+
+#: loader/i386/bsd.c:1312
+msgid "Load FreeBSD kernel module."
+msgstr ""
+
+#: loader/i386/bsd.c:1315
+msgid "Load FreeBSD kernel module (ELF)."
+msgstr ""
+
+#: loader/i386/efi/linux.c:1011 loader/i386/ieee1275/linux.c:301
+#: loader/i386/linux.c:1012 loader/i386/pc/linux.c:399
+#: loader/powerpc/ieee1275/linux.c:353 loader/sparc64/ieee1275/linux.c:514
+msgid "Load Linux."
+msgstr ""
+
+#: loader/i386/efi/linux.c:1013 loader/i386/ieee1275/linux.c:303
+#: loader/i386/linux.c:1014 loader/i386/pc/linux.c:402
+#: loader/powerpc/ieee1275/linux.c:355 loader/sparc64/ieee1275/linux.c:516
+msgid "Load initrd."
+msgstr ""
+
+#: loader/i386/xnu.c:1032
+msgid "Load device-properties dump."
+msgstr ""
+
+#: loader/multiboot_loader.c:133
+msgid "Load a multiboot 2 kernel."
+msgstr ""
+
+#: loader/multiboot_loader.c:136
+msgid "Load a multiboot kernel."
+msgstr ""
+
+#: loader/multiboot_loader.c:141
+msgid "Load a multiboot module."
+msgstr ""
+
+#: loader/xnu.c:1428
+msgid "Load XNU image."
+msgstr ""
+
+#: loader/xnu.c:1430
+msgid "Load 64-bit XNU image."
+msgstr ""
+
+#: loader/xnu.c:1432
+msgid "Load XNU extension package."
+msgstr ""
+
+#: loader/xnu.c:1434
+msgid "Load XNU extension."
+msgstr ""
+
+#: loader/xnu.c:1436
+msgid "DIRECTORY [OSBundleRequired]"
+msgstr ""
+
+#: loader/xnu.c:1437
+msgid "Load XNU extension directory."
+msgstr ""
+
+#: loader/xnu.c:1444
+msgid "Load a splash image for XNU."
+msgstr ""
+
+#: loader/xnu.c:1449
+msgid "Load XNU hibernate image."
+msgstr ""
+
+#: normal/auth.c:233
+#, fuzzy
+msgid "Enter username: "
+msgstr "Inserire il nome utente:"
+
+#: normal/auth.c:238
+msgid "Enter password: "
+msgstr ""
+
+#: normal/color.c:80
+#, c-format
+msgid "Warning: syntax error (missing slash) in `%s'\n"
+msgstr "Attenzione: errore di sintassi (slash mancante) in \"%s\"\n"
+
+#: normal/color.c:89
+#, c-format
+msgid "Warning: invalid foreground color `%s'\n"
+msgstr "Attenzione: colore di primo piano \"%s\" non valido\n"
+
+#: normal/color.c:95
+#, c-format
+msgid "Warning: invalid background color `%s'\n"
+msgstr "Attenzione: colore di sfondo \"%s\" non valido\n"
+
+#: normal/dyncmd.c:147
+msgid "not loaded"
+msgstr ""
+
+#: normal/main.c:408
+#, c-format
+msgid "GNU GRUB  version %s"
+msgstr "GNU GRUB versione %s"
+
+#: normal/main.c:539
+#, c-format
+msgid ""
+"Minimal BASH-like line editing is supported. For the first word, TAB lists "
+"possible command completions. Anywhere else TAB lists possible device or "
+"file completions. %s"
+msgstr ""
+"Supporto minimale per modifica in stile BASH. Per la prima parola, TAB "
+"elenca i completamenti del comando. In altre parti elenca i device possibili "
+"o il completamento dei file. %s"
+
+#: normal/main.c:542
+msgid "ESC at any time exits."
+msgstr "ESC esce in qualsiasi momento."
+
+# (ndt) questa pare che al %s venga sostituito qualche cosa di non traducibile, che dovrebbe essere tipo: files, commands, devices, partitions...
+#: normal/menu_entry.c:1060
+#, fuzzy
+msgid "Possible commands are:"
+msgstr "Possibili \"%s\" sono:"
+
+# (ndt) questa pare che al %s venga sostituito qualche cosa di non traducibile, che dovrebbe essere tipo: files, commands, devices, partitions...
+#: normal/menu_entry.c:1064
+#, fuzzy
+msgid "Possible devices are:"
+msgstr "Possibili \"%s\" sono:"
+
+# (ndt) questa pare che al %s venga sostituito qualche cosa di non traducibile, che dovrebbe essere tipo: files, commands, devices, partitions...
+#: normal/menu_entry.c:1068
+#, fuzzy
+msgid "Possible files are:"
+msgstr "Possibili \"%s\" sono:"
+
+# (ndt) questa pare che al %s venga sostituito qualche cosa di non traducibile, che dovrebbe essere tipo: files, commands, devices, partitions...
+#: normal/menu_entry.c:1072
+#, fuzzy
+msgid "Possible partitions are:"
+msgstr "Possibili \"%s\" sono:"
+
+# (ndt) questa pare che al %s venga sostituito qualche cosa di non traducibile, che dovrebbe essere tipo: files, commands, devices, partitions...
+#: normal/menu_entry.c:1076
+#, fuzzy
+msgid "Possible arguments are:"
+msgstr "Possibili \"%s\" sono:"
+
+# (ndt) questa pare che al %s venga sostituito qualche cosa di non traducibile, che dovrebbe essere tipo: files, commands, devices, partitions...
+#: normal/menu_entry.c:1080
+#, fuzzy
+msgid "Possible things are:"
+msgstr "Possibili \"%s\" sono:"
+
+#: normal/menu_entry.c:1184
+msgid "Booting a command list"
+msgstr "Avvio di un elenco di comandi"
+
+#: normal/menu_entry.c:1397
+msgid "Press any key to continue..."
+msgstr "Premere un tasto per continuare..."
+
+#: normal/menu_text.c:179
+msgid ""
+"Minimum Emacs-like screen editing is supported. TAB lists completions. Press "
+"Ctrl-x to boot, Ctrl-c for a command-line or ESC to return menu."
+msgstr ""
+"Supporto minimale per modifica in stile Emacs. TAB elenca i completamenti. "
+"Premere Ctrl-X per avviare, Ctrl-C per la riga di comando o Esc per tornare "
+"al menù."
+
+#: normal/menu_text.c:186
+#, c-format
+msgid "Use the %C and %C keys to select which entry is highlighted.\n"
+msgstr "Usare i tasti %C e %C per selezionare la voce da evidenziare.\n"
+
+#: normal/menu_text.c:203
+#, fuzzy
+msgid ""
+"Press enter to boot the selected OS, 'e' to edit the commands before booting "
+"or 'c' for a command-line. ESC to return previous menu.\n"
+msgstr ""
+"Premere Invio per avviare il sistema selezionato, \"e\" per modificare i "
+"comandi prima dell'avvio oppure \"c\" per la riga di comando.\n"
+
+#: normal/menu_text.c:211
+msgid ""
+"Press enter to boot the selected OS, 'e' to edit the commands before booting "
+"or 'c' for a command-line.\n"
+msgstr ""
+"Premere Invio per avviare il sistema selezionato, \"e\" per modificare i "
+"comandi prima dell'avvio oppure \"c\" per la riga di comando.\n"
+
+#: normal/menu_text.c:363
+#, fuzzy, c-format
+msgid "The highlighted entry will be executed automatically in %ds."
+msgstr "La voce selezionata verrà avviata automaticamente in %ds."
+
+#: normal/misc.c:41
+#, c-format
+msgid "Partition %s:"
+msgstr "Partizione %s:"
+
+#: normal/misc.c:46
+#, c-format
+msgid "Device %s:"
+msgstr "Device %s:"
+
+#: normal/misc.c:52
+msgid "Filesystem cannot be accessed"
+msgstr "Impossibile accedere al file system"
+
+#: normal/misc.c:63
+#, c-format
+msgid "Filesystem type %s"
+msgstr "File system di tipo %s"
+
+#: normal/misc.c:73
+#, fuzzy, c-format
+msgid "- Label \"%s\""
+msgstr "- Etichetta %s"
+
+# (ndt) lasiato il trattino: la data è nel formato YYYY-MM-DD, l'ultimo è il giorno della settimana
+#: normal/misc.c:88
+#, c-format
+msgid "- Last modification time %d-%02d-%02d %02d:%02d:%02d %s"
+msgstr "- Ultima modifica %d-%02d-%02d %02d.%02d.%02d %s"
+
+#: normal/misc.c:111
+msgid "Unknown filesystem"
+msgstr "File system sconosciuto"
+
+#: normal/misc.c:113
+msgid "Partition table"
+msgstr "Tabella delle partizioni"
+
+#: term/serial.c:46
+msgid "Set the serial unit."
+msgstr ""
+
+#: term/serial.c:47
+msgid "Set the serial port address."
+msgstr ""
+
+#: term/serial.c:48
+msgid "Set the serial port speed."
+msgstr ""
+
+#: term/serial.c:49
+msgid "Set the serial port word length."
+msgstr ""
+
+#: term/serial.c:50
+msgid "Set the serial port parity."
+msgstr ""
+
+#: term/serial.c:51
+msgid "Set the serial port stop bits."
+msgstr ""
+
+#: util/grub-mkrawimage.c:69
+msgid "the core image is too small"
+msgstr "l'immagine core è troppo piccola"
+
+#: util/grub-mkrawimage.c:81
+msgid "cannot compress the kernel image"
+msgstr "impossibile comprimere l'immagine del kernel"
+
+#: util/grub-mkrawimage.c:156
+msgid "prefix is too long"
+msgstr "il prefisso è troppo lungo"
+
+#: util/grub-mkrawimage.c:242
+msgid "the core image is too big"
+msgstr "l'immagine core è troppo grande"
+
+#: util/grub-mkrawimage.c:247
+#, c-format
+msgid "diskboot.img size must be %u bytes"
+msgstr "la dimensione di diskboot.img deve essere di %u byte"
+
+#: util/grub-mkrawimage.c:330
+#, fuzzy, c-format
+msgid "core image is too big (%p > %p)"
+msgstr "L'immagine core è troppo grande (%p > %p)\n"
+
+#: util/grub-mkrawimage.c:434 util/i386/pc/grub-setup.c:587
+#, fuzzy, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "Usare \"%s --help\" per ulteriori informazioni.\n"
+
+#: util/grub-mkrawimage.c:436
+#, fuzzy, c-format
+msgid ""
+"Usage: %s [OPTION]... [MODULES]\n"
+"\n"
+"Make a bootable image of GRUB.\n"
+"\n"
+"  -d, --directory=DIR     use images and modules under DIR [default=%s]\n"
+"  -p, --prefix=DIR        set grub_prefix directory [default=%s]\n"
+"  -m, --memdisk=FILE      embed FILE as a memdisk image\n"
+"  -f, --font=FILE         embed FILE as a boot font\n"
+"  -c, --config=FILE       embed FILE as boot config\n"
+"  -o, --output=FILE       output a generated image to FILE [default=stdout]\n"
+"  -O, --format=FORMAT     generate an image in format [default=%s]\n"
+"                          available formats: %s\n"
+"  -h, --help              display this message and exit\n"
+"  -V, --version           print version information and exit\n"
+"  -v, --verbose           print verbose messages\n"
+"\n"
+"Report bugs to <%s>.\n"
+msgstr ""
+"Uso: grub-mkimage [OPZIONI]... [MODULI]\n"
+"\n"
+"Crea un'immagine avviabile di GRUB.\n"
+"\n"
+"  -d, --directory=DIR     Usa le immagini e i moduli in DIR [predefinito=%"
+"s]\n"
+"  -p, --prefix=DIR        Imposta la directory di grub_prefix [predefinito=%"
+"s]\n"
+"  -m, --memdisk=FILE      Incorpora FILE come immagine memdisk\n"
+"  -c, --config=FILE       Incorpora FILE come configurazione di boot\n"
+"  -o, --output=FILE       Invia in output un'immagine generata su FILE "
+"[predefinito=stdout]\n"
+"  -h, --help              Visualizza questo messaggio ed esce\n"
+"  -V, --version           Stampa la versione ed esce\n"
+"  -v, --verbose           Stampa messaggi prolissi\n"
+"\n"
+"Segnalare i bug a <%s>.\n"
+
+#: util/grub-mkrawimage.c:580
+#, c-format
+msgid "cannot open %s"
+msgstr "impossibile aprire %s"
+
+#: util/i386/pc/grub-setup.c:159
+#, fuzzy
+msgid "the first sector of the core file is not sector-aligned"
+msgstr "Il primo settore del file core non è allineato rispetto al settore"
+
+#: util/i386/pc/grub-setup.c:173
+#, fuzzy
+msgid "non-sector-aligned data is found in the core file"
+msgstr "Trovati dati non allineati rispetto al settore nel file core"
+
+#: util/i386/pc/grub-setup.c:187
+#, fuzzy
+msgid "the sectors of the core file are too fragmented"
+msgstr "I settori del file core sono troppo frammentati"
+
+#: util/i386/pc/grub-setup.c:198
+#, fuzzy, c-format
+msgid "the size of `%s' is not %u"
+msgstr "La dimensione di \"%s\" non è %u"
+
+#: util/i386/pc/grub-setup.c:215
+#, fuzzy, c-format
+msgid "the size of `%s' is too small"
+msgstr "La dimensione di \"%s\" è troppo piccola"
+
+#: util/i386/pc/grub-setup.c:217
+#, fuzzy, c-format
+msgid "the size of `%s' is too large"
+msgstr "La dimensione di \"%s\" è troppo grande"
+
+#: util/i386/pc/grub-setup.c:254
+#, fuzzy, c-format
+msgid "unable to identify a filesystem in %s; safety check can't be performed"
+msgstr ""
+"Impossibile identificare un file system in %s; non è possibile eseguire un "
+"controllo di sicurezza"
+
+#: util/i386/pc/grub-setup.c:258
+#, c-format
+msgid ""
+"%s appears to contain a %s filesystem which isn't known to reserve space for "
+"DOS-style boot.  Installing GRUB there could result in FILESYSTEM "
+"DESTRUCTION if valuable data is overwritten by grub-setup (--skip-fs-probe "
+"disables this check, use at your own risk)"
+msgstr ""
+"Sembra che %s contenga un file system %s, noto per non riservare dello "
+"spazio per l'avvio in stile DOS. Installare GRUB qui potrebbe portare alla "
+"DISTRUZIONE del file system se dati importanti vengono sovrascritti da grub-"
+"setup (--skip-fs-probe disabilita questo controllo, usare a proprio rischio)."
+
+#: util/i386/pc/grub-setup.c:307
+#, fuzzy
+msgid "no DOS-style partitions found"
+msgstr "Non sono state trovate partizioni in stile DOS"
+
+#: util/i386/pc/grub-setup.c:323 util/i386/pc/grub-setup.c:348
+msgid ""
+"Attempting to install GRUB to a partitionless disk.  This is a BAD idea."
+msgstr ""
+"Tentativo di installare GRUB su un disco privo di partizioni. Non è una "
+"buona idea."
+
+#: util/i386/pc/grub-setup.c:329
+msgid ""
+"Attempting to install GRUB to a partition instead of the MBR.  This is a BAD "
+"idea."
+msgstr ""
+"Tentativo di installare GRUB in una partizione invece che nel MBR. Non è una "
+"buona idea."
+
+#: util/i386/pc/grub-setup.c:357
+msgid "No DOS-style partitions found"
+msgstr "Non sono state trovate partizioni in stile DOS"
+
+#: util/i386/pc/grub-setup.c:362
+msgid ""
+"This msdos-style partition label has no post-MBR gap; embedding won't be "
+"possible!"
+msgstr ""
+"L'etichetta della partizione in stile MS-DOS non presenta uno spazio dopo "
+"l'MBR; l'embed non sarà possibile."
+
+#: util/i386/pc/grub-setup.c:364
+msgid ""
+"This GPT partition label has no BIOS Boot Partition; embedding won't be "
+"possible!"
+msgstr ""
+"L'etichetta della partizione GPT non presenta una BIOS Boot Partition; "
+"l'embed non sarà possibile."
+
+#: util/i386/pc/grub-setup.c:371
+msgid "Your core.img is unusually large.  It won't fit in the embedding area."
+msgstr ""
+"L'immagine core.img è troppo grande. Non può essere contenuta nell'area di "
+"embed."
+
+#: util/i386/pc/grub-setup.c:373
+msgid "Your embedding area is unusually small.  core.img won't fit in it."
+msgstr ""
+"L'area di embed è troppo piccola. L'immagine core.img non può esservi "
+"contenuta."
+
+#: util/i386/pc/grub-setup.c:416
+#, fuzzy
+msgid ""
+"embedding is not possible, but this is required when the root device is on a "
+"RAID array or LVM volume"
+msgstr ""
+"L'embed non è possibile, ma è richiesto quando il dispositivo di root si "
+"trova su un array RAID o un volume LVM."
+
+#: util/i386/pc/grub-setup.c:419
+msgid ""
+"Embedding is not possible.  GRUB can only be installed in this setup by "
+"using blocklists.  However, blocklists are UNRELIABLE and its use is "
+"discouraged."
+msgstr ""
+"L'embed non è possibile. GRUB può essere installato con questa "
+"configurazione solo usando blocklist. Le blocklist non sono comunque "
+"affidabili e ne viene sconsigliato l'uso."
+
+#: util/i386/pc/grub-setup.c:423
+#, fuzzy
+msgid "if you really want blocklists, use --force"
+msgstr "Per utilizzare le blocklist, usare --force."
+
+#: util/i386/pc/grub-setup.c:439
+#, c-format
+msgid "attempting to read the core image `%s' from GRUB"
+msgstr "tentativo di leggere l'immagine core \"%s\" da GRUB"
+
+#: util/i386/pc/grub-setup.c:440
+#, c-format
+msgid "attempting to read the core image `%s' from GRUB again"
+msgstr "tentativo di leggere nuovamente l'immagine core \"%s\" da GRUB"
+
+#: util/i386/pc/grub-setup.c:498
+#, fuzzy, c-format
+msgid "cannot read `%s' correctly"
+msgstr "Impossibile leggere \"%s\" correttamente"
+
+#: util/i386/pc/grub-setup.c:511
+#, fuzzy
+msgid "no terminator in the core image"
+msgstr "Nessun terminatore nell'immagine core"
+
+#: util/i386/pc/grub-setup.c:522
+#, fuzzy
+msgid "failed to read the first sector of the core image"
+msgstr "Lettura del primo settore dell'immagine core non riuscita"
+
+#: util/i386/pc/grub-setup.c:528
+#, fuzzy
+msgid "failed to read the rest sectors of the core image"
+msgstr "Lettura dei restanti settori dell'immagine core non riuscita"
+
+#: util/i386/pc/grub-setup.c:547
+#, fuzzy, c-format
+msgid "cannot open `%s'"
+msgstr "Impossibile aprire \"%s\""
+
+#: util/i386/pc/grub-setup.c:589
+#, fuzzy, c-format
+msgid ""
+"Usage: %s [OPTION]... DEVICE\n"
+"\n"
+"Set up images to boot from DEVICE.\n"
+"DEVICE must be a GRUB device (e.g. `(hd0,1)').\n"
+"\n"
+"  -b, --boot-image=FILE   use FILE as the boot image [default=%s]\n"
+"  -c, --core-image=FILE   use FILE as the core image [default=%s]\n"
+"  -d, --directory=DIR     use GRUB files in the directory DIR [default=%s]\n"
+"  -m, --device-map=FILE   use FILE as the device map [default=%s]\n"
+"  -r, --root-device=DEV   use DEV as the root device [default=guessed]\n"
+"  -f, --force             install even if problems are detected\n"
+"  -s, --skip-fs-probe     do not probe for filesystems in DEVICE\n"
+"  -h, --help              display this message and exit\n"
+"  -V, --version           print version information and exit\n"
+"  -v, --verbose           print verbose messages\n"
+"\n"
+"Report bugs to <%s>.\n"
+msgstr ""
+"Uso: grub-setup [OPZIONI]... DEVICE\n"
+"\n"
+"Configura le immagini per essere avviate da DEVICE.\n"
+"DEVICE deve essere un device di GRUB (come \"(hd0,1)\").\n"
+"\n"
+"  -b, --boot-image=FILE   Usa FILE come l'immagine di boot [predefinito=%s]\n"
+"  -c, --core-image=FILE   Usa FILE come l'immagine core [predefinito=%s]\n"
+"  -d, --directory=DIR     Usa i file di GRUB nella directory DIR "
+"[predefinito=%s]\n"
+"  -m, --device-map=FILE   Usa FILE come device map [predefinito=%s]\n"
+"  -r, --root-device=DEV   Usa DEV come device root [predefinito=ipotizzato]\n"
+"  -f, --force             Installa anche in presenza di problemi\n"
+"  -s, --skip-fs-probe     Non cerca file system nel DEVICE\n"
+"  -h, --help              Visualizza questo messaggio ed esce\n"
+"  -V, --version           Stampa la versione ed esce\n"
+"  -v, --verbose           Stampa messaggi prolissi\n"
+"\n"
+"Segnalare i bug a <%s>.\n"
+
+#: util/i386/pc/grub-setup.c:719
+#, c-format
+msgid "No device is specified.\n"
+msgstr "Nessun device specificato.\n"
+
+#: util/i386/pc/grub-setup.c:725
+#, c-format
+msgid "Unknown extra argument `%s'.\n"
+msgstr "Argomento aggiuntivo \"%s\" sconosciuto.\n"
+
+#: util/i386/pc/grub-setup.c:742
+#, c-format
+msgid "Invalid device `%s'.\n"
+msgstr "Device \"%s\" non valido.\n"
+
+#: util/i386/pc/grub-setup.c:755
+#, fuzzy, c-format
+msgid "invalid root device `%s'"
+msgstr "Device root \"%s\" non valido"
+
+#: util/i386/pc/grub-setup.c:768
+#, fuzzy
+msgid "cannot guess the root device. Specify the option `--root-device'"
+msgstr ""
+"Impossibile ipotizzare il device di root. Specificare l'opzione \"--root-"
+"device\"."
+
+#: util/grub.d/10_kfreebsd.in:47
+msgid "%s, with kFreeBSD %s"
+msgstr "%s, con kFreeBSD %s"
+
+#: util/grub.d/10_kfreebsd.in:55
+msgid "Loading kernel of FreeBSD %s ..."
+msgstr ""
+
+#: util/grub.d/10_linux.in:59
+msgid "%s, with Linux %s (recovery mode)"
+msgstr "%s, con Linux %s (modalità ripristino)"
+
+#: util/grub.d/10_linux.in:61
+msgid "%s, with Linux %s"
+msgstr "%s, con Linux %s"
+
+#: util/grub.d/10_linux.in:86
+msgid "Loading Linux %s ..."
+msgstr ""
+
+#: util/grub.d/10_linux.in:91
+msgid "Loading initial ramdisk ..."
+msgstr ""
+
+#~ msgid "A boot catalog exists and appears corrupted.\n"
+#~ msgstr "Un catalogo di avvio esiste e sembra danneggiato.\n"
+
+#~ msgid "Please check the following file: %s.\n"
+#~ msgstr "Controllare il seguente file: %s.\n"
+
+#~ msgid "This file must be removed before a bootable CD can be done.\n"
+#~ msgstr ""
+#~ "Questo file deve essere rimosso prima di poter creare un CD avviabile.\n"
+
+#~ msgid "Error creating boot catalog (%s)"
+#~ msgstr "Errore nel creare il catalogo di avvio (%s)"
+
+#~ msgid "Error writing to boot catalog (%s)"
+#~ msgstr "Errore nello scrivere sul catalogo di avvio (%s)"
+
+#~ msgid "Boot catalog cannot be found!\n"
+#~ msgstr "Impossibile trovare il catalogo di avvio.\n"
+
+#~ msgid "Boot image cannot be found!\n"
+#~ msgstr "Impossibile trovare l'immagine di boot.\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Size of boot image is %d sectors"
+#~ msgstr ""
+#~ "\n"
+#~ "La dimensione dell'immagine di boot è di %d settori."
+
+#~ msgid "No emulation\n"
+#~ msgstr "Nessuna emulazione\n"
+
+#~ msgid "Emulating a 1.44 meg floppy\n"
+#~ msgstr "Emulazione di un disco floppy da 1.44MB\n"
+
+#~ msgid "Emulating a 2.88 meg floppy\n"
+#~ msgstr "Emulazione di un disco floppy da 2.88MB\n"
+
+#~ msgid "Emulating a 1.2 meg floppy\n"
+#~ msgstr "Emulazione di un disco floppy da 1.2MB\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Error - boot image is not the an allowable size.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Errore: l'immagine di avvio non è di una dimensione consentita.\n"
+
+#~ msgid "Error opening boot catalog for update"
+#~ msgstr "Errore nell'aprire il catalogo di avvio per l'aggiornamento"
+
+#~ msgid "Error writing to boot catalog"
+#~ msgstr "Errore nello scrivere sul catalogo di avvio"
+
+#~ msgid "Error opening boot image file '%s' for update"
+#~ msgstr ""
+#~ "Errore nell'aprire il file dell'immagine di avvio \"%s\" per "
+#~ "l'aggiornamento"
+
+#~ msgid "Odd alignment at non-end-of-file in boot image '%s'"
+#~ msgstr ""
+#~ "Allineamento non corretto alla non-fine-del-file nell'immagine di boot \"%"
+#~ "s\""
+
+#~ msgid "Boot image file '%s' changed unexpectedly"
+#~ msgstr ""
+#~ "Il file dell'immagine di boot \"%s\" è stato modificato inaspettatamente"
+
+#~ msgid "Error writing to boot image (%s)"
+#~ msgstr "Errore nello scrivere sull'immagine di avvio (%s)"
+
+#~ msgid "Unable to generate sane path tables - too many directories (%d)\n"
+#~ msgstr ""
+#~ "Impossibile generare tabelle di percorso ragionevoli, troppe directory (%"
+#~ "d)\n"
+
+#~ msgid "Entry %d not in path tables\n"
+#~ msgstr "Voce %d non presente nelle tabelle di percorso\n"
+
+# (ndt) originale fantastica...
+#~ msgid "Fatal goof - directory has amnesia\n"
+#~ msgstr "Errore fatale: la directory ha perso memoria\n"
+
+#~ msgid "Joliet path table lengths do not match %d %d\n"
+#~ msgstr ""
+#~ "Le lunghezze della tabella dei percorsi Joliet non corrispondono %d %d\n"
+
+#~ msgid "Unable to locate relocated directory\n"
+#~ msgstr "Impossibile localizzare la directory spostata\n"
+
+#~ msgid "Fatal goof - unable to find directory location\n"
+#~ msgstr "Errore fatale: impossibile trovare la posizione della directory\n"
+
+#~ msgid "Unexpected joliet directory length %d %d %s\n"
+#~ msgstr "Lunghezza directory Joliet non attesa %d %d %s\n"
+
+#~ msgid "Process all files (don't skip backup files)"
+#~ msgstr "Elabora tutti i file (non tralascia quelli di backup)"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Set Application ID"
+#~ msgstr "Imposta l'ID dell'applicazione"
+
+#~ msgid "Set Bibliographic filename"
+#~ msgstr "Imposta il nome file bibliografico"
+
+#~ msgid "Set Copyright filename"
+#~ msgstr "Imposta il nome file copyright"
+
+#~ msgid "Set embedded boot image name"
+#~ msgstr "Imposta il nome dell'immagine di avvio embed"
+
+# (ndt) protective?!?
+#~ msgid "Patch a protective DOS-style label in the image"
+#~ msgstr "Corregge un'etichetta protettiva in stile DOS nell'immagine"
+
+#~ msgid "Set El Torito boot image name"
+#~ msgstr "Imposta il nome dell'immagine di avvio El Torito"
+
+#~ msgid "Set El Torito boot catalog name"
+#~ msgstr "Imposta il nome del catalogo di avvio El Torito"
+
+# (ndt) non so se convenga tenere "Boot Info Table" non tradotto... è una cosa di El Torito
+#~ msgid "Patch Boot Info Table in El Torito boot image"
+#~ msgstr ""
+#~ "Corregge la tabella di informazioni di avvio nell'immagine di avvio El "
+#~ "Torito"
+
+#~ msgid "Dummy option for backward compatibility"
+#~ msgstr "Opzione di comodo per retro compatibilità"
+
+#~ msgid "Enable floppy drive emulation for El Torito"
+#~ msgstr "Abilita l'emulazione del disco floppy per El Torito"
+
+#~ msgid "PARAMS"
+#~ msgstr "PARAMETRI"
+
+#~ msgid "Magic parameters from cdrecord"
+#~ msgstr "Parametri da cdrecord"
+
+#~ msgid "Omit trailing periods from filenames"
+#~ msgstr "Tralascia i punti finali dai nomi dei file"
+
+#~ msgid "Disable deep directory relocation"
+#~ msgstr "Disabilita la rilocazione delle directory profonde"
+
+#~ msgid "Follow symbolic links"
+#~ msgstr "Segue i collegamenti simbolici"
+
+#~ msgid "Print option help"
+#~ msgstr "Stampa l'aiuto dell'opzione"
+
+#~ msgid "Print version information and exit"
+#~ msgstr "Stampa la versione ed esce"
+
+#~ msgid "GLOBFILE"
+#~ msgstr "FILEGLOB"
+
+#~ msgid "Hide ISO9660/RR file"
+#~ msgstr "Nasconde il file ISO9660/RR"
+
+#~ msgid "Hide Joliet file"
+#~ msgstr "Nasconde il file Joilet"
+
+#~ msgid "ADD_FILES"
+#~ msgstr "AGG_FILE"
+
+#~ msgid "No longer supported"
+#~ msgstr "Non più supportato"
+
+#~ msgid "Generate Joliet directory information"
+#~ msgstr "Genera informazioni di directory Joliet"
+
+#~ msgid "Allow full 32 character filenames for iso9660 names"
+#~ msgstr "Consente nomi di file di 32 caratteri per i nomi ISO9660"
+
+#~ msgid "Allow iso9660 filenames to start with '.'"
+#~ msgstr "Consente ai nomi di file ISO9660 di iniziare con un punto (.)"
+
+#~ msgid "LOG_FILE"
+#~ msgstr "FILE_REG"
+
+#~ msgid "Re-direct messages to LOG_FILE"
+#~ msgstr "Redirige i messaggi verso FILE_REG"
+
+# (ndt) o "il file di nome"?
+#~ msgid "Exclude file name"
+#~ msgstr "Esclude i nomi di file"
+
+# (ndt) da rivedere
+#~ msgid "Set path to previous session to merge"
+#~ msgstr "Imposta il percorso della sessione precedente da unire"
+
+#~ msgid "Omit version number from iso9660 filename"
+#~ msgstr "Tralascia il numero di versione dai nomi di file ISO9660"
+
+#~ msgid "Inhibit splitting symlink components"
+#~ msgstr "Inibisce la divisione dei componenti dei collegamenti simbolici"
+
+#~ msgid "Inhibit splitting symlink fields"
+#~ msgstr "Inibisce la divisione dei campi dei collegamenti simbolici"
+
+#~ msgid "Set output file name"
+#~ msgstr "Imposta il nome del file di output"
+
+#~ msgid "PREP"
+#~ msgstr "PREP"
+
+#~ msgid "Set Volume preparer"
+#~ msgstr "Imposta il perparatore del volume"
+
+#~ msgid "Print estimated filesystem size and exit"
+#~ msgstr "Stampa la dimensione stimata del file system ed esce"
+
+#~ msgid "PUB"
+#~ msgstr "PUB"
+
+#~ msgid "Set Volume publisher"
+#~ msgstr "Imposta l'editore del volume"
+
+#~ msgid "Run quietly"
+#~ msgstr "Esecuzione silenziosa"
+
+#~ msgid "Generate rationalized Rock Ridge directory information"
+#~ msgstr "Genera informazioni di directory Rock Ridge razionalizzate"
+
+#~ msgid "Generate Rock Ridge directory information"
+#~ msgstr "Genera informazioni di directory Rock Ridge"
+
+#~ msgid "Split output into files of approx. 1GB size"
+#~ msgstr "Divide l'output in file di circa 1GB"
+
+#~ msgid "Set System ID"
+#~ msgstr "Imposta l'ID di sistema"
+
+#~ msgid ""
+#~ "Generate translation tables for systems that don't understand long "
+#~ "filenames"
+#~ msgstr ""
+#~ "Genera translation table per sistemi che non comprendono nomi di file "
+#~ "lunghi"
+
+#~ msgid "Verbose"
+#~ msgstr "Prolisso"
+
+#~ msgid "Set Volume ID"
+#~ msgstr "Imposta l'ID del volume"
+
+#~ msgid "Set Volume set ID"
+#~ msgstr "Imposta l'ID del set di volumi"
+
+#~ msgid "Set Volume set size"
+#~ msgstr "Imposta la dimensione del set di volumi"
+
+#~ msgid "Set Volume set sequence number"
+#~ msgstr "Imposta il numero di sequenza del set di volumi"
+
+#~ msgid "Exclude file name (deprecated)"
+#~ msgstr "Esclude i nomi di file (deprecata)"
+
+#~ msgid "Override creation date"
+#~ msgstr "Sovrascrive la data di creazione"
+
+#~ msgid "Override modification date"
+#~ msgstr "Sovrascrive la data di modifica"
+
+#~ msgid "Override expiration date"
+#~ msgstr "Sovrascrive la data di scadenza"
+
+#~ msgid "Override effective date"
+#~ msgstr "Sovrascrive la data effettiva"
+
+#~ msgid "Using \"%s\"\n"
+#~ msgstr "In uso \"%s\"\n"
+
+#~ msgid "%s:%d: name required\n"
+#~ msgstr "%s:%d: richiesto il nome\n"
+
+#~ msgid "%s:%d: equals sign required\n"
+#~ msgstr "%s:%d: richiesto il segno di uguale\n"
+
+#~ msgid "%s:%d: field name \"%s\" unknown\n"
+#~ msgstr "%s:%d: nome \"%s\" del campo sconosciuto\n"
+
+#~ msgid "Usage: %s [options] file...\n"
+#~ msgstr "Uso: %s [OPZIONI] FILE...\n"
+
+#~ msgid "Options:\n"
+#~ msgstr "Opzioni:\n"
+
+#~ msgid "-i option no longer supported.\n"
+#~ msgstr "Opzione -i non più supportata.\n"
+
+#~ msgid "Required boot image pathname missing"
+#~ msgstr "Manca il percorso richiesto dell'immagine di avvio"
+
+#~ msgid "Required boot catalog pathname missing\n"
+#~ msgstr "Manca il percorso richiesto del catalogo di avvio\n"
+
+#~ msgid "Ignoring -no-emul-boot (no-emulation is the default behaviour)\n"
+#~ msgstr ""
+#~ "Viene ignorato -no-emul-boot (nessuna emulazione è il comportamento "
+#~ "predefinito)\n"
+
+#~ msgid "Abstract filename string too long\n"
+#~ msgstr "Stringa del nome file astratto troppo lunga\n"
+
+#~ msgid "Application-id string too long\n"
+#~ msgstr "Stringa dell'ID applicazione troppo lunga\n"
+
+#~ msgid "Bibliographic filename string too long\n"
+#~ msgstr "Stringa del nome file bibliografico troppo lunga\n"
+
+#~ msgid "Copyright filename string too long\n"
+#~ msgstr "Stringa del nome file copyright troppo lunga\n"
+
+# (ndt) sembra "il preparatore di macchine"...
+#~ msgid "Preparer string too long\n"
+#~ msgstr "Stringa del preparatore troppo lunga\n"
+
+#~ msgid "Publisher string too long\n"
+#~ msgstr "Stringa dell'editore troppo lunga\n"
+
+#~ msgid "System ID string too long\n"
+#~ msgstr "Stringa dell'ID di sistema troppo lunga\n"
+
+#~ msgid "Volume ID string too long\n"
+#~ msgstr "Stringa dell'ID del volume troppo lunga\n"
+
+#~ msgid "Volume set ID string too long\n"
+#~ msgstr "Stringa dell'ID del set di volumi troppo lunga\n"
+
+#~ msgid "Volume set sequence number too big\n"
+#~ msgstr "Numero di sequenza del set di volumi troppo grande\n"
+
+#~ msgid "date string must be 16 characters.\n"
+#~ msgstr "La stringa della data deve essere di 16 caratteri.\n"
+
+#~ msgid "Warning: getrlimit"
+#~ msgstr "Attenzione: getrlimit"
+
+#~ msgid "Warning: setrlimit"
+#~ msgstr "Attenzione: setrlimit"
+
+#~ msgid "Multisession usage bug: Must specify -C if -M is used.\n"
+#~ msgstr ""
+#~ "Errore di utilizzo multi-sessione: è necessario specificare -C se viene "
+#~ "usata -M.\n"
+
+#~ msgid ""
+#~ "Warning: -C specified without -M: old session data will not be merged.\n"
+#~ msgstr ""
+#~ "Attenzione: -C specificata senza -M, i vecchi dati della sessione non "
+#~ "verranno uniti.\n"
+
+#~ msgid "can't open logfile: %s"
+#~ msgstr "impossibile aprire il file di registro: %s"
+
+#~ msgid "re-directing all messages to %s\n"
+#~ msgstr "ridirezione di tutti i messaggi verso %s\n"
+
+#~ msgid "can't open logfile: %s\n"
+#~ msgstr "impossibile aprire il file di registro: %s\n"
+
+#~ msgid "Unable to open previous session image %s\n"
+#~ msgstr "Impossibile aprire l'immagine %s della sessione precedente\n"
+
+#~ msgid "Invalid node - %s\n"
+#~ msgstr "Nodo non valido - %s\n"
+
+#~ msgid "Joliet tree sort failed.\n"
+#~ msgstr "Ordinamento albero Joliet non riuscito.\n"
+
+#~ msgid "Unable to open /dev/null\n"
+#~ msgstr "Impossibile aprire /dev/null\n"
+
+#~ msgid "Unable to open disc image file\n"
+#~ msgstr "Impossibile aprire l'immagine disco\n"
+
+# (ndt) http://opengroup.org/onlinepubs/007908775/xsh/brk.html
+#~ msgid "Max brk space used %x\n"
+#~ msgstr "Massimo spazio brk usato %x\n"
+
+#~ msgid "%llu extents written (%llu MiB)\n"
+#~ msgstr "Scritti %llu extent (%llu MiB)\n"
+
+#~ msgid "Seek error on old image\n"
+#~ msgstr "Errore di posizionamento nella vecchia immagine\n"
+
+#~ msgid "**Bad RR version attribute"
+#~ msgstr "**Attributo versione RR errato"
+
+#~ msgid ""
+#~ "Warning: Neither Rock Ridge (-R) nor TRANS.TBL (-T) name translations "
+#~ "were found on previous session. ISO (8.3) file names have been used "
+#~ "instead.\n"
+#~ msgstr ""
+#~ "Attenzione: le traduzioni dei nomi Rock Ridge (-R) o TRANS.TBL (-T) non "
+#~ "sono state trovate nella sessione precedente. Sono stati usati nomi di "
+#~ "file ISO (8.3).\n"
+
+#~ msgid "Read error on old image %s\n"
+#~ msgstr "Errore di lettura sulla vecchia immagine %s\n"
+
+#~ msgid "Special parameters for cdwrite not specified with -C\n"
+#~ msgstr "Parametri speciali per cdwrite non specificati con -C\n"
+
+#~ msgid "Malformed cdwrite parameters\n"
+#~ msgstr "Parametri di cdrwrite non corretti\n"
+
+# (ndt) SL sta per Symbolic Link, il resto pare sia qualche cosa proprio di Rock Ridge
+#~ msgid "symbolic link ``%s'' to long for one SL System Use Field, splitting"
+#~ msgstr ""
+#~ "collegamento simbolico \"%s\" troppo lungo per un SL System Use Field, "
+#~ "viene diviso"
+
+# (ndt) vedi nota a inizio file per "transparent compression"
+#~ msgid "Unable to insert transparent compressed file - name conflict\n"
+#~ msgstr ""
+#~ "Impossibile inserire un file a compressione immediata, conflitto nel "
+#~ "nome\n"
+
+#~ msgid "Extension record too long\n"
+#~ msgstr "Record estensione troppo lungo\n"
+
+#~ msgid "Fatal goof\n"
+#~ msgstr "Errore fatale\n"
+
+#~ msgid "Unable to  generate unique  name for file %s\n"
+#~ msgstr "Impossibile generare un nome univoco per il file %s\n"
+
+#~ msgid "Using %s for %s%s%s (%s)\n"
+#~ msgstr "Viene usato %s per %s%s%s (%s)\n"
+
+#~ msgid "Fatal error - RR overflow for file %s\n"
+#~ msgstr "Errore fatale: overflow RR per il file %s\n"
+
+#~ msgid "Unable to sort directory %s\n"
+#~ msgstr "Impossibile ordinare la directory %s\n"
+
+# (ndt) non sono sicuro di tradurre "translation table"
+#~ msgid "Translation table size mismatch %d %d\n"
+#~ msgstr "La dimensione della translation table non corrisponde %d %d\n"
+
+#~ msgid "Unable to locate directory parent\n"
+#~ msgstr "Impossibile localizzare la directory superiore\n"
+
+#~ msgid "Scanning %s\n"
+#~ msgstr "Analisi di %s\n"
+
+#~ msgid "Unable to open directory %s\n"
+#~ msgstr "Impossibile aprire la directory %s\n"
+
+#~ msgid "Ignoring file %s\n"
+#~ msgstr "File %s ignorato\n"
+
+#~ msgid "Overflow of stat buffer\n"
+#~ msgstr "Overflow del buffer stat\n"
+
+#~ msgid "Excluded by match: %s\n"
+#~ msgstr "Escluso per corrispondenza: %s\n"
+
+#~ msgid "Excluded: %s\n"
+#~ msgstr "Escluso: %s\n"
+
+#~ msgid "Non-existant or inaccessible: %s\n"
+#~ msgstr "Non esistente o inaccessibile: %s\n"
+
+#~ msgid "Unable to stat file %s - ignoring and continuing.\n"
+#~ msgstr ""
+#~ "Impossibile eseguire stat sul file %s. Viene ignorato e si continua.\n"
+
+#~ msgid "Symlink %s ignored - continuing.\n"
+#~ msgstr "Collegamento simbolico %s ignorato. Si continua.\n"
+
+#~ msgid "Already cached directory seen (%s)\n"
+#~ msgstr "Vista una directory che è già nella cache (%s)\n"
+
+#~ msgid "File %s is not readable (%s) - ignoring\n"
+#~ msgstr "Il file %s non è leggibile (%s), viene ignorato\n"
+
+#~ msgid "Directory loop - fatal goof (%s %lx %lu).\n"
+#~ msgstr "Ciclo nella directory. Errore fatale (%s %lx %lu).\n"
+
+#~ msgid "Unknown file type %s - ignoring and continuing.\n"
+#~ msgstr "Tipo di file %s sconosciuto. Viene ignorato e si continua.\n"
+
+#~ msgid "Hidden from ISO9660 tree: %s\n"
+#~ msgstr "Nascosto dall'albero ISO9660: %s\n"
+
+#~ msgid "Hidden from Joliet tree: %s\n"
+#~ msgstr "Nascosto dall'albero Joliet: %s\n"
+
+#~ msgid "Directories too deep  %s\n"
+#~ msgstr "Directory troppo profonde %s\n"
+
+#~ msgid "Unable to delete non-empty directory\n"
+#~ msgstr "Impossibile eliminare una directory non vuota\n"
+
+#~ msgid "Unable to locate child directory in parent list\n"
+#~ msgstr ""
+#~ "Impossibile localizzare la directory discendente nell'elenco di quella "
+#~ "superiore\n"
+
+#~ msgid "call to search_tree_file with an absolute path, stripping\n"
+#~ msgstr ""
+#~ "chiamata a search_tree_file con un percorso assoluto, viene rimosso\n"
+
+# (ndt) che schifo! questa e quella precedente sono collegate
+#~ msgid "initial path separator. Hope this was intended...\n"
+#~ msgstr "il separatore di percorso iniziale. Si presume sia voluto...\n"
+
+#~ msgid "Cannot open '%s'"
+#~ msgstr "Impossibile aprire \"%s\""
+
+#~ msgid "cannot fwrite %llu*%llu\n"
+#~ msgstr "impossibile eseguire fwrite %llu*%llu\n"
+
+#~ msgid "cannot open %s\n"
+#~ msgstr "impossibile aprire %s\n"
+
+#~ msgid "cannot read %llu bytes from %s"
+#~ msgstr "impossibile leggere %llu byte da %s"
+
+#~ msgid "%6.2f%% done, estimate finish %s"
+#~ msgstr "%6.2f%% completato, termine previsto %s"
+
+#~ msgid "Cache hit for %s%s%s\n"
+#~ msgstr "Hit della cache per %s%s%s\n"
+
+#~ msgid "Unexpected directory length %d %d %s\n"
+#~ msgstr "Lunghezza directory inaspettata %d %d %s\n"
+
+# (ndt) ???
+#~ msgid "Continuation entry record length mismatch (%d %d).\n"
+#~ msgstr ""
+#~ "Lunghezza del record della voce di continuazione non corrispondente (%d %"
+#~ "d).\n"
+
+#~ msgid "Path table lengths do not match %d %d\n"
+#~ msgstr "Le lunghezze della tabella del percorso non corrispondono %d %d\n"
+
+#~ msgid "Total extents scheduled to be written = %llu\n"
+#~ msgstr "Totale extent da scrivere = %llu\n"
+
+#~ msgid "Total extents actually written = %llu\n"
+#~ msgstr "Totale extent scritti = %llu\n"
+
+#~ msgid ""
+#~ "Number of extents written different than what was predicted.  Please "
+#~ "fix.\n"
+#~ msgstr ""
+#~ "Numero degli extent scritti diverso da quello previsto. Correggere.\n"
+
+# (ndt) preferisco lasciarla un po' più libera
+#~ msgid "Predicted = %d, written = %llu\n"
+#~ msgstr "Previsti = %d Scritti = %llu\n"
+
+#~ msgid "Total translation table size: %d\n"
+#~ msgstr "Dimensione totale della translation table: %d\n"
+
+#~ msgid "Total rockridge attributes bytes: %d\n"
+#~ msgstr "Totale byte degli attributi rockridge: %d\n"
+
+#~ msgid "Total directory bytes: %d\n"
+#~ msgstr "Totale byte della directory: %d\n"
+
+#~ msgid "Path table size(bytes): %d\n"
+#~ msgstr "Dimensione tabella dei percorsi (byte): %d\n"
+
+#~ msgid "Unable to open %s"
+#~ msgstr "Impossibile aprire %s"
+
+#~ msgid "ESC to return previous menu."
+#~ msgstr "ESC per tornare al menù precedente."
+
+#~ msgid "Booting '%s'"
+#~ msgstr "Avvio di \"%s\""
+
+#~ msgid "Falling back to '%s'"
+#~ msgstr "Si ricorre a \"%s\""
+
+#~ msgid "Failed to boot default entries.\n"
+#~ msgstr "Avvio delle voci predefinite non riuscito.\n"

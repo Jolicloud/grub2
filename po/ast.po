@@ -1,0 +1,1672 @@
+# Mensaxes n'asturianu pa Grub
+# Copyright (C) 2009 Free Software Foundation, Inc.
+# This file is distributed under the same license as the grub package.
+# Marcos Alvarez Costales <marcos.alvarez.costales@gmail.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: grub-1.97+20100124\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-03-06 21:00+0100\n"
+"PO-Revision-Date: 2010-02-15 14:15+0100\n"
+"Last-Translator: Marcos Alvarez Costales <marcos.alvarez.costales@gmail."
+"com>\n"
+"Language-Team: Asturian <ubuntu-l10n-ast@lists.ubuntu.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: asturian\n"
+
+#: commands/acpi.c:40
+msgid "Don't load host tables specified by comma-separated list."
+msgstr ""
+"Nun carga tables d'anfitrión especificaes na llista separtada por comes."
+
+#: commands/acpi.c:43
+msgid "Load only tables specified by comma-separated list."
+msgstr "Cargar namái tables especificaes en llista dixebrada por comes."
+
+#: commands/acpi.c:44
+msgid "Expose v1 tables."
+msgstr "Esponer tables v1"
+
+#: commands/acpi.c:45
+msgid "Expose v2 and v3 tables."
+msgstr "Esponer tables v2 y v3"
+
+#: commands/acpi.c:46
+msgid "Set OEMID of RSDP, XSDT and RSDT."
+msgstr "Afitar OEMID de RSDP, XSDT y RSDT."
+
+#: commands/acpi.c:48
+msgid "Set OEMTABLE ID of RSDP, XSDT and RSDT."
+msgstr "Afitar OEMTABLE ID de RSDP, XSDT y RSDT."
+
+#: commands/acpi.c:50
+msgid "Set OEMTABLE revision of RSDP, XSDT and RSDT."
+msgstr "Afitar revisión OEMTABLE de RSDP, XSDT y RSDT."
+
+#: commands/acpi.c:52
+msgid "Set creator field of RSDP, XSDT and RSDT."
+msgstr "Afitar campu creador pa RSDP, CSDT y RSDT."
+
+#: commands/acpi.c:54
+msgid "Set creator revision of RSDP, XSDT and RSDT."
+msgstr "Afitar revisión de creador de RSDP, CSDT y RSDT."
+
+#: commands/acpi.c:55
+msgid ""
+"Don't update EBDA. May fix failures or hangs on some. BIOSes but makes it "
+"ineffective with OS not receiving RSDP from GRUB."
+msgstr ""
+"Nun anovar EBDA. Podría correxir fallos o colingase en delles BIOS, pero "
+"vuélvese ineficiente si'l SO nun recibi RSDP del GRUB."
+
+#: commands/acpi.c:763
+msgid ""
+"[-1|-2] [--exclude=TABLE1,TABLE2|--load-only=table1,table2] FILE1 [FILE2] "
+"[...]"
+msgstr ""
+"[-1|-2] [--exclude=TABLA1,TABLA2|--load-only=tabla1,tabla2] FICHERU1 "
+"[FICHERU2] [...]"
+
+#: commands/acpi.c:766
+msgid "Load host ACPI tables and tables specified by arguments."
+msgstr "Cargar tables ACPI del anfitrión y tables especificaes por argumentos."
+
+#: commands/blocklist.c:114 commands/cat.c:82 commands/configfile.c:57
+#: commands/configfile.c:60 commands/configfile.c:65 commands/crc.c:64
+#: commands/minicmd.c:357 loader/i386/bsd.c:1297 loader/i386/bsd.c:1301
+#: loader/i386/bsd.c:1305
+msgid "FILE"
+msgstr "FICHERU"
+
+#: commands/blocklist.c:114
+msgid "Print a block list."
+msgstr "Imprentar una llista de bloques."
+
+#: commands/boot.c:190
+msgid "Boot an operating system."
+msgstr "Arrancar un sistema operativu."
+
+#: commands/cat.c:82 commands/minicmd.c:357
+msgid "Show the contents of a file."
+msgstr "Amosar el conteníu d'un ficheru."
+
+#: commands/cmp.c:113
+msgid "FILE1 FILE2"
+msgstr "FICHERU1 FICHERU2"
+
+#: commands/cmp.c:113
+msgid "Compare two files."
+msgstr "Comparar dos ficheros."
+
+#: commands/configfile.c:57
+msgid "Load another config file."
+msgstr "Cargar otru ficheru de configuración."
+
+#: commands/configfile.c:61 commands/configfile.c:66
+msgid "Load another config file without changing context."
+msgstr "Cargar otru ficheru de configuración ensin camudar de contestu."
+
+#: commands/crc.c:65
+msgid "Calculate the crc32 checksum of a file."
+msgstr "Calcular la suma de comprobación crc32 d'un ficheru."
+
+#: commands/date.c:139
+msgid "[[year-]month-day] [hour:minute[:second]]"
+msgstr "[[añu-]mes-día] [hora:minutu[:segundu]]"
+
+#: commands/date.c:140
+msgid "Command to display/set current datetime."
+msgstr "Orde p'amosar/camudar la data y hora actual."
+
+#: commands/echo.c:27
+msgid "Do not output the trailing newline."
+msgstr "Nun amosar la llinia nueva al final."
+
+#: commands/echo.c:28
+msgid "Enable interpretation of backslash escapes."
+msgstr "Activar la interpretación de los escapes de barra invertida."
+
+#: commands/echo.c:117
+msgid "[-e|-n] STRING"
+msgstr "[-e|-n] CADENA"
+
+#: commands/echo.c:117
+msgid "Display a line of text."
+msgstr "Amosar una llinia de testu."
+
+#: commands/efi/fixvideo.c:103
+msgid "Fix video problem."
+msgstr "Correxir problema de vídeu."
+
+#: commands/efi/loadbios.c:207
+msgid "Fake BIOS."
+msgstr "BIOS falsu."
+
+#: commands/efi/loadbios.c:211
+msgid "Load BIOS dump."
+msgstr "Cargar volcáu de BIOS."
+
+#: commands/gptsync.c:244
+msgid "DEVICE [PARTITION[+/-[TYPE]]] ..."
+msgstr "PRESÉU [PARTICIÓN[+/-[TIPU]]] ..."
+
+#: commands/gptsync.c:245
+msgid ""
+"Fill hybrid MBR of GPT drive DEVICE. specified partitions will be a part of "
+"hybrid mbr. Up to 3 partitions are allowed. TYPE is an MBR type. + means "
+"that partition is active. Only one partition can be active."
+msgstr ""
+"Relleno MBR híbridu de la unidá de GPT DEVICE. Les particiones especificaes "
+"van formar parte d'un MBR híbridu. Déxense hasta trés particiones. TYPE ye "
+"un tipu de MBR. + significa qu'esa partición ta activa. Namái pue haber una "
+"partición activa."
+
+#: commands/halt.c:39
+msgid ""
+"Halts the computer.  This command does not work on all firmware "
+"implementations."
+msgstr ""
+"Pa l'equipu. Esta orde nun funciona en toles implementaciones de firmware."
+
+#: commands/handler.c:94
+msgid "[class [handler]]"
+msgstr "[clase [manexador]]"
+
+#: commands/handler.c:95
+msgid "List or select a handler."
+msgstr "Llista o escueyi un manexador."
+
+#: commands/hdparm.c:30
+msgid ""
+"Set Advanced Power Management\n"
+"(1=low, ..., 254=high, 255=off)."
+msgstr ""
+"Afitar el xestor avanzáu d'enerxía\n"
+"(1=baxu, ..., 254=altu, 255=apagáu)."
+
+#: commands/hdparm.c:33
+msgid "Check power mode."
+msgstr "Comprobar el mou d'enerxía."
+
+#: commands/hdparm.c:34
+msgid "Freeze ATA security settings until reset."
+msgstr "Conxelar les configuraciones de seguridá ATA hasta reaniciar"
+
+#: commands/hdparm.c:36
+msgid "Check SMART health status."
+msgstr "Comprobar l'estáu de salú de SMART."
+
+#: commands/hdparm.c:37
+msgid ""
+"Set Automatic Acoustic Management\n"
+"(0=off, 128=quiet, ..., 254=fast)."
+msgstr ""
+"Afitar el xestor automáticu d'acústica\n"
+"(0=apagáu, 128=silenciosu, ..., 254=rápidu)."
+
+#: commands/hdparm.c:40
+msgid ""
+"Set standby timeout\n"
+"(0=off, 1=5s, 2=10s, ..., 240=20m, 241=30m, ...)."
+msgstr ""
+"Afitar tiempu d'espera\n"
+"(0=apagáu, 1=5s, 2=10s, ..., 240=20m, 241=30m, ...)."
+
+#: commands/hdparm.c:43
+msgid "Set drive to standby mode."
+msgstr "Afitar el controlador pal mou n'espera"
+
+#: commands/hdparm.c:44
+msgid "Set drive to sleep mode."
+msgstr "Afitar la unidá en mou dormir."
+
+#: commands/hdparm.c:45
+msgid "Print drive identity and settings."
+msgstr "Imprenta la identidá del controlador y configuraciones."
+
+#: commands/hdparm.c:47
+msgid "Dump contents of ATA IDENTIFY sector."
+msgstr "Volcar conteníos del seutor ATA IDENTIFY"
+
+#: commands/hdparm.c:49
+msgid "Disable/enable SMART (0/1)."
+msgstr "Desactivar/activar SMART (0/1)."
+
+#: commands/hdparm.c:50
+msgid "Do not print messages."
+msgstr "Nun imprentar mensaxes."
+
+#: commands/hdparm.c:414
+msgid "[OPTIONS] DISK"
+msgstr "[OPCIONES] DISCU"
+
+#: commands/hdparm.c:415
+msgid "Get/set ATA disk parameters."
+msgstr "Llograr/afitar parámetros ATA del discu"
+
+#: commands/help.c:103 lib/arg.c:110
+msgid "Usage:"
+msgstr "Usu:"
+
+#: commands/help.c:136
+msgid "[PATTERN ...]"
+msgstr "[PATRÓN ...]"
+
+#: commands/help.c:137
+msgid "Show a help message."
+msgstr "Amuesa un mensaxe d'aida."
+
+#: commands/hexdump.c:30
+msgid "Skip offset bytes from the beginning of file."
+msgstr "Saltar bytes de desplazamientu dende l'empiezu del ficheru."
+
+#: commands/hexdump.c:32
+msgid "Read only LENGTH bytes."
+msgstr "Lleer namái LENGTH bytes."
+
+#: commands/hexdump.c:125
+msgid "[OPTIONS] FILE_OR_DEVICE"
+msgstr "[OPCIONES] FICHERU_O_PRESÉU"
+
+#: commands/hexdump.c:126
+msgid "Dump the contents of a file or memory."
+msgstr "Volcar los conteníos d'un ficheru o memoria."
+
+#: commands/i386/cpuid.c:37
+msgid "Check for long mode flag (default)."
+msgstr "Comprobar l'indicador de mou llargu (predetermináu)."
+
+#: commands/i386/cpuid.c:92
+msgid "Check for CPU features."
+msgstr "Comprobar les carauterístiques de la CPU."
+
+#: commands/i386/pc/drivemap.c:37
+msgid "Show the current mappings."
+msgstr "Amosar asignaciones actuales."
+
+#: commands/i386/pc/drivemap.c:38
+msgid "Reset all mappings to the default values."
+msgstr "Reaniciar toles asignaciones a valores predeterminados."
+
+#: commands/i386/pc/drivemap.c:39
+msgid "Perform both direct and reverse mappings."
+msgstr "Realizar asignaciones direutes ya inverses"
+
+#: commands/i386/pc/drivemap.c:407
+msgid "-l | -r | [-s] grubdev osdisk."
+msgstr "-l | -r | [-s] grubdev osdisk."
+
+#: commands/i386/pc/drivemap.c:408
+msgid "Manage the BIOS drive mappings."
+msgstr "Xestiona les asignaciones del controlador de la BIOS."
+
+#: commands/i386/pc/halt.c:27
+msgid "Do not use APM to halt the computer."
+msgstr "Nun usar APM pa parar l'equipu."
+
+#: commands/i386/pc/halt.c:51
+msgid "Halt the system, if possible using APM."
+msgstr "Parar el sistema, si ye dable usar APM."
+
+#: commands/i386/pc/play.c:262
+msgid "FILE | TEMPO [PITCH1 DURATION1] [PITCH2 DURATION2] ... "
+msgstr ""
+
+#: commands/i386/pc/play.c:263
+msgid "Play a tune."
+msgstr "Afinar."
+
+#: commands/i386/pc/pxecmd.c:46
+msgid "Unload PXE environment."
+msgstr "Descargar entornu PXE."
+
+#: commands/i386/pc/vbeinfo.c:179
+msgid "List compatible VESA BIOS extension video modes."
+msgstr "Listar moos de vídeu compatibles de la estensión VESA BIOS."
+
+#: commands/i386/pc/vbetest.c:173
+msgid "Test VESA BIOS Extension 2.0+ support."
+msgstr "Probar sofitu pa la estension VESA BIOS 2.0+."
+
+#: commands/ieee1275/suspend.c:43
+msgid "Return to Open Firmware prompt."
+msgstr "Volver al cursor de Open Firmware."
+
+#: commands/keystatus.c:28
+msgid "Check Shift key."
+msgstr "Comprobar tecla Mayús"
+
+#: commands/keystatus.c:29
+msgid "Check Control key."
+msgstr "Comprobar tecla Ctrl"
+
+#: commands/keystatus.c:30
+msgid "Check Alt key."
+msgstr "Comprobar tecla Alt"
+
+#: commands/keystatus.c:85
+msgid "[--shift] [--ctrl] [--alt]"
+msgstr "[--shift] [--ctrl] [--alt]"
+
+#: commands/keystatus.c:86
+msgid "Check key modifier status."
+msgstr "Comprobar l'estáu del modificador de tecla."
+
+#: commands/loadenv.c:33
+msgid "Specify filename."
+msgstr "Especificar nome del ficheru."
+
+#: commands/loadenv.c:383 commands/loadenv.c:389
+msgid "[-f FILE]"
+msgstr "[-f FICHERU]"
+
+#: commands/loadenv.c:384
+msgid "Load variables from environment block file."
+msgstr "Cargar variables dende l'ficheru de bloque d'entornu."
+
+#: commands/loadenv.c:390
+msgid "List variables from environment block file."
+msgstr "Llista de variables dende l'ficheru de bloque d'entornu."
+
+#: commands/loadenv.c:395
+msgid "[-f FILE] variable_name [...]"
+msgstr "[-f FICHERU] nome_variable [...]"
+
+#: commands/loadenv.c:396
+msgid "Save variables to environment block file."
+msgstr "Guardar variables nel ficheru de bloque d'entornu."
+
+#: commands/ls.c:37
+msgid "Show a long list with more detailed information."
+msgstr "Amosar una llista llarga d'información con más detalles."
+
+#: commands/ls.c:38
+msgid "Print sizes in a human readable format."
+msgstr "Imprentar tamaños nún formatu lleíble por humanos."
+
+#: commands/ls.c:39
+msgid "List all files."
+msgstr "Llista de tolos ficheros."
+
+#: commands/ls.c:269
+msgid "[-l|-h|-a] [FILE]"
+msgstr "[-l|-h|-a] [Ficheru]"
+
+#: commands/ls.c:270
+msgid "List devices and files."
+msgstr "Llista de preseos y ficheros"
+
+#: commands/lsmmap.c:47
+msgid "List memory map provided by firmware."
+msgstr "Llistar el mapa de memoria apurríu pol firmware."
+
+#: commands/lspci.c:228
+msgid "List PCI devices."
+msgstr "Llista de preseos PCI."
+
+#: commands/memrw.c:31
+msgid "Save read value into variable VARNAME."
+msgstr "Guardar el valor lleíu na variable VARNAME."
+
+#: commands/memrw.c:123 commands/memrw.c:126 commands/memrw.c:129
+#: commands/minicmd.c:366
+msgid "ADDR"
+msgstr "DIREICIÓN"
+
+#: commands/memrw.c:123
+msgid "Read byte from ADDR."
+msgstr "Lleer byte dende DIREICIÓN."
+
+#: commands/memrw.c:126
+msgid "Read word from ADDR."
+msgstr "Lleer pallabra dende ADDR."
+
+#: commands/memrw.c:129
+msgid "Read dword from ADDR."
+msgstr "Lleer duble pallabra dende ADDR."
+
+#: commands/memrw.c:132 commands/memrw.c:135 commands/memrw.c:138
+msgid "ADDR VALUE [MASK]"
+msgstr "ADDR VALOR [mázcara]"
+
+#: commands/memrw.c:132
+msgid "Write byte VALUE to ADDR."
+msgstr "Escribir el byte en VALOR a ADDR"
+
+#: commands/memrw.c:135
+msgid "Write word VALUE to ADDR."
+msgstr "Escribir la pallabra en VALOR a ADDR"
+
+#: commands/memrw.c:138
+msgid "Write dword VALUE to ADDR."
+msgstr "Escribir el valor DWORD a ADDR"
+
+#: commands/minicmd.c:360
+msgid "Show this message."
+msgstr "Amosar esti mensax."
+
+#: commands/minicmd.c:363 commands/probe.c:154
+msgid "[DEVICE]"
+msgstr "[PRESÉU]"
+
+#: commands/minicmd.c:363
+msgid "Set the root device."
+msgstr "Afitar el preséu raigañu."
+
+#: commands/minicmd.c:366
+msgid "Dump memory."
+msgstr "Entornáu de memoria."
+
+#: commands/minicmd.c:369
+msgid "MODULE"
+msgstr "MÓDULU"
+
+#: commands/minicmd.c:369
+msgid "Remove a module."
+msgstr "Desaniciar un módulu."
+
+#: commands/minicmd.c:372
+msgid "Show loaded modules."
+msgstr "Amosar módulos cargaos."
+
+#: commands/minicmd.c:375
+msgid "Exit from GRUB."
+msgstr "Colar del GRUB."
+
+#: commands/minicmd.c:378
+msgid "Clear the screen."
+msgstr "Llimpiar la pantalla."
+
+#: commands/parttool.c:325
+msgid "PARTITION COMMANDS"
+msgstr "ÓRDENES DE PARTICIÓN"
+
+#: commands/password.c:78
+msgid "USER PASSWORD"
+msgstr "CONTRASEÑA D'USUARIu"
+
+#: commands/password.c:79
+msgid "Set user password (plaintext). Unrecommended and insecure."
+msgstr ""
+"Afitar la contraseña d'usuariu (testu planu). Non encamentáu ya inseguru."
+
+#: commands/probe.c:38
+msgid "Set a variable to return value."
+msgstr "Afitar una variable pa devolver el valor."
+
+#: commands/probe.c:39
+msgid "Determine driver."
+msgstr "Determinar controlador."
+
+#: commands/probe.c:40
+msgid "Determine partition map type."
+msgstr "Determinar el tipu de mapa de particiones"
+
+#: commands/probe.c:41
+msgid "Determine filesystem type."
+msgstr "Determinar tipu de sistema de ficheros."
+
+#: commands/probe.c:42
+msgid "Determine filesystem UUID."
+msgstr "Determinar UUID de sistema de ficheros."
+
+#: commands/probe.c:43
+msgid "Determine filesystem label."
+msgstr "Determinar etiqueta de sistema de ficheros."
+
+#: commands/probe.c:155
+msgid "Retrieve device info."
+msgstr "Recuperar información del preséu."
+
+#: commands/read.c:83
+msgid "[ENVVAR]"
+msgstr "[ENVVAR]"
+
+#: commands/read.c:84
+msgid "Set variable with user input."
+msgstr "Afitar la variable cola entrada del usuariu."
+
+#: commands/reboot.c:39
+msgid "Reboot the computer."
+msgstr "Reaniciar l'equipu."
+
+#: commands/search.c:161
+msgid "NAME [VARIABLE]"
+msgstr "NOME [VARIABLE]"
+
+#: commands/search_file.c:5
+msgid ""
+"Search devices by file. If VARIABLE is specified, the first device found is "
+"set to a variable."
+msgstr ""
+"Guetar preseos por ficheru. Si s'especificó VARIABLE, el primer preséu "
+"atopáu guárdase nuna variable."
+
+#: commands/search_label.c:5
+msgid ""
+"Search devices by label. If VARIABLE is specified, the first device found is "
+"set to a variable."
+msgstr ""
+"Guetar preseos por etiqueta. Si s'especificó VARIABLE, el primer preséu "
+"atopáu guárdase nuna variable."
+
+#: commands/search_uuid.c:5
+msgid ""
+"Search devices by UUID. If VARIABLE is specified, the first device found is "
+"set to a variable."
+msgstr ""
+"Guetar preseos por UUID. Si s'especificó VARIABLE, el primer preséu "
+"alcontráu guárdase nuna variable."
+
+#: commands/sleep.c:31
+msgid "Verbose countdown."
+msgstr "Cunta regresiva detallada."
+
+#: commands/sleep.c:32
+msgid "Interruptible with ESC."
+msgstr "Interrumpible con ESC."
+
+#: commands/sleep.c:106
+msgid "NUMBER_OF_SECONDS"
+msgstr "NÚMBERU_DE_SEGUNDOS"
+
+#: commands/sleep.c:107
+msgid "Wait for a specified number of seconds."
+msgstr "Esperar un númberu específicu de segundos."
+
+#: commands/test.c:424
+msgid "EXPRESSION ]"
+msgstr "ESPRESIÓN ]"
+
+#: commands/test.c:424 commands/test.c:426
+msgid "Evaluate an expression."
+msgstr "Evaluar una espresión"
+
+#: commands/test.c:426
+msgid "EXPRESSION"
+msgstr "ESPRESIÓN"
+
+#: commands/true.c:47
+msgid "Do nothing, successfully."
+msgstr "Nun faer res, con ésitu."
+
+#: commands/true.c:50
+msgid "Do nothing, unsuccessfully."
+msgstr "Nun faer res, ensin ésitu."
+
+#: commands/usbtest.c:199
+msgid "Test USB support."
+msgstr "Comprobar sofitu USB."
+
+#: commands/videotest.c:180
+msgid "Test video subsystem."
+msgstr "Comprobar subsistema de vídeu."
+
+#: commands/xnu_uuid.c:92
+msgid "GRUBUUID [VARNAME]"
+msgstr "GRUBUUID [NOME_VAR]"
+
+#: commands/xnu_uuid.c:93
+msgid "Transform 64-bit UUID to format suitable for XNU."
+msgstr "Tresformar 64-bit UUID al formatu afechu pa XNU."
+
+#: disk/loopback.c:40
+msgid "Delete the loopback device entry."
+msgstr "Desaniciar la entrada del preséu loopback."
+
+#: disk/loopback.c:41
+msgid "Simulate a hard drive with partitions."
+msgstr "Simular un discu duru con particiones."
+
+#: disk/loopback.c:249
+msgid "[-d|-p] DEVICENAME FILE."
+msgstr "[-d|-p] FICHERU NOME_PRESÉU."
+
+#: disk/loopback.c:250
+msgid "Make a device of a file."
+msgstr "Crear un preséu d'un ficheru."
+
+#: hello/hello.c:43
+msgid "Say \"Hello World\"."
+msgstr "Dicir «Hola mundu»."
+
+#: lib/arg.c:34
+msgid "Display this help and exit."
+msgstr "Amosar esta aida y colar."
+
+#: lib/arg.c:36
+msgid "Display the usage of this command and exit."
+msgstr "Amosar l'usu d'esta orde y colar."
+
+#: loader/efi/appleloader.c:325
+msgid "Boot legacy system."
+msgstr "Antiguu sistema d'arranque."
+
+#: loader/efi/chainloader.c:340 loader/i386/pc/chainloader.c:153
+msgid "Load another boot loader."
+msgstr "Cargar otru cargador d'arranque."
+
+#: loader/i386/bsd.c:65
+msgid "Display output on all consoles."
+msgstr "Amosar salida en toles consoles."
+
+#: loader/i386/bsd.c:66
+msgid "Use serial console."
+msgstr "Usar consola serie."
+
+#: loader/i386/bsd.c:67 loader/i386/bsd.c:93 loader/i386/bsd.c:114
+msgid "Ask for file name to reboot from."
+msgstr "Entrugar pol nome del ficheru pa reaniciar."
+
+#: loader/i386/bsd.c:68
+msgid "Use CDROM as root."
+msgstr "Usa CDROM como raíz."
+
+#: loader/i386/bsd.c:69
+msgid "Invoke user configuration routing."
+msgstr "Invocar configuración d'encaminamientu del usuariu."
+
+#: loader/i386/bsd.c:70 loader/i386/bsd.c:97 loader/i386/bsd.c:117
+msgid "Enter in KDB on boot."
+msgstr "Entrar en KDB al bootear"
+
+#: loader/i386/bsd.c:71
+msgid "Use GDB remote debugger instead of DDB."
+msgstr "Usar el depurador llonxanu GDB n'arróu de DDB."
+
+#: loader/i386/bsd.c:72
+msgid "Disable all boot output."
+msgstr "Desactivar tola salida d'arranque."
+
+#: loader/i386/bsd.c:74
+msgid "Wait for keypress after every line of output."
+msgstr "Esperar por cada tecla primida dempués de cada llinia de salida."
+
+#: loader/i386/bsd.c:76
+msgid "Use compiled-in rootdev."
+msgstr "Usar preséu raigañu integráu."
+
+#: loader/i386/bsd.c:77 loader/i386/bsd.c:96 loader/i386/bsd.c:120
+msgid "Boot into single mode."
+msgstr "Arrancar en mou únicu."
+
+#: loader/i386/bsd.c:78 loader/i386/bsd.c:121
+msgid "Boot with verbose messages."
+msgstr "Arrancar con mensaxes detallaos."
+
+#: loader/i386/bsd.c:94 loader/i386/bsd.c:115
+msgid "Don't reboot, just halt."
+msgstr "Nun reaniciar, namái parar."
+
+#: loader/i386/bsd.c:95 loader/i386/bsd.c:116
+msgid "Change configured devices."
+msgstr "Camudar preseos configuraos."
+
+#: loader/i386/bsd.c:98 loader/i386/bsd.c:124
+msgid "Set root device."
+msgstr "Afitar el preséu raigañu."
+
+#: loader/i386/bsd.c:112
+msgid "Disable SMP."
+msgstr "Desactivar SMP."
+
+#: loader/i386/bsd.c:113
+msgid "Disable ACPI."
+msgstr "Desactivar ACPI"
+
+#: loader/i386/bsd.c:119
+msgid "Don't display boot diagnostic messages."
+msgstr "Nun amosar los mensaxes de diagnósticu d'arranque."
+
+#: loader/i386/bsd.c:122
+msgid "Boot with debug messages."
+msgstr "Arrancar con mensaxes de depuración"
+
+#: loader/i386/bsd.c:123
+msgid "Supress normal output (warnings remain)."
+msgstr "Suprimir salida normal (permanecen avisos)."
+
+#: loader/i386/bsd.c:124
+msgid "DEVICE"
+msgstr "PRESÉU"
+
+#: loader/i386/bsd.c:1297
+msgid "Load kernel of FreeBSD."
+msgstr "Cargar núcleu de FreeBSD."
+
+#: loader/i386/bsd.c:1301
+msgid "Load kernel of OpenBSD."
+msgstr "Cargar núcleu de OpenBSD."
+
+#: loader/i386/bsd.c:1305
+msgid "Load kernel of NetBSD."
+msgstr "Cargar núcleu de NetBSD."
+
+#: loader/i386/bsd.c:1309
+msgid "Load FreeBSD env."
+msgstr "Cargar entornu FreeBSD."
+
+#: loader/i386/bsd.c:1312
+msgid "Load FreeBSD kernel module."
+msgstr "Cargar módulu del núcleu FreeBSD."
+
+#: loader/i386/bsd.c:1315
+msgid "Load FreeBSD kernel module (ELF)."
+msgstr "Cargar módulu (ELF) del núcleu FreeBSD."
+
+#: loader/i386/efi/linux.c:1011 loader/i386/ieee1275/linux.c:301
+#: loader/i386/linux.c:1012 loader/i386/pc/linux.c:399
+#: loader/powerpc/ieee1275/linux.c:353 loader/sparc64/ieee1275/linux.c:514
+msgid "Load Linux."
+msgstr "Cargar Linux."
+
+#: loader/i386/efi/linux.c:1013 loader/i386/ieee1275/linux.c:303
+#: loader/i386/linux.c:1014 loader/i386/pc/linux.c:402
+#: loader/powerpc/ieee1275/linux.c:355 loader/sparc64/ieee1275/linux.c:516
+msgid "Load initrd."
+msgstr "Cargar initrd."
+
+#: loader/i386/xnu.c:1032
+msgid "Load device-properties dump."
+msgstr "Cargar volcáu de preséu-propiedaes."
+
+#: loader/multiboot_loader.c:133
+msgid "Load a multiboot 2 kernel."
+msgstr "Cargar núcleu de multiarranque 2."
+
+#: loader/multiboot_loader.c:136
+msgid "Load a multiboot kernel."
+msgstr "Cargar un núcleu d'arranque múltiple."
+
+#: loader/multiboot_loader.c:141
+msgid "Load a multiboot module."
+msgstr "Cargar un módulu d'arranque múltiple."
+
+#: loader/xnu.c:1428
+msgid "Load XNU image."
+msgstr "Cargar imaxe XNU."
+
+#: loader/xnu.c:1430
+msgid "Load 64-bit XNU image."
+msgstr "Cargar imaxe XNU de 64-bit."
+
+#: loader/xnu.c:1432
+msgid "Load XNU extension package."
+msgstr "Cargar paquete d'estensión XNU."
+
+#: loader/xnu.c:1434
+msgid "Load XNU extension."
+msgstr "Cargar estensión XNU."
+
+#: loader/xnu.c:1436
+msgid "DIRECTORY [OSBundleRequired]"
+msgstr "DIREUTORIU [OSBundleRequired]"
+
+#: loader/xnu.c:1437
+msgid "Load XNU extension directory."
+msgstr "Cargar direutoriu d'estensión XNU."
+
+#: loader/xnu.c:1444
+msgid "Load a splash image for XNU."
+msgstr "Cargar una imaxe de bienvinía pa XNU."
+
+#: loader/xnu.c:1449
+msgid "Load XNU hibernate image."
+msgstr "Cargar imagen d'ivernación XNU."
+
+#: normal/auth.c:233
+msgid "Enter username: "
+msgstr "Introduz nome d'usuariu: "
+
+#: normal/auth.c:238
+msgid "Enter password: "
+msgstr "Introduz contraseña: "
+
+#: normal/color.c:80
+#, c-format
+msgid "Warning: syntax error (missing slash) in `%s'\n"
+msgstr "Avisu: fallu de sintasis (falta barra) en `%s'\n"
+
+#: normal/color.c:89
+#, c-format
+msgid "Warning: invalid foreground color `%s'\n"
+msgstr "Avisu: color de primer planu nun válidu `%s'\n"
+
+#: normal/color.c:95
+#, c-format
+msgid "Warning: invalid background color `%s'\n"
+msgstr "Avisu: color de fondu nun válidu `%s'\n"
+
+#: normal/dyncmd.c:147
+msgid "not loaded"
+msgstr "non cargáu"
+
+#: normal/main.c:408
+#, c-format
+msgid "GNU GRUB  version %s"
+msgstr "GNU GRUB  version %s"
+
+#: normal/main.c:539
+#, c-format
+msgid ""
+"Minimal BASH-like line editing is supported. For the first word, TAB lists "
+"possible command completions. Anywhere else TAB lists possible device or "
+"file completions. %s"
+msgstr ""
+"Almítese una mínima edición de llinies al estilu BASH. Pa la primer "
+"pallabra, TAB amuesa les posibles formes de completar comandos. En "
+"cualesquier otru sitiu, TAB amuesa les posibles formes de completar preseos "
+"o ficheros. %s"
+
+#: normal/main.c:542
+msgid "ESC at any time exits."
+msgstr "Calcar ESC en cualisquier momentu pa colar."
+
+#: normal/menu_entry.c:1060
+msgid "Possible commands are:"
+msgstr "Les posibles ordes son:"
+
+#: normal/menu_entry.c:1064
+msgid "Possible devices are:"
+msgstr "Los posibles preseos son:"
+
+#: normal/menu_entry.c:1068
+msgid "Possible files are:"
+msgstr "Los ficheros posibles son:"
+
+#: normal/menu_entry.c:1072
+msgid "Possible partitions are:"
+msgstr "Les posibles particiones son:"
+
+#: normal/menu_entry.c:1076
+msgid "Possible arguments are:"
+msgstr "Los posibles argumentos son:"
+
+#: normal/menu_entry.c:1080
+msgid "Possible things are:"
+msgstr "Les posibles coses son:"
+
+#: normal/menu_entry.c:1184
+msgid "Booting a command list"
+msgstr "Arrancar una llista d'órdenes"
+
+#: normal/menu_entry.c:1397
+msgid "Press any key to continue..."
+msgstr "Calca una tecla pa siguir..."
+
+#: normal/menu_text.c:179
+msgid ""
+"Minimum Emacs-like screen editing is supported. TAB lists completions. Press "
+"Ctrl-x to boot, Ctrl-c for a command-line or ESC to return menu."
+msgstr ""
+"Permítese la edición mínima en pantalla tipu Emacs. TAB llista completaos. "
+"Calca Ctrl-x pa empecipiar, Ctrl-c pa una llinia d'ordes o ESC pa tornar al "
+"menú."
+
+#: normal/menu_text.c:186
+#, c-format
+msgid "Use the %C and %C keys to select which entry is highlighted.\n"
+msgstr "Usa les tecles %C y %C pa esbillar qué entrada prefieres.\n"
+
+#: normal/menu_text.c:203
+msgid ""
+"Press enter to boot the selected OS, 'e' to edit the commands before booting "
+"or 'c' for a command-line. ESC to return previous menu.\n"
+msgstr ""
+"Calca intro p'arrancar el Sistema Operativu escoyíu, «e» pa editar les ordes "
+"enantes d'arrancar o «c» pa una llinia d'ordes. ESC pa volver menú anterior.\n"
+
+#: normal/menu_text.c:211
+msgid ""
+"Press enter to boot the selected OS, 'e' to edit the commands before booting "
+"or 'c' for a command-line.\n"
+msgstr ""
+"Calca enter p'arrancar el SO esbilláu, 'e' pa editar los comandos enantes "
+"d'arrancar, o 'c' pa una llinia de comandos.\n"
+
+#: normal/menu_text.c:363
+#, c-format
+msgid "The highlighted entry will be executed automatically in %ds."
+msgstr "La entrada resaltada va executase automáticamente en %ds."
+
+#: normal/misc.c:41
+#, c-format
+msgid "Partition %s:"
+msgstr "Partición %s:"
+
+#: normal/misc.c:46
+#, c-format
+msgid "Device %s:"
+msgstr "Preséu %s:"
+
+#: normal/misc.c:52
+msgid "Filesystem cannot be accessed"
+msgstr "Nun puede accedese al sistema de ficheros"
+
+#: normal/misc.c:63
+#, c-format
+msgid "Filesystem type %s"
+msgstr "Sistema de ficheros triba %s"
+
+#: normal/misc.c:73
+#, c-format
+msgid "- Label \"%s\""
+msgstr "- Etiqueta «%s»"
+
+#: normal/misc.c:88
+#, c-format
+msgid "- Last modification time %d-%02d-%02d %02d:%02d:%02d %s"
+msgstr "- Hora de cabera modificación %d-%02d-%02d %02d:%02d:%02d %s"
+
+#: normal/misc.c:111
+msgid "Unknown filesystem"
+msgstr "Sistema de ficheros desconocíu"
+
+#: normal/misc.c:113
+msgid "Partition table"
+msgstr "Tabla de partición"
+
+#: term/serial.c:46
+msgid "Set the serial unit."
+msgstr "Afitar la unidá serie."
+
+#: term/serial.c:47
+msgid "Set the serial port address."
+msgstr "Afitar la direición del puertu serie."
+
+#: term/serial.c:48
+msgid "Set the serial port speed."
+msgstr "Afita la velocidá del puertu serie."
+
+#: term/serial.c:49
+msgid "Set the serial port word length."
+msgstr "Afitar el llargor de la pallabra del puertu de serie."
+
+#: term/serial.c:50
+msgid "Set the serial port parity."
+msgstr "Afitar la paridá del puertu serie."
+
+#: term/serial.c:51
+msgid "Set the serial port stop bits."
+msgstr "Afitar el bit de posa del puertu serie."
+
+#: util/grub-mkrawimage.c:69
+msgid "the core image is too small"
+msgstr "la imaxe del nucleu ye enforma pequeña"
+
+#: util/grub-mkrawimage.c:81
+msgid "cannot compress the kernel image"
+msgstr "nun puede comprimise la imaxe kernel"
+
+#: util/grub-mkrawimage.c:156
+msgid "prefix is too long"
+msgstr "el prefixu ye enforma llargu"
+
+#: util/grub-mkrawimage.c:242
+msgid "the core image is too big"
+msgstr "la imaxe del nucleu ye enforma grande"
+
+#: util/grub-mkrawimage.c:247
+#, c-format
+msgid "diskboot.img size must be %u bytes"
+msgstr "el tamañu de diskboot.img tien de ser de %u bytes"
+
+#: util/grub-mkrawimage.c:330
+#, c-format
+msgid "core image is too big (%p > %p)"
+msgstr "la imaxe del núcleu ye enforma grande (%p > %p)"
+
+#: util/grub-mkrawimage.c:434 util/i386/pc/grub-setup.c:587
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "Executa `%s --help' pa más información.\n"
+
+#: util/grub-mkrawimage.c:436
+#, fuzzy, c-format
+msgid ""
+"Usage: %s [OPTION]... [MODULES]\n"
+"\n"
+"Make a bootable image of GRUB.\n"
+"\n"
+"  -d, --directory=DIR     use images and modules under DIR [default=%s]\n"
+"  -p, --prefix=DIR        set grub_prefix directory [default=%s]\n"
+"  -m, --memdisk=FILE      embed FILE as a memdisk image\n"
+"  -f, --font=FILE         embed FILE as a boot font\n"
+"  -c, --config=FILE       embed FILE as boot config\n"
+"  -o, --output=FILE       output a generated image to FILE [default=stdout]\n"
+"  -O, --format=FORMAT     generate an image in format [default=%s]\n"
+"                          available formats: %s\n"
+"  -h, --help              display this message and exit\n"
+"  -V, --version           print version information and exit\n"
+"  -v, --verbose           print verbose messages\n"
+"\n"
+"Report bugs to <%s>.\n"
+msgstr ""
+"Mou d'usu:% s [OPCIÓN] ... [MÓDULOS]\n"
+"\n"
+"Crea una imaxe d'arranque de GRUB.\n"
+"  -d, - directory=DIR usa les imaxes y módulos asitiaos en DIR [por omisión ="
+"%s]\n"
+"  -p, - prefix=DIR asigna'l direutoriu grub_prefix [por omisión = %s]\n"
+"  -m, - memdisk=FICHERU incrusta FICHERU como imaxe memdisk\n"
+"  -F, - font=FICHERU incrusta FICHERU como tipografía d'arranque\n"
+"  -c, - config=FICHERU incrusta FICHERU como configuración d'arranque\n"
+"  -o, - output=FICHERU unvia la imaxe xenerada a FICHERU [por omisión = "
+"stdout]\n"
+"  -O, - format=FORMATU xenera una imaxe en FORMATU [por omisión ="
+
+#: util/grub-mkrawimage.c:580
+#, c-format
+msgid "cannot open %s"
+msgstr "nun puede abrise %s"
+
+#: util/i386/pc/grub-setup.c:159
+msgid "the first sector of the core file is not sector-aligned"
+msgstr "el primer sector del ficheru principal nun ta alliniáu col sector"
+
+#: util/i386/pc/grub-setup.c:173
+msgid "non-sector-aligned data is found in the core file"
+msgstr "atopáronse datos non alliniaos con un sector nel ficheru principal"
+
+#: util/i386/pc/grub-setup.c:187
+msgid "the sectors of the core file are too fragmented"
+msgstr "los sectores del ficheru núcleu tán enforma estrizaos."
+
+#: util/i386/pc/grub-setup.c:198
+#, c-format
+msgid "the size of `%s' is not %u"
+msgstr "el tamañu de «%s» nun ye %u"
+
+#: util/i386/pc/grub-setup.c:215
+#, c-format
+msgid "the size of `%s' is too small"
+msgstr "el tamañu de «%s» ye enforma pequeñu"
+
+#: util/i386/pc/grub-setup.c:217
+#, c-format
+msgid "the size of `%s' is too large"
+msgstr "el tamañu de «%s» ye enforma grande"
+
+#: util/i386/pc/grub-setup.c:254
+#, c-format
+msgid "unable to identify a filesystem in %s; safety check can't be performed"
+msgstr ""
+"nun ye dable identificar un sistema d'ficheros en %s; nun puede llevase a "
+"cabu una comprobación de seguridá"
+
+#: util/i386/pc/grub-setup.c:258
+#, c-format
+msgid ""
+"%s appears to contain a %s filesystem which isn't known to reserve space for "
+"DOS-style boot.  Installing GRUB there could result in FILESYSTEM "
+"DESTRUCTION if valuable data is overwritten by grub-setup (--skip-fs-probe "
+"disables this check, use at your own risk)"
+msgstr ""
+"%s paez contener un sistema de ficheros %s que nun sabi cómo acutar espaciu "
+"pa l'arranque estilu DOS. Instalar GRUB ehí podría probar una DESTRUCCIÓN "
+"DEL SISTEMA DE FICHEROS si se sobreescriben datos pervalibles per aciu de "
+"grub-setup (--skip-fs-probe desactiva esta comprobación; úsalu baxo la to "
+"responsabilidá)"
+
+#: util/i386/pc/grub-setup.c:307
+msgid "no DOS-style partitions found"
+msgstr "nun s'atopó denguna partición tipu DOS"
+
+#: util/i386/pc/grub-setup.c:323 util/i386/pc/grub-setup.c:348
+msgid ""
+"Attempting to install GRUB to a partitionless disk.  This is a BAD idea."
+msgstr ""
+"Intentando instalar GRUB a un discu ensin partición. Esto ye una MALA idega."
+
+#: util/i386/pc/grub-setup.c:329
+msgid ""
+"Attempting to install GRUB to a partition instead of the MBR.  This is a BAD "
+"idea."
+msgstr ""
+"Intentado instalar GRUB a una partición en llugar del MBR.  Esto ye una MALA "
+"idega."
+
+#: util/i386/pc/grub-setup.c:357
+msgid "No DOS-style partitions found"
+msgstr "Nun s'alcontraron particiones DOS-style"
+
+#: util/i386/pc/grub-setup.c:362
+msgid ""
+"This msdos-style partition label has no post-MBR gap; embedding won't be "
+"possible!"
+msgstr ""
+"Esta etiqueta de partición tipu MS-DOS nun tien un buecu darrera del MBR; "
+"nun ye dable incrustar"
+
+#: util/i386/pc/grub-setup.c:364
+msgid ""
+"This GPT partition label has no BIOS Boot Partition; embedding won't be "
+"possible!"
+msgstr ""
+"La etiqueta de partición GPT nun tien una Partición BIOS Boot; l'embebíu nun "
+"ye posible!"
+
+#: util/i386/pc/grub-setup.c:371
+msgid "Your core.img is unusually large.  It won't fit in the embedding area."
+msgstr ""
+"El core.img ye enforma grande.  Nun va poder contenese nel area d'embebíu"
+
+#: util/i386/pc/grub-setup.c:373
+msgid "Your embedding area is unusually small.  core.img won't fit in it."
+msgstr ""
+"La so área d'empotráu ye inusualmente pequeña. core.img nun va caber nella."
+
+#: util/i386/pc/grub-setup.c:416
+msgid ""
+"embedding is not possible, but this is required when the root device is on a "
+"RAID array or LVM volume"
+msgstr ""
+"nun ye posible incrusta, pero esto ye necesariu cuando'l preséu raigañu ta "
+"nún array RAID o nún volume LVM."
+
+#: util/i386/pc/grub-setup.c:419
+msgid ""
+"Embedding is not possible.  GRUB can only be installed in this setup by "
+"using blocklists.  However, blocklists are UNRELIABLE and its use is "
+"discouraged."
+msgstr ""
+"Nun ye dable incrustar. GRUB namái puede instalase nesta configuración "
+"usando llistes de bloques. Sicasí, éstes NUN SON FIABLES y el so usu "
+"desaconséyase."
+
+#: util/i386/pc/grub-setup.c:423
+msgid "if you really want blocklists, use --force"
+msgstr "Si daveres quies usar llistes de bloques, usa --force"
+
+#: util/i386/pc/grub-setup.c:439
+#, c-format
+msgid "attempting to read the core image `%s' from GRUB"
+msgstr "intentando lleer la imaxe del nucleu `%s' dende'l GRUB"
+
+#: util/i386/pc/grub-setup.c:440
+#, c-format
+msgid "attempting to read the core image `%s' from GRUB again"
+msgstr "intentando lleer la imaxe del nucleu `%s' dende'l GRUB otra vegada"
+
+#: util/i386/pc/grub-setup.c:498
+#, c-format
+msgid "cannot read `%s' correctly"
+msgstr "nun puede lleese «%s» correchamente"
+
+#: util/i386/pc/grub-setup.c:511
+msgid "no terminator in the core image"
+msgstr "nun hai terminador na imaxe principal"
+
+#: util/i386/pc/grub-setup.c:522
+msgid "failed to read the first sector of the core image"
+msgstr "fallu al lleer el primer sector de la imaxe principal"
+
+#: util/i386/pc/grub-setup.c:528
+msgid "failed to read the rest sectors of the core image"
+msgstr "fallu al lleer los restantes sectores de la imaxe principal"
+
+#: util/i386/pc/grub-setup.c:547
+#, c-format
+msgid "cannot open `%s'"
+msgstr "nun puede abrise «%s»"
+
+#: util/i386/pc/grub-setup.c:589
+#, c-format
+msgid ""
+"Usage: %s [OPTION]... DEVICE\n"
+"\n"
+"Set up images to boot from DEVICE.\n"
+"DEVICE must be a GRUB device (e.g. `(hd0,1)').\n"
+"\n"
+"  -b, --boot-image=FILE   use FILE as the boot image [default=%s]\n"
+"  -c, --core-image=FILE   use FILE as the core image [default=%s]\n"
+"  -d, --directory=DIR     use GRUB files in the directory DIR [default=%s]\n"
+"  -m, --device-map=FILE   use FILE as the device map [default=%s]\n"
+"  -r, --root-device=DEV   use DEV as the root device [default=guessed]\n"
+"  -f, --force             install even if problems are detected\n"
+"  -s, --skip-fs-probe     do not probe for filesystems in DEVICE\n"
+"  -h, --help              display this message and exit\n"
+"  -V, --version           print version information and exit\n"
+"  -v, --verbose           print verbose messages\n"
+"\n"
+"Report bugs to <%s>.\n"
+msgstr ""
+"Usu: %s [OPCIÓN]... PRESÉU\n"
+"\n"
+"Configura una imaxe pal arranque d'un PRESÉU.\n"
+"El PRESÉU tien de ser un preséu GRUB (por exemplu, «(hd0, 1) »).\n"
+"\n"
+"  -b, --boot-image=FICHERU usa FICHERU como la imaxe d'arranque "
+"[predetermináu=%s]\n"
+"  -c, --core-image=FICHERU usa FICHERU uso como la imaxe principal "
+"[predetermináu=%s]\n"
+"  -d, --directory=DIR usu de los ficheros de GRUB nel direutoriu DIR "
+"[predetermináu=%s]\n"
+"  -m, --device-map=FICHERU usa FICHERU como'l mapa de preséu [predetermináu=%"
+"s]\n"
+"  -r, --root-device=DIS usa DIS como preséu raigañu "
+"[predetermináu=aldovináu]\n"
+"  -f, --force fuercia la instalación anque se deteuten problemes\n"
+"  -s, --skip-fs-probe non prueba pa sistemes de ficheros en PRESÉU\n"
+"  -h, --help amuesa esti mensaxe y colar\n"
+"  -V, --version amuesa información sobro la versión y sal\n"
+"  -v, --verbose amuesa un mensaxe verbosu\n"
+"\n"
+"Informe de fallos a <%s>.\n"
+
+#: util/i386/pc/grub-setup.c:719
+#, c-format
+msgid "No device is specified.\n"
+msgstr "Nun s'especificó dengún preséu.\n"
+
+#: util/i386/pc/grub-setup.c:725
+#, c-format
+msgid "Unknown extra argument `%s'.\n"
+msgstr "Argumentu estra desconocíu `%s'.\n"
+
+#: util/i386/pc/grub-setup.c:742
+#, c-format
+msgid "Invalid device `%s'.\n"
+msgstr "Preséu inválidu `%s'.\n"
+
+#: util/i386/pc/grub-setup.c:755
+#, c-format
+msgid "invalid root device `%s'"
+msgstr "Preséu root invalidu «%s»"
+
+#: util/i386/pc/grub-setup.c:768
+msgid "cannot guess the root device. Specify the option `--root-device'"
+msgstr ""
+"nun puede determinase'l preséu raigañu. Especifique la opción `--root-device'"
+
+#: util/grub.d/10_kfreebsd.in:47
+msgid "%s, with kFreeBSD %s"
+msgstr "%s, con kFreeBSD %s"
+
+#: util/grub.d/10_kfreebsd.in:55
+msgid "Loading kernel of FreeBSD %s ..."
+msgstr "Cargando núcleu de FreeBSD %s ..."
+
+#: util/grub.d/10_linux.in:59
+msgid "%s, with Linux %s (recovery mode)"
+msgstr "%s, con Linux %s (mou recuperación)"
+
+#: util/grub.d/10_linux.in:61
+msgid "%s, with Linux %s"
+msgstr "%s, con Linux %s"
+
+#: util/grub.d/10_linux.in:86
+msgid "Loading Linux %s ..."
+msgstr "Cargando Linux %s ..."
+
+#: util/grub.d/10_linux.in:91
+msgid "Loading initial ramdisk ..."
+msgstr "Cargando'l discu RAM inicial..."
+
+#~ msgid "Load XNU ramdisk. It will be seen as md0."
+#~ msgstr "Carga XNU ramdisk. Va vese como md0"
+
+#~ msgid "Please check the following file: %s.\n"
+#~ msgstr "Por favor, comprueba'l siguiente ficheru: %s.\n"
+
+#~ msgid "This file must be removed before a bootable CD can be done.\n"
+#~ msgstr ""
+#~ "Esti ficheru ha desaniciase enantes de que pueda facese un CD "
+#~ "autoarrancable.\n"
+
+#~ msgid "Error creating boot catalog (%s)"
+#~ msgstr "Fallu creando catálogu de boot (%s)"
+
+#~ msgid "Error writing to boot catalog (%s)"
+#~ msgstr "Fallu escribiendo al catálogu de boot (%s)"
+
+#~ msgid "Boot catalog cannot be found!\n"
+#~ msgstr "Nun puede alcontrase catálogu de boot!\n"
+
+#~ msgid "Boot image cannot be found!\n"
+#~ msgstr "Nun puede alcontrase imaxe de Boot!\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Size of boot image is %d sectors"
+#~ msgstr ""
+#~ "\n"
+#~ "El tamañu de la imaxe del boot ye de %d sectores"
+
+#~ msgid "No emulation\n"
+#~ msgstr "Denguna emulación\n"
+
+#~ msgid "Emulating a 1.44 meg floppy\n"
+#~ msgstr "Emulando un 1.44 meg floppy\n"
+
+#~ msgid "Emulating a 2.88 meg floppy\n"
+#~ msgstr "Emulando un 2.88 meg floppy\n"
+
+#~ msgid "Emulating a 1.2 meg floppy\n"
+#~ msgstr "Emulando un 1.2 meg floppy\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Error - boot image is not the an allowable size.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Fallu - la imaxe del boot nun ye una dimensión permitida.\n"
+
+#~ msgid "Error opening boot catalog for update"
+#~ msgstr "Fallu abriendo catálogu de boot p'anovamientu"
+
+#~ msgid "Error writing to boot catalog"
+#~ msgstr "Fallu escribiendo catálogu del boot"
+
+#~ msgid "Error opening boot image file '%s' for update"
+#~ msgstr "Fallu abriendo ficheru d'imaxe del boot '%s' p'anovamientu"
+
+#~ msgid "Odd alignment at non-end-of-file in boot image '%s'"
+#~ msgstr ""
+#~ "Alliniamientu incorreutu nel non-fin-de-ficheru na imaxe del boot '%s'"
+
+#~ msgid "Boot image file '%s' changed unexpectedly"
+#~ msgstr "El ficheru d'imaxe de Boot '%s' camudó inesperadamente"
+
+#~ msgid "Error writing to boot image (%s)"
+#~ msgstr "Fallu escribiendo na imaxe del boot (%s)"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Set Application ID"
+#~ msgstr "Afitar ID d'Aplicación"
+
+#~ msgid "Set Bibliographic filename"
+#~ msgstr "Afitar nome de ficheru Bibliográficu"
+
+#~ msgid "Set embedded boot image name"
+#~ msgstr "Afitar nome d'imaxe d'arranque embebida"
+
+#~ msgid "Set El Torito boot image name"
+#~ msgstr "Afitar nome d'imaxe d'arranque El Torito"
+
+#~ msgid "Set El Torito boot catalog name"
+#~ msgstr "Afitar el nome de catálogu d'arranque El Torito"
+
+#~ msgid "Enable floppy drive emulation for El Torito"
+#~ msgstr "Activar emulación de preséu disquete pa El Torito"
+
+#~ msgid "PARAMS"
+#~ msgstr "PARAMS"
+
+#~ msgid "Magic parameters from cdrecord"
+#~ msgstr "Parámetros Magic pa cdrecord"
+
+#~ msgid "Follow symbolic links"
+#~ msgstr "Siguir enllaces simbólicos"
+
+#~ msgid "Print option help"
+#~ msgstr "Imprentar opción d'aida"
+
+#~ msgid "Print version information and exit"
+#~ msgstr "Imprentar información de versión y colar"
+
+#~ msgid "GLOBFILE"
+#~ msgstr "GLOBFILE"
+
+#~ msgid "Hide ISO9660/RR file"
+#~ msgstr "Anubrir ficheru ISO9660/RR"
+
+#~ msgid "Hide Joliet file"
+#~ msgstr "Anubrir ficheru Joliet"
+
+#~ msgid "ADD_FILES"
+#~ msgstr "ADD_FILES"
+
+#~ msgid "Generate Joliet directory information"
+#~ msgstr "Xenerar información de direutoriu Joliet"
+
+#~ msgid "Allow full 32 character filenames for iso9660 names"
+#~ msgstr ""
+#~ "Permitir nomes de ficheru de 32 carauteres de llargo pa nomes iso9660"
+
+#~ msgid "Allow iso9660 filenames to start with '.'"
+#~ msgstr "Permitir nomes de ficheru iso9660 aniciar con '.'"
+
+#~ msgid "LOG_FILE"
+#~ msgstr "LOG_FILE"
+
+#~ msgid "Re-direct messages to LOG_FILE"
+#~ msgstr "Redireicionar mensaxes a LOG_FILE"
+
+#~ msgid "Exclude file name"
+#~ msgstr "Escluyir nome de ficheru"
+
+#~ msgid "Set path to previous session to merge"
+#~ msgstr "Afitar camín a sesión previa p'amestar"
+
+#~ msgid "Omit version number from iso9660 filename"
+#~ msgstr "Omitir númberu de versión pa nome de ficheros iso9660"
+
+#~ msgid "Inhibit splitting symlink components"
+#~ msgstr "Impedir cortar componentes d'enllaces simbólicos"
+
+#~ msgid "Inhibit splitting symlink fields"
+#~ msgstr "Impedir cortar campos d'enllaces simbólicos"
+
+#~ msgid "Set output file name"
+#~ msgstr "Afitar nome de ficheru de salida"
+
+#~ msgid "PREP"
+#~ msgstr "PREP"
+
+#~ msgid "Print estimated filesystem size and exit"
+#~ msgstr "Imprentar tamañu estimáu de sistema de ficheru y colar"
+
+#~ msgid "PUB"
+#~ msgstr "PUB"
+
+#~ msgid "Split output into files of approx. 1GB size"
+#~ msgstr "Cortar salida en ficheros d'aprosimadamente 1Gb de tamañu"
+
+#~ msgid "Set System ID"
+#~ msgstr "Afitar ID Sistema"
+
+#~ msgid ""
+#~ "Generate translation tables for systems that don't understand long "
+#~ "filenames"
+#~ msgstr ""
+#~ "Xenerar tables de tornes pa sistemes que nun entienden nomes de ficheros "
+#~ "llargos"
+
+#~ msgid "Verbose"
+#~ msgstr "Detallao"
+
+#~ msgid "Set Volume ID"
+#~ msgstr "Afitar ID Volume"
+
+#~ msgid "Set Volume set ID"
+#~ msgstr "Afitar ID de Volume"
+
+#~ msgid "Set Volume set size"
+#~ msgstr "Afitar tamañu de Volume"
+
+#~ msgid "Set Volume set sequence number"
+#~ msgstr "Afitar númberu de secuencia a Volume"
+
+#~ msgid "Exclude file name (deprecated)"
+#~ msgstr "Escleyir nome de ficheru (anticuao)"
+
+#~ msgid "Override creation date"
+#~ msgstr "Sobroescribir data de criación"
+
+#~ msgid "Override modification date"
+#~ msgstr "Sobroescribir data de modificación"
+
+#~ msgid "Override expiration date"
+#~ msgstr "Sobroescribir data d'espiración"
+
+#~ msgid "Using \"%s\"\n"
+#~ msgstr "Usando \"%s\"\n"
+
+#~ msgid "%s:%d: name required\n"
+#~ msgstr "%s:%d: nome requeríu\n"
+
+#~ msgid "%s:%d: field name \"%s\" unknown\n"
+#~ msgstr "%s:%d: nome de campu \"%s\" desconocíu\n"
+
+#~ msgid "Usage: %s [options] file...\n"
+#~ msgstr "Usu: %s [opciones] ficheru...\n"
+
+#~ msgid "Options:\n"
+#~ msgstr "Opciones:\n"
+
+#~ msgid "Required boot image pathname missing"
+#~ msgstr "Falta camín pa la imaxe d'arranque"
+
+#~ msgid "Required boot catalog pathname missing\n"
+#~ msgstr "Falta camín pal catálogu d'arranque\n"
+
+#~ msgid "Ignoring -no-emul-boot (no-emulation is the default behaviour)\n"
+#~ msgstr ""
+#~ "Ignorando -no-emul-boot (no-emulation ye'l comportamientu por defeutu)\n"
+
+#~ msgid "Application-id string too long\n"
+#~ msgstr "Cadena Application-id demasiao llarga\n"
+
+#~ msgid "Copyright filename string too long\n"
+#~ msgstr "Cadena del nome de ficheru Copyright demasiao llarga\n"
+
+#~ msgid "System ID string too long\n"
+#~ msgstr "Cadena System ID demasiao llarga\n"
+
+#~ msgid "Volume ID string too long\n"
+#~ msgstr "Cadena Volume ID demasiao llarga\n"
+
+#~ msgid "date string must be 16 characters.\n"
+#~ msgstr "cadena data tien de ser 16 carauteres.\n"
+
+#~ msgid "Warning: getrlimit"
+#~ msgstr "Avisu: getrlimit"
+
+#~ msgid "Warning: setrlimit"
+#~ msgstr "Avisu: setrlimit"
+
+#~ msgid "Multisession usage bug: Must specify -C if -M is used.\n"
+#~ msgstr "Fallu n'usu Multisesión: Tienes qu'especificar -C si -M ye usao.\n"
+
+#~ msgid "can't open logfile: %s"
+#~ msgstr "Nun pudó abrise ficheru de rexistru: %s"
+
+#~ msgid "re-directing all messages to %s\n"
+#~ msgstr "redireicionar tolos mensaxes a %s\n"
+
+#~ msgid "can't open logfile: %s\n"
+#~ msgstr "nun pudó abrise ficheru de rexistru: %s\n"
+
+#~ msgid "Unable to open previous session image %s\n"
+#~ msgstr "Nun pudó abrise imaxe de sesión previa %s\n"
+
+#~ msgid "Invalid node - %s\n"
+#~ msgstr "nodu nun válidu - %s\n"
+
+#~ msgid "Unable to open /dev/null\n"
+#~ msgstr "Nun pudó abrise /dev/null\n"
+
+#~ msgid "Unable to open disc image file\n"
+#~ msgstr "Nun pudó abrise ficheru d'imaxe de discu\n"
+
+#~ msgid "Read error on old image %s\n"
+#~ msgstr "Fallu lleendo imaxe vieya %s\n"
+
+#~ msgid "Special parameters for cdwrite not specified with -C\n"
+#~ msgstr "Non especificaos parámetros especiales pa cdwrite con -C\n"
+
+#~ msgid "Malformed cdwrite parameters\n"
+#~ msgstr "Parámetros pa cdwrite mal formaos\n"
+
+#~ msgid "Unable to  generate unique  name for file %s\n"
+#~ msgstr "Nun pudó xenerase nome únicu pal ficheru %s\n"
+
+#~ msgid "Using %s for %s%s%s (%s)\n"
+#~ msgstr "Usando %s pa %s%s%s (%s)\n"
+
+#~ msgid "Unable to sort directory %s\n"
+#~ msgstr "Nun pudó ordenase'l direutoriu %s\n"
+
+#~ msgid "Unable to locate directory parent\n"
+#~ msgstr "Nun pudó llocalizase direutoriu padre\n"
+
+#~ msgid "Scanning %s\n"
+#~ msgstr "Escaneando %s\n"
+
+#~ msgid "Unable to open directory %s\n"
+#~ msgstr "Imposible abrir direutoriu %s\n"
+
+#~ msgid "Ignoring file %s\n"
+#~ msgstr "Inorando ficheru %s\n"
+
+#~ msgid "Excluded by match: %s\n"
+#~ msgstr "Escluyíu por coincidencia: %s\n"
+
+#~ msgid "Excluded: %s\n"
+#~ msgstr "Escluyíu: %s\n"
+
+#~ msgid "Non-existant or inaccessible: %s\n"
+#~ msgstr "Non esiste o inacesible: %s\n"
+
+#~ msgid "Symlink %s ignored - continuing.\n"
+#~ msgstr "Enllaz simbólicu %s ignoráu - siguiendo.\n"
+
+#~ msgid "File %s is not readable (%s) - ignoring\n"
+#~ msgstr "El ficheru %s nun ye lleíble (%s) - inorando\n"
+
+#~ msgid "Unknown file type %s - ignoring and continuing.\n"
+#~ msgstr "Triba de ficheru desconocíu %s - inorando y continuando.\n"
+
+#~ msgid "Hidden from ISO9660 tree: %s\n"
+#~ msgstr "Anubríu pal árbol ISO9660: %s\n"
+
+#~ msgid "Hidden from Joliet tree: %s\n"
+#~ msgstr "Anubríu pal árbol Joliet: %s\n"
+
+#~ msgid "Unable to delete non-empty directory\n"
+#~ msgstr "Imposible desaniciar direutoriu non-ermu\n"
+
+#~ msgid "Unable to locate child directory in parent list\n"
+#~ msgstr "Nun pudó llocalizase direutoriu fíyu na llista del padre\n"
+
+#~ msgid "Cannot open '%s'"
+#~ msgstr "Nun puede abrise '%s'"
+
+#~ msgid "cannot open %s\n"
+#~ msgstr "nun puede abrise %s\n"
+
+#~ msgid "cannot read %llu bytes from %s"
+#~ msgstr "nun pueden lleese %llu bytes dende %s"
+
+#~ msgid "%6.2f%% done, estimate finish %s"
+#~ msgstr "%6.2f%% fecho, estímase final %s"
+
+#~ msgid "Predicted = %d, written = %llu\n"
+#~ msgstr "Predecíu = %d, escritu = %llu\n"
+
+#~ msgid "Total translation table size: %d\n"
+#~ msgstr "Tamañu total de la tabla de torna: %d\n"
+
+#~ msgid "Total directory bytes: %d\n"
+#~ msgstr "Total de bytes del direutoriu: %d\n"
+
+#~ msgid "Unable to open %s"
+#~ msgstr "Nun puede abrise %s"
+
+#~ msgid "ESC to return previous menu."
+#~ msgstr "ESC pa tornar al menú previu."
+
+#~ msgid "Booting '%s'"
+#~ msgstr "Aniciando '%s'"
+
+#~ msgid "Falling back to '%s'"
+#~ msgstr "Fallu tornando a '%s'"
+
+#~ msgid "Failed to boot default entries.\n"
+#~ msgstr "Fallu al aniciar entraes por defeutu.\n"

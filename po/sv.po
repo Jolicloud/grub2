@@ -1,0 +1,1805 @@
+# Swedish strings for grub
+# Copyright (C) 2009, 2010 Free Software Foundation, Inc.
+# This file is distributed under the same license as the grub package.
+# Martin Bagge <brother@bsnet.se>, 2009.
+# Daniel Nylander <po@danielnylander.se>, 2009, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: grub 1.97+20100124\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-03-06 21:00+0100\n"
+"PO-Revision-Date: 2010-02-01 22:15+0100\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: commands/acpi.c:40
+msgid "Don't load host tables specified by comma-separated list."
+msgstr ""
+
+#: commands/acpi.c:43
+msgid "Load only tables specified by comma-separated list."
+msgstr ""
+
+#: commands/acpi.c:44
+msgid "Expose v1 tables."
+msgstr ""
+
+#: commands/acpi.c:45
+msgid "Expose v2 and v3 tables."
+msgstr ""
+
+#: commands/acpi.c:46
+msgid "Set OEMID of RSDP, XSDT and RSDT."
+msgstr ""
+
+#: commands/acpi.c:48
+msgid "Set OEMTABLE ID of RSDP, XSDT and RSDT."
+msgstr ""
+
+#: commands/acpi.c:50
+msgid "Set OEMTABLE revision of RSDP, XSDT and RSDT."
+msgstr ""
+
+#: commands/acpi.c:52
+msgid "Set creator field of RSDP, XSDT and RSDT."
+msgstr ""
+
+#: commands/acpi.c:54
+msgid "Set creator revision of RSDP, XSDT and RSDT."
+msgstr ""
+
+#: commands/acpi.c:55
+msgid ""
+"Don't update EBDA. May fix failures or hangs on some. BIOSes but makes it "
+"ineffective with OS not receiving RSDP from GRUB."
+msgstr ""
+
+#: commands/acpi.c:763
+msgid ""
+"[-1|-2] [--exclude=TABLE1,TABLE2|--load-only=table1,table2] FILE1 [FILE2] "
+"[...]"
+msgstr ""
+
+#: commands/acpi.c:766
+msgid "Load host ACPI tables and tables specified by arguments."
+msgstr ""
+
+#: commands/blocklist.c:114 commands/cat.c:82 commands/configfile.c:57
+#: commands/configfile.c:60 commands/configfile.c:65 commands/crc.c:64
+#: commands/minicmd.c:357 loader/i386/bsd.c:1297 loader/i386/bsd.c:1301
+#: loader/i386/bsd.c:1305
+msgid "FILE"
+msgstr "FIL"
+
+#: commands/blocklist.c:114
+msgid "Print a block list."
+msgstr "Skriv ut en blocklista."
+
+#: commands/boot.c:190
+msgid "Boot an operating system."
+msgstr "Starta upp ett operativsystem."
+
+#: commands/cat.c:82 commands/minicmd.c:357
+msgid "Show the contents of a file."
+msgstr "Visa innehållet av en fil."
+
+#: commands/cmp.c:113
+msgid "FILE1 FILE2"
+msgstr "FIL1 FIL2"
+
+#: commands/cmp.c:113
+msgid "Compare two files."
+msgstr "Jämför två filer."
+
+#: commands/configfile.c:57
+msgid "Load another config file."
+msgstr "Läs in en annan konfigurationsfil."
+
+#: commands/configfile.c:61 commands/configfile.c:66
+msgid "Load another config file without changing context."
+msgstr ""
+
+#: commands/crc.c:65
+msgid "Calculate the crc32 checksum of a file."
+msgstr ""
+
+#: commands/date.c:139
+msgid "[[year-]month-day] [hour:minute[:second]]"
+msgstr ""
+
+#: commands/date.c:140
+msgid "Command to display/set current datetime."
+msgstr ""
+
+#: commands/echo.c:27
+msgid "Do not output the trailing newline."
+msgstr ""
+
+#: commands/echo.c:28
+msgid "Enable interpretation of backslash escapes."
+msgstr ""
+
+#: commands/echo.c:117
+msgid "[-e|-n] STRING"
+msgstr "[-e|-n] STRÄNG"
+
+#: commands/echo.c:117
+msgid "Display a line of text."
+msgstr "Visa en rad text."
+
+#: commands/efi/fixvideo.c:103
+msgid "Fix video problem."
+msgstr ""
+
+#: commands/efi/loadbios.c:207
+msgid "Fake BIOS."
+msgstr ""
+
+#: commands/efi/loadbios.c:211
+msgid "Load BIOS dump."
+msgstr ""
+
+#: commands/gptsync.c:244
+msgid "DEVICE [PARTITION[+/-[TYPE]]] ..."
+msgstr "ENHET [PARTITION[+/-[TYP]]] ..."
+
+#: commands/gptsync.c:245
+msgid ""
+"Fill hybrid MBR of GPT drive DEVICE. specified partitions will be a part of "
+"hybrid mbr. Up to 3 partitions are allowed. TYPE is an MBR type. + means "
+"that partition is active. Only one partition can be active."
+msgstr ""
+
+#: commands/halt.c:39
+msgid ""
+"Halts the computer.  This command does not work on all firmware "
+"implementations."
+msgstr ""
+
+#: commands/handler.c:94
+msgid "[class [handler]]"
+msgstr ""
+
+#: commands/handler.c:95
+msgid "List or select a handler."
+msgstr ""
+
+#: commands/hdparm.c:30
+msgid ""
+"Set Advanced Power Management\n"
+"(1=low, ..., 254=high, 255=off)."
+msgstr ""
+
+#: commands/hdparm.c:33
+msgid "Check power mode."
+msgstr ""
+
+#: commands/hdparm.c:34
+msgid "Freeze ATA security settings until reset."
+msgstr ""
+
+#: commands/hdparm.c:36
+msgid "Check SMART health status."
+msgstr ""
+
+#: commands/hdparm.c:37
+msgid ""
+"Set Automatic Acoustic Management\n"
+"(0=off, 128=quiet, ..., 254=fast)."
+msgstr ""
+
+#: commands/hdparm.c:40
+msgid ""
+"Set standby timeout\n"
+"(0=off, 1=5s, 2=10s, ..., 240=20m, 241=30m, ...)."
+msgstr ""
+
+#: commands/hdparm.c:43
+msgid "Set drive to standby mode."
+msgstr ""
+
+#: commands/hdparm.c:44
+msgid "Set drive to sleep mode."
+msgstr ""
+
+#: commands/hdparm.c:45
+msgid "Print drive identity and settings."
+msgstr ""
+
+#: commands/hdparm.c:47
+msgid "Dump contents of ATA IDENTIFY sector."
+msgstr ""
+
+#: commands/hdparm.c:49
+msgid "Disable/enable SMART (0/1)."
+msgstr "Inaktivera/aktivera SMART (0/1)."
+
+#: commands/hdparm.c:50
+msgid "Do not print messages."
+msgstr "Skriv inte ut meddelanden."
+
+#: commands/hdparm.c:414
+msgid "[OPTIONS] DISK"
+msgstr "[FLAGGOR] DISK"
+
+#: commands/hdparm.c:415
+msgid "Get/set ATA disk parameters."
+msgstr ""
+
+#: commands/help.c:103 lib/arg.c:110
+msgid "Usage:"
+msgstr "Användning:"
+
+#: commands/help.c:136
+msgid "[PATTERN ...]"
+msgstr "[MÖNSTER ...]"
+
+#: commands/help.c:137
+msgid "Show a help message."
+msgstr "Visa ett hjälpmeddelande."
+
+#: commands/hexdump.c:30
+msgid "Skip offset bytes from the beginning of file."
+msgstr ""
+
+#: commands/hexdump.c:32
+msgid "Read only LENGTH bytes."
+msgstr ""
+
+#: commands/hexdump.c:125
+msgid "[OPTIONS] FILE_OR_DEVICE"
+msgstr "[FLAGGOR] FIL_ELLER_ENHET"
+
+#: commands/hexdump.c:126
+msgid "Dump the contents of a file or memory."
+msgstr ""
+
+#: commands/i386/cpuid.c:37
+msgid "Check for long mode flag (default)."
+msgstr ""
+
+#: commands/i386/cpuid.c:92
+msgid "Check for CPU features."
+msgstr ""
+
+#: commands/i386/pc/drivemap.c:37
+msgid "Show the current mappings."
+msgstr ""
+
+#: commands/i386/pc/drivemap.c:38
+msgid "Reset all mappings to the default values."
+msgstr ""
+
+#: commands/i386/pc/drivemap.c:39
+msgid "Perform both direct and reverse mappings."
+msgstr ""
+
+#: commands/i386/pc/drivemap.c:407
+msgid "-l | -r | [-s] grubdev osdisk."
+msgstr ""
+
+#: commands/i386/pc/drivemap.c:408
+msgid "Manage the BIOS drive mappings."
+msgstr ""
+
+#: commands/i386/pc/halt.c:27
+msgid "Do not use APM to halt the computer."
+msgstr ""
+
+#: commands/i386/pc/halt.c:51
+msgid "Halt the system, if possible using APM."
+msgstr ""
+
+#: commands/i386/pc/play.c:262
+msgid "FILE | TEMPO [PITCH1 DURATION1] [PITCH2 DURATION2] ... "
+msgstr ""
+
+#: commands/i386/pc/play.c:263
+msgid "Play a tune."
+msgstr ""
+
+#: commands/i386/pc/pxecmd.c:46
+msgid "Unload PXE environment."
+msgstr ""
+
+#: commands/i386/pc/vbeinfo.c:179
+msgid "List compatible VESA BIOS extension video modes."
+msgstr ""
+
+#: commands/i386/pc/vbetest.c:173
+msgid "Test VESA BIOS Extension 2.0+ support."
+msgstr ""
+
+#: commands/ieee1275/suspend.c:43
+msgid "Return to Open Firmware prompt."
+msgstr ""
+
+#: commands/keystatus.c:28
+msgid "Check Shift key."
+msgstr ""
+
+#: commands/keystatus.c:29
+msgid "Check Control key."
+msgstr ""
+
+#: commands/keystatus.c:30
+msgid "Check Alt key."
+msgstr ""
+
+#: commands/keystatus.c:85
+msgid "[--shift] [--ctrl] [--alt]"
+msgstr "[--shift] [--ctrl] [--alt]"
+
+#: commands/keystatus.c:86
+msgid "Check key modifier status."
+msgstr ""
+
+#: commands/loadenv.c:33
+msgid "Specify filename."
+msgstr "Ange filnamn."
+
+#: commands/loadenv.c:383 commands/loadenv.c:389
+msgid "[-f FILE]"
+msgstr "[-f FIL]"
+
+#: commands/loadenv.c:384
+msgid "Load variables from environment block file."
+msgstr ""
+
+#: commands/loadenv.c:390
+msgid "List variables from environment block file."
+msgstr ""
+
+#: commands/loadenv.c:395
+msgid "[-f FILE] variable_name [...]"
+msgstr "[-f FIL] variabelnamn [...]"
+
+#: commands/loadenv.c:396
+msgid "Save variables to environment block file."
+msgstr ""
+
+#: commands/ls.c:37
+msgid "Show a long list with more detailed information."
+msgstr ""
+
+#: commands/ls.c:38
+msgid "Print sizes in a human readable format."
+msgstr ""
+
+#: commands/ls.c:39
+msgid "List all files."
+msgstr "Lista alla filer."
+
+#: commands/ls.c:269
+msgid "[-l|-h|-a] [FILE]"
+msgstr "[-l|-h|-a] [FIL]"
+
+#: commands/ls.c:270
+msgid "List devices and files."
+msgstr "Lista enheter och filer."
+
+#: commands/lsmmap.c:47
+msgid "List memory map provided by firmware."
+msgstr ""
+
+#: commands/lspci.c:228
+msgid "List PCI devices."
+msgstr "Lista PCI-enheter."
+
+#: commands/memrw.c:31
+msgid "Save read value into variable VARNAME."
+msgstr ""
+
+#: commands/memrw.c:123 commands/memrw.c:126 commands/memrw.c:129
+#: commands/minicmd.c:366
+msgid "ADDR"
+msgstr "ADR"
+
+#: commands/memrw.c:123
+msgid "Read byte from ADDR."
+msgstr "Läs byte från ADR."
+
+#: commands/memrw.c:126
+msgid "Read word from ADDR."
+msgstr "Läs word från ADR."
+
+#: commands/memrw.c:129
+msgid "Read dword from ADDR."
+msgstr "Läs dword från ADR."
+
+#: commands/memrw.c:132 commands/memrw.c:135 commands/memrw.c:138
+msgid "ADDR VALUE [MASK]"
+msgstr ""
+
+#: commands/memrw.c:132
+msgid "Write byte VALUE to ADDR."
+msgstr ""
+
+#: commands/memrw.c:135
+msgid "Write word VALUE to ADDR."
+msgstr ""
+
+#: commands/memrw.c:138
+msgid "Write dword VALUE to ADDR."
+msgstr ""
+
+#: commands/minicmd.c:360
+msgid "Show this message."
+msgstr "Visa detta meddelande."
+
+#: commands/minicmd.c:363 commands/probe.c:154
+msgid "[DEVICE]"
+msgstr "[ENHET]"
+
+#: commands/minicmd.c:363
+msgid "Set the root device."
+msgstr ""
+
+#: commands/minicmd.c:366
+msgid "Dump memory."
+msgstr ""
+
+#: commands/minicmd.c:369
+msgid "MODULE"
+msgstr "MODUL"
+
+#: commands/minicmd.c:369
+msgid "Remove a module."
+msgstr "Ta bort en modul."
+
+#: commands/minicmd.c:372
+msgid "Show loaded modules."
+msgstr "Visa inlästa moduler."
+
+#: commands/minicmd.c:375
+msgid "Exit from GRUB."
+msgstr "Avsluta GRUB."
+
+#: commands/minicmd.c:378
+msgid "Clear the screen."
+msgstr "Töm skärmen."
+
+#: commands/parttool.c:325
+msgid "PARTITION COMMANDS"
+msgstr ""
+
+#: commands/password.c:78
+msgid "USER PASSWORD"
+msgstr ""
+
+#: commands/password.c:79
+msgid "Set user password (plaintext). Unrecommended and insecure."
+msgstr ""
+
+#: commands/probe.c:38
+msgid "Set a variable to return value."
+msgstr ""
+
+#: commands/probe.c:39
+msgid "Determine driver."
+msgstr "Fastställ drivrutin."
+
+#: commands/probe.c:40
+msgid "Determine partition map type."
+msgstr ""
+
+#: commands/probe.c:41
+msgid "Determine filesystem type."
+msgstr "Fastställ filsystemstyp."
+
+#: commands/probe.c:42
+msgid "Determine filesystem UUID."
+msgstr ""
+
+#: commands/probe.c:43
+msgid "Determine filesystem label."
+msgstr ""
+
+#: commands/probe.c:155
+msgid "Retrieve device info."
+msgstr ""
+
+#: commands/read.c:83
+msgid "[ENVVAR]"
+msgstr ""
+
+#: commands/read.c:84
+msgid "Set variable with user input."
+msgstr ""
+
+#: commands/reboot.c:39
+msgid "Reboot the computer."
+msgstr "Starta om datorn."
+
+#: commands/search.c:161
+msgid "NAME [VARIABLE]"
+msgstr "NAMN [VARIABEL]"
+
+#: commands/search_file.c:5
+msgid ""
+"Search devices by file. If VARIABLE is specified, the first device found is "
+"set to a variable."
+msgstr ""
+
+#: commands/search_label.c:5
+msgid ""
+"Search devices by label. If VARIABLE is specified, the first device found is "
+"set to a variable."
+msgstr ""
+
+#: commands/search_uuid.c:5
+msgid ""
+"Search devices by UUID. If VARIABLE is specified, the first device found is "
+"set to a variable."
+msgstr ""
+
+#: commands/sleep.c:31
+msgid "Verbose countdown."
+msgstr ""
+
+#: commands/sleep.c:32
+msgid "Interruptible with ESC."
+msgstr ""
+
+#: commands/sleep.c:106
+msgid "NUMBER_OF_SECONDS"
+msgstr "ANTAL_SEKUNDER"
+
+#: commands/sleep.c:107
+msgid "Wait for a specified number of seconds."
+msgstr "Vänta ett angivet antal sekunder."
+
+#: commands/test.c:424
+msgid "EXPRESSION ]"
+msgstr "UTTRYCK ]"
+
+#: commands/test.c:424 commands/test.c:426
+msgid "Evaluate an expression."
+msgstr "Evaluera ett uttryck."
+
+#: commands/test.c:426
+msgid "EXPRESSION"
+msgstr "UTTRYCK"
+
+#: commands/true.c:47
+msgid "Do nothing, successfully."
+msgstr "Gör ingenting, lyckas."
+
+#: commands/true.c:50
+msgid "Do nothing, unsuccessfully."
+msgstr "Gör ingenting, misslyckas."
+
+#: commands/usbtest.c:199
+msgid "Test USB support."
+msgstr "Testa USB-stöd."
+
+#: commands/videotest.c:180
+msgid "Test video subsystem."
+msgstr ""
+
+#: commands/xnu_uuid.c:92
+msgid "GRUBUUID [VARNAME]"
+msgstr ""
+
+#: commands/xnu_uuid.c:93
+msgid "Transform 64-bit UUID to format suitable for XNU."
+msgstr ""
+
+#: disk/loopback.c:40
+msgid "Delete the loopback device entry."
+msgstr ""
+
+#: disk/loopback.c:41
+msgid "Simulate a hard drive with partitions."
+msgstr "Simulera en hårddisk med partitioner."
+
+#: disk/loopback.c:249
+msgid "[-d|-p] DEVICENAME FILE."
+msgstr "[-d|-p] ENHETSNAMN FIL."
+
+#: disk/loopback.c:250
+msgid "Make a device of a file."
+msgstr "Gör en enhet av en fil."
+
+#: hello/hello.c:43
+msgid "Say \"Hello World\"."
+msgstr "Säg \"Hello World\"."
+
+#: lib/arg.c:34
+msgid "Display this help and exit."
+msgstr "Visa denna hjälp och avsluta."
+
+#: lib/arg.c:36
+msgid "Display the usage of this command and exit."
+msgstr ""
+
+#: loader/efi/appleloader.c:325
+msgid "Boot legacy system."
+msgstr ""
+
+#: loader/efi/chainloader.c:340 loader/i386/pc/chainloader.c:153
+msgid "Load another boot loader."
+msgstr "Läs in en annan starthanterare."
+
+#: loader/i386/bsd.c:65
+msgid "Display output on all consoles."
+msgstr "Visa utskrift på alla konsoller."
+
+#: loader/i386/bsd.c:66
+msgid "Use serial console."
+msgstr "Använd seriekonsoll."
+
+#: loader/i386/bsd.c:67 loader/i386/bsd.c:93 loader/i386/bsd.c:114
+msgid "Ask for file name to reboot from."
+msgstr "Fråga efter filnamn att starta upp från."
+
+#: loader/i386/bsd.c:68
+msgid "Use CDROM as root."
+msgstr "Använd CDROM som rot."
+
+#: loader/i386/bsd.c:69
+msgid "Invoke user configuration routing."
+msgstr ""
+
+#: loader/i386/bsd.c:70 loader/i386/bsd.c:97 loader/i386/bsd.c:117
+msgid "Enter in KDB on boot."
+msgstr "Ange i KDB vid uppstart."
+
+#: loader/i386/bsd.c:71
+msgid "Use GDB remote debugger instead of DDB."
+msgstr "Använd fjärrfelsökaren GDB istället för DDB."
+
+#: loader/i386/bsd.c:72
+msgid "Disable all boot output."
+msgstr "Inaktivera all utskrift under uppstart."
+
+#: loader/i386/bsd.c:74
+msgid "Wait for keypress after every line of output."
+msgstr "Vänta på tangenttryckning efter varje utskriftsrad."
+
+#: loader/i386/bsd.c:76
+msgid "Use compiled-in rootdev."
+msgstr "Använd inkompilerad rootdev."
+
+#: loader/i386/bsd.c:77 loader/i386/bsd.c:96 loader/i386/bsd.c:120
+msgid "Boot into single mode."
+msgstr "Starta upp i enanvändarläge."
+
+#: loader/i386/bsd.c:78 loader/i386/bsd.c:121
+msgid "Boot with verbose messages."
+msgstr "Starta upp med informativa meddelanden."
+
+#: loader/i386/bsd.c:94 loader/i386/bsd.c:115
+msgid "Don't reboot, just halt."
+msgstr "Starta inte om, stanna bara."
+
+#: loader/i386/bsd.c:95 loader/i386/bsd.c:116
+msgid "Change configured devices."
+msgstr "Ändra konfigurerade enheter."
+
+#: loader/i386/bsd.c:98 loader/i386/bsd.c:124
+msgid "Set root device."
+msgstr "Ange rotenhet."
+
+#: loader/i386/bsd.c:112
+msgid "Disable SMP."
+msgstr "Inaktivera SMP."
+
+#: loader/i386/bsd.c:113
+msgid "Disable ACPI."
+msgstr "Inaktivera ACPI."
+
+#: loader/i386/bsd.c:119
+msgid "Don't display boot diagnostic messages."
+msgstr "Visa inte uppstartsmeddelanden för diagnostik."
+
+#: loader/i386/bsd.c:122
+msgid "Boot with debug messages."
+msgstr "Starta upp med felsökningsmeddelanden."
+
+#: loader/i386/bsd.c:123
+msgid "Supress normal output (warnings remain)."
+msgstr ""
+
+#: loader/i386/bsd.c:124
+msgid "DEVICE"
+msgstr "ENHET"
+
+#: loader/i386/bsd.c:1297
+msgid "Load kernel of FreeBSD."
+msgstr "Läs in kärna för FreeBSD."
+
+#: loader/i386/bsd.c:1301
+msgid "Load kernel of OpenBSD."
+msgstr "Läs in kärna för OpenBSD."
+
+#: loader/i386/bsd.c:1305
+msgid "Load kernel of NetBSD."
+msgstr "Läs in kärna för NetBSD."
+
+#: loader/i386/bsd.c:1309
+msgid "Load FreeBSD env."
+msgstr ""
+
+#: loader/i386/bsd.c:1312
+msgid "Load FreeBSD kernel module."
+msgstr "Läs in kärnmodul för FreeBSD."
+
+#: loader/i386/bsd.c:1315
+msgid "Load FreeBSD kernel module (ELF)."
+msgstr "Läs in kärnmodul för FreeBSD (ELF)."
+
+#: loader/i386/efi/linux.c:1011 loader/i386/ieee1275/linux.c:301
+#: loader/i386/linux.c:1012 loader/i386/pc/linux.c:399
+#: loader/powerpc/ieee1275/linux.c:353 loader/sparc64/ieee1275/linux.c:514
+msgid "Load Linux."
+msgstr "Läs in Linux."
+
+#: loader/i386/efi/linux.c:1013 loader/i386/ieee1275/linux.c:303
+#: loader/i386/linux.c:1014 loader/i386/pc/linux.c:402
+#: loader/powerpc/ieee1275/linux.c:355 loader/sparc64/ieee1275/linux.c:516
+msgid "Load initrd."
+msgstr "Läs in initrd."
+
+#: loader/i386/xnu.c:1032
+msgid "Load device-properties dump."
+msgstr ""
+
+#: loader/multiboot_loader.c:133
+msgid "Load a multiboot 2 kernel."
+msgstr ""
+
+#: loader/multiboot_loader.c:136
+msgid "Load a multiboot kernel."
+msgstr ""
+
+#: loader/multiboot_loader.c:141
+msgid "Load a multiboot module."
+msgstr ""
+
+#: loader/xnu.c:1428
+msgid "Load XNU image."
+msgstr "Läs in XNU-avbildning."
+
+#: loader/xnu.c:1430
+msgid "Load 64-bit XNU image."
+msgstr "Läs in 64-bitars XNU-avbildning."
+
+#: loader/xnu.c:1432
+msgid "Load XNU extension package."
+msgstr ""
+
+#: loader/xnu.c:1434
+msgid "Load XNU extension."
+msgstr "Läs in XNU-utökning."
+
+#: loader/xnu.c:1436
+msgid "DIRECTORY [OSBundleRequired]"
+msgstr "KATALOG [OSBundleRequired]"
+
+#: loader/xnu.c:1437
+msgid "Load XNU extension directory."
+msgstr ""
+
+#: loader/xnu.c:1444
+msgid "Load a splash image for XNU."
+msgstr "Läs in en startbild för XNU."
+
+#: loader/xnu.c:1449
+msgid "Load XNU hibernate image."
+msgstr "Läs in XNU-avbildning för viloläge."
+
+#: normal/auth.c:233
+msgid "Enter username: "
+msgstr "Ange användarnamn: "
+
+#: normal/auth.c:238
+msgid "Enter password: "
+msgstr "Ange lösenord: "
+
+#: normal/color.c:80
+#, c-format
+msgid "Warning: syntax error (missing slash) in `%s'\n"
+msgstr "Varning: syntaxfel (saknar snedstreck) i \"%s\"\n"
+
+#: normal/color.c:89
+#, c-format
+msgid "Warning: invalid foreground color `%s'\n"
+msgstr "Varning: ogiltig förgrundsfärg \"%s\"\n"
+
+#: normal/color.c:95
+#, c-format
+msgid "Warning: invalid background color `%s'\n"
+msgstr "Varning: ogiltig bakgrundsfärg \"%s\"\n"
+
+#: normal/dyncmd.c:147
+msgid "not loaded"
+msgstr "inte inläst"
+
+#: normal/main.c:408
+#, c-format
+msgid "GNU GRUB  version %s"
+msgstr "GNU GRUB  version %s"
+
+#: normal/main.c:539
+#, c-format
+msgid ""
+"Minimal BASH-like line editing is supported. For the first word, TAB lists "
+"possible command completions. Anywhere else TAB lists possible device or "
+"file completions. %s"
+msgstr ""
+"Minimal Bash-liknande radeditering stöds. För det första ordet kan tabulator-"
+"tangenteten användas för att visa kompletteringsalternativ. I övriga fall "
+"visa tabulator-tangenten möjliga enheter eller filnamn för komplettering. %s"
+
+#: normal/main.c:542
+msgid "ESC at any time exits."
+msgstr "ESC när som helst avslutar."
+
+#: normal/menu_entry.c:1060
+msgid "Possible commands are:"
+msgstr "Möjliga kommandon är:"
+
+#: normal/menu_entry.c:1064
+msgid "Possible devices are:"
+msgstr "Möjliga enheter är:"
+
+#: normal/menu_entry.c:1068
+msgid "Possible files are:"
+msgstr "Möjliga filer är:"
+
+#: normal/menu_entry.c:1072
+msgid "Possible partitions are:"
+msgstr "Möjliga partitioner är:"
+
+#: normal/menu_entry.c:1076
+msgid "Possible arguments are:"
+msgstr "Möjliga argument är:"
+
+#: normal/menu_entry.c:1080
+msgid "Possible things are:"
+msgstr "Möjliga saker är:"
+
+#: normal/menu_entry.c:1184
+msgid "Booting a command list"
+msgstr "Starta en kommandolista"
+
+#: normal/menu_entry.c:1397
+msgid "Press any key to continue..."
+msgstr "Tryck på en tangent för att fortsätta..."
+
+#: normal/menu_text.c:179
+msgid ""
+"Minimum Emacs-like screen editing is supported. TAB lists completions. Press "
+"Ctrl-x to boot, Ctrl-c for a command-line or ESC to return menu."
+msgstr ""
+"Minimal Emacs-liknande skärmeditering stöds. Tabulator-tangenten används för "
+"att visa kompletteringsalternativ. Ange Ctrl-x för att starta, Ctrl-c för "
+"kommandorad eller ESC för att återgå till menyn."
+
+#: normal/menu_text.c:186
+#, c-format
+msgid "Use the %C and %C keys to select which entry is highlighted.\n"
+msgstr "Använd tangenterna %C och %C för att navigera bland valen.\n"
+
+#: normal/menu_text.c:203
+msgid ""
+"Press enter to boot the selected OS, 'e' to edit the commands before booting "
+"or 'c' for a command-line. ESC to return previous menu.\n"
+msgstr ""
+"Tryck Enter för att starta upp markerat val, \"e\" för att redigera "
+"kommandon innan uppstart eller \"c\" för kommandorad. ESC för att återgå "
+"till föregående meny.\n"
+
+#: normal/menu_text.c:211
+msgid ""
+"Press enter to boot the selected OS, 'e' to edit the commands before booting "
+"or 'c' for a command-line.\n"
+msgstr ""
+"Tryck Enter för att starta upp markerat val, \"e\" för att redigera "
+"kommandon innan uppstart eller \"c\" för kommandorad.\n"
+
+#: normal/menu_text.c:363
+#, c-format
+msgid "The highlighted entry will be executed automatically in %ds."
+msgstr "Markerat val kommer att startas upp automatiskt om %d sekunder."
+
+#: normal/misc.c:41
+#, c-format
+msgid "Partition %s:"
+msgstr "Partition %s:"
+
+#: normal/misc.c:46
+#, c-format
+msgid "Device %s:"
+msgstr "Enhet %s:"
+
+#: normal/misc.c:52
+msgid "Filesystem cannot be accessed"
+msgstr "Filsystemet går inte att komma åt"
+
+#: normal/misc.c:63
+#, c-format
+msgid "Filesystem type %s"
+msgstr "Filsystemstyp %s"
+
+#: normal/misc.c:73
+#, c-format
+msgid "- Label \"%s\""
+msgstr "- Etikett \"%s\""
+
+#: normal/misc.c:88
+#, c-format
+msgid "- Last modification time %d-%02d-%02d %02d:%02d:%02d %s"
+msgstr "- Senaste ändringsdatum %d-%02d-%02d %02d.%02d.%02d %s"
+
+#: normal/misc.c:111
+msgid "Unknown filesystem"
+msgstr "Okänt filsystem"
+
+#: normal/misc.c:113
+msgid "Partition table"
+msgstr "Partitionstabell"
+
+#: term/serial.c:46
+msgid "Set the serial unit."
+msgstr "Ställ in serieenhet."
+
+#: term/serial.c:47
+msgid "Set the serial port address."
+msgstr "Ställ in adress för serieporten."
+
+#: term/serial.c:48
+msgid "Set the serial port speed."
+msgstr "Ställ in hastighet för serieporten."
+
+#: term/serial.c:49
+msgid "Set the serial port word length."
+msgstr "Ställ in ordlängd för serieporten."
+
+#: term/serial.c:50
+msgid "Set the serial port parity."
+msgstr "Ställ in paritet för serieporten."
+
+#: term/serial.c:51
+msgid "Set the serial port stop bits."
+msgstr "Ställ in stoppbitar för serieporten."
+
+#: util/grub-mkrawimage.c:69
+msgid "the core image is too small"
+msgstr "kärnavbildningen är för liten"
+
+#: util/grub-mkrawimage.c:81
+msgid "cannot compress the kernel image"
+msgstr "kan inte komprimera kärnavbildningen"
+
+#: util/grub-mkrawimage.c:156
+msgid "prefix is too long"
+msgstr "för långt prefix"
+
+#: util/grub-mkrawimage.c:242
+msgid "the core image is too big"
+msgstr "kärnavbildningen är för stor"
+
+#: util/grub-mkrawimage.c:247
+#, c-format
+msgid "diskboot.img size must be %u bytes"
+msgstr "storleken på diskboot.img måste vara %u byte"
+
+#: util/grub-mkrawimage.c:330
+#, c-format
+msgid "core image is too big (%p > %p)"
+msgstr "kärnavbildningen är för stor (%p > %p)"
+
+#: util/grub-mkrawimage.c:434 util/i386/pc/grub-setup.c:587
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "Prova \"%s --help\" för mer information.\n"
+
+#: util/grub-mkrawimage.c:436
+#, fuzzy, c-format
+msgid ""
+"Usage: %s [OPTION]... [MODULES]\n"
+"\n"
+"Make a bootable image of GRUB.\n"
+"\n"
+"  -d, --directory=DIR     use images and modules under DIR [default=%s]\n"
+"  -p, --prefix=DIR        set grub_prefix directory [default=%s]\n"
+"  -m, --memdisk=FILE      embed FILE as a memdisk image\n"
+"  -f, --font=FILE         embed FILE as a boot font\n"
+"  -c, --config=FILE       embed FILE as boot config\n"
+"  -o, --output=FILE       output a generated image to FILE [default=stdout]\n"
+"  -O, --format=FORMAT     generate an image in format [default=%s]\n"
+"                          available formats: %s\n"
+"  -h, --help              display this message and exit\n"
+"  -V, --version           print version information and exit\n"
+"  -v, --verbose           print verbose messages\n"
+"\n"
+"Report bugs to <%s>.\n"
+msgstr ""
+"Användning: %s [FLAGGA]... [MODULER]\n"
+"\n"
+"Gör en startbar avbildning av GRUB.\n"
+"\n"
+"  -d, --directory=KAT     använd avbildningar och moduler i katalog KAT "
+"[standard=%s]\n"
+"  -p, --prefix=KAT        ange katalog för grub_prefix [standard=%s]\n"
+"  -m, --memdisk=FIL       bädda in FIL som en memdisk-avbildning\n"
+"  -f, --font=FIL          bädda in FIL som ett uppstartstypsnitt\n"
+"  -c, --config=FIL        bädda in FIL som uppstartskonfiguration\n"
+"  -o, --output=FIL        skriv avbildning till FIL [standard=stdout]\n"
+"  -O, --format=FORMAT     generera en avbildning i formatet [standard="
+
+#: util/grub-mkrawimage.c:580
+#, c-format
+msgid "cannot open %s"
+msgstr "kan inte öppna %s"
+
+#: util/i386/pc/grub-setup.c:159
+msgid "the first sector of the core file is not sector-aligned"
+msgstr "första sektorn i kärnfilen är inte sektorjusterad"
+
+#: util/i386/pc/grub-setup.c:173
+msgid "non-sector-aligned data is found in the core file"
+msgstr "data som inte är sektorjusterad hittades i kärnfilen"
+
+#: util/i386/pc/grub-setup.c:187
+msgid "the sectors of the core file are too fragmented"
+msgstr "sektorerna för kärnfilen är för fragmenterade"
+
+#: util/i386/pc/grub-setup.c:198
+#, c-format
+msgid "the size of `%s' is not %u"
+msgstr "storleken för \"%s\" är inte %u"
+
+#: util/i386/pc/grub-setup.c:215
+#, c-format
+msgid "the size of `%s' is too small"
+msgstr "storleken på \"%s\" är för liten"
+
+#: util/i386/pc/grub-setup.c:217
+#, c-format
+msgid "the size of `%s' is too large"
+msgstr "storleken på \"%s\" är för stor"
+
+#: util/i386/pc/grub-setup.c:254
+#, c-format
+msgid "unable to identify a filesystem in %s; safety check can't be performed"
+msgstr ""
+"kunde inte identifiera ett filsystem på %s; säkerhetskontroll kan inte "
+"genomföras"
+
+#: util/i386/pc/grub-setup.c:258
+#, c-format
+msgid ""
+"%s appears to contain a %s filesystem which isn't known to reserve space for "
+"DOS-style boot.  Installing GRUB there could result in FILESYSTEM "
+"DESTRUCTION if valuable data is overwritten by grub-setup (--skip-fs-probe "
+"disables this check, use at your own risk)"
+msgstr ""
+"%s verkar innehålla ett %s filsystem som inte kan reservera plats för DOS-"
+"liknande uppstart. Installeras GRUB där kan det innebära att FILSYSTEMET "
+"FÖRSTÖRS om viktiga data skrivs över av grub-setup (flaggan --skip-fs-probe "
+"avaktivera denna kontroll, använd den på egen risk)."
+
+#: util/i386/pc/grub-setup.c:307
+msgid "no DOS-style partitions found"
+msgstr "inga DOS-liknande partitioner hittades"
+
+#: util/i386/pc/grub-setup.c:323 util/i386/pc/grub-setup.c:348
+msgid ""
+"Attempting to install GRUB to a partitionless disk.  This is a BAD idea."
+msgstr ""
+"Försöker installera GRUB på en opartitionerad disk. Detta är en DÅLIG idé."
+
+#: util/i386/pc/grub-setup.c:329
+msgid ""
+"Attempting to install GRUB to a partition instead of the MBR.  This is a BAD "
+"idea."
+msgstr ""
+"Försöker installera GRUB på en partition instället för i MBR. Detta är en "
+"DÅLIG idé."
+
+#: util/i386/pc/grub-setup.c:357
+msgid "No DOS-style partitions found"
+msgstr "Inga DOS-liknande partitioner hittades"
+
+#: util/i386/pc/grub-setup.c:362
+msgid ""
+"This msdos-style partition label has no post-MBR gap; embedding won't be "
+"possible!"
+msgstr ""
+"Denna msdos-liknande partitionsettikett har inget utrymme efter MBR, "
+"inbäddning kommer inte att fungera!"
+
+#: util/i386/pc/grub-setup.c:364
+msgid ""
+"This GPT partition label has no BIOS Boot Partition; embedding won't be "
+"possible!"
+msgstr ""
+"Denna GPT-partitions-ettikett har ingen BIOS-partition för uppstart, "
+"inbäddning kommer inte att fungera!"
+
+#: util/i386/pc/grub-setup.c:371
+msgid "Your core.img is unusually large.  It won't fit in the embedding area."
+msgstr ""
+"Din fil core.img är ovanligt stor. Den kommer inte att få plats i utrymmet "
+"avsett för inbäddning."
+
+#: util/i386/pc/grub-setup.c:373
+msgid "Your embedding area is unusually small.  core.img won't fit in it."
+msgstr ""
+"Ditt utrymme för inbäddning är ovanligt litet. core.img kommer inte att få "
+"plats."
+
+#: util/i386/pc/grub-setup.c:416
+msgid ""
+"embedding is not possible, but this is required when the root device is on a "
+"RAID array or LVM volume"
+msgstr ""
+"inbäddning är inte möjligt, detta krävs dock när rotenheten finns på en RAID-"
+"kedja eller LVM-volym"
+
+#: util/i386/pc/grub-setup.c:419
+msgid ""
+"Embedding is not possible.  GRUB can only be installed in this setup by "
+"using blocklists.  However, blocklists are UNRELIABLE and its use is "
+"discouraged."
+msgstr ""
+"Inbäddning är inte möjlig. GRUB kan bara bli installerad i denna form genom "
+"att anvnda blocklistor. Blocklistor är tyvärr OPÅLITLIGA och användandet av "
+"dem är inte uppmuntrat."
+
+#: util/i386/pc/grub-setup.c:423
+msgid "if you really want blocklists, use --force"
+msgstr "om du verkligen vill använda blocklistor, använd --force"
+
+#: util/i386/pc/grub-setup.c:439
+#, c-format
+msgid "attempting to read the core image `%s' from GRUB"
+msgstr "försöker läsa kärnavbildningen \"%s\" från GRUB"
+
+#: util/i386/pc/grub-setup.c:440
+#, c-format
+msgid "attempting to read the core image `%s' from GRUB again"
+msgstr "försöker läsa kärnavbildningen \"%s\" från GRUB igen"
+
+#: util/i386/pc/grub-setup.c:498
+#, c-format
+msgid "cannot read `%s' correctly"
+msgstr "kan inte läsa \"%s\" korrekt"
+
+#: util/i386/pc/grub-setup.c:511
+msgid "no terminator in the core image"
+msgstr "ingen terminering i kärnavbildningen"
+
+#: util/i386/pc/grub-setup.c:522
+msgid "failed to read the first sector of the core image"
+msgstr "misslyckades med att läsa första sektorn av kärnavbildningen"
+
+#: util/i386/pc/grub-setup.c:528
+msgid "failed to read the rest sectors of the core image"
+msgstr "mIsslyckades med att läsa restsektorerna i kärnavbildningen"
+
+#: util/i386/pc/grub-setup.c:547
+#, c-format
+msgid "cannot open `%s'"
+msgstr "kan inte öppna \"%s\""
+
+#: util/i386/pc/grub-setup.c:589
+#, c-format
+msgid ""
+"Usage: %s [OPTION]... DEVICE\n"
+"\n"
+"Set up images to boot from DEVICE.\n"
+"DEVICE must be a GRUB device (e.g. `(hd0,1)').\n"
+"\n"
+"  -b, --boot-image=FILE   use FILE as the boot image [default=%s]\n"
+"  -c, --core-image=FILE   use FILE as the core image [default=%s]\n"
+"  -d, --directory=DIR     use GRUB files in the directory DIR [default=%s]\n"
+"  -m, --device-map=FILE   use FILE as the device map [default=%s]\n"
+"  -r, --root-device=DEV   use DEV as the root device [default=guessed]\n"
+"  -f, --force             install even if problems are detected\n"
+"  -s, --skip-fs-probe     do not probe for filesystems in DEVICE\n"
+"  -h, --help              display this message and exit\n"
+"  -V, --version           print version information and exit\n"
+"  -v, --verbose           print verbose messages\n"
+"\n"
+"Report bugs to <%s>.\n"
+msgstr ""
+"Användning: %s [FLAGGA]... ENHET\n"
+"\n"
+"Konfigurera avbildningar för uppstart från ENHET.\n"
+"ENHET måste vara en GRUB-enhet (t.ex. \"(hd0,1)\").\n"
+"\n"
+"  -b, --boot-image=FIL    använd FIL som uppstartsavbildning [standard=%s]\n"
+"  -c, --core-image=FIL    använd FIL som kärnavbildning [standard=%s]\n"
+"  -d, --directory=KAT     använd GRUB-filer i katalogen KAT [standard=%s]\n"
+"  -m, --device-map=FIL    använd FIL som enhetskarta [standard=%s]\n"
+"  -r, --root-device=ENHET   använd ENHET som rotenhet [standard=gissad]\n"
+"  -f, --force             installera även om fel upptäcks\n"
+"  -s, --skip-fs-probe     leta inte efter filsystem i ENHET\n"
+"  -h, --help              visa detta meddelande och avsluta\n"
+"  -V, --version           visa versionsinformation och avsluta\n"
+"  -v, --verbose           visa informativa meddelanden\n"
+"\n"
+"Rapportera fel till <%s>.\n"
+"Rapportera kommentarer om översättningen till <tp-sv@listor.tp-sv.se>.\n"
+
+#: util/i386/pc/grub-setup.c:719
+#, c-format
+msgid "No device is specified.\n"
+msgstr "Ingen enhet har angivits.\n"
+
+#: util/i386/pc/grub-setup.c:725
+#, c-format
+msgid "Unknown extra argument `%s'.\n"
+msgstr "Okänt extra argument \"%s\".\n"
+
+#: util/i386/pc/grub-setup.c:742
+#, c-format
+msgid "Invalid device `%s'.\n"
+msgstr "Ogiltig enhet \"%s\".\n"
+
+#: util/i386/pc/grub-setup.c:755
+#, c-format
+msgid "invalid root device `%s'"
+msgstr "ogiltig rotenhet \"%s\""
+
+#: util/i386/pc/grub-setup.c:768
+msgid "cannot guess the root device. Specify the option `--root-device'"
+msgstr "kan inte gissa rotenhet. Ange flaggan \"--root-device\""
+
+#: util/grub.d/10_kfreebsd.in:47
+msgid "%s, with kFreeBSD %s"
+msgstr "%s, med kFreeBSD %s"
+
+#: util/grub.d/10_kfreebsd.in:55
+msgid "Loading kernel of FreeBSD %s ..."
+msgstr "Läser in kärna för FreeBSD %s ..."
+
+#: util/grub.d/10_linux.in:59
+msgid "%s, with Linux %s (recovery mode)"
+msgstr "%s, med Linux %s (återställningsläge)"
+
+#: util/grub.d/10_linux.in:61
+msgid "%s, with Linux %s"
+msgstr "%s, med Linux %s"
+
+#: util/grub.d/10_linux.in:86
+msgid "Loading Linux %s ..."
+msgstr "Läser in Linux %s ..."
+
+#: util/grub.d/10_linux.in:91
+msgid "Loading initial ramdisk ..."
+msgstr "Läser in initial ramdisk ..."
+
+#~ msgid "A boot catalog exists and appears corrupted.\n"
+#~ msgstr "En uppstartskatalog existerar och verkar vara trasig.\n"
+
+#~ msgid "Please check the following file: %s.\n"
+#~ msgstr "Kontrollera följande fil: %s.\n"
+
+#~ msgid "This file must be removed before a bootable CD can be done.\n"
+#~ msgstr "Denna fil måste tas bort innan en startbar CD kan göras.\n"
+
+#~ msgid "Error creating boot catalog (%s)"
+#~ msgstr "Fel vid skapande av uppstartskatalog (%s)"
+
+#~ msgid "Error writing to boot catalog (%s)"
+#~ msgstr "Fel vid skrivning till uppstartskatalog (%s)"
+
+#~ msgid "Boot catalog cannot be found!\n"
+#~ msgstr "Uppstartskatalog kan inte hittas!\n"
+
+#~ msgid "Boot image cannot be found!\n"
+#~ msgstr "Uppstartsavbildning kan inte hittas!\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Size of boot image is %d sectors"
+#~ msgstr ""
+#~ "\n"
+#~ "Storleken på uppstartsavbildningen är %d sektorer"
+
+#~ msgid "No emulation\n"
+#~ msgstr "Ingen emulering\n"
+
+#~ msgid "Emulating a 1.44 meg floppy\n"
+#~ msgstr "Emulerar en 1,44 megabyte diskett\n"
+
+#~ msgid "Emulating a 2.88 meg floppy\n"
+#~ msgstr "Emulerar en 2,88 megabyte diskett\n"
+
+#~ msgid "Emulating a 1.2 meg floppy\n"
+#~ msgstr "Emulerar en 1,2 megabyte diskett\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Error - boot image is not the an allowable size.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Fel - uppstartsavbildningen har inte tillåten storlek.\n"
+
+#~ msgid "Error opening boot catalog for update"
+#~ msgstr "Fel vid öppning av uppstartskatalog för uppdatering"
+
+#~ msgid "Error writing to boot catalog"
+#~ msgstr "Fel vid skrivning till uppstartskatalog"
+
+#~ msgid "Error opening boot image file '%s' for update"
+#~ msgstr "Fel vid öppning av uppstartsavbildning \"%s\" för uppdatering"
+
+#~ msgid "Odd alignment at non-end-of-file in boot image '%s'"
+#~ msgstr "Märklig justering vid icke-slut i uppstartsavbildning \"%s\""
+
+#~ msgid "Boot image file '%s' changed unexpectedly"
+#~ msgstr "Uppstartsavbildningen \"%s\" ändrades oväntat"
+
+#~ msgid "Error writing to boot image (%s)"
+#~ msgstr "Fel vid skrivning till uppstartsavbildning (%s)"
+
+#~ msgid "Unable to generate sane path tables - too many directories (%d)\n"
+#~ msgstr "Kan inte skapa vettiga sökvägstabeller - för många kataloger (%d)\n"
+
+#~ msgid "Entry %d not in path tables\n"
+#~ msgstr "%d finns inte i sökvägstabell\n"
+
+#~ msgid "Fatal goof - directory has amnesia\n"
+#~ msgstr "Allvarligt misstag - katalog har amnesi\n"
+
+#~ msgid "Joliet path table lengths do not match %d %d\n"
+#~ msgstr "Sökvägstabellernas längd för joilet stämmer inte %d %d\n"
+
+#~ msgid "Unable to locate relocated directory\n"
+#~ msgstr "Kan inte hitta flyttad katalog\n"
+
+#~ msgid "Fatal goof - unable to find directory location\n"
+#~ msgstr "Allvarligt misstag - kan inte hitta position för katalog\n"
+
+#~ msgid "Unexpected joliet directory length %d %d %s\n"
+#~ msgstr "Oväntad längd på joiletkatalog %d %d %s\n"
+
+#~ msgid "Process all files (don't skip backup files)"
+#~ msgstr "Processa alla filer (hoppa inte över backupfiler)"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Set Application ID"
+#~ msgstr "Ange ID för applikation"
+
+#~ msgid "Set Bibliographic filename"
+#~ msgstr "Ange bibliografiskt filnamn"
+
+#~ msgid "Set Copyright filename"
+#~ msgstr "Ange filnamn för upphovsrätt"
+
+#~ msgid "Set embedded boot image name"
+#~ msgstr "Ange namn för inbäddad uppstartsavbildning"
+
+#~ msgid "Patch a protective DOS-style label in the image"
+#~ msgstr ""
+#~ "Laga eventuell protektionistisk DOS-liknande ettikettering i avbildning"
+
+#~ msgid "Set El Torito boot image name"
+#~ msgstr "Ange namn för El Torito uppstartsavbildning"
+
+#~ msgid "Set El Torito boot catalog name"
+#~ msgstr "Ange namn för El Torito katalog"
+
+#~ msgid "Patch Boot Info Table in El Torito boot image"
+#~ msgstr ""
+#~ "Laga tabell med uppstartsinformation i El Torito uppstartsavbildning"
+
+#~ msgid "Dummy option for backward compatibility"
+#~ msgstr "Låtsas alternativ för bakåtkompabilitet"
+
+#~ msgid "Enable floppy drive emulation for El Torito"
+#~ msgstr "Aktivera emulering av diskettstation för El Torito"
+
+#~ msgid "PARAMS"
+#~ msgstr "PARAMS"
+
+#~ msgid "Magic parameters from cdrecord"
+#~ msgstr "Magiska parametrar från cdrecord"
+
+#~ msgid "Omit trailing periods from filenames"
+#~ msgstr "Uteslut punkter i slutet på filnamn"
+
+#~ msgid "Disable deep directory relocation"
+#~ msgstr "Avaktivera djup omstrukturering av kataloger"
+
+#~ msgid "Follow symbolic links"
+#~ msgstr "Följ symboliska länkar"
+
+#~ msgid "Print option help"
+#~ msgstr "Skriv ut hjälp för flaggor"
+
+#~ msgid "Print version information and exit"
+#~ msgstr "Skriv ut versionsinformation och avsluta"
+
+#~ msgid "GLOBFILE"
+#~ msgstr "GLOBFILE"
+
+#~ msgid "Hide ISO9660/RR file"
+#~ msgstr "Dölj ISO9660/RR-fil"
+
+#~ msgid "Hide Joliet file"
+#~ msgstr "Dölj Joliet-fil"
+
+#~ msgid "ADD_FILES"
+#~ msgstr "ADD_FILES"
+
+#~ msgid "No longer supported"
+#~ msgstr "Stöds inte längre"
+
+#~ msgid "Generate Joliet directory information"
+#~ msgstr "Skapa kataloginformation för joilet"
+
+#~ msgid "Allow full 32 character filenames for iso9660 names"
+#~ msgstr "Tillåt 32 tecken långa filnamn för iso9660-namn"
+
+#~ msgid "Allow iso9660 filenames to start with '.'"
+#~ msgstr "Tillåt att iso9660-filnamn börjar med \".\""
+
+#~ msgid "LOG_FILE"
+#~ msgstr "LOGGFIL"
+
+#~ msgid "Re-direct messages to LOG_FILE"
+#~ msgstr "Dirigera om meddelanden till LOGGFIL"
+
+#~ msgid "Exclude file name"
+#~ msgstr "Exkludera filnamn"
+
+#~ msgid "Set path to previous session to merge"
+#~ msgstr "Ange sökväg för föregående session att slå ihop"
+
+#~ msgid "Omit version number from iso9660 filename"
+#~ msgstr "Utelämna versionsnummer från iso9660-filnamn"
+
+#~ msgid "Inhibit splitting symlink components"
+#~ msgstr "Förhindra uppdelning av symboliska länkars komponenter"
+
+#~ msgid "Inhibit splitting symlink fields"
+#~ msgstr "Förhindra uppdelning av fält för symboliska länkar"
+
+#~ msgid "Set output file name"
+#~ msgstr "Ange filnamn för utdata"
+
+#~ msgid "PREP"
+#~ msgstr "PREP"
+
+#~ msgid "Set Volume preparer"
+#~ msgstr "Ange volymtillredare"
+
+#~ msgid "Print estimated filesystem size and exit"
+#~ msgstr "Skriv uppskattad storlek på filsystem och avsluta"
+
+#~ msgid "PUB"
+#~ msgstr "PUB"
+
+#~ msgid "Set Volume publisher"
+#~ msgstr "Ange publicerare av volym"
+
+#~ msgid "Run quietly"
+#~ msgstr "Kör tyst"
+
+#~ msgid "Generate rationalized Rock Ridge directory information"
+#~ msgstr "Skapa rationell Rock Ridge kataloginformation"
+
+#~ msgid "Generate Rock Ridge directory information"
+#~ msgstr "Skapa Rock Ridge kataloginformation"
+
+#~ msgid "Split output into files of approx. 1GB size"
+#~ msgstr "Splittra utdata i filer om ungefär 1GB i storlek"
+
+#~ msgid "Set System ID"
+#~ msgstr "Ange system ID"
+
+#~ msgid ""
+#~ "Generate translation tables for systems that don't understand long "
+#~ "filenames"
+#~ msgstr ""
+#~ "Skapa översättningstabeller för system som inte hanterar långa filnamn"
+
+#~ msgid "Verbose"
+#~ msgstr "Informativ"
+
+#~ msgid "Set Volume ID"
+#~ msgstr "Ange ID för volym"
+
+#~ msgid "Set Volume set ID"
+#~ msgstr "Ange set ID för volym"
+
+#~ msgid "Set Volume set size"
+#~ msgstr "Ange storlek för volym"
+
+#~ msgid "Set Volume set sequence number"
+#~ msgstr "Ange sekvensnummer för volym"
+
+#~ msgid "Exclude file name (deprecated)"
+#~ msgstr "Exkludera filnamn (funktionen fasas ut)"
+
+#~ msgid "Override creation date"
+#~ msgstr "Åsidosätt datum för skapande"
+
+#~ msgid "Override modification date"
+#~ msgstr "Åsidosätt datum för modifiering"
+
+#~ msgid "Override expiration date"
+#~ msgstr "Åsidosätt utgångsdatum"
+
+#~ msgid "Override effective date"
+#~ msgstr "Åsidosätt faktiskt datum"
+
+#~ msgid "Using \"%s\"\n"
+#~ msgstr "Använder \"%s\"\n"
+
+#~ msgid "%s:%d: name required\n"
+#~ msgstr "%s:%d: namn krävs\n"
+
+#~ msgid "%s:%d: equals sign required\n"
+#~ msgstr "%s:%d: likamedtecken krävs\n"
+
+#~ msgid "%s:%d: field name \"%s\" unknown\n"
+#~ msgstr "%s:%d: fältnamnet \"%s\" är okänt\n"
+
+#~ msgid "Usage: %s [options] file...\n"
+#~ msgstr "Användning: %s [flaggor] fil...\n"
+
+#~ msgid "Options:\n"
+#~ msgstr "Flaggor:\n"
+
+#~ msgid "-i option no longer supported.\n"
+#~ msgstr "flaggan -i stöds inte längre.\n"
+
+#~ msgid "Required boot image pathname missing"
+#~ msgstr "Sökväg för uppstartsavbildning saknas"
+
+#~ msgid "Required boot catalog pathname missing\n"
+#~ msgstr "Sökväg för uppstartskatalogen saknas\n"
+
+#~ msgid "Ignoring -no-emul-boot (no-emulation is the default behaviour)\n"
+#~ msgstr "Ignorera -no-emul-boot (no-emulation är standardförfarande)\n"
+
+#~ msgid "Abstract filename string too long\n"
+#~ msgstr "Sträng för abstrakt filnamn är för lång\n"
+
+#~ msgid "Application-id string too long\n"
+#~ msgstr "Sträng för applikations ID för lång\n"
+
+#~ msgid "Bibliographic filename string too long\n"
+#~ msgstr "Sträng för bibliografiskt filnamn för lång\n"
+
+#~ msgid "Copyright filename string too long\n"
+#~ msgstr "Sträng med filnamn för upphovsrätt för lång\n"
+
+#~ msgid "Preparer string too long\n"
+#~ msgstr "Sträng för tillredare är för lång\n"
+
+#~ msgid "Publisher string too long\n"
+#~ msgstr "Sträng för publiceraren är för lång\n"
+
+#~ msgid "System ID string too long\n"
+#~ msgstr "Sträng för system ID är för lång\n"
+
+#~ msgid "Volume ID string too long\n"
+#~ msgstr "Sträng för volym ID är för lång\n"
+
+#~ msgid "Volume set ID string too long\n"
+#~ msgstr "Sträng för set ID för volymen är för lång\n"
+
+#~ msgid "Volume set sequence number too big\n"
+#~ msgstr "Volymens sekvensnummer är för stort\n"
+
+#~ msgid "date string must be 16 characters.\n"
+#~ msgstr "datumsträngen måste vara 16 tecken.\n"
+
+#~ msgid "Warning: getrlimit"
+#~ msgstr "Varning: getrlimit"
+
+#~ msgid "Warning: setrlimit"
+#~ msgstr "Varning: setrlimit"
+
+#~ msgid "Multisession usage bug: Must specify -C if -M is used.\n"
+#~ msgstr ""
+#~ "Felaktig hantering av multisession: Flagga -C måste anges om flagga -M "
+#~ "används.\n"
+
+#~ msgid ""
+#~ "Warning: -C specified without -M: old session data will not be merged.\n"
+#~ msgstr ""
+#~ "Varning: Flagga -C angiven utan att flagga -M används: gammal "
+#~ "sessionsdata kommer inte att samköras.\n"
+
+#~ msgid "can't open logfile: %s"
+#~ msgstr "kan inte öppna loggfilen: %s"
+
+#~ msgid "re-directing all messages to %s\n"
+#~ msgstr "dirigerar om alla meddelanden till %s\n"
+
+#~ msgid "can't open logfile: %s\n"
+#~ msgstr "kan inte öppna loggfil: %s\n"
+
+#~ msgid "Unable to open previous session image %s\n"
+#~ msgstr "Kan inte öppna avbildning för föregående session %s\n"
+
+#~ msgid "Invalid node - %s\n"
+#~ msgstr "Ogiltig nod - %s\n"
+
+#~ msgid "Joliet tree sort failed.\n"
+#~ msgstr "Trädsortering för joilet misslyckades.\n"
+
+#~ msgid "Unable to open /dev/null\n"
+#~ msgstr "Kan inte öppna /dev/null\n"
+
+#~ msgid "Unable to open disc image file\n"
+#~ msgstr "Kan inte öppna fil med diskavbildning\n"
+
+#~ msgid "Seek error on old image\n"
+#~ msgstr "Sökfel på äldre avbildning\n"
+
+#~ msgid "**Bad RR version attribute"
+#~ msgstr "**Trasigt attribut för RR-version"
+
+#~ msgid ""
+#~ "Warning: Neither Rock Ridge (-R) nor TRANS.TBL (-T) name translations "
+#~ "were found on previous session. ISO (8.3) file names have been used "
+#~ "instead.\n"
+#~ msgstr ""
+#~ "Varning: Varken Rock Ridge (-R) eller TRANS.TBL (-T) namnöversättningar "
+#~ "hittades i föregående session. ISO (8.3) filnamn används istället.\n"
+
+#~ msgid "Read error on old image %s\n"
+#~ msgstr "Läsfel på äldre avbildning %s\n"
+
+#~ msgid "Special parameters for cdwrite not specified with -C\n"
+#~ msgstr "Specialparametrar för cdwrite inte specificerade med -C\n"
+
+#~ msgid "Malformed cdwrite parameters\n"
+#~ msgstr "Felaktigt formaterade cdwrite-parametrar\n"
+
+#~ msgid "symbolic link ``%s'' to long for one SL System Use Field, splitting"
+#~ msgstr ""
+#~ "den symboliska länken \"%s\" är för lång för ett SL "
+#~ "systemanvändningsfält, delar upp"
+
+#~ msgid "Unable to insert transparent compressed file - name conflict\n"
+#~ msgstr "Kan inte applicera transparent komprimerad fil - namnkonflikt\n"
+
+#~ msgid "Extension record too long\n"
+#~ msgstr "Utökningsregister för långt\n"
+
+#~ msgid "Fatal goof\n"
+#~ msgstr "Allvarligt misstag\n"
+
+#~ msgid "Unable to  generate unique  name for file %s\n"
+#~ msgstr "Kan inte skapa unikt filnamn för filen %s\n"
+
+#~ msgid "Using %s for %s%s%s (%s)\n"
+#~ msgstr "Använder %s för %s%s%s (%s)\n"
+
+#~ msgid "Fatal error - RR overflow for file %s\n"
+#~ msgstr "Allvarligt fel - RR överskrivning för fil %s\n"
+
+#~ msgid "Unable to sort directory %s\n"
+#~ msgstr "Kan inte sortera katalog %s\n"
+
+#~ msgid "Translation table size mismatch %d %d\n"
+#~ msgstr "Översättningstabellens storlek stämmer inte %d %d\n"
+
+#~ msgid "Unable to locate directory parent\n"
+#~ msgstr "Kan inte hitta katalogens förälder\n"
+
+#~ msgid "Scanning %s\n"
+#~ msgstr "Läser av %s\n"
+
+#~ msgid "Unable to open directory %s\n"
+#~ msgstr "Kunde inte öppna katalogen %s\n"
+
+#~ msgid "Ignoring file %s\n"
+#~ msgstr "Ignorerar fil %s\n"
+
+#~ msgid "Excluded by match: %s\n"
+#~ msgstr "Exkluderad vid träff: %s\n"
+
+#~ msgid "Excluded: %s\n"
+#~ msgstr "Exkluderade: %s\n"
+
+#~ msgid "Non-existant or inaccessible: %s\n"
+#~ msgstr "Existerar ej eller kan inte läsas: %s\n"
+
+#~ msgid "Symlink %s ignored - continuing.\n"
+#~ msgstr "Symboliska länken %s ignoreras - fortsätter.\n"
+
+#~ msgid "Already cached directory seen (%s)\n"
+#~ msgstr "Katalog som redan finns i cache hittades (%s)\n"
+
+#~ msgid "File %s is not readable (%s) - ignoring\n"
+#~ msgstr "Filen %s är inte läsbar (%s) - ignorerar\n"
+
+#~ msgid "Directory loop - fatal goof (%s %lx %lu).\n"
+#~ msgstr "Loop i katalog - allvarligt misstag (%s %lx %lu).\n"
+
+#~ msgid "Unknown file type %s - ignoring and continuing.\n"
+#~ msgstr "Okänd filtyp %s - ignorerar och fortsätter.\n"
+
+#~ msgid "Hidden from ISO9660 tree: %s\n"
+#~ msgstr "Gömt från ISO9660-träd: %s\n"
+
+#~ msgid "Hidden from Joliet tree: %s\n"
+#~ msgstr "Gömt från joilet-träd: %s\n"
+
+#~ msgid "Directories too deep  %s\n"
+#~ msgstr "Kataloger för djup %s\n"
+
+#~ msgid "Unable to delete non-empty directory\n"
+#~ msgstr "Kan inte radera katalog som inte är tom\n"
+
+#~ msgid "Unable to locate child directory in parent list\n"
+#~ msgstr "Kan inte hitta underkatalog i huvudlista\n"
+
+#~ msgid "call to search_tree_file with an absolute path, stripping\n"
+#~ msgstr "anrop till search_tree_file med en absolut sökväg, rensar\n"
+
+#~ msgid "initial path separator. Hope this was intended...\n"
+#~ msgstr "inledande sökvägsseparator. Förhoppningsvis var detta medvetet...\n"
+
+#~ msgid "Cannot open '%s'"
+#~ msgstr "Kan inte öppna \"%s\""
+
+#~ msgid "cannot fwrite %llu*%llu\n"
+#~ msgstr "kan inte fwrite %llu*%llu\n"
+
+#~ msgid "cannot open %s\n"
+#~ msgstr "kan inte öppna %s\n"
+
+#~ msgid "cannot read %llu bytes from %s"
+#~ msgstr "kan inte läsa %llu byte från %s"
+
+#~ msgid "%6.2f%% done, estimate finish %s"
+#~ msgstr "%6.2f%% klart, beräknat klart %s"
+
+#~ msgid "Cache hit for %s%s%s\n"
+#~ msgstr "Träff i cache för %s%s%s\n"
+
+#~ msgid "Unexpected directory length %d %d %s\n"
+#~ msgstr "Oväntad kataloglängd %d %d %s\n"
+
+#~ msgid "Path table lengths do not match %d %d\n"
+#~ msgstr "Längd på sökvägstabellerna stämmer inte %d %d\n"
+
+#~ msgid "Predicted = %d, written = %llu\n"
+#~ msgstr "Uppskattat = %d, skrivit = %llu\n"
+
+#~ msgid "Total translation table size: %d\n"
+#~ msgstr "Översättningstabellens totalstorlek: %d\n"
+
+#~ msgid "Total rockridge attributes bytes: %d\n"
+#~ msgstr "Rockridge-attribut, totalt antal byte: %d\n"
+
+#~ msgid "Total directory bytes: %d\n"
+#~ msgstr "Antal byte katalog: %d\n"
+
+#~ msgid "Path table size(bytes): %d\n"
+#~ msgstr "Sökvägstabellens storlek (byte): %d\n"
+
+#~ msgid "Unable to open %s"
+#~ msgstr "Kunde inte öppna %s"
+
+#~ msgid "ESC to return previous menu."
+#~ msgstr "ESC för att återgå till föregående meny."
+
+#~ msgid "Booting '%s'"
+#~ msgstr "Starta upp \"%s\""
+
+#~ msgid "Falling back to '%s'"
+#~ msgstr "Faller tillbaka på \"%s\""
+
+#~ msgid "Failed to boot default entries.\n"
+#~ msgstr "MIsslyckades med att starta standardvalen.\n"

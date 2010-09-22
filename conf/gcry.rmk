@@ -1,0 +1,128 @@
+# -*- makefile -*-
+
+MAINTAINER_CLEANFILES += $(srcdir)/conf/gcry.rmk $(srcdir)/lib/libgcrypt-grub/cipher/ChangeLog $(srcdir)/lib/libgcrypt-grub/cipher/cipher.h $(srcdir)/lib/libgcrypt-grub/cipher/crypto.lst $(srcdir)/lib/libgcrypt-grub/cipher/g10lib.h $(srcdir)/lib/libgcrypt-grub/cipher/memory.h $(srcdir)/lib/libgcrypt-grub/cipher/types.h
+MAINTAINER_CLEANFILES += $(srcdir)/lib/libgcrypt-grub/cipher/whirlpool.c
+pkglib_MODULES += gcry_whirlpool.mod
+gcry_whirlpool_mod_SOURCES = lib/libgcrypt-grub/cipher/whirlpool.c
+gcry_whirlpool_mod_CFLAGS = $(COMMON_CFLAGS) -Wno-missing-field-initializers -Wno-error -I$(srcdir)/lib/libgcrypt_wrap
+gcry_whirlpool_mod_LDFLAGS = $(COMMON_LDFLAGS)
+
+MAINTAINER_CLEANFILES += $(srcdir)/lib/libgcrypt-grub/cipher/twofish.c
+pkglib_MODULES += gcry_twofish.mod
+gcry_twofish_mod_SOURCES = lib/libgcrypt-grub/cipher/twofish.c
+gcry_twofish_mod_CFLAGS = $(COMMON_CFLAGS) -Wno-missing-field-initializers -Wno-error -I$(srcdir)/lib/libgcrypt_wrap
+gcry_twofish_mod_LDFLAGS = $(COMMON_LDFLAGS)
+
+MAINTAINER_CLEANFILES += $(srcdir)/lib/libgcrypt-grub/cipher/tiger.c
+pkglib_MODULES += gcry_tiger.mod
+gcry_tiger_mod_SOURCES = lib/libgcrypt-grub/cipher/tiger.c
+gcry_tiger_mod_CFLAGS = $(COMMON_CFLAGS) -Wno-missing-field-initializers -Wno-error -I$(srcdir)/lib/libgcrypt_wrap
+gcry_tiger_mod_LDFLAGS = $(COMMON_LDFLAGS)
+
+MAINTAINER_CLEANFILES += $(srcdir)/lib/libgcrypt-grub/cipher/sha512.c
+pkglib_MODULES += gcry_sha512.mod
+gcry_sha512_mod_SOURCES = lib/libgcrypt-grub/cipher/sha512.c
+gcry_sha512_mod_CFLAGS = $(COMMON_CFLAGS) -Wno-missing-field-initializers -Wno-error -I$(srcdir)/lib/libgcrypt_wrap
+gcry_sha512_mod_LDFLAGS = $(COMMON_LDFLAGS)
+
+MAINTAINER_CLEANFILES += $(srcdir)/lib/libgcrypt-grub/cipher/sha256.c
+pkglib_MODULES += gcry_sha256.mod
+gcry_sha256_mod_SOURCES = lib/libgcrypt-grub/cipher/sha256.c
+gcry_sha256_mod_CFLAGS = $(COMMON_CFLAGS) -Wno-missing-field-initializers -Wno-error -I$(srcdir)/lib/libgcrypt_wrap
+gcry_sha256_mod_LDFLAGS = $(COMMON_LDFLAGS)
+
+MAINTAINER_CLEANFILES += $(srcdir)/lib/libgcrypt-grub/cipher/sha1.c
+pkglib_MODULES += gcry_sha1.mod
+gcry_sha1_mod_SOURCES = lib/libgcrypt-grub/cipher/sha1.c
+gcry_sha1_mod_CFLAGS = $(COMMON_CFLAGS) -Wno-missing-field-initializers -Wno-error -I$(srcdir)/lib/libgcrypt_wrap
+gcry_sha1_mod_LDFLAGS = $(COMMON_LDFLAGS)
+
+MAINTAINER_CLEANFILES += $(srcdir)/lib/libgcrypt-grub/cipher/serpent.c
+pkglib_MODULES += gcry_serpent.mod
+gcry_serpent_mod_SOURCES = lib/libgcrypt-grub/cipher/serpent.c
+gcry_serpent_mod_CFLAGS = $(COMMON_CFLAGS) -Wno-missing-field-initializers -Wno-error -I$(srcdir)/lib/libgcrypt_wrap
+gcry_serpent_mod_LDFLAGS = $(COMMON_LDFLAGS)
+
+MAINTAINER_CLEANFILES += $(srcdir)/lib/libgcrypt-grub/cipher/seed.c
+pkglib_MODULES += gcry_seed.mod
+gcry_seed_mod_SOURCES = lib/libgcrypt-grub/cipher/seed.c
+gcry_seed_mod_CFLAGS = $(COMMON_CFLAGS) -Wno-missing-field-initializers -Wno-error -I$(srcdir)/lib/libgcrypt_wrap
+gcry_seed_mod_LDFLAGS = $(COMMON_LDFLAGS)
+
+MAINTAINER_CLEANFILES += $(srcdir)/lib/libgcrypt-grub/cipher/rsa.c
+MAINTAINER_CLEANFILES += $(srcdir)/lib/libgcrypt-grub/cipher/rmd160.c
+pkglib_MODULES += gcry_rmd160.mod
+gcry_rmd160_mod_SOURCES = lib/libgcrypt-grub/cipher/rmd160.c
+gcry_rmd160_mod_CFLAGS = $(COMMON_CFLAGS) -Wno-missing-field-initializers -Wno-error -I$(srcdir)/lib/libgcrypt_wrap
+gcry_rmd160_mod_LDFLAGS = $(COMMON_LDFLAGS)
+
+MAINTAINER_CLEANFILES += $(srcdir)/lib/libgcrypt-grub/cipher/rmd.h
+MAINTAINER_CLEANFILES += $(srcdir)/lib/libgcrypt-grub/cipher/rijndael.c
+pkglib_MODULES += gcry_rijndael.mod
+gcry_rijndael_mod_SOURCES = lib/libgcrypt-grub/cipher/rijndael.c
+gcry_rijndael_mod_CFLAGS = $(COMMON_CFLAGS) -Wno-missing-field-initializers -Wno-error -I$(srcdir)/lib/libgcrypt_wrap
+gcry_rijndael_mod_LDFLAGS = $(COMMON_LDFLAGS)
+
+MAINTAINER_CLEANFILES += $(srcdir)/lib/libgcrypt-grub/cipher/rijndael-tables.h
+MAINTAINER_CLEANFILES += $(srcdir)/lib/libgcrypt-grub/cipher/rfc2268.c
+pkglib_MODULES += gcry_rfc2268.mod
+gcry_rfc2268_mod_SOURCES = lib/libgcrypt-grub/cipher/rfc2268.c
+gcry_rfc2268_mod_CFLAGS = $(COMMON_CFLAGS) -Wno-missing-field-initializers -Wno-error -I$(srcdir)/lib/libgcrypt_wrap
+gcry_rfc2268_mod_LDFLAGS = $(COMMON_LDFLAGS)
+
+MAINTAINER_CLEANFILES += $(srcdir)/lib/libgcrypt-grub/cipher/primegen.c
+MAINTAINER_CLEANFILES += $(srcdir)/lib/libgcrypt-grub/cipher/md5.c
+pkglib_MODULES += gcry_md5.mod
+gcry_md5_mod_SOURCES = lib/libgcrypt-grub/cipher/md5.c
+gcry_md5_mod_CFLAGS = $(COMMON_CFLAGS) -Wno-missing-field-initializers -Wno-error -I$(srcdir)/lib/libgcrypt_wrap
+gcry_md5_mod_LDFLAGS = $(COMMON_LDFLAGS)
+
+MAINTAINER_CLEANFILES += $(srcdir)/lib/libgcrypt-grub/cipher/md4.c
+pkglib_MODULES += gcry_md4.mod
+gcry_md4_mod_SOURCES = lib/libgcrypt-grub/cipher/md4.c
+gcry_md4_mod_CFLAGS = $(COMMON_CFLAGS) -Wno-missing-field-initializers -Wno-error -I$(srcdir)/lib/libgcrypt_wrap
+gcry_md4_mod_LDFLAGS = $(COMMON_LDFLAGS)
+
+MAINTAINER_CLEANFILES += $(srcdir)/lib/libgcrypt-grub/cipher/hash-common.h
+MAINTAINER_CLEANFILES += $(srcdir)/lib/libgcrypt-grub/cipher/elgamal.c
+MAINTAINER_CLEANFILES += $(srcdir)/lib/libgcrypt-grub/cipher/ecc.c
+MAINTAINER_CLEANFILES += $(srcdir)/lib/libgcrypt-grub/cipher/dsa.c
+MAINTAINER_CLEANFILES += $(srcdir)/lib/libgcrypt-grub/cipher/des.c
+pkglib_MODULES += gcry_des.mod
+gcry_des_mod_SOURCES = lib/libgcrypt-grub/cipher/des.c
+gcry_des_mod_CFLAGS = $(COMMON_CFLAGS) -Wno-missing-field-initializers -Wno-error -I$(srcdir)/lib/libgcrypt_wrap
+gcry_des_mod_LDFLAGS = $(COMMON_LDFLAGS)
+
+MAINTAINER_CLEANFILES += $(srcdir)/lib/libgcrypt-grub/cipher/crc.c
+pkglib_MODULES += gcry_crc.mod
+gcry_crc_mod_SOURCES = lib/libgcrypt-grub/cipher/crc.c
+gcry_crc_mod_CFLAGS = $(COMMON_CFLAGS) -Wno-missing-field-initializers -Wno-error -I$(srcdir)/lib/libgcrypt_wrap
+gcry_crc_mod_LDFLAGS = $(COMMON_LDFLAGS)
+
+MAINTAINER_CLEANFILES += $(srcdir)/lib/libgcrypt-grub/cipher/cast5.c
+pkglib_MODULES += gcry_cast5.mod
+gcry_cast5_mod_SOURCES = lib/libgcrypt-grub/cipher/cast5.c
+gcry_cast5_mod_CFLAGS = $(COMMON_CFLAGS) -Wno-missing-field-initializers -Wno-error -I$(srcdir)/lib/libgcrypt_wrap
+gcry_cast5_mod_LDFLAGS = $(COMMON_LDFLAGS)
+
+MAINTAINER_CLEANFILES += $(srcdir)/lib/libgcrypt-grub/cipher/camellia.h
+MAINTAINER_CLEANFILES += $(srcdir)/lib/libgcrypt-grub/cipher/camellia.c
+MAINTAINER_CLEANFILES += $(srcdir)/lib/libgcrypt-grub/cipher/camellia-glue.c
+pkglib_MODULES += gcry_camellia.mod
+gcry_camellia_mod_SOURCES = lib/libgcrypt-grub/cipher/camellia-glue.c lib/libgcrypt-grub/cipher/camellia.c
+gcry_camellia_mod_CFLAGS = $(COMMON_CFLAGS) -Wno-missing-field-initializers -Wno-error -I$(srcdir)/lib/libgcrypt_wrap
+gcry_camellia_mod_LDFLAGS = $(COMMON_LDFLAGS)
+
+MAINTAINER_CLEANFILES += $(srcdir)/lib/libgcrypt-grub/cipher/blowfish.c
+pkglib_MODULES += gcry_blowfish.mod
+gcry_blowfish_mod_SOURCES = lib/libgcrypt-grub/cipher/blowfish.c
+gcry_blowfish_mod_CFLAGS = $(COMMON_CFLAGS) -Wno-missing-field-initializers -Wno-error -I$(srcdir)/lib/libgcrypt_wrap
+gcry_blowfish_mod_LDFLAGS = $(COMMON_LDFLAGS)
+
+MAINTAINER_CLEANFILES += $(srcdir)/lib/libgcrypt-grub/cipher/bithelp.h
+MAINTAINER_CLEANFILES += $(srcdir)/lib/libgcrypt-grub/cipher/arcfour.c
+pkglib_MODULES += gcry_arcfour.mod
+gcry_arcfour_mod_SOURCES = lib/libgcrypt-grub/cipher/arcfour.c
+gcry_arcfour_mod_CFLAGS = $(COMMON_CFLAGS) -Wno-missing-field-initializers -Wno-error -I$(srcdir)/lib/libgcrypt_wrap
+gcry_arcfour_mod_LDFLAGS = $(COMMON_LDFLAGS)
+

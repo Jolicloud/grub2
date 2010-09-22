@@ -1,0 +1,1918 @@
+# Pesan Bahasa Indonesia untuk grub.
+# Copyright (C) 2009, 2010 Free Software Foundation, Inc.
+# This file is distributed under the same license as the grub package.
+# Arif E. Nugroho <arif_endro@yahoo.com>, 2009, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: grub 1.97+20100124\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-03-06 21:00+0100\n"
+"PO-Revision-Date: 2010-01-25 16:30+0700\n"
+"Last-Translator: Arif E. Nugroho <arif_endro@yahoo.com>\n"
+"Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: commands/acpi.c:40
+msgid "Don't load host tables specified by comma-separated list."
+msgstr ""
+"Jangan muat tabel komputer yang dispesifikasikan oleh daftar yang dipisahkan "
+"dengan koma."
+
+#: commands/acpi.c:43
+msgid "Load only tables specified by comma-separated list."
+msgstr ""
+"Hanya muat tabel yang dispesifikasikan oleh daftar yang dipisahkan dengan "
+"koma."
+
+#: commands/acpi.c:44
+msgid "Expose v1 tables."
+msgstr "Tampilkan tabel v1."
+
+#: commands/acpi.c:45
+msgid "Expose v2 and v3 tables."
+msgstr "Tampilkan tabel v2 dan v3."
+
+#: commands/acpi.c:46
+msgid "Set OEMID of RSDP, XSDT and RSDT."
+msgstr "Set OEMID dari RSDP, XSDT dan RSDT."
+
+#: commands/acpi.c:48
+msgid "Set OEMTABLE ID of RSDP, XSDT and RSDT."
+msgstr "Set OEMTABLE ID dari RSDP, XSDT dan RSDT."
+
+#: commands/acpi.c:50
+msgid "Set OEMTABLE revision of RSDP, XSDT and RSDT."
+msgstr "Set revisi OEMTABLE dari RSDP, XSDT dan RSDT."
+
+#: commands/acpi.c:52
+msgid "Set creator field of RSDP, XSDT and RSDT."
+msgstr "Set bagian pembuat dari RSDP, XSDT dan RSDT."
+
+#: commands/acpi.c:54
+msgid "Set creator revision of RSDP, XSDT and RSDT."
+msgstr "Set revisi pembuat dari RSDP, XSDT dan RSDT."
+
+#: commands/acpi.c:55
+msgid ""
+"Don't update EBDA. May fix failures or hangs on some. BIOSes but makes it "
+"ineffective with OS not receiving RSDP from GRUB."
+msgstr ""
+"Jangan perbarui EBDA. Mungkin memperbaiki kegagalan atau berhenti di "
+"beberapa BIOS tetapi membuat itu tidak efektif dengan OS mendapatkan RSDP "
+"dari GRUB."
+
+#: commands/acpi.c:763
+msgid ""
+"[-1|-2] [--exclude=TABLE1,TABLE2|--load-only=table1,table2] FILE1 [FILE2] "
+"[...]"
+msgstr ""
+"[-1|-2] [--exclude=TABEL1,TABEL2|--load-only=tabel1,tabel2] BERKAS1 "
+"[BERKAS2] [...]"
+
+#: commands/acpi.c:766
+msgid "Load host ACPI tables and tables specified by arguments."
+msgstr "Muat tabel ACPI komputer dan tabel yang dispesifikasikan oleh argumen."
+
+#: commands/blocklist.c:114 commands/cat.c:82 commands/configfile.c:57
+#: commands/configfile.c:60 commands/configfile.c:65 commands/crc.c:64
+#: commands/minicmd.c:357 loader/i386/bsd.c:1297 loader/i386/bsd.c:1301
+#: loader/i386/bsd.c:1305
+msgid "FILE"
+msgstr "BERKAS"
+
+#: commands/blocklist.c:114
+msgid "Print a block list."
+msgstr "Tampilkan daftar blok."
+
+#: commands/boot.c:190
+msgid "Boot an operating system."
+msgstr "Boot sistem operasi."
+
+#: commands/cat.c:82 commands/minicmd.c:357
+msgid "Show the contents of a file."
+msgstr "Tampilkan isi dari berkas."
+
+#: commands/cmp.c:113
+msgid "FILE1 FILE2"
+msgstr "BERKAS1 BERKAS2"
+
+#: commands/cmp.c:113
+msgid "Compare two files."
+msgstr "Bandingkan dua berkas."
+
+#: commands/configfile.c:57
+msgid "Load another config file."
+msgstr "Muat berkas konfigurasi lain."
+
+#: commands/configfile.c:61 commands/configfile.c:66
+msgid "Load another config file without changing context."
+msgstr "Muat berkas konfigurasi lain tanpa mengubah konteks."
+
+#: commands/crc.c:65
+msgid "Calculate the crc32 checksum of a file."
+msgstr "Hitung 'checksum' crc32 dari berkas."
+
+#: commands/date.c:139
+msgid "[[year-]month-day] [hour:minute[:second]]"
+msgstr "[[tahun-]bulan-hari] [jam:menit[:detik]]"
+
+#: commands/date.c:140
+msgid "Command to display/set current datetime."
+msgstr "Perintah untuk menampilkan/menset tanggal dan waktu saat ini."
+
+#: commands/echo.c:27
+msgid "Do not output the trailing newline."
+msgstr "Jangan keluarkan akhiran baris baru."
+
+#: commands/echo.c:28
+msgid "Enable interpretation of backslash escapes."
+msgstr "Aktifkan interpretasi 'escape backslash'."
+
+#: commands/echo.c:117
+msgid "[-e|-n] STRING"
+msgstr "[-e|-n] KATA-KATA"
+
+#: commands/echo.c:117
+msgid "Display a line of text."
+msgstr "Tampilkan baris dari teks."
+
+#: commands/efi/fixvideo.c:103
+msgid "Fix video problem."
+msgstr "Perbaiki masalah video."
+
+#: commands/efi/loadbios.c:207
+msgid "Fake BIOS."
+msgstr "Palsukan BIOS."
+
+#: commands/efi/loadbios.c:211
+msgid "Load BIOS dump."
+msgstr "Muat BIOS 'dump'."
+
+#: commands/gptsync.c:244
+msgid "DEVICE [PARTITION[+/-[TYPE]]] ..."
+msgstr "PERANGKAT [PARTISI[+/-[TIPE]]] ..."
+
+#: commands/gptsync.c:245
+msgid ""
+"Fill hybrid MBR of GPT drive DEVICE. specified partitions will be a part of "
+"hybrid mbr. Up to 3 partitions are allowed. TYPE is an MBR type. + means "
+"that partition is active. Only one partition can be active."
+msgstr ""
+"Isi hybrid MBR dari GPT drive PERANGKAT. partisi yang dispesifikasikan akan "
+"menjadi bagian dari hybrid mbr. sampai 3 partisi diperbolehkan. TYPE dalah "
+"sebuah tipe MBR. + berarti partisi itu aktif. Hanya satu partisi yang boleh "
+"aktif."
+
+#: commands/halt.c:39
+msgid ""
+"Halts the computer.  This command does not work on all firmware "
+"implementations."
+msgstr ""
+"Hentikan komputer. Perintah ini mungkin tidak bekerja di semua implementasi "
+"'firmware'."
+
+#: commands/handler.c:94
+msgid "[class [handler]]"
+msgstr "[kelas [pengendali]]"
+
+#: commands/handler.c:95
+msgid "List or select a handler."
+msgstr "Tampilkan atau pilih pengendali."
+
+#: commands/hdparm.c:30
+msgid ""
+"Set Advanced Power Management\n"
+"(1=low, ..., 254=high, 255=off)."
+msgstr ""
+"Set Advanced Power Management\n"
+"(1=rendah, ..., 254=tinggi, 255=tidak nyala)."
+
+#: commands/hdparm.c:33
+msgid "Check power mode."
+msgstr "Periksa mode power."
+
+#: commands/hdparm.c:34
+msgid "Freeze ATA security settings until reset."
+msgstr "Hentikan konfigurasi keamanan ATA sampai reset."
+
+#: commands/hdparm.c:36
+msgid "Check SMART health status."
+msgstr "Periksa keadaan kesehatan SMART."
+
+#: commands/hdparm.c:37
+msgid ""
+"Set Automatic Acoustic Management\n"
+"(0=off, 128=quiet, ..., 254=fast)."
+msgstr ""
+"Set Automatic Acoustic Management\n"
+"(0=tidak nyala, 128=pelan, ..., 254=cepat)."
+
+#: commands/hdparm.c:40
+msgid ""
+"Set standby timeout\n"
+"(0=off, 1=5s, 2=10s, ..., 240=20m, 241=30m, ...)."
+msgstr ""
+"Set waktu habis standby\n"
+"(0=tidak nyala, 1=5s, 2=10s, ..., 240=20m, 241=30m, ...)."
+
+#: commands/hdparm.c:43
+msgid "Set drive to standby mode."
+msgstr "Set drive ke mode standby."
+
+#: commands/hdparm.c:44
+msgid "Set drive to sleep mode."
+msgstr "Set drive ke mode tidur."
+
+#: commands/hdparm.c:45
+msgid "Print drive identity and settings."
+msgstr "Tampilkan konfigurasi dan identitas drive."
+
+#: commands/hdparm.c:47
+msgid "Dump contents of ATA IDENTIFY sector."
+msgstr "Tampilkan isi dari sektor IDENTIFIKASI ATA."
+
+#: commands/hdparm.c:49
+msgid "Disable/enable SMART (0/1)."
+msgstr "Nonaktifkan/aktifkan SMART (0/1)."
+
+#: commands/hdparm.c:50
+msgid "Do not print messages."
+msgstr "Jangan tampilkan pesan."
+
+#: commands/hdparm.c:414
+msgid "[OPTIONS] DISK"
+msgstr "[PILIHAN] DISK"
+
+#: commands/hdparm.c:415
+msgid "Get/set ATA disk parameters."
+msgstr "Get/set parameter disk ATA."
+
+#: commands/help.c:103 lib/arg.c:110
+msgid "Usage:"
+msgstr "Penggunaan:"
+
+#: commands/help.c:136
+msgid "[PATTERN ...]"
+msgstr "[POLA ...]"
+
+#: commands/help.c:137
+msgid "Show a help message."
+msgstr "Tampilkan pesan bantuan."
+
+#: commands/hexdump.c:30
+msgid "Skip offset bytes from the beginning of file."
+msgstr "Lewati byte ofset dari awal berkas."
+
+#: commands/hexdump.c:32
+msgid "Read only LENGTH bytes."
+msgstr "Baca saja PANJANG bytes."
+
+#: commands/hexdump.c:125
+msgid "[OPTIONS] FILE_OR_DEVICE"
+msgstr "[PILIHAN] BERKAS_ATAU_PERANGKAT"
+
+#: commands/hexdump.c:126
+msgid "Dump the contents of a file or memory."
+msgstr "Tampilkan isi dari sebuah berkas atau memori."
+
+#: commands/i386/cpuid.c:37
+msgid "Check for long mode flag (default)."
+msgstr "Periksa untuk tanda mode panjang (baku)."
+
+#: commands/i386/cpuid.c:92
+msgid "Check for CPU features."
+msgstr "Periksa kapabilitas CPU."
+
+#: commands/i386/pc/drivemap.c:37
+msgid "Show the current mappings."
+msgstr "Tampilkan pemetaan saat ini."
+
+#: commands/i386/pc/drivemap.c:38
+msgid "Reset all mappings to the default values."
+msgstr "Reset seluruh pemetaan ke nilai baku."
+
+#: commands/i386/pc/drivemap.c:39
+msgid "Perform both direct and reverse mappings."
+msgstr "Lakukan baik pemetaan secara langsung dan terbalik."
+
+#: commands/i386/pc/drivemap.c:407
+msgid "-l | -r | [-s] grubdev osdisk."
+msgstr "-l | -r | [-s] grubdev osdisk."
+
+#: commands/i386/pc/drivemap.c:408
+msgid "Manage the BIOS drive mappings."
+msgstr "Pelihara pemetaan drive BIOS."
+
+#: commands/i386/pc/halt.c:27
+msgid "Do not use APM to halt the computer."
+msgstr "Jangan gunakan APM untuk menghentikan komputer."
+
+#: commands/i386/pc/halt.c:51
+msgid "Halt the system, if possible using APM."
+msgstr "Hentikan sistem, jika memungkinkan gunakan APM."
+
+#: commands/i386/pc/play.c:262
+msgid "FILE | TEMPO [PITCH1 DURATION1] [PITCH2 DURATION2] ... "
+msgstr ""
+
+#: commands/i386/pc/play.c:263
+msgid "Play a tune."
+msgstr "Mainkan sebuah nada."
+
+#: commands/i386/pc/pxecmd.c:46
+msgid "Unload PXE environment."
+msgstr "Bongkar-muat lingkungan PXE."
+
+#: commands/i386/pc/vbeinfo.c:179
+msgid "List compatible VESA BIOS extension video modes."
+msgstr "Tampilkan ekstensi mode video yang kompatibel dengan VESA BIOS."
+
+#: commands/i386/pc/vbetest.c:173
+msgid "Test VESA BIOS Extension 2.0+ support."
+msgstr "Coba dukungan ekstensi VESA BIOS 2.0+."
+
+#: commands/ieee1275/suspend.c:43
+msgid "Return to Open Firmware prompt."
+msgstr "Kembalikan ke prompt Open Firmware."
+
+#: commands/keystatus.c:28
+msgid "Check Shift key."
+msgstr "Periksa tombol Shift."
+
+#: commands/keystatus.c:29
+msgid "Check Control key."
+msgstr "Periksa tombol Control."
+
+#: commands/keystatus.c:30
+msgid "Check Alt key."
+msgstr "Periksa tombol Alt."
+
+#: commands/keystatus.c:85
+msgid "[--shift] [--ctrl] [--alt]"
+msgstr "[--shift] [--ctrl] [--alt]"
+
+#: commands/keystatus.c:86
+msgid "Check key modifier status."
+msgstr "Periksa keadaan tombol pemodifikasi."
+
+#: commands/loadenv.c:33
+msgid "Specify filename."
+msgstr "Spesifikasikan nama berkas."
+
+#: commands/loadenv.c:383 commands/loadenv.c:389
+msgid "[-f FILE]"
+msgstr "[-f BERKAS]"
+
+#: commands/loadenv.c:384
+msgid "Load variables from environment block file."
+msgstr "Muat variabel dari berkas blok lingkungan."
+
+#: commands/loadenv.c:390
+msgid "List variables from environment block file."
+msgstr "Tampilkan variabel dari berkas blok lingkungan."
+
+#: commands/loadenv.c:395
+msgid "[-f FILE] variable_name [...]"
+msgstr "[-f BERKAS] nama_variabel [...]"
+
+#: commands/loadenv.c:396
+msgid "Save variables to environment block file."
+msgstr "Simpan variabel ke berkas blok lingkungan."
+
+#: commands/ls.c:37
+msgid "Show a long list with more detailed information."
+msgstr "Tampilkan sebuah daftar panjang dengan informasi yang lengkap."
+
+#: commands/ls.c:38
+msgid "Print sizes in a human readable format."
+msgstr "Tampilkan ukuran dalam format yang mudah dibaca."
+
+#: commands/ls.c:39
+msgid "List all files."
+msgstr "Tampilkan seluruh berkas."
+
+#: commands/ls.c:269
+msgid "[-l|-h|-a] [FILE]"
+msgstr "[-l|-h|-a] [BERKAS]"
+
+#: commands/ls.c:270
+msgid "List devices and files."
+msgstr "Tampilkan perangkat dan berkas."
+
+#: commands/lsmmap.c:47
+msgid "List memory map provided by firmware."
+msgstr "Tampilkan peta memori yang disediakan oleh firmware."
+
+#: commands/lspci.c:228
+msgid "List PCI devices."
+msgstr "Tampilkan perangkat PCI."
+
+#: commands/memrw.c:31
+msgid "Save read value into variable VARNAME."
+msgstr "Simpan nilai terbaca kedalam variabel NAMAVAR."
+
+#: commands/memrw.c:123 commands/memrw.c:126 commands/memrw.c:129
+#: commands/minicmd.c:366
+msgid "ADDR"
+msgstr "ALAMAT"
+
+#: commands/memrw.c:123
+msgid "Read byte from ADDR."
+msgstr "Baca byte dari ALAMAT."
+
+#: commands/memrw.c:126
+msgid "Read word from ADDR."
+msgstr "Baca word dari ALAMAT."
+
+#: commands/memrw.c:129
+msgid "Read dword from ADDR."
+msgstr "Baca dword dari ALAMAT."
+
+#: commands/memrw.c:132 commands/memrw.c:135 commands/memrw.c:138
+msgid "ADDR VALUE [MASK]"
+msgstr "ALAMAT NILAI [TOPENG]"
+
+#: commands/memrw.c:132
+msgid "Write byte VALUE to ADDR."
+msgstr "Tulis NILAI byte ke ALAMAT."
+
+#: commands/memrw.c:135
+msgid "Write word VALUE to ADDR."
+msgstr "Tulis NILAI word ke ALAMAT."
+
+#: commands/memrw.c:138
+msgid "Write dword VALUE to ADDR."
+msgstr "Tulis NILAI dword ke ALAMAT."
+
+#: commands/minicmd.c:360
+msgid "Show this message."
+msgstr "Tampilkan pesan ini."
+
+#: commands/minicmd.c:363 commands/probe.c:154
+msgid "[DEVICE]"
+msgstr "[PERANGKAT]"
+
+#: commands/minicmd.c:363
+msgid "Set the root device."
+msgstr "Set perangkat root."
+
+#: commands/minicmd.c:366
+msgid "Dump memory."
+msgstr "Tampilkan memori."
+
+#: commands/minicmd.c:369
+msgid "MODULE"
+msgstr "MODUL"
+
+#: commands/minicmd.c:369
+msgid "Remove a module."
+msgstr "Hapus sebuah modul."
+
+#: commands/minicmd.c:372
+msgid "Show loaded modules."
+msgstr "Tampilkan modul termuat."
+
+#: commands/minicmd.c:375
+msgid "Exit from GRUB."
+msgstr "Keluar dari GRUB."
+
+#: commands/minicmd.c:378
+msgid "Clear the screen."
+msgstr "Bersihkan layar."
+
+#: commands/parttool.c:325
+msgid "PARTITION COMMANDS"
+msgstr "PERINTAH PARTISI"
+
+#: commands/password.c:78
+msgid "USER PASSWORD"
+msgstr "KATA SANDI PENGGUNA"
+
+#: commands/password.c:79
+msgid "Set user password (plaintext). Unrecommended and insecure."
+msgstr ""
+"Set kata sandi pengguna (teks-terbuka). Tidak direkomendasikan dan tidak "
+"aman."
+
+#: commands/probe.c:38
+msgid "Set a variable to return value."
+msgstr "Set sebuah variabel ke nilai kembali."
+
+#: commands/probe.c:39
+msgid "Determine driver."
+msgstr "Tentukan driver."
+
+#: commands/probe.c:40
+msgid "Determine partition map type."
+msgstr "Tentukan tipe peta partisi."
+
+#: commands/probe.c:41
+msgid "Determine filesystem type."
+msgstr "Tentukan tipe sistem berkas."
+
+#: commands/probe.c:42
+msgid "Determine filesystem UUID."
+msgstr "Tentukan UUID sistem berkas."
+
+#: commands/probe.c:43
+msgid "Determine filesystem label."
+msgstr "Tentukan nama sistem berkas."
+
+#: commands/probe.c:155
+msgid "Retrieve device info."
+msgstr "Dapatkan informasi perangkat."
+
+#: commands/read.c:83
+msgid "[ENVVAR]"
+msgstr "[ENVVAR]"
+
+#: commands/read.c:84
+msgid "Set variable with user input."
+msgstr "Set variabel dengan masukan pengguna."
+
+#: commands/reboot.c:39
+msgid "Reboot the computer."
+msgstr "Reboot komputer."
+
+#: commands/search.c:161
+msgid "NAME [VARIABLE]"
+msgstr "NAMA [VARIABEL]"
+
+#: commands/search_file.c:5
+msgid ""
+"Search devices by file. If VARIABLE is specified, the first device found is "
+"set to a variable."
+msgstr ""
+"Cari perangkat dengan berkas. Jika VARIABEL dispesifikasikan, perangkat "
+"pertama yang ditemukan diset ke variabel."
+
+#: commands/search_label.c:5
+msgid ""
+"Search devices by label. If VARIABLE is specified, the first device found is "
+"set to a variable."
+msgstr ""
+"Cari perangkat berdasarkan nama. Jika VARIABEL dispesifikasikan, perangkat "
+"pertama yang ditemukan diset ke variabel."
+
+#: commands/search_uuid.c:5
+msgid ""
+"Search devices by UUID. If VARIABLE is specified, the first device found is "
+"set to a variable."
+msgstr ""
+"Cari perangkat dengan UUID. Jika VARIABEL dispesifikasikan, perangkat "
+"pertama yang ditemukan diset ke sebuah variabel."
+
+#: commands/sleep.c:31
+msgid "Verbose countdown."
+msgstr "Hitung mundur secara detail."
+
+#: commands/sleep.c:32
+msgid "Interruptible with ESC."
+msgstr "Dapat diinterupsi dengan ESC."
+
+#: commands/sleep.c:106
+msgid "NUMBER_OF_SECONDS"
+msgstr "JUMLAH_DARI_DETIK"
+
+#: commands/sleep.c:107
+msgid "Wait for a specified number of seconds."
+msgstr "Tunggu selama jumlah dari detik yang dispesifikasikan."
+
+#: commands/test.c:424
+msgid "EXPRESSION ]"
+msgstr "EKSPRESI ]"
+
+#: commands/test.c:424 commands/test.c:426
+msgid "Evaluate an expression."
+msgstr "Evaluasi sebuah ekspresi."
+
+#: commands/test.c:426
+msgid "EXPRESSION"
+msgstr "EKSPRESI"
+
+#: commands/true.c:47
+msgid "Do nothing, successfully."
+msgstr "Tidak melakukan apapun, sukses."
+
+#: commands/true.c:50
+msgid "Do nothing, unsuccessfully."
+msgstr "Tidak melakukan apapun, tidak sukses."
+
+#: commands/usbtest.c:199
+msgid "Test USB support."
+msgstr "Coba dukungan USB."
+
+#: commands/videotest.c:180
+msgid "Test video subsystem."
+msgstr "Coba subsistem video."
+
+#: commands/xnu_uuid.c:92
+msgid "GRUBUUID [VARNAME]"
+msgstr "GRUBUUID [NAMAVAR]"
+
+#: commands/xnu_uuid.c:93
+msgid "Transform 64-bit UUID to format suitable for XNU."
+msgstr "Transformasikan 64-bit UUID ke format yang sesuai untuk XNU."
+
+#: disk/loopback.c:40
+msgid "Delete the loopback device entry."
+msgstr "Hapus masukan perangkat loopback."
+
+#: disk/loopback.c:41
+msgid "Simulate a hard drive with partitions."
+msgstr "Simulasikan sebuah hard drive dengan partisi."
+
+#: disk/loopback.c:249
+msgid "[-d|-p] DEVICENAME FILE."
+msgstr "[-d|-p] NAMAPERANGKAT BERKAS."
+
+#: disk/loopback.c:250
+msgid "Make a device of a file."
+msgstr "Buat perangkat dari berkas."
+
+#: hello/hello.c:43
+msgid "Say \"Hello World\"."
+msgstr "Katakan \"Hi Dunia\"."
+
+#: lib/arg.c:34
+msgid "Display this help and exit."
+msgstr "Tampilkan bantuan ini dan keluar."
+
+#: lib/arg.c:36
+msgid "Display the usage of this command and exit."
+msgstr "Tampilkan penggunaan dari perintah ini dan keluar."
+
+#: loader/efi/appleloader.c:325
+msgid "Boot legacy system."
+msgstr "Boot sistem sesungguhnya."
+
+#: loader/efi/chainloader.c:340 loader/i386/pc/chainloader.c:153
+msgid "Load another boot loader."
+msgstr "Muat 'boot loader' lain."
+
+#: loader/i386/bsd.c:65
+msgid "Display output on all consoles."
+msgstr "Tampilkan keluaran di semua konsol."
+
+#: loader/i386/bsd.c:66
+msgid "Use serial console."
+msgstr "Gunakan konsol serial."
+
+#: loader/i386/bsd.c:67 loader/i386/bsd.c:93 loader/i386/bsd.c:114
+msgid "Ask for file name to reboot from."
+msgstr "Tanya untuk nama berkas untuk direboot dari."
+
+#: loader/i386/bsd.c:68
+msgid "Use CDROM as root."
+msgstr "Gunakan CDROM sebagai root."
+
+#: loader/i386/bsd.c:69
+msgid "Invoke user configuration routing."
+msgstr "Panggil konfigurasi routing pengguna."
+
+#: loader/i386/bsd.c:70 loader/i386/bsd.c:97 loader/i386/bsd.c:117
+msgid "Enter in KDB on boot."
+msgstr "Masuk dalam KDB pada waktu boot."
+
+#: loader/i386/bsd.c:71
+msgid "Use GDB remote debugger instead of DDB."
+msgstr "Gunakan GDB remote debugger daripada DDB."
+
+#: loader/i386/bsd.c:72
+msgid "Disable all boot output."
+msgstr "Tampilkan seluruh keluaran boot."
+
+#: loader/i386/bsd.c:74
+msgid "Wait for keypress after every line of output."
+msgstr "Tunggu untuk penekanan tombol setelah setiap baris dari keluaran."
+
+#: loader/i386/bsd.c:76
+msgid "Use compiled-in rootdev."
+msgstr "Gunakan compiled-in rootdev."
+
+#: loader/i386/bsd.c:77 loader/i386/bsd.c:96 loader/i386/bsd.c:120
+msgid "Boot into single mode."
+msgstr "Boot kedalam mode tunggal."
+
+#: loader/i386/bsd.c:78 loader/i386/bsd.c:121
+msgid "Boot with verbose messages."
+msgstr "Boot dengan pesan detail."
+
+#: loader/i386/bsd.c:94 loader/i386/bsd.c:115
+msgid "Don't reboot, just halt."
+msgstr "Jangan reboot, hanya hentikan."
+
+#: loader/i386/bsd.c:95 loader/i386/bsd.c:116
+msgid "Change configured devices."
+msgstr "Ubah konfigurasi perangkat."
+
+#: loader/i386/bsd.c:98 loader/i386/bsd.c:124
+msgid "Set root device."
+msgstr "Set perangkat root."
+
+#: loader/i386/bsd.c:112
+msgid "Disable SMP."
+msgstr "Non-aktifkan SMP."
+
+#: loader/i386/bsd.c:113
+msgid "Disable ACPI."
+msgstr "No-aktifkan ACPI."
+
+#: loader/i386/bsd.c:119
+msgid "Don't display boot diagnostic messages."
+msgstr "Jangan tampilkan pesan diagnosa boot."
+
+#: loader/i386/bsd.c:122
+msgid "Boot with debug messages."
+msgstr "Boot dengan pesan debug."
+
+#: loader/i386/bsd.c:123
+msgid "Supress normal output (warnings remain)."
+msgstr "Tekan keluaran normal (peringatan tetap)."
+
+#: loader/i386/bsd.c:124
+msgid "DEVICE"
+msgstr "PERANGKAT"
+
+#: loader/i386/bsd.c:1297
+msgid "Load kernel of FreeBSD."
+msgstr "Muat kernel dari FreeBSD."
+
+#: loader/i386/bsd.c:1301
+msgid "Load kernel of OpenBSD."
+msgstr "Muat kernal dari OpenBSD."
+
+#: loader/i386/bsd.c:1305
+msgid "Load kernel of NetBSD."
+msgstr "Muat kernel dari NetBSD."
+
+#: loader/i386/bsd.c:1309
+msgid "Load FreeBSD env."
+msgstr "Muat lingkungan FreeBSD."
+
+#: loader/i386/bsd.c:1312
+msgid "Load FreeBSD kernel module."
+msgstr "Muat modul kernel FreeBSD."
+
+#: loader/i386/bsd.c:1315
+msgid "Load FreeBSD kernel module (ELF)."
+msgstr "Muat modul kernel (ELF) FreeBSD."
+
+#: loader/i386/efi/linux.c:1011 loader/i386/ieee1275/linux.c:301
+#: loader/i386/linux.c:1012 loader/i386/pc/linux.c:399
+#: loader/powerpc/ieee1275/linux.c:353 loader/sparc64/ieee1275/linux.c:514
+msgid "Load Linux."
+msgstr "Muat Linux."
+
+#: loader/i386/efi/linux.c:1013 loader/i386/ieee1275/linux.c:303
+#: loader/i386/linux.c:1014 loader/i386/pc/linux.c:402
+#: loader/powerpc/ieee1275/linux.c:355 loader/sparc64/ieee1275/linux.c:516
+msgid "Load initrd."
+msgstr "Muat initrd."
+
+#: loader/i386/xnu.c:1032
+msgid "Load device-properties dump."
+msgstr "Muat properti-perangkat dump."
+
+#: loader/multiboot_loader.c:133
+msgid "Load a multiboot 2 kernel."
+msgstr "Muat sebuah kernel multiboot 2."
+
+#: loader/multiboot_loader.c:136
+msgid "Load a multiboot kernel."
+msgstr "Muat sebuah kernel multiboot."
+
+#: loader/multiboot_loader.c:141
+msgid "Load a multiboot module."
+msgstr "Muat sebuah modul multiboot."
+
+#: loader/xnu.c:1428
+msgid "Load XNU image."
+msgstr "Muat image XNU."
+
+#: loader/xnu.c:1430
+msgid "Load 64-bit XNU image."
+msgstr "Muat image 64-bit XNU."
+
+#: loader/xnu.c:1432
+msgid "Load XNU extension package."
+msgstr "Muat paket ekstensi XNU."
+
+#: loader/xnu.c:1434
+msgid "Load XNU extension."
+msgstr "Muat ekstensi XNU."
+
+#: loader/xnu.c:1436
+msgid "DIRECTORY [OSBundleRequired]"
+msgstr "DIREKTORI [OSBundleRequired]"
+
+#: loader/xnu.c:1437
+msgid "Load XNU extension directory."
+msgstr "Muat ekstensi direktori XNU."
+
+#: loader/xnu.c:1444
+msgid "Load a splash image for XNU."
+msgstr "Muat sebuah gambar singkat untuk XNU."
+
+#: loader/xnu.c:1449
+msgid "Load XNU hibernate image."
+msgstr "Muat berkas hibernate XNU."
+
+#: normal/auth.c:233
+msgid "Enter username: "
+msgstr "Masukan nama pengguna: "
+
+#: normal/auth.c:238
+msgid "Enter password: "
+msgstr "Masukan kata sandi   : "
+
+#: normal/color.c:80
+#, c-format
+msgid "Warning: syntax error (missing slash) in `%s'\n"
+msgstr "Peringatan: kesalahan dalam sintaks (hilang slash) dalam `%s'\n"
+
+#: normal/color.c:89
+#, c-format
+msgid "Warning: invalid foreground color `%s'\n"
+msgstr "Peringatan: warna depan tidak valid `%s'\n"
+
+#: normal/color.c:95
+#, c-format
+msgid "Warning: invalid background color `%s'\n"
+msgstr "Peringatan: nama belakang tidak valid `%s'\n"
+
+#: normal/dyncmd.c:147
+msgid "not loaded"
+msgstr "tidak termuat"
+
+#: normal/main.c:408
+#, c-format
+msgid "GNU GRUB  version %s"
+msgstr "GNU GRUB  versi %s"
+
+#: normal/main.c:539
+#, c-format
+msgid ""
+"Minimal BASH-like line editing is supported. For the first word, TAB lists "
+"possible command completions. Anywhere else TAB lists possible device or "
+"file completions. %s"
+msgstr ""
+"Penyuntingan minimal bergaya BASH didukung. Untuk kata pertama, TAB "
+"menampilkan pelengkapan perintah yang memungkin. Dimanapun TAB menampilkan "
+"perangkat yang memungkinkan atau pelengkapan berkas. %s"
+
+#: normal/main.c:542
+msgid "ESC at any time exits."
+msgstr "ESC di waktu apapun keluar."
+
+#: normal/menu_entry.c:1060
+msgid "Possible commands are:"
+msgstr "Perintah yang memungkinkan adalah:"
+
+#: normal/menu_entry.c:1064
+msgid "Possible devices are:"
+msgstr "Perangkat yang memungkinkan adalah:"
+
+#: normal/menu_entry.c:1068
+msgid "Possible files are:"
+msgstr "Berkas yang memungkinkan adalah:"
+
+#: normal/menu_entry.c:1072
+msgid "Possible partitions are:"
+msgstr "Partisi yang memungkinkan adalah:"
+
+#: normal/menu_entry.c:1076
+msgid "Possible arguments are:"
+msgstr "Argumen yang memungkinkan adalah:"
+
+#: normal/menu_entry.c:1080
+msgid "Possible things are:"
+msgstr "Hal yang memungkinkan adalah:"
+
+#: normal/menu_entry.c:1184
+msgid "Booting a command list"
+msgstr "Mem-boot dari sebuah daftar perintah"
+
+#: normal/menu_entry.c:1397
+msgid "Press any key to continue..."
+msgstr "Tekan tombol apapun untuk melanjutkan..."
+
+#: normal/menu_text.c:179
+msgid ""
+"Minimum Emacs-like screen editing is supported. TAB lists completions. Press "
+"Ctrl-x to boot, Ctrl-c for a command-line or ESC to return menu."
+msgstr ""
+"Penyuntingan layar minimum bergaya Emacs didukung. TAB menampilkan "
+"pelengkapan. Tekan Ctrl-x untuk boot, Ctrl-c untuk baris perintah atau ESC "
+"untuk kembali ke menu."
+
+#: normal/menu_text.c:186
+#, c-format
+msgid "Use the %C and %C keys to select which entry is highlighted.\n"
+msgstr ""
+"Gunakan tombol-tombol %C dan %C untuk memiliki masukan mana yang disoroti.\n"
+
+#: normal/menu_text.c:203
+msgid ""
+"Press enter to boot the selected OS, 'e' to edit the commands before booting "
+"or 'c' for a command-line. ESC to return previous menu.\n"
+msgstr ""
+"Tekan enter untuk mem-boot OS yang dipilih, 'e' untuk mengubah perintah "
+"sebelum booting atau 'c' untuk sebuah baris perintah. ESC kembali ke menu "
+"sebelumnya.\n"
+
+#: normal/menu_text.c:211
+msgid ""
+"Press enter to boot the selected OS, 'e' to edit the commands before booting "
+"or 'c' for a command-line.\n"
+msgstr ""
+"Tekan enter untuk mem-boot OS yang dipilih, 'e' untuk mengubah perintah "
+"sebelum booting atau 'c' untuk sebuah baris perintah.\n"
+
+#: normal/menu_text.c:363
+#, c-format
+msgid "The highlighted entry will be executed automatically in %ds."
+msgstr "Masukan yang disoroti akan diboot secara otomatis dalam %ds."
+
+#: normal/misc.c:41
+#, c-format
+msgid "Partition %s:"
+msgstr "Partisi %s:"
+
+#: normal/misc.c:46
+#, c-format
+msgid "Device %s:"
+msgstr "Perankat %s:"
+
+#: normal/misc.c:52
+msgid "Filesystem cannot be accessed"
+msgstr "Sistem berkas tidak dapat diakses"
+
+#: normal/misc.c:63
+#, c-format
+msgid "Filesystem type %s"
+msgstr "Tipe sistem berkas %s"
+
+#: normal/misc.c:73
+#, c-format
+msgid "- Label \"%s\""
+msgstr "- Label \"%s\""
+
+#: normal/misc.c:88
+#, c-format
+msgid "- Last modification time %d-%02d-%02d %02d:%02d:%02d %s"
+msgstr "- Waktu modifikasi terakhir %d-%02d-%02d %02d:%02d:%02d %s"
+
+#: normal/misc.c:111
+msgid "Unknown filesystem"
+msgstr "Sistem berkas tidak diketahui"
+
+#: normal/misc.c:113
+msgid "Partition table"
+msgstr "Tabel partisi"
+
+#: term/serial.c:46
+msgid "Set the serial unit."
+msgstr "Set satuan serial."
+
+#: term/serial.c:47
+msgid "Set the serial port address."
+msgstr "Set alamat port serial."
+
+#: term/serial.c:48
+msgid "Set the serial port speed."
+msgstr "Set kecepatan port serial."
+
+#: term/serial.c:49
+msgid "Set the serial port word length."
+msgstr "Set panjang kata port serial."
+
+#: term/serial.c:50
+msgid "Set the serial port parity."
+msgstr "Set pariti dari port serial."
+
+#: term/serial.c:51
+msgid "Set the serial port stop bits."
+msgstr "Set stop bit dari port serial."
+
+#: util/grub-mkrawimage.c:69
+msgid "the core image is too small"
+msgstr "image core terlalu kecil"
+
+#: util/grub-mkrawimage.c:81
+msgid "cannot compress the kernel image"
+msgstr "tidak dapat mengkompress image kernel"
+
+#: util/grub-mkrawimage.c:156
+msgid "prefix is too long"
+msgstr "awalan terlalu panjang"
+
+#: util/grub-mkrawimage.c:242
+msgid "the core image is too big"
+msgstr "image core terlalu besar"
+
+#: util/grub-mkrawimage.c:247
+#, c-format
+msgid "diskboot.img size must be %u bytes"
+msgstr "besar diskboot.img seharusnya %u bytes"
+
+#: util/grub-mkrawimage.c:330
+#, c-format
+msgid "core image is too big (%p > %p)"
+msgstr "Image core terlalu besar (%p >%p)"
+
+#: util/grub-mkrawimage.c:434 util/i386/pc/grub-setup.c:587
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "Coba `%s --help' untuk informasi lebih lanjut.\n"
+
+#: util/grub-mkrawimage.c:436
+#, fuzzy, c-format
+msgid ""
+"Usage: %s [OPTION]... [MODULES]\n"
+"\n"
+"Make a bootable image of GRUB.\n"
+"\n"
+"  -d, --directory=DIR     use images and modules under DIR [default=%s]\n"
+"  -p, --prefix=DIR        set grub_prefix directory [default=%s]\n"
+"  -m, --memdisk=FILE      embed FILE as a memdisk image\n"
+"  -f, --font=FILE         embed FILE as a boot font\n"
+"  -c, --config=FILE       embed FILE as boot config\n"
+"  -o, --output=FILE       output a generated image to FILE [default=stdout]\n"
+"  -O, --format=FORMAT     generate an image in format [default=%s]\n"
+"                          available formats: %s\n"
+"  -h, --help              display this message and exit\n"
+"  -V, --version           print version information and exit\n"
+"  -v, --verbose           print verbose messages\n"
+"\n"
+"Report bugs to <%s>.\n"
+msgstr ""
+"Penggunaan: %s [PILIHAN]... [MODUL]\n"
+"\n"
+"Buat sebuah image GRUB yang dapat diboot.\n"
+"\n"
+"  -d, --directory=DIR     gunakan image dan modul dibawah DIR [baku=%s]\n"
+"  -p, --prefix=DIR        set direktori grub_prefix [baku=%s]\n"
+"  -m, --memdisk=BERKAS    tempatkan BERKAS sebagai sebuah image memdisk\n"
+"  -f, --font=BERKAS       tempatkan BERKAS sebagai font boot\n"
+"  -c, --config=BERKAS     tempatkan BERKAS sebagai konfigurasi boot\n"
+"  -o, --output=BERKAS     keluarkan sebuah image yang dihasilkan ke BERKAS "
+"[baku=stdout]\n"
+"  -O, --format=FORMAT     hasilkan sebuah image dalam format [baku="
+
+#: util/grub-mkrawimage.c:580
+#, c-format
+msgid "cannot open %s"
+msgstr "tidak dapat membuka %s"
+
+#: util/i386/pc/grub-setup.c:159
+msgid "the first sector of the core file is not sector-aligned"
+msgstr "sektor pertama dari berkas core tidak selaras secara sektor"
+
+#: util/i386/pc/grub-setup.c:173
+msgid "non-sector-aligned data is found in the core file"
+msgstr "sektor-tidak-selaras data ditemukan dalam berkas core"
+
+#: util/i386/pc/grub-setup.c:187
+msgid "the sectors of the core file are too fragmented"
+msgstr "sektor dari berkas core terlalu terpotong potong"
+
+#: util/i386/pc/grub-setup.c:198
+#, c-format
+msgid "the size of `%s' is not %u"
+msgstr "ukuran dari `%s' bukan %u"
+
+#: util/i386/pc/grub-setup.c:215
+#, c-format
+msgid "the size of `%s' is too small"
+msgstr "ukuran dari `%s' terlalu kecil"
+
+#: util/i386/pc/grub-setup.c:217
+#, c-format
+msgid "the size of `%s' is too large"
+msgstr "ukuran dari `%s' terlalu besar"
+
+#: util/i386/pc/grub-setup.c:254
+#, c-format
+msgid "unable to identify a filesystem in %s; safety check can't be performed"
+msgstr ""
+"tidak dapat mengidentifikasikan sebuah sistem berkas dalam %s; pemeriksaan "
+"keamanan tidak dapat dilakukan"
+
+#: util/i386/pc/grub-setup.c:258
+#, c-format
+msgid ""
+"%s appears to contain a %s filesystem which isn't known to reserve space for "
+"DOS-style boot.  Installing GRUB there could result in FILESYSTEM "
+"DESTRUCTION if valuable data is overwritten by grub-setup (--skip-fs-probe "
+"disables this check, use at your own risk)"
+msgstr ""
+"%s sepertinya berisi sebuah sistem berkas %s yang tidak diketahui untuk "
+"mereserve ruang untuk boot gaya-DOS. Memasang GRUB disana dapat berakibat "
+"KERUSAKAN SISTEM BERKAS jika data berharga dipaksa tulis oleh grub-setup (--"
+"skip-fs-probe menonaktifkan pemeriksaan ini, gunakan sesuai resiko anda)"
+
+#: util/i386/pc/grub-setup.c:307
+msgid "no DOS-style partitions found"
+msgstr "tidak ditemukan gaya partisi DOS"
+
+#: util/i386/pc/grub-setup.c:323 util/i386/pc/grub-setup.c:348
+msgid ""
+"Attempting to install GRUB to a partitionless disk.  This is a BAD idea."
+msgstr ""
+"Mencoba memasang GRUB ke sebuah disk yang tidak berpartisi. Ini mungkin "
+"bukan ide baik."
+
+#: util/i386/pc/grub-setup.c:329
+msgid ""
+"Attempting to install GRUB to a partition instead of the MBR.  This is a BAD "
+"idea."
+msgstr ""
+"Mencoba memasang GRUB ke sebuah partisi daripada MBR. Ini mungkin bukan ide "
+"baik."
+
+#: util/i386/pc/grub-setup.c:357
+msgid "No DOS-style partitions found"
+msgstr "Tidak ditemukan gaya partisi DOS"
+
+#: util/i386/pc/grub-setup.c:362
+msgid ""
+"This msdos-style partition label has no post-MBR gap; embedding won't be "
+"possible!"
+msgstr ""
+"Label partisi gaya msdos ini tidak memiliki post-MBR gap; penempatan tidak "
+"memungkinkan!"
+
+#: util/i386/pc/grub-setup.c:364
+msgid ""
+"This GPT partition label has no BIOS Boot Partition; embedding won't be "
+"possible!"
+msgstr ""
+"Label partisi GPT ini tidak memiliki partisi boot BIOS; penempatan tidak "
+"memungkinkan!"
+
+#: util/i386/pc/grub-setup.c:371
+msgid "Your core.img is unusually large.  It won't fit in the embedding area."
+msgstr ""
+"Besar core.img anda sangat besar. Ini tidak akan masuk dalam area penempatan."
+
+#: util/i386/pc/grub-setup.c:373
+msgid "Your embedding area is unusually small.  core.img won't fit in it."
+msgstr "Penempatan anda sangat kecil. core.img tidak akan masuk disana."
+
+#: util/i386/pc/grub-setup.c:416
+msgid ""
+"embedding is not possible, but this is required when the root device is on a "
+"RAID array or LVM volume"
+msgstr ""
+"penempatan tidak memungkinkan, tetapi ini dibutuhkan ketika perangkat root "
+"berada di sebuah array RAID atau volume LVM."
+
+#: util/i386/pc/grub-setup.c:419
+msgid ""
+"Embedding is not possible.  GRUB can only be installed in this setup by "
+"using blocklists.  However, blocklists are UNRELIABLE and its use is "
+"discouraged."
+msgstr ""
+"Penempatan tidak memungkinkan. GRUB hanya dapat dipasang di konfigurasi ini "
+"dengan menggunakan blocklists. Akan tetapi, blocklists TIDAK DAPAT DIJAGAKAN "
+"dan penggunaan ini tidak disarankan."
+
+#: util/i386/pc/grub-setup.c:423
+msgid "if you really want blocklists, use --force"
+msgstr "jika anda benar benar menginginkan blocklists, gunakan --force."
+
+#: util/i386/pc/grub-setup.c:439
+#, c-format
+msgid "attempting to read the core image `%s' from GRUB"
+msgstr "mencoba untuk membaca image core `%s' dari GRUB"
+
+#: util/i386/pc/grub-setup.c:440
+#, c-format
+msgid "attempting to read the core image `%s' from GRUB again"
+msgstr "mencoba untuk membaca image core `%s' dari GRUB lagi"
+
+#: util/i386/pc/grub-setup.c:498
+#, c-format
+msgid "cannot read `%s' correctly"
+msgstr "tidak dapat membaca `%s' secara benar"
+
+#: util/i386/pc/grub-setup.c:511
+msgid "no terminator in the core image"
+msgstr "tidak ada pengakhir dalam image core"
+
+#: util/i386/pc/grub-setup.c:522
+msgid "failed to read the first sector of the core image"
+msgstr "gagal untuk membaca sektor pertama dari core image"
+
+#: util/i386/pc/grub-setup.c:528
+msgid "failed to read the rest sectors of the core image"
+msgstr "gagal untuk membaca sektor selanjutnya dari image core"
+
+#: util/i386/pc/grub-setup.c:547
+#, c-format
+msgid "cannot open `%s'"
+msgstr "tidak dapat membuka `%s'"
+
+#: util/i386/pc/grub-setup.c:589
+#, c-format
+msgid ""
+"Usage: %s [OPTION]... DEVICE\n"
+"\n"
+"Set up images to boot from DEVICE.\n"
+"DEVICE must be a GRUB device (e.g. `(hd0,1)').\n"
+"\n"
+"  -b, --boot-image=FILE   use FILE as the boot image [default=%s]\n"
+"  -c, --core-image=FILE   use FILE as the core image [default=%s]\n"
+"  -d, --directory=DIR     use GRUB files in the directory DIR [default=%s]\n"
+"  -m, --device-map=FILE   use FILE as the device map [default=%s]\n"
+"  -r, --root-device=DEV   use DEV as the root device [default=guessed]\n"
+"  -f, --force             install even if problems are detected\n"
+"  -s, --skip-fs-probe     do not probe for filesystems in DEVICE\n"
+"  -h, --help              display this message and exit\n"
+"  -V, --version           print version information and exit\n"
+"  -v, --verbose           print verbose messages\n"
+"\n"
+"Report bugs to <%s>.\n"
+msgstr ""
+"Penggunaan: %s [PILIHAN]... PERANGKAT\n"
+"\n"
+"Konfigurasi image untuk boot dari PERANGKAT.\n"
+"PERANGKAT harus berupa sebuah perangkat GRUB (e.g. ``(hd0,1)'').\n"
+"\n"
+"  -b, --boot-image=BERKAS gunakan BERKAS sebagai image boot [baku=%s]\n"
+"  -c, --core-image=BERKAS gunakan BERKAS sebagai image core [baku=%s]\n"
+"  -d, --directory=DIR     gunakan berkas GRUB dalam direktori DIR [baku=%s]\n"
+"  -m, --device-map=BERKAS gunakan BERKAS sebagai peta perangkat [baku=%s]\n"
+"  -r, --root-device=DEV   gunakan DEV sebagai perangkat root [baku=ditebak]\n"
+"  -f, --force             pasang walaupun masalah terdeteksi\n"
+"  -s, --skip-fs-probe     jangan periksa untuk sistem berkas dalam "
+"PERANGKAT\n"
+"  -h, --help              tampilkan pesan bantuan ini dan keluar\n"
+"  -V, --version           tampilkan informasi versi dan keluar\n"
+"  -v, --verbose           tampilkan informasi secara detail\n"
+"\n"
+"Laporkan bugs ke <%s>.\n"
+
+#: util/i386/pc/grub-setup.c:719
+#, c-format
+msgid "No device is specified.\n"
+msgstr "Perangkat tidak dispesifikasikan.\n"
+
+#: util/i386/pc/grub-setup.c:725
+#, c-format
+msgid "Unknown extra argument `%s'.\n"
+msgstr "Argumen ekstra `%s' tidak diketahui.\n"
+
+#: util/i386/pc/grub-setup.c:742
+#, c-format
+msgid "Invalid device `%s'.\n"
+msgstr "Perangkat `%s' tidak valid.\n"
+
+#: util/i386/pc/grub-setup.c:755
+#, c-format
+msgid "invalid root device `%s'"
+msgstr "perangkat root `%s' tidak valid"
+
+#: util/i386/pc/grub-setup.c:768
+msgid "cannot guess the root device. Specify the option `--root-device'"
+msgstr ""
+"tidak dapat menebak perangkat root. Spesifikasikan pilihan ``--root-device''."
+
+#: util/grub.d/10_kfreebsd.in:47
+msgid "%s, with kFreeBSD %s"
+msgstr "%s, dengan kFreeBSD %s"
+
+#: util/grub.d/10_kfreebsd.in:55
+msgid "Loading kernel of FreeBSD %s ..."
+msgstr "Memuat kernel dari FreeBSD %s ..."
+
+#: util/grub.d/10_linux.in:59
+msgid "%s, with Linux %s (recovery mode)"
+msgstr "%s, dengan Linux %s (mode penyembuhan)"
+
+#: util/grub.d/10_linux.in:61
+msgid "%s, with Linux %s"
+msgstr "%s, dengan Linux %s"
+
+#: util/grub.d/10_linux.in:86
+msgid "Loading Linux %s ..."
+msgstr "Memuat Linux %s ..."
+
+#: util/grub.d/10_linux.in:91
+msgid "Loading initial ramdisk ..."
+msgstr "Memuat inisial ramdisk ..."
+
+#~ msgid "Load XNU ramdisk. It will be seen as md0."
+#~ msgstr "Muat XNU ramdisk. Ini akan kelihatan seperti md0."
+
+#~ msgid "A boot catalog exists and appears corrupted.\n"
+#~ msgstr "Sebuah katalog boot ada dan mungkin terkorupsi.\n"
+
+#~ msgid "Please check the following file: %s.\n"
+#~ msgstr "Mohon periksa berkas berikut: %s.\n"
+
+#~ msgid "This file must be removed before a bootable CD can be done.\n"
+#~ msgstr ""
+#~ "Berkas ini mungkin telah terhapus sebelum sebuah CD bootable dapat "
+#~ "dilakukan.\n"
+
+#~ msgid "Error creating boot catalog (%s)"
+#~ msgstr "Error membuat katalog boot (%s)"
+
+#~ msgid "Error writing to boot catalog (%s)"
+#~ msgstr "Error menulis katalog boot (%s)"
+
+#~ msgid "Boot catalog cannot be found!\n"
+#~ msgstr "Katalog boot tidak dapat ditemukan!\n"
+
+#~ msgid "Boot image cannot be found!\n"
+#~ msgstr "Image boot tidak dapat ditemukan!\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Size of boot image is %d sectors"
+#~ msgstr ""
+#~ "\n"
+#~ "Ukuran dari boot image adalah %d sektor"
+
+#~ msgid "No emulation\n"
+#~ msgstr "Tidak ada emulasi\n"
+
+#~ msgid "Emulating a 1.44 meg floppy\n"
+#~ msgstr "Mengemulasikan sebuah 1.44 meg floppy\n"
+
+#~ msgid "Emulating a 2.88 meg floppy\n"
+#~ msgstr "Mengemulasikan sebuah 2.88 meg floppy\n"
+
+#~ msgid "Emulating a 1.2 meg floppy\n"
+#~ msgstr "Mengemulasikan sebuah 1.2 meg floppy\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Error - boot image is not the an allowable size.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Error - image boot tidak berukuran yang diperbolehkan.\n"
+
+#~ msgid "Error opening boot catalog for update"
+#~ msgstr "Error membuka katalog boot untuk diperbarui"
+
+#~ msgid "Error writing to boot catalog"
+#~ msgstr "Error menulis ke katalog boot"
+
+#~ msgid "Error opening boot image file '%s' for update"
+#~ msgstr "Error membuka berkas boot image '%s' untuk diperbarui"
+
+#~ msgid "Odd alignment at non-end-of-file in boot image '%s'"
+#~ msgstr "Penyesuaian janggal di akhir-dari-berkas dalam image boot '%s'"
+
+#~ msgid "Boot image file '%s' changed unexpectedly"
+#~ msgstr "Berkas image boot '%s' berubah secara tidak terduga"
+
+#~ msgid "Error writing to boot image (%s)"
+#~ msgstr "Error menulis ke boot image (%s)"
+
+#~ msgid "Unable to generate sane path tables - too many directories (%d)\n"
+#~ msgstr ""
+#~ "Tidak dapat menghasilkan tabel jalur yang masuk akal - terlalu banyak "
+#~ "direktori (%d)\n"
+
+#~ msgid "Entry %d not in path tables\n"
+#~ msgstr "Masukan %d tidak dalam tabel jalur\n"
+
+#~ msgid "Fatal goof - directory has amnesia\n"
+#~ msgstr "Fatal goof - direktori memiliki amnesia\n"
+
+#~ msgid "Joliet path table lengths do not match %d %d\n"
+#~ msgstr "Panjang tabel jalur joliet tidak cocok %d %d\n"
+
+#~ msgid "Unable to locate relocated directory\n"
+#~ msgstr "Tidak dapat menempatkan direktori yang ditempatkan\n"
+
+#~ msgid "Fatal goof - unable to find directory location\n"
+#~ msgstr "Fatal goof - tidak dapat menemukan lokasi direktori\n"
+
+#~ msgid "Unexpected joliet directory length %d %d %s\n"
+#~ msgstr "Panjang direktori joliet tidak terduga %d %d %s\n"
+
+#~ msgid "Process all files (don't skip backup files)"
+#~ msgstr "Proses seluruh berkas (jangan lewatkan berkas cadangan)"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Set Application ID"
+#~ msgstr "Set ID Aplikasi"
+
+#~ msgid "Set Bibliographic filename"
+#~ msgstr "Set nama berkas bibliographic"
+
+#~ msgid "Set Copyright filename"
+#~ msgstr "Set nama berkas Hak Cipta"
+
+#~ msgid "Set embedded boot image name"
+#~ msgstr "Set nama image embedded boot"
+
+#~ msgid "Patch a protective DOS-style label in the image"
+#~ msgstr "Patch sebuah label proteksi bergaya DOS dalam image"
+
+#~ msgid "Set El Torito boot image name"
+#~ msgstr "Set nama El Torito boot image"
+
+#~ msgid "Set El Torito boot catalog name"
+#~ msgstr "Set nama katalog boot El Torito"
+
+#~ msgid "Patch Boot Info Table in El Torito boot image"
+#~ msgstr "Patch Tabel Informasi boot dalam image boot El Torito"
+
+#~ msgid "Dummy option for backward compatibility"
+#~ msgstr "Pilihan dummy untuk kompabilitas kebelakang"
+
+#~ msgid "Enable floppy drive emulation for El Torito"
+#~ msgstr "Aktifkan emulasi drive floppy untuk El Torito"
+
+#~ msgid "PARAMS"
+#~ msgstr "PARAMETER"
+
+#~ msgid "Magic parameters from cdrecord"
+#~ msgstr "Majik parameter dari cdrecord"
+
+#~ msgid "Omit trailing periods from filenames"
+#~ msgstr "Abaikan sisa titik dari nama berkas"
+
+#~ msgid "Disable deep directory relocation"
+#~ msgstr "Non aktifkan relokasi dalam direktori"
+
+#~ msgid "Follow symbolic links"
+#~ msgstr "Ikuti link simbolik"
+
+#~ msgid "Print option help"
+#~ msgstr "Tampilkan pilihan bantuan"
+
+#~ msgid "Print version information and exit"
+#~ msgstr "Tampilkan informasi versi dan keluar"
+
+#~ msgid "GLOBFILE"
+#~ msgstr "GLOBFILE"
+
+#~ msgid "Hide ISO9660/RR file"
+#~ msgstr "Sembunyikan berkas ISO9660/RR"
+
+#~ msgid "Hide Joliet file"
+#~ msgstr "Sembunyikan berkas Joliet"
+
+#~ msgid "ADD_FILES"
+#~ msgstr "ADD_FILES"
+
+#~ msgid "No longer supported"
+#~ msgstr "Tidak lagi didukung"
+
+#~ msgid "Generate Joliet directory information"
+#~ msgstr "Hasilkan informasi direktori Joliet"
+
+#~ msgid "Allow full 32 character filenames for iso9660 names"
+#~ msgstr "Ijinkan panjang nama berkas 32 karakter untuk nama iso9660"
+
+#~ msgid "Allow iso9660 filenames to start with '.'"
+#~ msgstr "Ijinkan nama berkas iso9660 dimulai dengan '.'"
+
+#~ msgid "LOG_FILE"
+#~ msgstr "LOG_FILE"
+
+#~ msgid "Re-direct messages to LOG_FILE"
+#~ msgstr "Alihkan pesan ke LOG_FILE"
+
+#~ msgid "Exclude file name"
+#~ msgstr "Nama berkas yang diabaikan"
+
+#~ msgid "Set path to previous session to merge"
+#~ msgstr "Set jalur untuk sesi sebelumnya untuk digabungkan"
+
+#~ msgid "Omit version number from iso9660 filename"
+#~ msgstr "Abaikan nomor versi dari nama berkas iso9660"
+
+#~ msgid "Inhibit splitting symlink components"
+#~ msgstr "Halangi pembagian komponen simlink"
+
+#~ msgid "Inhibit splitting symlink fields"
+#~ msgstr "Halangi pembagian daerah simlink"
+
+#~ msgid "Set output file name"
+#~ msgstr "Set nama berkas keluaran"
+
+#~ msgid "PREP"
+#~ msgstr "PREP"
+
+#~ msgid "Set Volume preparer"
+#~ msgstr "Set penyiap Volume"
+
+#~ msgid "Print estimated filesystem size and exit"
+#~ msgstr "Tampilkan perkiraan besar sistem berkas dan keluar"
+
+#~ msgid "PUB"
+#~ msgstr "PUB"
+
+#~ msgid "Set Volume publisher"
+#~ msgstr "Set Volume penerbit"
+
+#~ msgid "Run quietly"
+#~ msgstr "Jalankan dengan diam"
+
+#~ msgid "Generate rationalized Rock Ridge directory information"
+#~ msgstr "Hasilkan informasi direktori Rock Ridge secara rasional"
+
+#~ msgid "Generate Rock Ridge directory information"
+#~ msgstr "Hasilkan informasi direktori Rock Ridge"
+
+#~ msgid "Split output into files of approx. 1GB size"
+#~ msgstr "Bagi keluaran kedalam berkas kira kira sebesar 1GB"
+
+#~ msgid "Set System ID"
+#~ msgstr "Set ID Sistem"
+
+#~ msgid ""
+#~ "Generate translation tables for systems that don't understand long "
+#~ "filenames"
+#~ msgstr ""
+#~ "Hasilkan tabel terjemahan untuk sistem yang tidak mengerti nama berkas "
+#~ "panjang"
+
+#~ msgid "Verbose"
+#~ msgstr "Detail"
+
+#~ msgid "Set Volume ID"
+#~ msgstr "Set ID Volume"
+
+#~ msgid "Set Volume set ID"
+#~ msgstr "Set Volume ID set"
+
+#~ msgid "Set Volume set size"
+#~ msgstr "Set Volume set ukuran"
+
+#~ msgid "Set Volume set sequence number"
+#~ msgstr "Set Volume set nomor urutan"
+
+#~ msgid "Exclude file name (deprecated)"
+#~ msgstr "Abaikan nama berkas (ditinggalkan)"
+
+#~ msgid "Override creation date"
+#~ msgstr "Paksa tanggal pembuatan"
+
+#~ msgid "Override modification date"
+#~ msgstr "Paksa tanggal modifikasi"
+
+#~ msgid "Override expiration date"
+#~ msgstr "Paksa tanggal ekpirasi"
+
+#~ msgid "Override effective date"
+#~ msgstr "Paksa tanggal efektif"
+
+#~ msgid "Using \"%s\"\n"
+#~ msgstr "Menggunakan \"%s\"\n"
+
+#~ msgid "%s:%d: name required\n"
+#~ msgstr "%s:%d: nama dibutuhkan\n"
+
+#~ msgid "%s:%d: equals sign required\n"
+#~ msgstr "%s:%d: tanda sama dibutuhkan\n"
+
+#~ msgid "%s:%d: field name \"%s\" unknown\n"
+#~ msgstr "%s:%d: nama daerah \"%s\" tidak diketahui\n"
+
+#~ msgid "Usage: %s [options] file...\n"
+#~ msgstr "Penggunaan: %s [pilihan] berkas...\n"
+
+#~ msgid "Options:\n"
+#~ msgstr "Pilihan:\n"
+
+#~ msgid "-i option no longer supported.\n"
+#~ msgstr "pilihan -i tidak lagi didukung.\n"
+
+#~ msgid "Required boot image pathname missing"
+#~ msgstr "Nama jalur boot image yang dibutuhkan hilang"
+
+#~ msgid "Required boot catalog pathname missing\n"
+#~ msgstr "Nama jalur katalog boot yang dibutuhkan hilang\n"
+
+#~ msgid "Ignoring -no-emul-boot (no-emulation is the default behaviour)\n"
+#~ msgstr "Mengabaikan -no-emul-boot (no-emulation adalah perilaku baku)\n"
+
+#~ msgid "Abstract filename string too long\n"
+#~ msgstr "String nama berkas abstrak terlalu panjang\n"
+
+#~ msgid "Application-id string too long\n"
+#~ msgstr "String ID-Aplikasi terlalu panjang\n"
+
+#~ msgid "Bibliographic filename string too long\n"
+#~ msgstr "String nama berkas bibliographic terlalu panjang\n"
+
+#~ msgid "Copyright filename string too long\n"
+#~ msgstr "String nama berkas Hak Cipta terlalu panjang\n"
+
+#~ msgid "Preparer string too long\n"
+#~ msgstr "String penyiap terlalu panjang\n"
+
+#~ msgid "Publisher string too long\n"
+#~ msgstr "String penerbit terlalu panjang\n"
+
+#~ msgid "System ID string too long\n"
+#~ msgstr "String ID sistem terlalu panjang\n"
+
+#~ msgid "Volume ID string too long\n"
+#~ msgstr "String ID volume terlalu penjang\n"
+
+#~ msgid "Volume set ID string too long\n"
+#~ msgstr "String ID set volume terlalu panjang\n"
+
+#~ msgid "Volume set sequence number too big\n"
+#~ msgstr "Set urutan nomor volume terlalu besar\n"
+
+#~ msgid "date string must be 16 characters.\n"
+#~ msgstr "string tanggal harus berupa 16 karakter.\n"
+
+#~ msgid "Warning: getrlimit"
+#~ msgstr "Peringatan: getrlimit"
+
+#~ msgid "Warning: setrlimit"
+#~ msgstr "Peringatan: setrlimit"
+
+#~ msgid "Multisession usage bug: Must specify -C if -M is used.\n"
+#~ msgstr ""
+#~ "Bug penggunaan multi sesi: Harus menspesifikasikan -C jika -M digunakan.\n"
+
+#~ msgid ""
+#~ "Warning: -C specified without -M: old session data will not be merged.\n"
+#~ msgstr ""
+#~ "Peringatan: -C dispesifikasikan tanpa -M: data sesi lama tidak akan "
+#~ "digabungkan.\n"
+
+#~ msgid "can't open logfile: %s"
+#~ msgstr "tidak dapat membuka berkas log: %s"
+
+#~ msgid "re-directing all messages to %s\n"
+#~ msgstr "menredireksikan seluruh pesan ke %s\n"
+
+#~ msgid "can't open logfile: %s\n"
+#~ msgstr "tidak dapat membuka berkas log: %s\n"
+
+#~ msgid "Unable to open previous session image %s\n"
+#~ msgstr "Tidak dapat membuka sesi image sebelumnya %s\n"
+
+#~ msgid "Invalid node - %s\n"
+#~ msgstr "Node tidak valid -%s\n"
+
+#~ msgid "Joliet tree sort failed.\n"
+#~ msgstr "Pengurutan pohon joliet gagal.\n"
+
+#~ msgid "Unable to open /dev/null\n"
+#~ msgstr "Tidak dapat membuka /dev/null\n"
+
+#~ msgid "Unable to open disc image file\n"
+#~ msgstr "Tidak dapat membuka berkas image disk\n"
+
+#~ msgid "Max brk space used %x\n"
+#~ msgstr "Ruang maksimal brk yang digunakan %x\n"
+
+#~ msgid "%llu extents written (%llu MiB)\n"
+#~ msgstr "%llu ekstensi ditulis (%llu MiB)\n"
+
+#~ msgid "Seek error on old image\n"
+#~ msgstr "Error pencarian dalam image lama\n"
+
+#~ msgid "**Bad RR version attribute"
+#~ msgstr "**Atribut versi RR buruk"
+
+#~ msgid ""
+#~ "Warning: Neither Rock Ridge (-R) nor TRANS.TBL (-T) name translations "
+#~ "were found on previous session. ISO (8.3) file names have been used "
+#~ "instead.\n"
+#~ msgstr ""
+#~ "Peringatan: Bukan Rock Ridge (-R) ataupun TRANS.TBL (-T) nama terjemahan "
+#~ "ditemukan dalam sesi sebelumnya. ISO (8.3) nama berkas yang telah "
+#~ "digunakan.\n"
+
+#~ msgid "Read error on old image %s\n"
+#~ msgstr "Error membaca dalam image lama %s\n"
+
+#~ msgid "Special parameters for cdwrite not specified with -C\n"
+#~ msgstr "Parameter spesial untuk cdwrite tidak dispesifikasikan dengan -C\n"
+
+#~ msgid "Malformed cdwrite parameters\n"
+#~ msgstr "Parameter cdwrite salah format\n"
+
+#~ msgid "symbolic link ``%s'' to long for one SL System Use Field, splitting"
+#~ msgstr ""
+#~ "link simbolik ``%s'' terlalu panjang untuk satu SL Sistem Menggunakan "
+#~ "Field,  dipisahkan"
+
+#~ msgid "Unable to insert transparent compressed file - name conflict\n"
+#~ msgstr ""
+#~ "Tidak dapat memasukan berkas terkompress secara transparan - konflik "
+#~ "nama\n"
+
+#~ msgid "Extension record too long\n"
+#~ msgstr "Rekaman ekstensi terlalu panjang\n"
+
+#~ msgid "Fatal goof\n"
+#~ msgstr "Fatal goof\n"
+
+#~ msgid "Unable to  generate unique  name for file %s\n"
+#~ msgstr "Tidak dapat menghasilkan nama unik untuk berkas %s\n"
+
+#~ msgid "Using %s for %s%s%s (%s)\n"
+#~ msgstr "Menggunakan %s untuk %s%s%s (%s)\n"
+
+#~ msgid "Fatal error - RR overflow for file %s\n"
+#~ msgstr "Fatal error -RR overflow untuk berkas %s\n"
+
+#~ msgid "Unable to sort directory %s\n"
+#~ msgstr "Tidak dapat mengurutkan direktori %s\n"
+
+#~ msgid "Translation table size mismatch %d %d\n"
+#~ msgstr "Besar tabel terjemahan tidak cocok %d %d\n"
+
+#~ msgid "Unable to locate directory parent\n"
+#~ msgstr "Tidak dapat menempatkan direktori atasnya\n"
+
+#~ msgid "Scanning %s\n"
+#~ msgstr "Memindai %s\n"
+
+#~ msgid "Unable to open directory %s\n"
+#~ msgstr "Tidak dapat membuka direktori %s\n"
+
+#~ msgid "Ignoring file %s\n"
+#~ msgstr "Mengabaikan berkas %s\n"
+
+#~ msgid "Overflow of stat buffer\n"
+#~ msgstr "Overflow dari penyangga statistik\n"
+
+#~ msgid "Excluded by match: %s\n"
+#~ msgstr "Diabaikan oleh kecocokan: %s\n"
+
+#~ msgid "Excluded: %s\n"
+#~ msgstr "Diabaikan: %s\n"
+
+#~ msgid "Non-existant or inaccessible: %s\n"
+#~ msgstr "Tidak ada atau tidak dapat diakses: %s\n"
+
+#~ msgid "Unable to stat file %s - ignoring and continuing.\n"
+#~ msgstr ""
+#~ "Tidak dapat memperoleh statistik berkas %s - mengabaikan dan "
+#~ "melanjutkan.\n"
+
+#~ msgid "Symlink %s ignored - continuing.\n"
+#~ msgstr "Link simbolik %s diabaikan - melanjutkan.\n"
+
+#~ msgid "Already cached directory seen (%s)\n"
+#~ msgstr "Direktori yang telah dicache terlihat (%s)\n"
+
+#~ msgid "File %s is not readable (%s) - ignoring\n"
+#~ msgstr "Berkas %s tidak dapat dibaca (%s) - mengabaikan\n"
+
+#~ msgid "Directory loop - fatal goof (%s %lx %lu).\n"
+#~ msgstr "Loop direktori - fatal goof (%s %lx %lu).\n"
+
+#~ msgid "Unknown file type %s - ignoring and continuing.\n"
+#~ msgstr "Tipe berkas %s tidak diketahui - mengabaikan dan melanjutkan.\n"
+
+#~ msgid "Hidden from ISO9660 tree: %s\n"
+#~ msgstr "Tersembunyi dari pohon ISO9660: %s\n"
+
+#~ msgid "Hidden from Joliet tree: %s\n"
+#~ msgstr "Tersembunyi dari pohon joliet: %s\n"
+
+#~ msgid "Directories too deep  %s\n"
+#~ msgstr "Direktori terlalu dalam %s\n"
+
+#~ msgid "Unable to delete non-empty directory\n"
+#~ msgstr "Tidak dapat menghapus direktori yang tidak kosong\n"
+
+#~ msgid "Unable to locate child directory in parent list\n"
+#~ msgstr "Tidak dapat menemukan direktori anak dalam daftar orang-tua\n"
+
+#~ msgid "call to search_tree_file with an absolute path, stripping\n"
+#~ msgstr ""
+#~ "memanggil ke search_tree_file dengan sebuah jalur absolut, dipotong\n"
+
+#~ msgid "initial path separator. Hope this was intended...\n"
+#~ msgstr "jalur pemisah awal. Semoga ini yang diinginkan...\n"
+
+#~ msgid "Cannot open '%s'"
+#~ msgstr "Tidak dapat membuka '%s'"
+
+#~ msgid "cannot fwrite %llu*%llu\n"
+#~ msgstr "tidak dapat fwrite %llu*%llu\n"
+
+#~ msgid "cannot open %s\n"
+#~ msgstr "tidak dapat membuka %s\n"
+
+#~ msgid "cannot read %llu bytes from %s"
+#~ msgstr "tidak dapat membaca %llu bytes dari %s"
+
+#~ msgid "%6.2f%% done, estimate finish %s"
+#~ msgstr "%6.2f%% selesai, kira kira selesai %s"
+
+#~ msgid "Cache hit for %s%s%s\n"
+#~ msgstr "Cache kena untuk %s%s%s\n"
+
+#~ msgid "Unexpected directory length %d %d %s\n"
+#~ msgstr "Panjang direktori tidak terduga %d %d %s\n"
+
+#~ msgid "Continuation entry record length mismatch (%d %d).\n"
+#~ msgstr "Panjang masukan rekaman lanjutan tidak cocok (%d %d).\n"
+
+#~ msgid "Path table lengths do not match %d %d\n"
+#~ msgstr "Panjang jalur tabel tidak cocok %d %d\n"
+
+#~ msgid "Total extents scheduled to be written = %llu\n"
+#~ msgstr "Total ekstensi telah terjadwal untuk ditulis = %llu\n"
+
+#~ msgid "Total extents actually written = %llu\n"
+#~ msgstr "Total ekstensi yang sebenarnya tertulis = %llu\n"
+
+#~ msgid ""
+#~ "Number of extents written different than what was predicted.  Please "
+#~ "fix.\n"
+#~ msgstr ""
+#~ "Jumlah dari ekstensi yang ditulis berbeda dari apa yang direncanakan. "
+#~ "Mohon betulkan.\n"
+
+#~ msgid "Predicted = %d, written = %llu\n"
+#~ msgstr "Diperkirakan = %d, tertulis = %llu\n"
+
+#~ msgid "Total translation table size: %d\n"
+#~ msgstr "Total besar tabel terjemahan: %d\n"
+
+#~ msgid "Total rockridge attributes bytes: %d\n"
+#~ msgstr "Total atribut rockridge bytes: %d\n"
+
+#~ msgid "Total directory bytes: %d\n"
+#~ msgstr "Total bytes direktori: %d\n"
+
+#~ msgid "Path table size(bytes): %d\n"
+#~ msgstr "Ukuran tabel jalur(bytes): %d\n"
+
+#~ msgid "Unable to open %s"
+#~ msgstr "Tidak dapat membuka %s"
+
+#~ msgid "ESC to return previous menu."
+#~ msgstr "ESC kembali ke menu sebelumnya."
+
+#~ msgid "Booting '%s'"
+#~ msgstr "Mem-boot '%s'"
+
+#~ msgid "Falling back to '%s'"
+#~ msgstr "Kembali ke '%s'"
+
+#~ msgid "Failed to boot default entries.\n"
+#~ msgstr "Gagal untuk mem-boot masukan baku.\n"
+
+#~ msgid "the size of memory disk is 0x%x"
+#~ msgstr "besar dari disk memori 0x%0x"
+
+#~ msgid "the size of config file is 0x%x"
+#~ msgstr "besar dari berkas konfig adalah 0x%x"
+
+#~ msgid "the total module size is 0x%x"
+#~ msgstr "total besar modul adalah 0x%x"
+
+#~ msgid "the core size is 0x%x"
+#~ msgstr "besar core adalah 0x%x"
+
+#~ msgid "the first sector is <%llu,%u,%u>"
+#~ msgstr "sektor pertama adalah <%llu,%u,%u>"
+
+#~ msgid "saving <%llu,%u,%u> with the segment 0x%x"
+#~ msgstr "menyimpan <%llu,%u,%u> dengan bagian 0x%x"
+
+#~ msgid "dos partition is %d, bsd partition is %d"
+#~ msgstr "partisi dos adalah %d, partisi bsd adalah %d"
+
+#~ msgid "the core image will be embedded at sector 0x%llx"
+#~ msgstr "core image akan di ditempatkan di sektor 0x%llx"
+
+#~ msgid ""
+#~ "succeeded in opening the core image but the size is different (%d != %d)"
+#~ msgstr "sukses dalam membuka image core tetapi ukurannya berbeda (%d != %d)"
+
+#~ msgid "succeeded in opening the core image but cannot read %d bytes"
+#~ msgstr "sukses dalam membuka image core tetapi tidak dapat membaca %d bytes"
+
+#~ msgid "succeeded in opening the core image but the data is different"
+#~ msgstr "sukses dalam membuka image core tetapi data berbeda"
+
+#~ msgid "couldn't open the core image"
+#~ msgstr "tidak dapat membuka image core"
+
+#~ msgid "error message = %s"
+#~ msgstr "pesan error = %s"
+
+#~ msgid "opening the core image `%s'"
+#~ msgstr "membuka image core `%s'"
+
+#~ msgid "guessing the root device failed, because of `%s'"
+#~ msgstr "pendeteksian perangkat root gagal, karena `%s'"
