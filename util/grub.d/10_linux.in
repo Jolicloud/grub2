@@ -74,13 +74,21 @@ EOF
     prepare_boot_cache="$(prepare_grub_to_access_device ${GRUB_DEVICE_BOOT} | sed -e "s/^/\t/")"
   fi
   printf '%s\n' "${prepare_boot_cache}"
-  cat << EOF
+  if [ "x$5" != "xquiet" ]; then
+    cat << EOF
 	echo	$(printf "$(gettext "Loading Linux %s ...")" ${version})
+EOF
+  fi
+  cat << EOF
 	linux	${rel_dirname}/${basename} root=${linux_root_device_thisversion} ro ${args}
 EOF
-  if test -n "${initrd}" ; then
+  if [ "x$5" != "xquiet" ]; then
     cat << EOF
 	echo	$(gettext "Loading initial ramdisk ...")
+EOF
+  fi
+  if test -n "${initrd}" ; then
+    cat << EOF
 	initrd	${rel_dirname}/${initrd}
 EOF
   fi
