@@ -542,6 +542,7 @@ show_menu (grub_menu_t menu, int nested)
       int boot_entry;
       grub_menu_entry_t e;
       int auto_boot;
+      int initial_timeout = grub_menu_get_timeout ();
 
       boot_entry = run_menu (menu, nested, &auto_boot);
       if (boot_entry < 0)
@@ -551,7 +552,9 @@ show_menu (grub_menu_t menu, int nested)
       if (! e)
 	continue; /* Menu is empty.  */
 
-      grub_cls ();
+      /* Only clear the screen if we drew the menu in the first place.  */
+      if (initial_timeout != 0)
+	grub_cls ();
 
       if (auto_boot)
         {
