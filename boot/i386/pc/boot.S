@@ -19,6 +19,7 @@
 
 #include <grub/symbol.h>
 #include <grub/boot.h>
+#include <grub/machine/memory.h>
 #include <grub/machine/boot.h>
 
 /*
@@ -147,9 +148,15 @@ real_start:
 	/* save drive reference first thing! */
 	pushw	%dx
 
+	/* is either shift key held down? */
+	movw	$(GRUB_MEMORY_MACHINE_BIOS_DATA_AREA_ADDR + 0x17), %bx
+	andb	$3, (%bx)
+	jz	2f
+
 	/* print a notification message on the screen */
 	MSG(notification_string)
 
+2:
 	/* set %si to the disk address packet */
 	movw	$disk_address_packet, %si
 
