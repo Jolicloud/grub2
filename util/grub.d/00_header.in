@@ -57,6 +57,11 @@ function savedefault {
     save_env saved_entry
   fi
 }
+
+function recordfail {
+  set recordfail=1
+  if [ -n \${have_grubenv} ]; then if [ -z \${boot_once} ]; then save_env recordfail; fi; fi
+}
 EOF
 
 case ${GRUB_TERMINAL_INPUT}:${GRUB_TERMINAL_OUTPUT} in
@@ -143,7 +148,11 @@ EOF
 fi
 
 cat << EOF
-set timeout=${GRUB_TIMEOUT}
+if [ \${recordfail} = 1 ]; then
+  set timeout=-1
+else
+  set timeout=${GRUB_TIMEOUT}
+fi
 EOF
 
 # Play an initial tune

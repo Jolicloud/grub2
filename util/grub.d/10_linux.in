@@ -67,6 +67,9 @@ linux_entry ()
     title="$(gettext "%s, with Linux %s")"
   fi
   printf "menuentry \"${title}\" ${CLASS} {\n" "${os}" "${version}"
+  cat << EOF
+	recordfail
+EOF
   save_default_entry | sed -e "s/^/\t/"
 
   if [ "x$GRUB_GFXPAYLOAD_LINUX" != x ]; then
