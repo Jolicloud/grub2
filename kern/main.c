@@ -154,6 +154,9 @@ grub_main (void)
   /* First of all, initialize the machine.  */
   grub_machine_init ();
 
+  /* Disable the cursor, early in the boot process */
+  grub_setcursor (0);
+
   /* Load pre-loaded modules and free the space.  */
   grub_register_exported_symbols ();
 #ifdef GRUB_LINKER_HAVE_INIT

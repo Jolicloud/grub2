@@ -152,6 +152,15 @@ grub_setcolorstate (grub_term_color_state state)
 }
 
 void
+grub_setcursor (int on)
+{
+  struct grub_term_output *term;
+  
+  FOR_ACTIVE_TERM_OUTPUTS(term)
+    grub_term_setcursor (term, on);
+}
+
+void
 grub_refresh (void)
 {
   struct grub_term_output *term;

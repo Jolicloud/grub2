@@ -258,6 +258,7 @@ int EXPORT_FUNC(grub_checkkey) (void);
 int EXPORT_FUNC(grub_getkeystatus) (void);
 void EXPORT_FUNC(grub_cls) (void);
 void EXPORT_FUNC(grub_setcolorstate) (grub_term_color_state state);
+void EXPORT_FUNC(grub_setcursor) (int on);
 void EXPORT_FUNC(grub_refresh) (void);
 void grub_puts_terminal (const char *str, struct grub_term_output *term);
 grub_uint16_t *grub_term_save_pos (void);

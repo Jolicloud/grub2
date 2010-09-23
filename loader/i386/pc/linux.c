@@ -28,6 +28,7 @@
 #include <grub/machine/init.h>
 #include <grub/machine/memory.h>
 #include <grub/dl.h>
+#include <grub/term.h>
 #include <grub/cpu/linux.h>
 #include <grub/command.h>
 #include <grub/i18n.h>
@@ -54,6 +55,7 @@ static grub_err_t
 grub_linux16_boot (void)
 {
   grub_video_set_mode ("text", 0, 0);
+  grub_setcursor( 0 );
   grub_linux16_real_boot ();
 
   /* Not reached.  */
