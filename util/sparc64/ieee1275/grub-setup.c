@@ -46,6 +46,7 @@
 #include <sys/stat.h>
 #include <dirent.h>
 #include <grub/util/getroot.h>
+#include <grub/util/deviceiter.h>
 
 #define _GNU_SOURCE	1
 #include <getopt.h>
@@ -618,6 +619,7 @@ int
 main (int argc, char *argv[])
 {
   struct grub_setup_info ginfo;
+  struct stat dev_map_stat;
 
   set_program_name (argv[0]);
 
@@ -629,6 +631,9 @@ main (int argc, char *argv[])
 
   /* Initialize the emulated biosdisk driver.  */
   grub_util_biosdisk_init (ginfo.dev_map ? ginfo.dev_map : DEFAULT_DEVICE_MAP);
+
+  if (stat (ginfo.dev_map ? : DEFAULT_DEVICE_MAP, &dev_map_stat) == -1)
+    grub_util_iterate_devices (grub_util_biosdisk_probe_device, 0);
 
   /* Initialize all modules. */
   grub_init_all ();

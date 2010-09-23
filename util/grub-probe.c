@@ -28,6 +28,7 @@
 #include <grub/msdos_partition.h>
 #include <grub/util/hostdisk.h>
 #include <grub/util/getroot.h>
+#include <grub/util/deviceiter.h>
 #include <grub/term.h>
 #include <grub/env.h>
 #include <grub/raid.h>
@@ -106,13 +107,14 @@ probe_raid_level (grub_disk_t disk)
 }
 
 static void
-probe (const char *path, char *device_name)
+probe (const char *path, char *device_name, const char *dev_map)
 {
   char *drive_name = NULL;
   char *grub_path = NULL;
   char *filebuf_via_grub = NULL, *filebuf_via_sys = NULL;
   grub_device_t dev = NULL;
   grub_fs_t fs;
+  struct stat dev_map_stat;
 
   if (path == NULL)
     {
@@ -134,6 +136,22 @@ probe (const char *path, char *device_name)
     {
       printf ("%s\n", device_name);
       goto end;
+    }
+
+  if (stat (dev_map, &dev_map_stat) == -1 &&
+      grub_util_get_dev_abstraction (device_name) != GRUB_DEV_ABSTRACTION_NONE)
+    {
+      /* If we don't have a device map, then we won't yet know about the
+         physical volumes underlying this device, so probe all devices.  */
+      grub_util_iterate_devices (grub_util_biosdisk_probe_device, 0);
+
+      /* Now reinitialise the higher layers.  */
+      grub_lvm_fini ();
+      grub_mdraid_fini ();
+      grub_raid_fini ();
+      grub_raid_init ();
+      grub_mdraid_init ();
+      grub_lvm_init ();
     }
 
   drive_name = grub_util_get_grub_dev (device_name);
@@ -428,9 +446,9 @@ main (int argc, char *argv[])
 
   /* Do it.  */
   if (argument_is_device)
-    probe (NULL, argument);
+    probe (NULL, argument, dev_map ? : DEFAULT_DEVICE_MAP);
   else
-    probe (argument, NULL);
+    probe (argument, NULL, dev_map ? : DEFAULT_DEVICE_MAP);
 
   /* Free resources.  */
   grub_fini_all ();

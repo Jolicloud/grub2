@@ -36,6 +36,7 @@
 #include <grub/util/raid.h>
 #include <grub/util/lvm.h>
 #include <grub/util/getroot.h>
+#include <grub/util/deviceiter.h>
 
 static const grub_gpt_part_type_t grub_gpt_partition_type_bios_boot = GRUB_GPT_PARTITION_TYPE_BIOS_BOOT;
 
@@ -631,6 +632,7 @@ main (int argc, char *argv[])
   char *core_file = 0;
   char *dir = 0;
   char *dev_map = 0;
+  struct stat dev_map_stat;
   char *root_dev = 0;
   char *dest_dev;
   int must_embed = 0, force = 0, fs_probe = 1;
@@ -728,6 +730,9 @@ main (int argc, char *argv[])
 
   /* Initialize the emulated biosdisk driver.  */
   grub_util_biosdisk_init (dev_map ? : DEFAULT_DEVICE_MAP);
+
+  if (stat (dev_map ? : DEFAULT_DEVICE_MAP, &dev_map_stat) == -1)
+    grub_util_iterate_devices (grub_util_biosdisk_probe_device, 0);
 
   /* Initialize all modules. */
   grub_init_all ();

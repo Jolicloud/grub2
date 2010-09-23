@@ -1225,6 +1225,48 @@ find_system_device (const char *os_dev, struct stat *st)
   return i;
 }
 
+static void
+store_grub_dev (const char *grub_disk, const char *os_disk)
+{
+  unsigned int i;
+
+  for (i = 0; i < ARRAY_SIZE (map); i++)
+    if (! map[i].device)
+      break;
+    else if (strcmp (map[i].drive, grub_disk) == 0)
+      {
+	if (strcmp (map[i].device, os_disk) == 0)
+	  return;
+	grub_util_error (_("drive `%s' already mapped to `%s'"),
+			 map[i].drive, map[i].device);
+      }
+
+  if (i == ARRAY_SIZE (map))
+    grub_util_error (_("device count exceeds limit"));
+
+  map[i].drive = xstrdup (grub_disk);
+  map[i].device = xstrdup (os_disk);
+}
+
+static int num_hd = 0;
+static int num_fd = 0;
+
+int
+grub_util_biosdisk_probe_device (const char *name, int is_floppy)
+{
+  char *grub_disk;
+
+  if (is_floppy)
+    grub_disk = xasprintf ("fd%d", num_fd++);
+  else
+    grub_disk = xasprintf ("hd%d", num_hd++);
+
+  store_grub_dev (grub_disk, name);
+  free (grub_disk);
+
+  return 0;
+}
+
 char *
 grub_util_biosdisk_get_grub_dev (const char *os_dev)
 {

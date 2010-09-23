@@ -22,6 +22,7 @@
 
 void grub_util_biosdisk_init (const char *dev_map);
 void grub_util_biosdisk_fini (void);
+int grub_util_biosdisk_probe_device (const char *name, int is_floppy);
 char *grub_util_biosdisk_get_grub_dev (const char *os_dev);
 
 #endif /* ! GRUB_BIOSDISK_MACHINE_UTIL_HEADER */
