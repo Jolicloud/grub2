@@ -139,7 +139,9 @@ probe (const char *path, char *device_name, const char *dev_map)
     }
 
   if (stat (dev_map, &dev_map_stat) == -1 &&
-      grub_util_get_dev_abstraction (device_name) != GRUB_DEV_ABSTRACTION_NONE)
+      (print == PRINT_DRIVE ||
+       grub_util_get_dev_abstraction (device_name) !=
+	 GRUB_DEV_ABSTRACTION_NONE))
     {
       /* If we don't have a device map, then we won't yet know about the
          physical volumes underlying this device, so probe all devices.  */
