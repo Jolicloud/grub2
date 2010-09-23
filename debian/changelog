@@ -1,3 +1,10 @@
+grub2 (1.98-2jolicloud1) robby; urgency=low
+
+  * Disable the cursor early in grub, and at the end when the kernel
+    loads.
+
+ -- Adam McDaniel <adam@jolicloud.org>  Thu, 23 Sep 2010 00:54:46 -0600
+
 grub2 (1.98-1ubuntu7) lucid-proposed; urgency=low
 
   * Update harmfully incorrect German translation of menu legend, which
