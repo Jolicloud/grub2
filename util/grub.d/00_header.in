@@ -142,22 +142,9 @@ insmod gettext
 EOF
 fi
 
-if [ "x${GRUB_HIDDEN_TIMEOUT}" != "x" ] ; then
-  if [ "x${GRUB_HIDDEN_TIMEOUT_QUIET}" = "xtrue" ] ; then
-    verbose=
-  else
-    verbose=" --verbose"
-  fi
-  cat << EOF
-if sleep$verbose --interruptible ${GRUB_HIDDEN_TIMEOUT} ; then
-  set timeout=${GRUB_TIMEOUT}
-fi
-EOF
-else
-  cat << EOF
+cat << EOF
 set timeout=${GRUB_TIMEOUT}
 EOF
-fi
 
 # Play an initial tune
 if [ "x${GRUB_INIT_TUNE}" != "x" ] ; then
