@@ -62,11 +62,11 @@ linux_entry ()
   recovery="$3"
   args="$4"
   if ${recovery} ; then
-    title="$(gettext "%s, with Linux %s (recovery mode)")"
+    title="$(gettext_quoted "%s, with Linux %s (recovery mode)")"
   else
-    title="$(gettext "%s, with Linux %s")"
+    title="$(gettext_quoted "%s, with Linux %s")"
   fi
-  printf "menuentry \"${title}\" ${CLASS} {\n" "${os}" "${version}"
+  printf "menuentry '${title}' ${CLASS} {\n" "${os}" "${version}"
   cat << EOF
 	recordfail
 EOF
@@ -84,7 +84,7 @@ EOF
   printf '%s\n' "${prepare_boot_cache}"
   if [ "x$5" != "xquiet" ]; then
     cat << EOF
-	echo	$(printf "$(gettext "Loading Linux %s ...")" ${version})
+	echo	'$(printf "$(gettext_quoted "Loading Linux %s ...")" ${version})'
 EOF
   fi
   cat << EOF
@@ -92,7 +92,7 @@ EOF
 EOF
   if [ "x$5" != "xquiet" ]; then
     cat << EOF
-	echo	$(gettext "Loading initial ramdisk ...")
+	echo	'$(gettext_quoted "Loading initial ramdisk ...")'
 EOF
   fi
   if test -n "${initrd}" ; then
