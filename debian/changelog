@@ -1,3 +1,13 @@
+grub2 (1.98-2jolicloud2) robby; urgency=low
+
+  * Removed "vt.global_cursor_default=0" from default/grub; this option
+    is now the default in linux kernel 2.6.35.4-1.38
+  * If GRUB was installed in OEM mode, default to not using UUIDs since this
+    will confuse clones of an installed image when cloned across multiple
+    devices.
+
+ -- Adam McDaniel <adam@jolicloud.org>  Thu, 07 Oct 2010 18:59:33 -0600
+
 grub2 (1.98-2jolicloud1) robby; urgency=low
 
   * Disable the cursor early in grub, and at the end when the kernel
