@@ -20,6 +20,13 @@ GRUB_CMDLINE_LINUX=""
 # Uncomment if you don't want GRUB to pass "root=UUID=xxx" parameter to Linux
 #GRUB_DISABLE_LINUX_UUID=true
 
+# If GRUB was installed in OEM mode, default to not using UUIDs since this
+# will confuse clones of an installed image when cloned across multiple
+# devices.
+if [ -e /etc/jolicloud-oem.conf ]; then
+    GRUB_DISABLE_LINUX_UUID=true
+fi
+
 # Uncomment to disable generation of recovery mode menu entries
 #GRUB_DISABLE_LINUX_RECOVERY="true"
 
