@@ -25,7 +25,6 @@ libdir=@libdir@
 found_other_os=
 
 adjust_timeout () {
-  if [ "x${found_other_os}" = "x" ] ; then
     if [ "x${GRUB_HIDDEN_TIMEOUT}" != "x" ] ; then
       if [ "x${GRUB_HIDDEN_TIMEOUT_QUIET}" = "xtrue" ] ; then
 	verbose=
@@ -51,7 +50,6 @@ fi
 EOF
       fi
     fi
-  fi
 }
 
 if [ "x${GRUB_DISABLE_OS_PROBER}" = "xtrue" ]; then
