@@ -1,3 +1,10 @@
+grub2 (1.98-2jolicloud3) robby; urgency=low
+
+  * FIXME: wubildr seems to ignore the keystatus.mod whatever I try, so
+    remove it from 30_os-prober.in
+
+ -- Benjamin Ryzman <benjamin@jolicloud.org>  Fri, 15 Oct 2010 11:24:29 +0200
+
 grub2 (1.98-2jolicloud2) robby; urgency=low
 
   * Removed "vt.global_cursor_default=0" from default/grub; this option
