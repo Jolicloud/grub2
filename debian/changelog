@@ -1,3 +1,9 @@
+grub2 (1.98-2jolicloud5) robby-1.2; urgency=low
+
+  * Order kernel version numbers with "sort --version-sort", not "sort -n"
+
+ -- Adam McDaniel <adam@jolicloud.org>  Wed, 23 Feb 2011 20:27:21 -0700
+
 grub2 (1.98-2jolicloud4) robby; urgency=low
 
   * Adjust timeout even when there are foreign OSes installed
