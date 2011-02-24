@@ -177,7 +177,7 @@ version_test_numeric ()
     a=$b
     b=$c
   fi
-  if (echo $a ; echo $b) | sort -n | head -n 1 | grep -qx $b ; then
+  if (echo $a ; echo $b) | sort --version-sort | head -n 1 | grep -qx $b ; then
     return 0
   else
     return 1
