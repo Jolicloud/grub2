@@ -29,8 +29,9 @@ Standards-Version: 3.8.4
 Homepage: http://www.gnu.org/software/grub/grub-2.en.html
 XS-Debian-Vcs-Bzr: https://alioth.debian.org/anonscm/bzr/pkg-grub/trunk/grub/
 XS-Debian-Vcs-Browser: http://bzr.debian.org/loggerhead/pkg-grub/
-Vcs-Bzr: http://bazaar.launchpad.net/~ubuntu-core-dev/ubuntu/lucid/grub2/lucid
-
+XS-Ubuntu-Vcs-Bzr: http://bazaar.launchpad.net/~ubuntu-core-dev/ubuntu/lucid/grub2/lucid
+Vcs-Browser: https://github.com/jolicloud/grub2
+Vcs-Git: git://github.com/jolicloud/grub2.git
 
 Package: grub2
 Architecture: i386 kfreebsd-i386 hurd-i386 kopensolaris-i386 amd64 kfreebsd-amd64 lpia powerpc sparc
